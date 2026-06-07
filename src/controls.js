@@ -15,6 +15,21 @@ import {
 let sceneRef, controlsRef, cameraRef, clearSceneFn, setModelFn;
 let animationStateRef = null;
 let modelPartsRenderToken = 0;
+let isCharacterIndexLoading = false;
+let isCharacterLoading = false;
+let loadStatusVariantIndex = 0;
+const LOAD_STATUS_VARIANTS = [
+  "loader-scan",
+  "loader-rain",
+  "loader-pulse",
+  "loader-sparkle",
+  "loader-cascade",
+  "loader-waverows",
+  "loader-columns",
+  "loader-helix",
+  "loader-diagswipe",
+  "loader-checkerboard"
+];
 
 export function initControls(scene, controls, camera, clearScene, setModel) {
   sceneRef = scene;
@@ -25,15 +40,24 @@ export function initControls(scene, controls, camera, clearScene, setModel) {
 
   setupDragDrop();
   setupUIBindings();
-  loadCharacterIndex();
+  setupCharacterLoader();
+  initializeCharacterIndex();
+}
+
+function setupCharacterLoader() {
+  const sel = document.getElementById("charSelect");
+  if (sel) sel.addEventListener("change", updateCharacterLoadControls);
 
   const btn = document.getElementById("btnLoadChar");
   if (btn)
     btn.addEventListener("click", async () => {
-      const sel = document.getElementById("charSelect");
-      if (sel.value) {
+      if (!sel?.value || isCharacterIndexLoading || isCharacterLoading) return;
+
+      const charId = sel.value;
+      setCharacterLoading(true, `Loading ${charId}...`);
+      try {
         const model = await loadCharacter(
-          sel.value,
+          charId,
           sceneRef,
           controlsRef,
           cameraRef,
@@ -46,8 +70,67 @@ export function initControls(scene, controls, camera, clearScene, setModel) {
           applyUIState();
           renderModelPartsPanel();
         }
+        setLoadStatus(model ? "" : "Load failed", !model);
+      } catch (err) {
+        console.warn(`Character load failed for ${charId}:`, err);
+        setLoadStatus(`Failed to load ${charId}`, true);
+      } finally {
+        setCharacterLoading(false);
       }
     });
+}
+
+async function initializeCharacterIndex() {
+  isCharacterIndexLoading = true;
+  updateCharacterLoadControls();
+  setLoadStatus("Loading character list...", false, true);
+  try {
+    await loadCharacterIndex();
+    setLoadStatus("");
+  } catch (err) {
+    console.warn("Character index failed:", err);
+    setLoadStatus("Character list failed to load", true);
+  } finally {
+    isCharacterIndexLoading = false;
+    updateCharacterLoadControls();
+  }
+}
+
+function setCharacterLoading(loading, message = "") {
+  isCharacterLoading = loading;
+  updateCharacterLoadControls();
+  if (message) setLoadStatus(message, false, loading);
+}
+
+function updateCharacterLoadControls() {
+  const sel = document.getElementById("charSelect");
+  const btn = document.getElementById("btnLoadChar");
+  const busy = isCharacterIndexLoading || isCharacterLoading;
+  if (sel) sel.disabled = busy;
+  if (!btn) return;
+
+  btn.disabled = busy || !sel?.value;
+  btn.classList.toggle("is-loading", isCharacterLoading);
+  btn.textContent = isCharacterLoading ? "Loading..." : "Load Character";
+  btn.setAttribute("aria-busy", isCharacterLoading ? "true" : "false");
+}
+
+function setLoadStatus(message, isError = false, isLoading = false) {
+  const status = document.getElementById("loadStatus");
+  if (!status) return;
+  status.textContent = isLoading ? "" : message || "";
+  if (isLoading && message) status.setAttribute("aria-label", message);
+  else status.removeAttribute("aria-label");
+  status.classList.toggle("is-error", !!isError);
+  status.classList.toggle("is-loading", !!isLoading);
+  status.classList.remove(...LOAD_STATUS_VARIANTS);
+  if (isLoading) {
+    status.classList.add(
+      LOAD_STATUS_VARIANTS[
+        loadStatusVariantIndex++ % LOAD_STATUS_VARIANTS.length
+      ]
+    );
+  }
 }
 
 // ── Drag & Drop ──

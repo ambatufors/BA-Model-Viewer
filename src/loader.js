@@ -2078,16 +2078,22 @@ function attachFxPropShell(root, meshInfo) {
 export async function loadCharacterIndex() {
   try {
     const resp = await fetch(withCacheVersion("models_index.json"));
+    if (!resp.ok) {
+      throw new Error(`models_index.json fetch failed: ${resp.status}`);
+    }
     modelsIndex = await resp.json();
     const sel = document.getElementById("charSelect");
+    if (!sel) return modelsIndex;
     for (const char of modelsIndex) {
       const opt = document.createElement("option");
       opt.value = char.id;
       opt.textContent = `${char.id} (${char.meshes.length} meshes)`;
       sel.appendChild(opt);
     }
+    return modelsIndex;
   } catch (e) {
     console.warn("Could not load models_index.json:", e);
+    throw e;
   }
 }
 
