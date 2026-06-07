@@ -484,7 +484,10 @@ function makeBillboardMaterial(texture, tilesX, tilesY, frameU, frameV, color, t
         ` : /* glsl */ `
         vec2 billboardHierarchyScale = vec2(1.0);
         `}
-        vec3 rotated = vec3((position.xy - u_Pivot) * instanceSize * billboardHierarchyScale, position.z);
+        // Unity's ParticleSystemRenderer pivot is an authored offset from the
+        // particle center. Negative Y should pull the quad below the emitter
+        // origin (e.g. CH0145 Miyu's face emotion mark), not push it upward.
+        vec3 rotated = vec3((position.xy + u_Pivot) * instanceSize * billboardHierarchyScale, position.z);
         float c = cos(instanceRotation);
         float s = sin(instanceRotation);
         rotated = vec3(rotated.x * c - rotated.y * s, rotated.x * s + rotated.y * c, rotated.z);

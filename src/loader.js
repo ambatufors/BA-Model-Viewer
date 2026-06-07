@@ -31,7 +31,7 @@ import { createHaloParticleSystem } from "./haloParticles.js";
 import { createModelFx } from "./modelFx.js";
 
 let modelsIndex = [];
-const ASSET_CACHE_VERSION = "build-2"; //You should poke this after modifying the code
+const ASSET_CACHE_VERSION = "build-4"; //You should poke this after modifying the code
 const HEAD_MESH_BASE_NAMES = new Set([
   "Face",
   "Hair",
@@ -3038,24 +3038,6 @@ export async function loadCharacter(
           (sourceBaseName === "Body" || meshInfo.submesh_order?.length) &&
           Array.isArray(child.material) &&
           child.material.length > 1;
-        // CH0145's Body avatar bakes a 50-tri Face submesh and 32-tri
-        // EyeMouth submesh at rest pose. The Face SMR ships its own
-        // animated Face submesh that overlaps the Body's static Face
-        // plane, producing a duplicate skin-toned face that blocks the
-        // eye region. The Body's EyeMouth submesh, however, owns the
-        // SetMouthTile sprite for the chibi mouth animation: hiding it
-        // erases the mouth, so we only hide the duplicate Face slot.
-        const HIDDEN_BODY_SUBMESHES_BY_CHAR = {
-          CH0145: new Set(["Face"])
-        };
-        const charHidden =
-          HIDDEN_BODY_SUBMESHES_BY_CHAR[String(charId).toUpperCase()];
-        const isHiddenBodySubmesh = (partBase) =>
-          meshInfo.isSkinned &&
-          sourceBaseName === "Body" &&
-          charHidden &&
-          charHidden.has(partBase);
-
         if (useSkinnedSubmeshMaterials) {
           const submeshNames =
             meshInfo.submesh_order || assetData.submesh_order || [];
@@ -3063,17 +3045,6 @@ export async function loadCharacter(
             const partName =
               submeshNames[materialIndex] || `sub${materialIndex}`;
             const partBaseName = getMeshBaseName(partName);
-            if (isHiddenBodySubmesh(partBaseName)) {
-              return {
-                material: makeHiddenMaterial(),
-                isHaloMesh: false,
-                isOverlay: false,
-                isEyeMouth: false,
-                noFaceTexture: false,
-                overrides: {},
-                mainTex: null
-              };
-            }
             return buildPartMaterial(
               child,
               partName,
@@ -3118,13 +3089,6 @@ export async function loadCharacter(
           : { name: sourceName, baseName: sourceBaseName };
         const name = resolvedPart.name;
         const baseName = resolvedPart.baseName;
-        if (isHiddenBodySubmesh(baseName)) {
-          child.userData.meshBaseName = baseName;
-          child.userData.isHaloMesh = false;
-          child.material = makeHiddenMaterial();
-          if (child.isSkinnedMesh) enableSkinningMaterial(child.material);
-          return;
-        }
         const built = buildPartMaterial(child, name, baseName, null, meshInfo);
 
         child.userData.meshBaseName = baseName;
