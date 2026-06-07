@@ -78,6 +78,11 @@ function getMeshBaseName(name) {
   return source.replace(/^Face\d+_/, "").replace(/^.*_/, "") || source;
 }
 
+function isSkinnedPropMeshInfo(meshInfo) {
+  const name = String(meshInfo?.name || "");
+  return !!meshInfo?.isSkinned && /(Medicine|Bottle|Prop)/i.test(name);
+}
+
 function pickTextureKey(texCache, keys) {
   for (const key of keys) {
     if (key && texCache[key]) return key;
@@ -2404,10 +2409,9 @@ export async function loadCharacter(
       // CH0082's bottle. Force such props through the simple textured path
       // so the atlas RGB is rendered as-is. Detected by manifest name match
       // on `(Medicine|Prop|Bottle)` rather than skin-weight count to avoid
-      // false positives on light hair/cloth bones.
-      const isSkinnedProp =
-        !!meshInfo?.isSkinned &&
-        /^(Medicine|Bottle|Prop)/i.test(meshInfo.name || "");
+      // false positives on light hair/cloth bones. Prop can appear mid-name
+      // too, e.g. CH0184 `GymProp`.
+      const isSkinnedProp = isSkinnedPropMeshInfo(meshInfo);
 
       if (isFxProp) {
         const colorData = meshInfo?.color || {
