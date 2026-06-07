@@ -47,6 +47,10 @@ And you're done.
 - `external_prop_attach.py`: You actually don't need this.
 - `export_halo_mesh.py`: Exports static halo mesh and halo metadata.
 
+## Contact
+
+entrance8808@proton.me
+
 ## Disclaimer
 
 This is an unofficial fan/personal project and is not affiliated with or endorsed by NEXON, Yostar, or Blue Archive. All trademarks, characters, and game assets belong to their respective owners. Use responsibly and don't use this for cheating, monetization, or evil gamer crimes.
