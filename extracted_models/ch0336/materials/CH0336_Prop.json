@@ -1,0 +1,154 @@
+{
+  "name": "CH0336_Prop",
+  "floats": {
+    "_AdditionalLightSharpness": 5.0,
+    "_AdditionalLightStrength": 1.0,
+    "_AlphaClip": 0.0,
+    "_BaseBrightness": 0.0,
+    "_Blend": 0.0,
+    "_BumpScale": 1.0,
+    "_ClearCoatMask": 0.0,
+    "_ClearCoatSmoothness": 0.0,
+    "_Cull": 2.0,
+    "_Cutoff": 0.5,
+    "_DetailAlbedoMapScale": 1.0,
+    "_DetailNormalMapScale": 1.0,
+    "_DitherThreshold": 0.0,
+    "_DstBlend": 0.0,
+    "_DstBlendAlpha": 0.0,
+    "_EnvironmentReflections": 1.0,
+    "_GlossMapScale": 0.0,
+    "_Glossiness": 0.0,
+    "_GlossyReflections": 0.0,
+    "_GlowStrength": 0.0,
+    "_GrayBrightness": 1.0,
+    "_InvViewPower": 2.0,
+    "_InvViewStrength": 0.0,
+    "_MaskGSensitivity": 1.0,
+    "_Metallic": 0.0,
+    "_OcclusionStrength": 1.0,
+    "_OutlineZCorrection": 0.0,
+    "_Parallax": 0.004999999888241291,
+    "_QueueOffset": 0.0,
+    "_ReceiveShadows": 1.0,
+    "_RimAreaLeveler": 2.0,
+    "_RimAreaMultiplier": 3.0,
+    "_RimStrength": 1.0,
+    "_ShadowThreshold": 0.38999998569488525,
+    "_Smoothness": 0.5,
+    "_SmoothnessTextureChannel": 0.0,
+    "_SpecularHighlights": 1.0,
+    "_SrcBlend": 1.0,
+    "_SrcBlendAlpha": 1.0,
+    "_Surface": 0.0,
+    "_ViewLightEdge": 0.0,
+    "_ViewOffset": 0.0,
+    "_ViewPower": 2.0,
+    "_ViewStrength": 0.0,
+    "_WorkflowMode": 1.0,
+    "_ZWrite": 1.0
+  },
+  "colors": {
+    "_BaseColor": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_CodeAddColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeAddRimColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeMultiplyColor": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_Color": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_EmissionColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "_GlowTint": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "_OutlineSolidColorTint": {
+      "r": 0.699999988079071,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "_OutlineTint": {
+      "r": 0.4433962106704712,
+      "g": 0.43139368295669556,
+      "b": 0.4287557601928711,
+      "a": 1.0
+    },
+    "_ShadowTint": {
+      "r": 0.8301886916160583,
+      "g": 0.778974711894989,
+      "b": 0.740121066570282,
+      "a": 1.0
+    },
+    "_SpecColor": {
+      "r": 0.19999995827674866,
+      "g": 0.19999995827674866,
+      "b": 0.19999995827674866,
+      "a": 1.0
+    },
+    "_Tint": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_TwoSideTint": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    }
+  },
+  "textures": {
+    "_MainTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ],
+      "name": "CH0336_Prop"
+    },
+    "_MaskTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ]
+    }
+  }
+}

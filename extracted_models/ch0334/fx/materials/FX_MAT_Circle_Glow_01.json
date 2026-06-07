@@ -1,0 +1,379 @@
+{
+  "name": "FX_MAT_Circle_Glow_01",
+  "shader": "DSFX/FX_SHADER_AlphaBlend_Add_Mask_0",
+  "floats": {
+    "Vector1_31C41B97": 1.0099999904632568,
+    "Vector1_3BF9E79E": -0.7799999713897705,
+    "Vector1_59C5C03": 0.10000000149011612,
+    "Vector1_671B8F3C": 12.0,
+    "Vector1_9D7C625B": 1.0,
+    "Vector1_A9AF81A2": 0.25,
+    "Vector1_C863176E": 30.0,
+    "Vector1_D5CFBC76": 0.3310000002384186,
+    "Vector1_EA282FF7": 0.0,
+    "Vector1_EA691D16": 0.30000001192092896,
+    "_1": 0.0,
+    "_AddPower": 1.0,
+    "_AlphaPremultiplyOn": 0.0,
+    "_Alphaclip_Value": -0.12999999523162842,
+    "_BlendOp": 0.0,
+    "_BumpScale": 1.0,
+    "_CameraFadingEnabled": 0.0,
+    "_CameraFarFadeDistance": 2.0,
+    "_CameraNearFadeDistance": 1.0,
+    "_ColorMode": 4.0,
+    "_Cull": 2.0,
+    "_Cull_Mode": 2.0,
+    "_Custom_Data_MainMask_Offset_Use": 0.0,
+    "_Custom_Data_Offset_Use": 0.0,
+    "_Cutoff": 0.5,
+    "_Dis_Speed_X": 0.0,
+    "_Dis_Speed_Y": 0.0,
+    "_DiscardPow": 0.847000002861023,
+    "_DispPowX": -0.10000000149011612,
+    "_DispPowY": -0.20000000298023224,
+    "_DistortionBlend": 0.5,
+    "_DistortionEnabled": 0.0,
+    "_DistortionStrength": 1.0,
+    "_DistortionStrengthScaled": 0.10000000149011612,
+    "_Distortion_Power_X": 0.0,
+    "_Distortion_Power_Y": 0.0,
+    "_DstBlend": 10.0,
+    "_DstBlendAlpha": 10.0,
+    "_EmissionEnabled": 0.0,
+    "_FlipbookMode": 0.0,
+    "_Float0": 1.0,
+    "_Float1": 0.7599999904632568,
+    "_Float12": 18.0,
+    "_Float13": 1.7300000190734863,
+    "_Float14": 0.0,
+    "_Float15": -1.0,
+    "_Float2": 0.0,
+    "_Float3": 1.0,
+    "_Float4": -1.0,
+    "_Float5": 1.0,
+    "_Float6": -1.0,
+    "_Float7": 0.0,
+    "_Float8": 0.734000027179718,
+    "_Float9": 1.5047252178192139,
+    "_GlowPow": 0.0,
+    "_LightingEnabled": 0.0,
+    "_Main_Distort_Use": 0.0,
+    "_Main_Speed_X": 0.0,
+    "_Main_Speed_Y": 0.0,
+    "_Main_Texture_No": 0.0,
+    "_Mask_Distort_Use": 0.0,
+    "_Mask_Speed_X": 0.0,
+    "_Mask_Speed_Y": 0.0,
+    "_Mode": 4.0,
+    "_Multiply": 1.0,
+    "_OpacityDistort": 1.0,
+    "_Power": 1.0,
+    "_RGBRGBA": 0.0,
+    "_SoftParticlesEnabled": 0.0,
+    "_SoftParticlesFarFadeDistance": 1.0,
+    "_SoftParticlesNearFadeDistance": 0.0,
+    "_SrcBlend": 1.0,
+    "_SrcBlendAlpha": 1.0,
+    "_Strength": 3.0,
+    "_Tex_Mask_Speed_X": 0.0,
+    "_Tex_Mask_Speed_Y": 0.0,
+    "_USpeed0": -0.05000000074505806,
+    "_USpeed1": 0.05000000074505806,
+    "_USpeed2": 0.0,
+    "_USpeed3": -0.10000000149011612,
+    "_VSpeed0": -0.8700000047683716,
+    "_VSpeed1": 0.8700000047683716,
+    "_VSpeed2": 0.0,
+    "_VSpeed3": -0.46000000834465027,
+    "_Value": 1.0,
+    "_ZOffsetFactor": 0.0,
+    "_ZOffsetUnits": 0.0,
+    "_ZTest": 4.0,
+    "_ZTest_Mode": 4.0,
+    "_ZWrite": 0.0,
+    "_ZWrite_Mode": 0.0,
+    "__dirty": 0.0,
+    "_cloud1": 0.0,
+    "_cloud2": 0.0,
+    "_distort": 1.0,
+    "_distort_sca": 1.0,
+    "_distort_scale": 0.8270000219345093,
+    "_distortion_speed": 0.5198041200637817,
+    "_offset": 0.0,
+    "_rotaion": 1.0,
+    "_rotaion_speed": 1.0,
+    "_texcoord": 1.0
+  },
+  "colors": {
+    "Color_3F08FBF5": {
+      "r": 5.962264060974121,
+      "g": 2.2431375980377197,
+      "b": 1.0968316793441772,
+      "a": 1.0
+    },
+    "Color_98444634": {
+      "r": 5.992156982421875,
+      "g": 1.0352941751480103,
+      "b": 0.125490203499794,
+      "a": 1.0
+    },
+    "Color_A95239E6": {
+      "r": 6.792452812194824,
+      "g": 0.6728373169898987,
+      "b": 0.6728373169898987,
+      "a": 0.0
+    },
+    "Vector2_60957000": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 0.8500000238418579,
+      "a": 0.0
+    },
+    "Vector2_65607CD3": {
+      "r": 0.0,
+      "g": -1.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "Vector2_66DAD999": {
+      "r": 5.0,
+      "g": 5.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "Vector2_744FC188": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "Vector2_82238DD6": {
+      "r": 0.0,
+      "g": -1.8799999952316284,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "Vector2_834F525B": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "Vector2_862BBCA5": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "Vector2_9AD21926": {
+      "r": 0.0,
+      "g": -1.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "Vector2_B49551FD": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "Vector2_D1F89673": {
+      "r": 0.20000000298023224,
+      "g": 0.20000000298023224,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "Vector4_3B0758B1": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "Vector4_D37EBC07": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": -0.23000000417232513,
+      "a": -2.3399999141693115
+    },
+    "_CameraFadeParams": {
+      "r": 0.0,
+      "g": 1e+308,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_Color": {
+      "r": 5.992156982421875,
+      "g": 5.992156982421875,
+      "b": 5.992156982421875,
+      "a": 1.0
+    },
+    "_Color0": {
+      "r": 47.937255859375,
+      "g": 6.77647066116333,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "_Color1": {
+      "r": 0.0,
+      "g": 0.045440010726451874,
+      "b": 0.6132075786590576,
+      "a": 0.0
+    },
+    "_ColorAddSubDiff": {
+      "r": 1.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CustomData_DistortOffset_CD1XYXY": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CustomData_DistortOffset_CD2XYXY": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CustomData_DistortPower_CD2XYXY": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CustomData_DistortTiling_CD1XYXY": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CustomData_DistortTiling_CD2XYXY": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CustomData_MainOffset_CD1XYXY": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CustomData_MainOffset_CD2XYXY": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CustomData_MainTiling_CD1XYXY": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CustomData_MainTiling_CD2XYXY": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CustomData_MaskOffset_CD1XYXY": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CustomData_MaskOffset_CD2XYXY": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CustomData_MaskTiling_CD1XYXY": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CustomData_MaskTiling_CD2XYXY": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_EmissionColor": {
+      "r": 3.5648696422576904,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "_MainColor": {
+      "r": 3.828903913497925,
+      "g": 1.6237759590148926,
+      "b": 0.9020978212356567,
+      "a": 0.0
+    },
+    "_Panner1": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_Panner2": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_SoftParticleFadeParams": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_TintColor": {
+      "r": 1.0,
+      "g": 0.49803924560546875,
+      "b": 0.0,
+      "a": 0.0
+    }
+  },
+  "ints": {},
+  "textures": {
+    "_Tex_Main": {
+      "name": "FX_TEX_White_01",
+      "path_id": 6977316844502959008,
+      "size": [
+        4,
+        4
+      ],
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ]
+    },
+    "_Tex_Mask": {
+      "name": "FX_TEX_Flare_01a",
+      "path_id": 916604894585360682,
+      "size": [
+        256,
+        256
+      ],
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ]
+    }
+  }
+}

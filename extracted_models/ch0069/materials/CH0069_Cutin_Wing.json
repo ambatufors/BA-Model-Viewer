@@ -1,0 +1,110 @@
+{
+  "name": "CH0069_Cutin_Wing",
+  "floats": {
+    "_AdditionalLightSharpness": 5.0,
+    "_AdditionalLightStrength": 1.0,
+    "_BaseBrightness": 0.05999999865889549,
+    "_Cull": 0.0,
+    "_Cutoff": 0.5,
+    "_DitherThreshold": 0.0,
+    "_DstBlend": 0.0,
+    "_DstBlendAlpha": 0.0,
+    "_GlowStrength": 0.0,
+    "_GrayBrightness": 1.0,
+    "_InvViewPower": 2.0,
+    "_InvViewStrength": 0.0,
+    "_MaskGSensitivity": 2.0,
+    "_OutlineZCorrection": 0.0,
+    "_RimAreaLeveler": 5.829999923706055,
+    "_RimAreaMultiplier": 6.829999923706055,
+    "_RimStrength": 9.5600004196167,
+    "_ShadowThreshold": 1.100000023841858,
+    "_SrcBlend": 1.0,
+    "_SrcBlendAlpha": 1.0,
+    "_ViewLightEdge": 0.5,
+    "_ViewOffset": 0.0,
+    "_ViewPower": 16.0,
+    "_ViewStrength": 0.10000000149011612,
+    "_ZWrite": 1.0
+  },
+  "colors": {
+    "_CodeAddColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeAddRimColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeMultiplyColor": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_GlowTint": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "_OutlineSolidColorTint": {
+      "r": 0.699999988079071,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "_OutlineTint": {
+      "r": 0.5554901957511902,
+      "g": 0.4450426995754242,
+      "b": 0.6886792182922363,
+      "a": 1.0
+    },
+    "_ShadowTint": {
+      "r": 0.900943398475647,
+      "g": 0.9247170090675354,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_Tint": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_TwoSideTint": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    }
+  },
+  "textures": {
+    "_MainTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ],
+      "name": "CH0069_Cutin_Wing"
+    },
+    "_MaskTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ],
+      "name": "CH0069_Cutin_Wing_Mask"
+    }
+  }
+}

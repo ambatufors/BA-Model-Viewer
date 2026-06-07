@@ -1,0 +1,559 @@
+{
+  "char_id": "NP0283",
+  "code_name": "shipper",
+  "source_prefab": "Field_Player_NP0283_NonWeapon",
+  "submesh_order": [
+    "Body",
+    "Face",
+    "EyeMouth",
+    "Eyebrow",
+    "Eyebrow02",
+    "Hair"
+  ],
+  "meshes": [
+    {
+      "name": "NP0283_Halo",
+      "file": "NP0283_Halo.glb",
+      "verts": 247,
+      "faces": 506
+    }
+  ],
+  "skinned_meshes": [
+    {
+      "name": "Body",
+      "file": "skinned/NP0283_Body.glb",
+      "verts": 9213,
+      "faces": 12210,
+      "bones": 116,
+      "mesh": "NP0283_Body",
+      "root_bone": "Bip001 Head",
+      "submesh_order": [
+        "Body",
+        "Face",
+        "EyeMouth",
+        "Eyebrow",
+        "Eyebrow02",
+        "Hair"
+      ],
+      "animations": [
+        {
+          "name": "CutIn_Ex2_Zone02_Op_01_Field_Player_NP0283_NonWeapon_01",
+          "duration": 3.8000001907348633,
+          "sample_rate": 30.0,
+          "channels": 381,
+          "keyframes": 3108,
+          "skipped_channels": 72,
+          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle"
+        },
+        {
+          "name": "CutIn_Ex2_Zone02_Op_01_Field_Player_NP0283_NonWeapon_03",
+          "duration": 3.066666603088379,
+          "sample_rate": 30.0,
+          "channels": 381,
+          "keyframes": 1438,
+          "skipped_channels": 72,
+          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle"
+        },
+        {
+          "name": "CutIn_Ex2_Zone02_Op_01_Field_Player_NP0283_NonWeapon_04",
+          "duration": 3.600001335144043,
+          "sample_rate": 30.0,
+          "channels": 381,
+          "keyframes": 1596,
+          "skipped_channels": 72,
+          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle"
+        },
+        {
+          "name": "CutIn_Ex2_Zone02_Op_01_Field_Player_NP0283_NonWeapon_05",
+          "duration": 9.266668319702148,
+          "sample_rate": 30.0,
+          "channels": 381,
+          "keyframes": 4957,
+          "skipped_channels": 72,
+          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle"
+        },
+        {
+          "name": "Field_Player_NP0283_NonWeapon_bench_End",
+          "duration": 2.500001907348633,
+          "sample_rate": 30.0,
+          "channels": 378,
+          "keyframes": 4228,
+          "skipped_channels": 135,
+          "source_bundle": "field-cafe-characteranimation-field_player_ch0283-_mxload-animationclips-2026-04-27_assets_all_2026725918.bundle"
+        },
+        {
+          "name": "Field_Player_NP0283_NonWeapon_bench_Ing",
+          "duration": 17.333335876464844,
+          "sample_rate": 30.0,
+          "channels": 378,
+          "keyframes": 12985,
+          "skipped_channels": 135,
+          "source_bundle": "field-cafe-characteranimation-field_player_ch0283-_mxload-animationclips-2026-04-27_assets_all_2026725918.bundle"
+        },
+        {
+          "name": "Field_Player_NP0283_NonWeapon_bench_Start",
+          "duration": 8.666666984558105,
+          "sample_rate": 30.0,
+          "channels": 378,
+          "keyframes": 12049,
+          "skipped_channels": 135,
+          "source_bundle": "field-cafe-characteranimation-field_player_ch0283-_mxload-animationclips-2026-04-27_assets_all_2026725918.bundle"
+        },
+        {
+          "name": "Field_Player_NP0283_NonWeapon_Field_Get_Item",
+          "duration": 3.500000238418579,
+          "sample_rate": 30.0,
+          "channels": 381,
+          "keyframes": 5254,
+          "skipped_channels": 81,
+          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle"
+        },
+        {
+          "name": "Field_Player_NP0283_NonWeapon_Move_Ing",
+          "duration": 1.3333333730697632,
+          "sample_rate": 30.0,
+          "channels": 379,
+          "keyframes": 3452,
+          "skipped_channels": 81,
+          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle"
+        },
+        {
+          "name": "Field_Player_NP0283_NonWeapon_Normal_Idle",
+          "duration": 4.0,
+          "sample_rate": 30.0,
+          "channels": 381,
+          "keyframes": 1771,
+          "skipped_channels": 81,
+          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle"
+        },
+        {
+          "name": "Field_Player_NP0283_NonWeapon_Normal_Idle_Think",
+          "duration": 12.000000953674316,
+          "sample_rate": 30.0,
+          "channels": 381,
+          "keyframes": 6677,
+          "skipped_channels": 81,
+          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle"
+        },
+        {
+          "name": "Field_Player_NP0283_NonWeapon_Prop_Field_Ex2_Zone02_Cat_01_End",
+          "duration": 9.0,
+          "sample_rate": 30.0,
+          "channels": 378,
+          "keyframes": 6039,
+          "skipped_channels": 81,
+          "source_bundle": "field-cafe-characteranimation-field_player_ch0283-_mxload-animationclips-2026-04-27_assets_all_2026725918.bundle"
+        },
+        {
+          "name": "Field_Player_NP0283_NonWeapon_Prop_Field_Ex2_Zone02_Cat_01_Ing",
+          "duration": 3.000000476837158,
+          "sample_rate": 30.0,
+          "channels": 377,
+          "keyframes": 1830,
+          "skipped_channels": 75,
+          "source_bundle": "field-cafe-characteranimation-field_player_ch0283-_mxload-animationclips-2026-04-27_assets_all_2026725918.bundle"
+        },
+        {
+          "name": "Field_Player_NP0283_NonWeapon_Prop_Field_Ex2_Zone02_Cat_01_Start",
+          "duration": 4.0,
+          "sample_rate": 30.0,
+          "channels": 378,
+          "keyframes": 4176,
+          "skipped_channels": 81,
+          "source_bundle": "field-cafe-characteranimation-field_player_ch0283-_mxload-animationclips-2026-04-27_assets_all_2026725918.bundle"
+        },
+        {
+          "name": "Field_Player_NP0283_NonWeapon_Search",
+          "duration": 4.6666669845581055,
+          "sample_rate": 30.0,
+          "channels": 381,
+          "keyframes": 4779,
+          "skipped_channels": 81,
+          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle"
+        },
+        {
+          "name": "Field_Player_NP0283_NonWeapon_Walk_Ing",
+          "duration": 2.500000238418579,
+          "sample_rate": 30.0,
+          "channels": 381,
+          "keyframes": 3639,
+          "skipped_channels": 81,
+          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle"
+        }
+      ]
+    },
+    {
+      "name": "Prop_Mesh",
+      "file": "skinned/NP0283_Prop_Mesh.glb",
+      "verts": 4888,
+      "faces": 6397,
+      "bones": 22,
+      "mesh": "NP0283_Prop_Mesh",
+      "root_bone": "bone_bag",
+      "submesh_order": [
+        "Prop",
+        "Prop_Alpha"
+      ],
+      "animations": [
+        {
+          "name": "CutIn_Ex2_Zone02_Op_01_Field_Player_NP0283_NonWeapon_01",
+          "duration": 3.8000001907348633,
+          "sample_rate": 30.0,
+          "channels": 69,
+          "keyframes": 587,
+          "skipped_channels": 384,
+          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle"
+        },
+        {
+          "name": "CutIn_Ex2_Zone02_Op_01_Field_Player_NP0283_NonWeapon_03",
+          "duration": 3.066666603088379,
+          "sample_rate": 30.0,
+          "channels": 69,
+          "keyframes": 293,
+          "skipped_channels": 384,
+          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle"
+        },
+        {
+          "name": "CutIn_Ex2_Zone02_Op_01_Field_Player_NP0283_NonWeapon_04",
+          "duration": 3.600001335144043,
+          "sample_rate": 30.0,
+          "channels": 69,
+          "keyframes": 343,
+          "skipped_channels": 384,
+          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle"
+        },
+        {
+          "name": "CutIn_Ex2_Zone02_Op_01_Field_Player_NP0283_NonWeapon_05",
+          "duration": 9.266668319702148,
+          "sample_rate": 30.0,
+          "channels": 69,
+          "keyframes": 961,
+          "skipped_channels": 384,
+          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle"
+        },
+        {
+          "name": "Field_Player_NP0283_NonWeapon_bench_End",
+          "duration": 2.500001907348633,
+          "sample_rate": 30.0,
+          "channels": 72,
+          "keyframes": 604,
+          "skipped_channels": 441,
+          "source_bundle": "field-cafe-characteranimation-field_player_ch0283-_mxload-animationclips-2026-04-27_assets_all_2026725918.bundle"
+        },
+        {
+          "name": "Field_Player_NP0283_NonWeapon_bench_Ing",
+          "duration": 17.333335876464844,
+          "sample_rate": 30.0,
+          "channels": 72,
+          "keyframes": 746,
+          "skipped_channels": 441,
+          "source_bundle": "field-cafe-characteranimation-field_player_ch0283-_mxload-animationclips-2026-04-27_assets_all_2026725918.bundle"
+        },
+        {
+          "name": "Field_Player_NP0283_NonWeapon_bench_Start",
+          "duration": 8.666666984558105,
+          "sample_rate": 30.0,
+          "channels": 72,
+          "keyframes": 985,
+          "skipped_channels": 441,
+          "source_bundle": "field-cafe-characteranimation-field_player_ch0283-_mxload-animationclips-2026-04-27_assets_all_2026725918.bundle"
+        },
+        {
+          "name": "Field_Player_NP0283_NonWeapon_Field_Get_Item",
+          "duration": 3.500000238418579,
+          "sample_rate": 30.0,
+          "channels": 72,
+          "keyframes": 375,
+          "skipped_channels": 390,
+          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle"
+        },
+        {
+          "name": "Field_Player_NP0283_NonWeapon_Move_Ing",
+          "duration": 1.3333333730697632,
+          "sample_rate": 30.0,
+          "channels": 72,
+          "keyframes": 442,
+          "skipped_channels": 388,
+          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle"
+        },
+        {
+          "name": "Field_Player_NP0283_NonWeapon_Normal_Idle",
+          "duration": 4.0,
+          "sample_rate": 30.0,
+          "channels": 72,
+          "keyframes": 158,
+          "skipped_channels": 390,
+          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle"
+        },
+        {
+          "name": "Field_Player_NP0283_NonWeapon_Normal_Idle_Think",
+          "duration": 12.000000953674316,
+          "sample_rate": 30.0,
+          "channels": 72,
+          "keyframes": 323,
+          "skipped_channels": 390,
+          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle"
+        },
+        {
+          "name": "Field_Player_NP0283_NonWeapon_Prop_Field_Ex2_Zone02_Cat_01_End",
+          "duration": 9.0,
+          "sample_rate": 30.0,
+          "channels": 72,
+          "keyframes": 407,
+          "skipped_channels": 387,
+          "source_bundle": "field-cafe-characteranimation-field_player_ch0283-_mxload-animationclips-2026-04-27_assets_all_2026725918.bundle"
+        },
+        {
+          "name": "Field_Player_NP0283_NonWeapon_Prop_Field_Ex2_Zone02_Cat_01_Ing",
+          "duration": 3.000000476837158,
+          "sample_rate": 30.0,
+          "channels": 72,
+          "keyframes": 193,
+          "skipped_channels": 380,
+          "source_bundle": "field-cafe-characteranimation-field_player_ch0283-_mxload-animationclips-2026-04-27_assets_all_2026725918.bundle"
+        },
+        {
+          "name": "Field_Player_NP0283_NonWeapon_Prop_Field_Ex2_Zone02_Cat_01_Start",
+          "duration": 4.0,
+          "sample_rate": 30.0,
+          "channels": 72,
+          "keyframes": 372,
+          "skipped_channels": 387,
+          "source_bundle": "field-cafe-characteranimation-field_player_ch0283-_mxload-animationclips-2026-04-27_assets_all_2026725918.bundle"
+        },
+        {
+          "name": "Field_Player_NP0283_NonWeapon_Search",
+          "duration": 4.6666669845581055,
+          "sample_rate": 30.0,
+          "channels": 72,
+          "keyframes": 272,
+          "skipped_channels": 390,
+          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle"
+        },
+        {
+          "name": "Field_Player_NP0283_NonWeapon_Walk_Ing",
+          "duration": 2.500000238418579,
+          "sample_rate": 30.0,
+          "channels": 72,
+          "keyframes": 272,
+          "skipped_channels": 390,
+          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle"
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "name": "Field_Player_NP0283_NoneWeapon_Body",
+      "file": "materials/Field_Player_NP0283_NoneWeapon_Body.json"
+    },
+    {
+      "name": "Field_Player_NP0283_NoneWeapon_EyeMouth",
+      "file": "materials/Field_Player_NP0283_NoneWeapon_EyeMouth.json"
+    },
+    {
+      "name": "Field_Player_NP0283_NoneWeapon_Eyebrow",
+      "file": "materials/Field_Player_NP0283_NoneWeapon_Eyebrow.json"
+    },
+    {
+      "name": "Field_Player_NP0283_NoneWeapon_Eyebrow02",
+      "file": "materials/Field_Player_NP0283_NoneWeapon_Eyebrow02.json"
+    },
+    {
+      "name": "Field_Player_NP0283_NoneWeapon_Face",
+      "file": "materials/Field_Player_NP0283_NoneWeapon_Face.json"
+    },
+    {
+      "name": "Field_Player_NP0283_NoneWeapon_Hair",
+      "file": "materials/Field_Player_NP0283_NoneWeapon_Hair.json"
+    },
+    {
+      "name": "Field_Player_NP0283_NoneWeapon_Halo",
+      "file": "materials/Field_Player_NP0283_NoneWeapon_Halo.json"
+    },
+    {
+      "name": "Field_Player_NP0283_NoneWeapon_Prop",
+      "file": "materials/Field_Player_NP0283_NoneWeapon_Prop.json"
+    },
+    {
+      "name": "Field_Player_NP0283_NoneWeapon_Prop_Alpha",
+      "file": "materials/Field_Player_NP0283_NoneWeapon_Prop_Alpha.json"
+    }
+  ],
+  "textures": [
+    {
+      "name": "Field_Player_NP0283_NoneWeapon_Body",
+      "file": "textures/Field_Player_NP0283_NoneWeapon_Body.png",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "Field_Player_NP0283_NoneWeapon_Body_Mask",
+      "file": "textures/Field_Player_NP0283_NoneWeapon_Body_Mask.png",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Field_Player_NP0283_NoneWeapon_EyeMouth",
+      "file": "textures/Field_Player_NP0283_NoneWeapon_EyeMouth.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "name": "Field_Player_NP0283_NoneWeapon_Face",
+      "file": "textures/Field_Player_NP0283_NoneWeapon_Face.png",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Field_Player_NP0283_NoneWeapon_Hair",
+      "file": "textures/Field_Player_NP0283_NoneWeapon_Hair.png",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "Field_Player_NP0283_NoneWeapon_Hair_Mask",
+      "file": "textures/Field_Player_NP0283_NoneWeapon_Hair_Mask.png",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "Field_Player_NP0283_NoneWeapon_Hair_Spec",
+      "file": "textures/Field_Player_NP0283_NoneWeapon_Hair_Spec.png",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "Field_Player_NP0283_NoneWeapon_Halo",
+      "file": "textures/Field_Player_NP0283_NoneWeapon_Halo.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "Field_Player_NP0283_NoneWeapon_Prop",
+      "file": "textures/Field_Player_NP0283_NoneWeapon_Prop.png",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Field_Player_NP0283_NoneWeapon_Prop_Mask",
+      "file": "textures/Field_Player_NP0283_NoneWeapon_Prop_Mask.png",
+      "size": [
+        256,
+        256
+      ]
+    }
+  ],
+  "source_bundles": [
+    "assets-_mx-field-characters-_mxdependency-meshes-2026-04-27_assets_all_3178761346.bundle",
+    "assets-_mx-field-characters-_mxdependency-prefabs-2026-04-27_assets_all_332194766.bundle",
+    "assets-_mx-field-characters-_mxdependency-materials-2026-04-27_assets_all_3514111476.bundle",
+    "assets-_mx-field-characters-_mxdependency-materials-2026-05-20_assets_all_3334852473.bundle",
+    "assets-_mx-field-characters-_mxdependency-textures-2026-04-27_assets_all_423376375.bundle",
+    "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle",
+    "assets-_mx-field-characters-_mxdependency-assets-2026-04-27_assets_all_876525241.bundle",
+    "field-character-_mxload-prefabs-2026-04-27_assets_all_776651948.bundle",
+    "field-cafe-characteranimation-field_player_ch0283-_mxload-animationclips-2026-04-27_assets_all_2026725918.bundle"
+  ],
+  "halo_anchor": {
+    "position": {
+      "x": 0.0,
+      "y": -0.23103512823581696,
+      "z": 1.0287679433822632
+    },
+    "rotation": {
+      "x": 0.7071067811865475,
+      "y": 0.0,
+      "z": 0.0,
+      "w": 0.7071067811865476
+    },
+    "scale": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 1.0
+    },
+    "source_path": "NP0283_Halo <- Field_Player_NP0283_NonWeapon_Halo <- HaloRoot <- Field_Player_NP0283_NonWeapon",
+    "name": "NP0283_Halo",
+    "coordinate_space": "viewer"
+  },
+  "halo_follow": {
+    "name": "HaloRoot",
+    "source_path": "HaloRoot <- Field_NPC_NP0143_SG_Weapon",
+    "follow_target": "Bip001 Head",
+    "coordinate_space": "viewer",
+    "target_position": {
+      "x": -1.0661884524476543e-06,
+      "y": -0.19999998911004127,
+      "z": 1.0300000993828804
+    },
+    "target_offset": {
+      "x": -7.750715269659865e-07,
+      "y": -0.20871318685657395,
+      "z": 0.3642863131516107
+    },
+    "target_relative_position": {
+      "x": -0.36428630352020264,
+      "y": -0.20871320366859436,
+      "z": 0.0
+    },
+    "clamp_min_offset": {
+      "x": -0.47999998927116394,
+      "y": -0.3400000035762787,
+      "z": -0.27000001072883606
+    },
+    "clamp_max_offset": {
+      "x": -0.25999999046325684,
+      "y": -0.07000000029802322,
+      "z": 0.27000001072883606
+    },
+    "follow_position_power": 0.10000000149011612,
+    "follow_rotation_power": 0.07000000029802322,
+    "fix_y_rotation": 0,
+    "local_forward": {
+      "x": 0.0,
+      "y": 1.0000001192092896,
+      "z": 0.0
+    },
+    "target_relative_rotation": {
+      "x": 0.5000001192092896,
+      "y": -0.49999937415122986,
+      "z": -0.5000000596046448,
+      "w": -0.5000007748603821
+    },
+    "initial_rotation": {
+      "x": -0.0,
+      "y": -0.0,
+      "z": -0.0,
+      "w": 1.0
+    },
+    "placement_tilt_deg": 40.0,
+    "depth_mode": "tilt"
+  },
+  "head_transform": {
+    "bone": "Bip001 Head",
+    "position": {
+      "x": -2.911169254816677e-07,
+      "y": 0.008713197746532668,
+      "z": 0.6657137862312696
+    },
+    "source_path": "Bip001 Head <- Bip001 Neck <- Bip001 Spine1 <- Bip001 Spine <- Bip001 Pelvis <- Bip001 <- Character_root <- bone_root <- Field_Player_NP0283_NonWeapon_Mesh"
+  }
+}

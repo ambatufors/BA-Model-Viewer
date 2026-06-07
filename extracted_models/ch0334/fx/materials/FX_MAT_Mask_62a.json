@@ -1,0 +1,160 @@
+{
+  "name": "FX_MAT_Mask_62a",
+  "shader": "DSFX/FX_SHADER_AlphaBlend_Add_Distort_1a",
+  "floats": {
+    "_AlphaPremultiplyOn": 0.0,
+    "_Alphaclip_Value": 0.0,
+    "_Cull": 0.0,
+    "_Dis_Speed_X": 0.0,
+    "_Dis_Speed_Y": 0.0,
+    "_Distortion_Power_X": 0.0,
+    "_Distortion_Power_Y": 0.0,
+    "_DstBlend": 10.0,
+    "_DstBlendAlpha": 10.0,
+    "_Main_Distort_Use": 0.0,
+    "_Main_Speed_X": 0.0,
+    "_Main_Speed_Y": 0.0,
+    "_Mask_Distort_Use": 0.0,
+    "_Multiply": 1.0,
+    "_RGBRGBA": 0.0,
+    "_SrcBlend": 5.0,
+    "_SrcBlendAlpha": 1.0,
+    "_Tex_Mask_Speed_X": 0.0,
+    "_Tex_Mask_Speed_Y": 0.0,
+    "_ZOffsetFactor": 0.0,
+    "_ZOffsetUnits": 0.0,
+    "_ZTest": 4.0,
+    "_ZWrite": 0.0
+  },
+  "colors": {
+    "_Color": {
+      "r": 5.992156982421875,
+      "g": 5.992156982421875,
+      "b": 5.992156982421875,
+      "a": 1.0
+    },
+    "_CustomData_DistortOffset_CD1XYXY": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CustomData_DistortOffset_CD2XYXY": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CustomData_DistortPower_CD2XYXY": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CustomData_DistortTiling_CD1XYXY": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CustomData_DistortTiling_CD2XYXY": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CustomData_MainOffset_CD1XYXY": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CustomData_MainOffset_CD2XYXY": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CustomData_MainTiling_CD1XYXY": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_CustomData_MainTiling_CD2XYXY": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CustomData_MaskOffset_CD1XYXY": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CustomData_MaskOffset_CD2XYXY": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CustomData_MaskTiling_CD1XYXY": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CustomData_MaskTiling_CD2XYXY": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    }
+  },
+  "ints": {},
+  "textures": {
+    "_Tex_Distort": {
+      "name": null,
+      "path_id": null,
+      "size": null,
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ]
+    },
+    "_Tex_Main": {
+      "name": "FX_TEX_Mask_62",
+      "path_id": -7561261976403023089,
+      "size": [
+        64,
+        4
+      ],
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ]
+    },
+    "_Tex_Mask": {
+      "name": null,
+      "path_id": null,
+      "size": null,
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ]
+    }
+  }
+}

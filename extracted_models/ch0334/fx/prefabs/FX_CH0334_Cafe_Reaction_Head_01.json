@@ -1,0 +1,67 @@
+{
+  "name": "FX_CH0334_Cafe_Reaction_Head_01",
+  "descendants": [
+    {
+      "go_name": "FX_CH0334_Cafe_Reaction_Head_01",
+      "path_id": 2305425588228071906,
+      "parent_path_id": 0,
+      "local_transform": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer",
+        "MB:CharacterAnimationEventEffect"
+      ]
+    },
+    {
+      "go_name": "Head_Acc",
+      "path_id": 6717023672740749794,
+      "parent_path_id": 2305425588228071906,
+      "local_transform": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    }
+  ],
+  "attach": {
+    "parent_index": 2,
+    "timer_duration": 2.5,
+    "life_mode": 1
+  }
+}

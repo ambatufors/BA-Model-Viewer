@@ -1,0 +1,625 @@
+{
+  "name": "FX_CH0334_Victory_Random_01",
+  "descendants": [
+    {
+      "go_name": "FX_CH0334_Victory_Random_01",
+      "path_id": -4102022454693127803,
+      "parent_path_id": 0,
+      "local_transform": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer",
+        "MB:CharacterAnimationEventEffect"
+      ]
+    },
+    {
+      "go_name": "_trans",
+      "path_id": 5600726131299129733,
+      "parent_path_id": -4102022454693127803,
+      "local_transform": {
+        "position": {
+          "x": -0.19359999895095825,
+          "y": -0.25270000100135803,
+          "z": 0.5094000101089478
+        },
+        "rotation": {
+          "x": 0.1300533562898636,
+          "y": 0.5617027878761292,
+          "z": 0.8006229400634766,
+          "w": 0.16303086280822754
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "flare_line_in",
+      "path_id": 3036949761782126981,
+      "parent_path_id": 5600726131299129733,
+      "local_transform": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "scale": {
+          "x": 1.000000238418579,
+          "y": 1.000000238418579,
+          "z": 1.0000001192092896
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "HUD_1",
+      "path_id": -4529247922395932283,
+      "parent_path_id": 5600726131299129733,
+      "local_transform": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "HUD_Ch",
+      "path_id": 8979995701925976453,
+      "parent_path_id": -4529247922395932283,
+      "local_transform": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": -9.313225746154785e-10,
+          "y": -3.725290298461914e-08,
+          "z": -7.450580596923828e-09,
+          "w": 1.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "HUD_scan_line",
+      "path_id": 2331272954529061253,
+      "parent_path_id": -4529247922395932283,
+      "local_transform": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": -9.313225746154785e-10,
+          "y": -3.725290298461914e-08,
+          "z": -7.450580596923828e-09,
+          "w": 1.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "HUD_sub_1",
+      "path_id": -3123249679175771771,
+      "parent_path_id": -4529247922395932283,
+      "local_transform": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": -9.313225746154785e-10,
+          "y": -3.725290298461914e-08,
+          "z": -7.450580596923828e-09,
+          "w": 1.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "touch_1",
+      "path_id": -2424974617257764475,
+      "parent_path_id": 5600726131299129733,
+      "local_transform": {
+        "position": {
+          "x": -0.0214080847799778,
+          "y": -0.02240854501724243,
+          "z": 8.381903171539307e-09
+        },
+        "rotation": {
+          "x": -3.073364496231079e-08,
+          "y": -2.2351741790771484e-08,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "scale": {
+          "x": 1.000000238418579,
+          "y": 1.000000238418579,
+          "z": 1.0000001192092896
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "dot_particle",
+      "path_id": -2890186286117742203,
+      "parent_path_id": -2424974617257764475,
+      "local_transform": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "touch_2",
+      "path_id": 3934776225492507013,
+      "parent_path_id": 5600726131299129733,
+      "local_transform": {
+        "position": {
+          "x": 0.028399977833032608,
+          "y": -0.04170000180602074,
+          "z": 1.4901161193847656e-08
+        },
+        "rotation": {
+          "x": -3.073364496231079e-08,
+          "y": -2.2351741790771484e-08,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "scale": {
+          "x": 1.000000238418579,
+          "y": 1.000000238418579,
+          "z": 1.0000001192092896
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "dot_particle_1",
+      "path_id": -8664569442122196603,
+      "parent_path_id": 3934776225492507013,
+      "local_transform": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "touch_3",
+      "path_id": 7983684706493536645,
+      "parent_path_id": 5600726131299129733,
+      "local_transform": {
+        "position": {
+          "x": -0.008300015702843666,
+          "y": -0.06000000983476639,
+          "z": -1.4901161193847656e-08
+        },
+        "rotation": {
+          "x": -3.073364496231079e-08,
+          "y": -2.2351741790771484e-08,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "scale": {
+          "x": 1.000000238418579,
+          "y": 1.000000238418579,
+          "z": 1.0000001192092896
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "dot_particle_2",
+      "path_id": 4023960332552640901,
+      "parent_path_id": 7983684706493536645,
+      "local_transform": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "-----",
+      "path_id": 6557767298703366533,
+      "parent_path_id": -4102022454693127803,
+      "local_transform": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform"
+      ]
+    },
+    {
+      "go_name": "glow-mesh",
+      "path_id": -500604385623533179,
+      "parent_path_id": -4102022454693127803,
+      "local_transform": {
+        "position": {
+          "x": 0.0,
+          "y": 0.48100003600120544,
+          "z": 0.5899999737739563
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "glow_back",
+      "path_id": 3698072807434099077,
+      "parent_path_id": -4102022454693127803,
+      "local_transform": {
+        "position": {
+          "x": 0.0,
+          "y": 0.48100003600120544,
+          "z": 0.5899999737739563
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "boke [100]",
+      "path_id": -5954191368487233147,
+      "parent_path_id": -4102022454693127803,
+      "local_transform": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.5
+        },
+        "rotation": {
+          "x": -0.7071068286895752,
+          "y": -1.862645149230957e-09,
+          "z": 1.862645149230957e-09,
+          "w": 0.7071068286895752
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "bokeh [6]",
+      "path_id": 7988948976183024005,
+      "parent_path_id": -4102022454693127803,
+      "local_transform": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.5
+        },
+        "rotation": {
+          "x": -0.7071068286895752,
+          "y": -1.862645149230957e-09,
+          "z": 1.862645149230957e-09,
+          "w": 0.7071068286895752
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "star_mesh [1]",
+      "path_id": 6406494009819994501,
+      "parent_path_id": -4102022454693127803,
+      "local_transform": {
+        "position": {
+          "x": -0.15799996256828308,
+          "y": -0.2979999780654907,
+          "z": 0.5609999895095825
+        },
+        "rotation": {
+          "x": -0.25973910093307495,
+          "y": -0.5201205611228943,
+          "z": -0.7988875508308411,
+          "w": 0.1542365550994873
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "particle_twinkle_2",
+      "path_id": -3758566687459239547,
+      "parent_path_id": 6406494009819994501,
+      "local_transform": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 5.960463766996327e-08,
+          "y": 5.960463766996327e-08,
+          "z": -0.8286918997764587,
+          "w": 0.5597050189971924
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "star_mesh [3]",
+      "path_id": 998712488173640069,
+      "parent_path_id": -4102022454693127803,
+      "local_transform": {
+        "position": {
+          "x": 0.19199997186660767,
+          "y": -0.2609999179840088,
+          "z": 0.49000006914138794
+        },
+        "rotation": {
+          "x": -0.37924546003341675,
+          "y": -0.40928569436073303,
+          "z": -0.5656312108039856,
+          "w": 0.6072227954864502
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "particle_twinkle_1",
+      "path_id": 9190913215781017989,
+      "parent_path_id": 998712488173640069,
+      "local_transform": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    }
+  ],
+  "attach": {
+    "parent_index": 0,
+    "timer_duration": 5.0,
+    "life_mode": 1
+  }
+}

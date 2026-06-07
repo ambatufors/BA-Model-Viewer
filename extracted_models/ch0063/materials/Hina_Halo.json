@@ -1,0 +1,126 @@
+{
+  "name": "Hina_Halo",
+  "floats": {
+    "_AlphaClip": 0.0,
+    "_Blend": 0.0,
+    "_BumpScale": 1.0,
+    "_Cull": 2.0,
+    "_Cutoff": 0.5,
+    "_DetailNormalMapScale": 1.0,
+    "_DitherThreshold": 0.0,
+    "_DstBlend": 0.0,
+    "_DstBlendAlpha": 0.0,
+    "_GlossMapScale": 1.0,
+    "_Glossiness": 0.0,
+    "_GlossyReflections": 1.0,
+    "_GlowStrength": 5.650000095367432,
+    "_GlowStrength0": 4.0,
+    "_GlowStrictness": 5.099999904632568,
+    "_GlowStrictness0": 24.0,
+    "_GrayBrightness": 1.0,
+    "_MaskGSensitivity": 1.0,
+    "_Metallic": 0.0,
+    "_OcclusionStrength": 1.0,
+    "_OutlineThickness": 0.003000000026077032,
+    "_OutlineZCorrection": 0.0,
+    "_Parallax": 0.019999999552965164,
+    "_RimAreaLeveler": 2.0,
+    "_RimAreaMultiplier": 3.0,
+    "_RimStrength": 1.0,
+    "_ShadowThreshold": 0.5,
+    "_SmoothnessTextureChannel": 0.0,
+    "_SpecBotArea": 0.30000001192092896,
+    "_SpecBotMultiplier": 11.11111068725586,
+    "_SpecStrength": 1.0,
+    "_SpecTopLeveler": 2.0,
+    "_SpecTopMultiplier": 3.0,
+    "_SpecularHighlights": 1.0,
+    "_SrcBlend": 1.0,
+    "_SrcBlendAlpha": 1.0,
+    "_Surface": 0.0,
+    "_UVSec": 0.0,
+    "_WorkflowMode": 1.0,
+    "_ZWrite": 1.0
+  },
+  "colors": {
+    "_Color": {
+      "r": 0.5882353186607361,
+      "g": 0.5882353186607361,
+      "b": 0.5882353186607361,
+      "a": 1.0
+    },
+    "_EmissionColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_GlowMaskColor": {
+      "r": 1.0,
+      "g": 0.5921568870544434,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_GlowMaskColor0": {
+      "r": 0.9716981053352356,
+      "g": 0.0,
+      "b": 0.9716981053352356,
+      "a": 1.0
+    },
+    "_GlowTint": {
+      "r": 1.176719307899475,
+      "g": 0.0,
+      "b": 1.177079677581787,
+      "a": 1.0
+    },
+    "_GlowTint0": {
+      "r": 1.4980392456054688,
+      "g": 0.0,
+      "b": 1.4980392456054688,
+      "a": 1.0
+    },
+    "_OutlineTint": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5,
+      "a": 1.0
+    },
+    "_ShadowTint": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5,
+      "a": 1.0
+    },
+    "_SpecColor": {
+      "r": 0.19999995827674866,
+      "g": 0.19999995827674866,
+      "b": 0.19999995827674866,
+      "a": 1.0
+    },
+    "_Tint": {
+      "r": 1.4980392456054688,
+      "g": 1.4980392456054688,
+      "b": 1.4980392456054688,
+      "a": 1.0
+    },
+    "_TwoSideTint": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    }
+  },
+  "textures": {
+    "_MainTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ],
+      "name": "Hina_Halo"
+    }
+  }
+}

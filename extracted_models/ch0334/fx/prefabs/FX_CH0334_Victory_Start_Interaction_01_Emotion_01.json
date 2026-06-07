@@ -1,0 +1,235 @@
+{
+  "name": "FX_CH0334_Victory_Start_Interaction_01_Emotion_01",
+  "descendants": [
+    {
+      "go_name": "FX_CH0334_Victory_Start_Interaction_01_Emotion_01",
+      "path_id": -6961845419236867348,
+      "parent_path_id": 0,
+      "local_transform": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer",
+        "MB:CharacterAnimationEventEffect"
+      ]
+    },
+    {
+      "go_name": "Par_1",
+      "path_id": -8158216340723875092,
+      "parent_path_id": -6961845419236867348,
+      "local_transform": {
+        "position": {
+          "x": -0.4181801378726959,
+          "y": -0.1570010781288147,
+          "z": 0.9892230033874512
+        },
+        "rotation": {
+          "x": -0.7071068286895752,
+          "y": 2.9802322387695312e-08,
+          "z": -2.9802322387695312e-08,
+          "w": -0.7071068286895752
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "st_particle",
+      "path_id": -5031702838700948756,
+      "parent_path_id": -6961845419236867348,
+      "local_transform": {
+        "position": {
+          "x": -0.44999998807907104,
+          "y": -0.20600056648254395,
+          "z": 0.9970006942749023
+        },
+        "rotation": {
+          "x": 0.6532815098762512,
+          "y": 0.27059808373451233,
+          "z": -0.27059808373451233,
+          "w": 0.6532815098762512
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "star_particle",
+      "path_id": 2580027599745827564,
+      "parent_path_id": -6961845419236867348,
+      "local_transform": {
+        "position": {
+          "x": -0.44999998807907104,
+          "y": -0.20600056648254395,
+          "z": 0.9970006942749023
+        },
+        "rotation": {
+          "x": 0.6532815098762512,
+          "y": 0.27059808373451233,
+          "z": -0.27059808373451233,
+          "w": 0.6532815098762512
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "glow-mesh",
+      "path_id": -6827377813627026708,
+      "parent_path_id": -6961845419236867348,
+      "local_transform": {
+        "position": {
+          "x": -0.44999998807907104,
+          "y": 0.17199957370758057,
+          "z": 0.9970004558563232
+        },
+        "rotation": {
+          "x": 0.6532815098762512,
+          "y": 0.27059808373451233,
+          "z": -0.27059808373451233,
+          "w": 0.6532815098762512
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "glow_back",
+      "path_id": 9129324631027991276,
+      "parent_path_id": -6961845419236867348,
+      "local_transform": {
+        "position": {
+          "x": -0.4119999408721924,
+          "y": 0.4809996485710144,
+          "z": 0.9990003108978271
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "boke [100]",
+      "path_id": 1768855350637216492,
+      "parent_path_id": -6961845419236867348,
+      "local_transform": {
+        "position": {
+          "x": -0.41199997067451477,
+          "y": 0.0,
+          "z": 0.9090005159378052
+        },
+        "rotation": {
+          "x": -0.7071068286895752,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.7071068286895752
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "bokeh [6]",
+      "path_id": 4939570817384956652,
+      "parent_path_id": -6961845419236867348,
+      "local_transform": {
+        "position": {
+          "x": -0.41199997067451477,
+          "y": 0.0,
+          "z": 0.9090005159378052
+        },
+        "rotation": {
+          "x": -0.7071068286895752,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.7071068286895752
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    }
+  ],
+  "attach": {
+    "parent_index": 0,
+    "timer_duration": 4.0,
+    "life_mode": 1
+  }
+}

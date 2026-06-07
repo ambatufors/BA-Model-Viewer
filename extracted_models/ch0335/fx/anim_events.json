@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "char_id": "CH0335",
+  "fx_functions": [
+    "AniEvt_InstantiateFx",
+    "AniEvt_PlayFx",
+    "InstantiateFx",
+    "PlayFx"
+  ],
+  "prefabs": [
+    "FX_CH0335_Cafe_Reaction_Shy_01"
+  ],
+  "events": [
+    {
+      "clip": "CH0335_Cafe_Reaction",
+      "time": 3.3333332538604736,
+      "func": "AniEvt_InstantiateFx",
+      "prefab_path_id": 7199677235883532000,
+      "prefab": "FX_CH0335_Cafe_Reaction_Shy_01",
+      "string_param": "",
+      "int_param": 0,
+      "float_param": 0
+    }
+  ]
+}

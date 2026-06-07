@@ -1,0 +1,136 @@
+{
+  "name": "Field_Player_NP0283_NoneWeapon_Hair",
+  "shader": "",
+  "floats": {
+    "_AdditionalLightSharpness": 5.0,
+    "_AdditionalLightStrength": 1.0,
+    "_AdjustiveHairShadow": 0.0,
+    "_Cull": 2.0,
+    "_DitherThreshold": 0.0,
+    "_DstBlend": 0.0,
+    "_DstBlendAlpha": 0.0,
+    "_GlowStrength": 1.0,
+    "_GrayBrightness": 1.0,
+    "_MaskGSensitivity": 1.0,
+    "_OutlineZCorrection": 0.0,
+    "_RimAreaLeveler": 3.0,
+    "_RimAreaMultiplier": 4.0,
+    "_RimStrength": 0.699999988079071,
+    "_ShadowThreshold": 0.7400000095367432,
+    "_SpecBotArea": 0.5260000228881836,
+    "_SpecBotMultiplier": 3.614335536956787,
+    "_SpecStrength": 0.699999988079071,
+    "_SpecTopLeveler": 5.199999809265137,
+    "_SpecTopMultiplier": 6.199999809265137,
+    "_SrcBlend": 1.0,
+    "_SrcBlendAlpha": 1.0,
+    "_ZWrite": 1.0
+  },
+  "colors": {
+    "_CodeAddColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeAddRimColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeMultiplyColor": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_GlowTint": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "_OutlineSolidColorTint": {
+      "r": 0.699999988079071,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "_OutlineTint": {
+      "r": 0.7547169923782349,
+      "g": 0.558917760848999,
+      "b": 0.558917760848999,
+      "a": 1.0
+    },
+    "_ShadowTint": {
+      "r": 0.9622641801834106,
+      "g": 0.7216981649398804,
+      "b": 0.7413361668586731,
+      "a": 1.0
+    },
+    "_SpecDirMultiplier": {
+      "r": 0.5000001192092896,
+      "g": 1.1026859283447266e-06,
+      "b": 0.15000003576278687,
+      "a": 0.0
+    },
+    "_Tint": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_TwoSideTint": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    }
+  },
+  "textures": {
+    "_HairSpecTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ],
+      "name": "Field_Player_NP0283_NoneWeapon_Hair_Spec"
+    },
+    "_MainTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ],
+      "name": "Field_Player_NP0283_NoneWeapon_Hair"
+    },
+    "_MaskTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ],
+      "name": "Field_Player_NP0283_NoneWeapon_Hair_Mask"
+    },
+    "_TempTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ]
+    }
+  }
+}

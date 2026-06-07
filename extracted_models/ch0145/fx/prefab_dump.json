@@ -1,0 +1,142 @@
+[
+  {
+    "name": "FX_CH0145_EX01_Motion_Eyes_01",
+    "pathid": 7956534735738531259,
+    "depth": 0,
+    "is_active": true,
+    "components": [
+      {
+        "kind": "Transform",
+        "pathid": 3125082216275013051,
+        "localPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "localRotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "localScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      {
+        "kind": "ParticleSystem",
+        "pathid": 7018769031247195579,
+        "note": "see Unity docs for module config"
+      },
+      {
+        "kind": "ParticleSystemRenderer",
+        "pathid": -99590187633906245,
+        "materials": [],
+        "mesh": [],
+        "render_mode": 5
+      }
+    ],
+    "children": [
+      {
+        "name": "R",
+        "pathid": 469372499517926843,
+        "depth": 1,
+        "is_active": true,
+        "components": [
+          {
+            "kind": "Transform",
+            "pathid": 7309453087299169723,
+            "localPosition": {
+              "x": -0.06700132042169571,
+              "y": 0.06499958783388138,
+              "z": -0.05399957299232483
+            },
+            "localRotation": {
+              "x": 0.9990482330322266,
+              "y": 7.485502351300966e-08,
+              "z": 2.9802311729554276e-08,
+              "w": 0.043619304895401
+            },
+            "localScale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          },
+          {
+            "kind": "ParticleSystem",
+            "pathid": -1479895209384317509,
+            "note": "see Unity docs for module config"
+          },
+          {
+            "kind": "ParticleSystemRenderer",
+            "pathid": -1417044662518125125,
+            "materials": [
+              {
+                "m_PathID": -7400080975401593953,
+                "m_FileID": 2,
+                "kind": "Material",
+                "name": "FX_MAT_Eyes_01",
+                "bundle": "assets-_mx-characters-ch0145-_mxdependency-materials-2025-07-02_assets_all_3041142678.bundle"
+              }
+            ],
+            "mesh": [],
+            "render_mode": 4
+          }
+        ],
+        "children": []
+      },
+      {
+        "name": "L",
+        "pathid": 638360062285540795,
+        "depth": 1,
+        "is_active": true,
+        "components": [
+          {
+            "kind": "Transform",
+            "pathid": -2129754594218512965,
+            "localPosition": {
+              "x": -0.06700117141008377,
+              "y": 0.06499959528446198,
+              "z": 0.06400030851364136
+            },
+            "localRotation": {
+              "x": 0.9990482926368713,
+              "y": -1.0197980060411282e-07,
+              "z": -9.499488129449674e-08,
+              "w": -0.043619394302368164
+            },
+            "localScale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          },
+          {
+            "kind": "ParticleSystem",
+            "pathid": -441156264199885381,
+            "note": "see Unity docs for module config"
+          },
+          {
+            "kind": "ParticleSystemRenderer",
+            "pathid": 1337638063140203963,
+            "materials": [
+              {
+                "m_PathID": -7400080975401593953,
+                "m_FileID": 2,
+                "kind": "Material",
+                "name": "FX_MAT_Eyes_01",
+                "bundle": "assets-_mx-characters-ch0145-_mxdependency-materials-2025-07-02_assets_all_3041142678.bundle"
+              }
+            ],
+            "mesh": [],
+            "render_mode": 4
+          }
+        ],
+        "children": []
+      }
+    ]
+  }
+]

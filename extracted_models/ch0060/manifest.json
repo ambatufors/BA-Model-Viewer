@@ -1,0 +1,2481 @@
+{
+  "char_id": "CH0060",
+  "submesh_order": [
+    "Hair",
+    "Face",
+    "Eyebrow",
+    "EyeMouth",
+    "Body"
+  ],
+  "meshes": [
+    {
+      "name": "Hair",
+      "file": "CH0060_Hair.glb",
+      "verts": 1556,
+      "faces": 2006
+    },
+    {
+      "name": "Face",
+      "file": "CH0060_Face.glb",
+      "verts": 500,
+      "faces": 606
+    },
+    {
+      "name": "Eyebrow",
+      "file": "CH0060_Eyebrow.glb",
+      "verts": 54,
+      "faces": 50
+    },
+    {
+      "name": "EyeMouth",
+      "file": "CH0060_EyeMouth.glb",
+      "verts": 147,
+      "faces": 160
+    },
+    {
+      "name": "Body",
+      "file": "CH0060_Body.glb",
+      "verts": 3373,
+      "faces": 4958
+    },
+    {
+      "name": "Halo",
+      "file": "CH0060_Halo.glb",
+      "verts": 167,
+      "faces": 276
+    }
+  ],
+  "skinned_meshes": [
+    {
+      "name": "Weapon",
+      "file": "skinned/CH0060_Weapon.glb",
+      "verts": 1143,
+      "faces": 1298,
+      "bones": 2,
+      "mesh": "CH0060_Weapon_02",
+      "root_bone": "Bip001_Weapon_L",
+      "submesh_order": [
+        "Tsurugi_Original_Weapon"
+      ],
+      "animations": [
+        {
+          "name": "CH0060_Cafe_Idle",
+          "duration": 4.0,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 42,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Cafe_my_poolparty_01_b_pool_01",
+          "duration": 16.76666831970215,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 124,
+          "skipped_channels": 327,
+          "source_bundle": "cafe-characteranimation-ch0060-_mxload-animationclips-2025-07-02_assets_all_449648857.bundle"
+        },
+        {
+          "name": "CH0060_Cafe_Reaction",
+          "duration": 4.0,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 149,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Cafe_Walk",
+          "duration": 2.5333335399627686,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 71,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Exs",
+          "duration": 2.3333334922790527,
+          "sample_rate": 30.0,
+          "channels": 9,
+          "keyframes": 196,
+          "skipped_channels": 309,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Exs_Cutin",
+          "duration": 4.566667079925537,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 127,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Formation_Idle",
+          "duration": 4.0,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 32,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Formation_Pickup",
+          "duration": 5.066667079925537,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 158,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Move01_Ing",
+          "duration": 0.6666666865348816,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 69,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Move02_Ing",
+          "duration": 0.6666666865348816,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 70,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Move_End_Normal01",
+          "duration": 1.0,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 104,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Move_End_Normal02",
+          "duration": 1.0,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 120,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal01_Attack_End",
+          "duration": 0.03333330154418945,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 24,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal01_Attack_Ing",
+          "duration": 2.1666667461395264,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 213,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal01_Attack_Start",
+          "duration": 0.03333333507180214,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 24,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal01_Callsign",
+          "duration": 1.5000001192092896,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 127,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal01_Delay",
+          "duration": 1.3333333730697632,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 166,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal01_Idle",
+          "duration": 3.6000001430511475,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 34,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal01_Public01",
+          "duration": 3.4666669368743896,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 263,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal01_Public01",
+          "duration": 3.4666669368743896,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 269,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal01_Public01_Root",
+          "duration": 3.4666669368743896,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 274,
+          "skipped_channels": 315,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal01_Reload",
+          "duration": 1.7666667699813843,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 168,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal02_Attack_End",
+          "duration": 0.03333330154418945,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 24,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal02_Attack_Ing",
+          "duration": 2.1666667461395264,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 228,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal02_Attack_Start",
+          "duration": 0.03333333507180214,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 24,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal02_Callsign",
+          "duration": 1.5000001192092896,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 128,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal02_Delay",
+          "duration": 1.3333333730697632,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 158,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal02_Idle",
+          "duration": 3.6000001430511475,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 35,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal02_Public01",
+          "duration": 3.4666669368743896,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 280,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal02_Public01",
+          "duration": 3.4666669368743896,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 266,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal02_Public01_Root",
+          "duration": 3.4666669368743896,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 275,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal02_Reload",
+          "duration": 1.7666667699813843,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 194,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Victory_End",
+          "duration": 4.0,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 45,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Victory_Start",
+          "duration": 2.933333396911621,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 162,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Vital_Death",
+          "duration": 2.2333333492279053,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 154,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Vital_Dying_Ing",
+          "duration": 1.4000000953674316,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 32,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Vital_Panic",
+          "duration": 1.4000000953674316,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 31,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Vital_Retreat",
+          "duration": 1.6666667461395264,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 43,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        }
+      ],
+      "visibility": {
+        "default_visible": true,
+        "hide_clip_patterns": [
+          "Cafe_"
+        ]
+      },
+      "child_index": 3,
+      "go_name": "CH0060_Weapon_02"
+    },
+    {
+      "name": "Body",
+      "file": "skinned/CH0060_Body.glb",
+      "verts": 5630,
+      "faces": 7780,
+      "bones": 102,
+      "mesh": "CH0060_Body",
+      "root_bone": "Bip001 Pelvis",
+      "submesh_order": [
+        "Hair",
+        "Face",
+        "Eyebrow",
+        "EyeMouth",
+        "Body"
+      ],
+      "animations": [
+        {
+          "name": "CH0060_Cafe_Idle",
+          "duration": 4.0,
+          "sample_rate": 30.0,
+          "channels": 315,
+          "keyframes": 2019,
+          "skipped_channels": 24,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Cafe_my_poolparty_01_b_pool_01",
+          "duration": 16.76666831970215,
+          "sample_rate": 30.0,
+          "channels": 315,
+          "keyframes": 7560,
+          "skipped_channels": 24,
+          "source_bundle": "cafe-characteranimation-ch0060-_mxload-animationclips-2025-07-02_assets_all_449648857.bundle"
+        },
+        {
+          "name": "CH0060_Cafe_Reaction",
+          "duration": 4.0,
+          "sample_rate": 30.0,
+          "channels": 315,
+          "keyframes": 5708,
+          "skipped_channels": 24,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Cafe_Walk",
+          "duration": 2.5333335399627686,
+          "sample_rate": 30.0,
+          "channels": 315,
+          "keyframes": 3258,
+          "skipped_channels": 24,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Exs",
+          "duration": 2.3333334922790527,
+          "sample_rate": 30.0,
+          "channels": 312,
+          "keyframes": 4184,
+          "skipped_channels": 6,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Exs_Cutin",
+          "duration": 4.566667079925537,
+          "sample_rate": 30.0,
+          "channels": 315,
+          "keyframes": 2764,
+          "skipped_channels": 24,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Formation_Idle",
+          "duration": 4.0,
+          "sample_rate": 30.0,
+          "channels": 315,
+          "keyframes": 1469,
+          "skipped_channels": 24,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Formation_Pickup",
+          "duration": 5.066667079925537,
+          "sample_rate": 30.0,
+          "channels": 315,
+          "keyframes": 4505,
+          "skipped_channels": 24,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Move01_Ing",
+          "duration": 0.6666666865348816,
+          "sample_rate": 30.0,
+          "channels": 315,
+          "keyframes": 1853,
+          "skipped_channels": 24,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Move02_Ing",
+          "duration": 0.6666666865348816,
+          "sample_rate": 30.0,
+          "channels": 315,
+          "keyframes": 1824,
+          "skipped_channels": 24,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Move_End_Normal01",
+          "duration": 1.0,
+          "sample_rate": 30.0,
+          "channels": 315,
+          "keyframes": 2157,
+          "skipped_channels": 24,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Move_End_Normal02",
+          "duration": 1.0,
+          "sample_rate": 30.0,
+          "channels": 315,
+          "keyframes": 2574,
+          "skipped_channels": 24,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal01_Attack_End",
+          "duration": 0.03333330154418945,
+          "sample_rate": 30.0,
+          "channels": 315,
+          "keyframes": 630,
+          "skipped_channels": 24,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal01_Attack_Ing",
+          "duration": 2.1666667461395264,
+          "sample_rate": 30.0,
+          "channels": 315,
+          "keyframes": 4162,
+          "skipped_channels": 24,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal01_Attack_Start",
+          "duration": 0.03333333507180214,
+          "sample_rate": 30.0,
+          "channels": 315,
+          "keyframes": 630,
+          "skipped_channels": 24,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal01_Callsign",
+          "duration": 1.5000001192092896,
+          "sample_rate": 30.0,
+          "channels": 315,
+          "keyframes": 2435,
+          "skipped_channels": 24,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal01_Delay",
+          "duration": 1.3333333730697632,
+          "sample_rate": 30.0,
+          "channels": 315,
+          "keyframes": 2832,
+          "skipped_channels": 24,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal01_Idle",
+          "duration": 3.6000001430511475,
+          "sample_rate": 30.0,
+          "channels": 315,
+          "keyframes": 1222,
+          "skipped_channels": 24,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal01_Public01",
+          "duration": 3.4666669368743896,
+          "sample_rate": 30.0,
+          "channels": 315,
+          "keyframes": 5652,
+          "skipped_channels": 24,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal01_Public01",
+          "duration": 3.4666669368743896,
+          "sample_rate": 30.0,
+          "channels": 312,
+          "keyframes": 5488,
+          "skipped_channels": 24,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal01_Public01_Root",
+          "duration": 3.4666669368743896,
+          "sample_rate": 30.0,
+          "channels": 315,
+          "keyframes": 5663,
+          "skipped_channels": 12,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal01_Reload",
+          "duration": 1.7666667699813843,
+          "sample_rate": 30.0,
+          "channels": 315,
+          "keyframes": 3475,
+          "skipped_channels": 24,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal02_Attack_End",
+          "duration": 0.03333330154418945,
+          "sample_rate": 30.0,
+          "channels": 315,
+          "keyframes": 630,
+          "skipped_channels": 24,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal02_Attack_Ing",
+          "duration": 2.1666667461395264,
+          "sample_rate": 30.0,
+          "channels": 315,
+          "keyframes": 4318,
+          "skipped_channels": 24,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal02_Attack_Start",
+          "duration": 0.03333333507180214,
+          "sample_rate": 30.0,
+          "channels": 315,
+          "keyframes": 630,
+          "skipped_channels": 24,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal02_Callsign",
+          "duration": 1.5000001192092896,
+          "sample_rate": 30.0,
+          "channels": 315,
+          "keyframes": 2375,
+          "skipped_channels": 24,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal02_Delay",
+          "duration": 1.3333333730697632,
+          "sample_rate": 30.0,
+          "channels": 315,
+          "keyframes": 3065,
+          "skipped_channels": 24,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal02_Idle",
+          "duration": 3.6000001430511475,
+          "sample_rate": 30.0,
+          "channels": 315,
+          "keyframes": 1214,
+          "skipped_channels": 24,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal02_Public01",
+          "duration": 3.4666669368743896,
+          "sample_rate": 30.0,
+          "channels": 312,
+          "keyframes": 5560,
+          "skipped_channels": 24,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal02_Public01",
+          "duration": 3.4666669368743896,
+          "sample_rate": 30.0,
+          "channels": 315,
+          "keyframes": 5575,
+          "skipped_channels": 24,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal02_Public01_Root",
+          "duration": 3.4666669368743896,
+          "sample_rate": 30.0,
+          "channels": 315,
+          "keyframes": 5587,
+          "skipped_channels": 24,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal02_Reload",
+          "duration": 1.7666667699813843,
+          "sample_rate": 30.0,
+          "channels": 315,
+          "keyframes": 3786,
+          "skipped_channels": 24,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Victory_End",
+          "duration": 4.0,
+          "sample_rate": 30.0,
+          "channels": 315,
+          "keyframes": 2128,
+          "skipped_channels": 24,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Victory_Start",
+          "duration": 2.933333396911621,
+          "sample_rate": 30.0,
+          "channels": 315,
+          "keyframes": 4892,
+          "skipped_channels": 24,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Vital_Death",
+          "duration": 2.2333333492279053,
+          "sample_rate": 30.0,
+          "channels": 315,
+          "keyframes": 2750,
+          "skipped_channels": 24,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Vital_Dying_Ing",
+          "duration": 1.4000000953674316,
+          "sample_rate": 30.0,
+          "channels": 315,
+          "keyframes": 991,
+          "skipped_channels": 24,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Vital_Panic",
+          "duration": 1.4000000953674316,
+          "sample_rate": 30.0,
+          "channels": 315,
+          "keyframes": 991,
+          "skipped_channels": 24,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Vital_Retreat",
+          "duration": 1.6666667461395264,
+          "sample_rate": 30.0,
+          "channels": 315,
+          "keyframes": 2209,
+          "skipped_channels": 24,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        }
+      ],
+      "child_index": 1,
+      "go_name": "CH0060_Body"
+    },
+    {
+      "name": "Weapon",
+      "file": "skinned/CH0060_Weapon.glb",
+      "verts": 1143,
+      "faces": 1298,
+      "bones": 2,
+      "mesh": "CH0060_Weapon_01",
+      "root_bone": "Bip001_Weapon_R",
+      "submesh_order": [
+        "Tsurugi_Original_Weapon"
+      ],
+      "animations": [
+        {
+          "name": "CH0060_Cafe_Idle",
+          "duration": 4.0,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 42,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Cafe_my_poolparty_01_b_pool_01",
+          "duration": 16.76666831970215,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 124,
+          "skipped_channels": 327,
+          "source_bundle": "cafe-characteranimation-ch0060-_mxload-animationclips-2025-07-02_assets_all_449648857.bundle"
+        },
+        {
+          "name": "CH0060_Cafe_Reaction",
+          "duration": 4.0,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 200,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Cafe_Walk",
+          "duration": 2.5333335399627686,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 57,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Exs",
+          "duration": 2.3333334922790527,
+          "sample_rate": 30.0,
+          "channels": 9,
+          "keyframes": 202,
+          "skipped_channels": 309,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Exs_Cutin",
+          "duration": 4.566667079925537,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 136,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Formation_Idle",
+          "duration": 4.0,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 33,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Formation_Pickup",
+          "duration": 5.066667079925537,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 101,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Move01_Ing",
+          "duration": 0.6666666865348816,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 65,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Move02_Ing",
+          "duration": 0.6666666865348816,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 62,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Move_End_Normal01",
+          "duration": 1.0,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 104,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Move_End_Normal02",
+          "duration": 1.0,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 122,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal01_Attack_End",
+          "duration": 0.03333330154418945,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 24,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal01_Attack_Ing",
+          "duration": 2.1666667461395264,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 207,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal01_Attack_Start",
+          "duration": 0.03333333507180214,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 24,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal01_Callsign",
+          "duration": 1.5000001192092896,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 102,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal01_Delay",
+          "duration": 1.3333333730697632,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 168,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal01_Idle",
+          "duration": 3.6000001430511475,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 35,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal01_Public01",
+          "duration": 3.4666669368743896,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 293,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal01_Public01",
+          "duration": 3.4666669368743896,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 290,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal01_Public01_Root",
+          "duration": 3.4666669368743896,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 304,
+          "skipped_channels": 315,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal01_Reload",
+          "duration": 1.7666667699813843,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 166,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal02_Attack_End",
+          "duration": 0.03333330154418945,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 24,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal02_Attack_Ing",
+          "duration": 2.1666667461395264,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 231,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal02_Attack_Start",
+          "duration": 0.03333333507180214,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 24,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal02_Callsign",
+          "duration": 1.5000001192092896,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 104,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal02_Delay",
+          "duration": 1.3333333730697632,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 157,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal02_Idle",
+          "duration": 3.6000001430511475,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 34,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal02_Public01",
+          "duration": 3.4666669368743896,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 316,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal02_Public01",
+          "duration": 3.4666669368743896,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 301,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal02_Public01_Root",
+          "duration": 3.4666669368743896,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 310,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Normal02_Reload",
+          "duration": 1.7666667699813843,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 193,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Victory_End",
+          "duration": 4.0,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 41,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Victory_Start",
+          "duration": 2.933333396911621,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 168,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Vital_Death",
+          "duration": 2.2333333492279053,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 138,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Vital_Dying_Ing",
+          "duration": 1.4000000953674316,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 31,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Vital_Panic",
+          "duration": 1.4000000953674316,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 31,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        },
+        {
+          "name": "CH0060_Vital_Retreat",
+          "duration": 1.6666667461395264,
+          "sample_rate": 30.0,
+          "channels": 12,
+          "keyframes": 56,
+          "skipped_channels": 327,
+          "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+        }
+      ],
+      "visibility": {
+        "default_visible": true,
+        "hide_clip_patterns": [
+          "Cafe_"
+        ]
+      },
+      "child_index": 2,
+      "go_name": "CH0060_Weapon_01"
+    }
+  ],
+  "textures": [
+    {
+      "name": "CH0060_Body",
+      "file": "textures/CH0060_Body.png",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "CH0060_Body_Mask",
+      "file": "textures/CH0060_Body_Mask.png",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "CH0060_EyeMouth",
+      "file": "textures/CH0060_EyeMouth.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "name": "CH0060_Face",
+      "file": "textures/CH0060_Face.png",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "CH0060_Face_Mask",
+      "file": "textures/CH0060_Face_Mask.png",
+      "size": [
+        8,
+        8
+      ]
+    },
+    {
+      "name": "CH0060_Hair",
+      "file": "textures/CH0060_Hair.png",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "CH0060_Hair_Mask",
+      "file": "textures/CH0060_Hair_Mask.png",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "CH0060_Hair_Spec",
+      "file": "textures/CH0060_Hair_Spec.png",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "Tsurugi_Mouth",
+      "file": "textures/Tsurugi_Mouth.png",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "Tsurugi_Original_Weapon",
+      "file": "textures/Tsurugi_Original_Weapon.png",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Tsurugi_Original_Weapon_Mask",
+      "file": "textures/Tsurugi_Original_Weapon_Mask.png",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Character_Mouth_2",
+      "file": "textures/Character_Mouth_2.png",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "Character_Mouth_Black",
+      "file": "textures/Character_Mouth_Black.png",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "Character_Mouth_High",
+      "file": "textures/Character_Mouth_High.png",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "Character_Mouth_Decagramaton",
+      "file": "textures/Character_Mouth_Decagramaton.png",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "Character_Mouth",
+      "file": "textures/Character_Mouth.png",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "FX_TEX_World_Halo_01",
+      "file": "textures/FX_TEX_World_Halo_01.png",
+      "size": [
+        1024,
+        1024
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "name": "CH0060_Body",
+      "file": "materials/CH0060_Body.json"
+    },
+    {
+      "name": "CH0060_EyeMouth",
+      "file": "materials/CH0060_EyeMouth.json"
+    },
+    {
+      "name": "CH0060_Eyebrow",
+      "file": "materials/CH0060_Eyebrow.json"
+    },
+    {
+      "name": "CH0060_Face",
+      "file": "materials/CH0060_Face.json"
+    },
+    {
+      "name": "CH0060_Hair",
+      "file": "materials/CH0060_Hair.json"
+    },
+    {
+      "name": "Tsurugi_Original_Halo",
+      "file": "materials/Tsurugi_Original_Halo.json"
+    },
+    {
+      "name": "Tsurugi_Original_Weapon",
+      "file": "materials/Tsurugi_Original_Weapon.json"
+    }
+  ],
+  "animations": [
+    {
+      "name": "CH0060_Cafe_Idle",
+      "sample_rate": 30.0,
+      "duration": 4.0,
+      "channels": 339,
+      "keyframes": 2067,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 202,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 1.0666667222976685,
+          "function": "SetMouthTile",
+          "int": 203,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 2.5333335399627686,
+          "function": "SetMouthTile",
+          "int": 202,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0060_Cafe_my_poolparty_01_b_pool_01",
+      "sample_rate": 30.0,
+      "duration": 16.76666831970215,
+      "channels": 339,
+      "keyframes": 7608,
+      "skipped_curves": 60,
+      "source_bundle": "cafe-characteranimation-ch0060-_mxload-animationclips-2025-07-02_assets_all_449648857.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 203,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 3.1666667461395264,
+          "function": "SetMouthTile",
+          "int": 203,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 7.4666666984558105,
+          "function": "SetMouthTile",
+          "int": 203,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 7.766666889190674,
+          "function": "InstantiateFx",
+          "int": 0,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 10.766667366027832,
+          "function": "SetMouthTile",
+          "int": 101,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 11.233333587646484,
+          "function": "SetMouthTile",
+          "int": 203,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0060_Cafe_Reaction",
+      "sample_rate": 30.0,
+      "duration": 4.0,
+      "channels": 339,
+      "keyframes": 5883,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 202,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 1.633333444595337,
+          "function": "SetMouthTile",
+          "int": 101,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 2.433333396911621,
+          "function": "SetMouthTile",
+          "int": 203,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 3.766666889190674,
+          "function": "SetMouthTile",
+          "int": 202,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0060_Cafe_Walk",
+      "sample_rate": 30.0,
+      "duration": 2.5333335399627686,
+      "channels": 339,
+      "keyframes": 3320,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 202,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0060_Exs",
+      "sample_rate": 30.0,
+      "duration": 2.3333334922790527,
+      "channels": 318,
+      "keyframes": 4422,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+    },
+    {
+      "name": "CH0060_Exs_Cutin",
+      "sample_rate": 30.0,
+      "duration": 4.566667079925537,
+      "channels": 339,
+      "keyframes": 2921,
+      "skipped_curves": 84,
+      "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 203,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 1.7666667699813843,
+          "function": "SetMouthTile",
+          "int": 300,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 1.8666667938232422,
+          "function": "SetMouthTile",
+          "int": 302,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 3.1666669845581055,
+          "function": "SetMouthTile",
+          "int": 300,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 3.3333334922790527,
+          "function": "SetMouthTile",
+          "int": 301,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 3.366666793823242,
+          "function": "SetMouthTile",
+          "int": 302,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0060_Formation_Idle",
+      "sample_rate": 30.0,
+      "duration": 4.0,
+      "channels": 339,
+      "keyframes": 1524,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 301,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0060_Formation_Pickup",
+      "sample_rate": 30.0,
+      "duration": 5.066667079925537,
+      "channels": 339,
+      "keyframes": 4660,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 202,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 1.2000000476837158,
+          "function": "SetMouthTile",
+          "int": 100,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 2.766666889190674,
+          "function": "SetMouthTile",
+          "int": 203,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 4.1666669845581055,
+          "function": "SetMouthTile",
+          "int": 202,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0060_Move01_Ing",
+      "sample_rate": 30.0,
+      "duration": 0.6666666865348816,
+      "channels": 339,
+      "keyframes": 1943,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 201,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0060_Move02_Ing",
+      "sample_rate": 30.0,
+      "duration": 0.6666666865348816,
+      "channels": 339,
+      "keyframes": 1912,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 300,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0060_Move_End_Normal01",
+      "sample_rate": 30.0,
+      "duration": 1.0,
+      "channels": 339,
+      "keyframes": 2297,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 201,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.7000000476837158,
+          "function": "SetMouthTile",
+          "int": 201,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0060_Move_End_Normal02",
+      "sample_rate": 30.0,
+      "duration": 1.0,
+      "channels": 339,
+      "keyframes": 2732,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 300,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.4333333671092987,
+          "function": "SetMouthTile",
+          "int": 301,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.7666667103767395,
+          "function": "SetMouthTile",
+          "int": 300,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0060_Normal01_Attack_End",
+      "sample_rate": 30.0,
+      "duration": 0.03333330154418945,
+      "channels": 339,
+      "keyframes": 678,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 201,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0060_Normal01_Attack_Ing",
+      "sample_rate": 30.0,
+      "duration": 2.1666667461395264,
+      "channels": 339,
+      "keyframes": 4432,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 200,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.40000003576278687,
+          "function": "SetMouthTile",
+          "int": 200,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 1.9000000953674316,
+          "function": "SetMouthTile",
+          "int": 201,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0060_Normal01_Attack_Start",
+      "sample_rate": 30.0,
+      "duration": 0.03333333507180214,
+      "channels": 339,
+      "keyframes": 678,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 201,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0060_Normal01_Callsign",
+      "sample_rate": 30.0,
+      "duration": 1.5000001192092896,
+      "channels": 339,
+      "keyframes": 2606,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 203,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.2666666805744171,
+          "function": "SetMouthTile",
+          "int": 300,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.46666669845581055,
+          "function": "SetMouthTile",
+          "int": 100,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 1.0666667222976685,
+          "function": "SetMouthTile",
+          "int": 300,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0060_Normal01_Delay",
+      "sample_rate": 30.0,
+      "duration": 1.3333333730697632,
+      "channels": 339,
+      "keyframes": 3074,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 201,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.23333333432674408,
+          "function": "SetMouthTile",
+          "int": 100,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 1.2333333492279053,
+          "function": "SetMouthTile",
+          "int": 201,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0060_Normal01_Idle",
+      "sample_rate": 30.0,
+      "duration": 3.6000001430511475,
+      "channels": 339,
+      "keyframes": 1285,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 201,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0060_Normal01_Public01",
+      "sample_rate": 30.0,
+      "duration": 3.4666669368743896,
+      "channels": 339,
+      "keyframes": 6022,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 300,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.5333333611488342,
+          "function": "SetMouthTile",
+          "int": 301,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 3.1000001430511475,
+          "function": "SetMouthTile",
+          "int": 201,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0060_Normal01_Public01",
+      "sample_rate": 30.0,
+      "duration": 3.4666669368743896,
+      "channels": 336,
+      "keyframes": 5841,
+      "skipped_curves": 420,
+      "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+    },
+    {
+      "name": "CH0060_Normal01_Public01_Root",
+      "sample_rate": 30.0,
+      "duration": 3.4666669368743896,
+      "channels": 327,
+      "keyframes": 6009,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+    },
+    {
+      "name": "CH0060_Normal01_Reload",
+      "sample_rate": 30.0,
+      "duration": 1.7666667699813843,
+      "channels": 339,
+      "keyframes": 3725,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 200,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 1.0,
+          "function": "SetMouthTile",
+          "int": 100,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 1.533333420753479,
+          "function": "SetMouthTile",
+          "int": 201,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0060_Normal02_Attack_End",
+      "sample_rate": 30.0,
+      "duration": 0.03333330154418945,
+      "channels": 339,
+      "keyframes": 678,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 300,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0060_Normal02_Attack_Ing",
+      "sample_rate": 30.0,
+      "duration": 2.1666667461395264,
+      "channels": 339,
+      "keyframes": 4597,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 300,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.30000001192092896,
+          "function": "SetMouthTile",
+          "int": 301,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.6333333849906921,
+          "function": "SetMouthTile",
+          "int": 302,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 1.633333444595337,
+          "function": "SetMouthTile",
+          "int": 300,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0060_Normal02_Attack_Start",
+      "sample_rate": 30.0,
+      "duration": 0.03333333507180214,
+      "channels": 339,
+      "keyframes": 678,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 300,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0060_Normal02_Callsign",
+      "sample_rate": 30.0,
+      "duration": 1.5000001192092896,
+      "channels": 339,
+      "keyframes": 2549,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 300,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0060_Normal02_Delay",
+      "sample_rate": 30.0,
+      "duration": 1.3333333730697632,
+      "channels": 339,
+      "keyframes": 3288,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 300,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.5,
+          "function": "SetMouthTile",
+          "int": 302,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.9666666984558105,
+          "function": "SetMouthTile",
+          "int": 300,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0060_Normal02_Idle",
+      "sample_rate": 30.0,
+      "duration": 3.6000001430511475,
+      "channels": 339,
+      "keyframes": 1277,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 300,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0060_Normal02_Public01",
+      "sample_rate": 30.0,
+      "duration": 3.4666669368743896,
+      "channels": 336,
+      "keyframes": 5934,
+      "skipped_curves": 420,
+      "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+    },
+    {
+      "name": "CH0060_Normal02_Public01",
+      "sample_rate": 30.0,
+      "duration": 3.4666669368743896,
+      "channels": 339,
+      "keyframes": 5948,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 300,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.40000003576278687,
+          "function": "SetMouthTile",
+          "int": 301,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.5666667222976685,
+          "function": "SetMouthTile",
+          "int": 302,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 3.066666841506958,
+          "function": "SetMouthTile",
+          "int": 300,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0060_Normal02_Public01_Root",
+      "sample_rate": 30.0,
+      "duration": 3.4666669368743896,
+      "channels": 339,
+      "keyframes": 5960,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle"
+    },
+    {
+      "name": "CH0060_Normal02_Reload",
+      "sample_rate": 30.0,
+      "duration": 1.7666667699813843,
+      "channels": 339,
+      "keyframes": 4063,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 300,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.23333334922790527,
+          "function": "SetMouthTile",
+          "int": 301,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.9000000357627869,
+          "function": "SetMouthTile",
+          "int": 300,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0060_Victory_End",
+      "sample_rate": 30.0,
+      "duration": 4.0,
+      "channels": 339,
+      "keyframes": 2180,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 202,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.6666667461395264,
+          "function": "SetMouthTile",
+          "int": 202,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 1.2666667699813843,
+          "function": "SetMouthTile",
+          "int": 100,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 2.766666889190674,
+          "function": "SetMouthTile",
+          "int": 202,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0060_Victory_Start",
+      "sample_rate": 30.0,
+      "duration": 2.933333396911621,
+      "channels": 339,
+      "keyframes": 5086,
+      "skipped_curves": 14,
+      "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 300,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 1.1666667461395264,
+          "function": "SetMouthTile",
+          "int": 203,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 1.2666667699813843,
+          "function": "SetMouthTile",
+          "int": 101,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 1.5000001192092896,
+          "function": "SetMouthTile",
+          "int": 100,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 2.0333335399627686,
+          "function": "SetMouthTile",
+          "int": 202,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0060_Vital_Death",
+      "sample_rate": 30.0,
+      "duration": 2.2333333492279053,
+      "channels": 339,
+      "keyframes": 2944,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 200,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.4333333671092987,
+          "function": "SetMouthTile",
+          "int": 303,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.7000000476837158,
+          "function": "SetMouthTile",
+          "int": 200,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0060_Vital_Dying_Ing",
+      "sample_rate": 30.0,
+      "duration": 1.4000000953674316,
+      "channels": 339,
+      "keyframes": 1044,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 303,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0060_Vital_Panic",
+      "sample_rate": 30.0,
+      "duration": 1.4000000953674316,
+      "channels": 339,
+      "keyframes": 1043,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 200,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0060_Vital_Retreat",
+      "sample_rate": 30.0,
+      "duration": 1.6666667461395264,
+      "channels": 339,
+      "keyframes": 2270,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 303,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    }
+  ],
+  "source_bundles": {
+    "meshes": [
+      "assets-_mx-characters-ch0060-_mxdependency-meshes-2025-07-02_assets_all_2177694544.bundle"
+    ],
+    "textures": [
+      "assets-_mx-characters-ch0060-_mxdependency-textures-2025-07-02_assets_all_4284568125.bundle",
+      "assets-_mx-spinecharacters-ch0060_spr-_mxdependency-textures-2025-07-02_assets_all_4038827368.bundle",
+      "assets-_mx-spinelobbies-ch0060_home-_mxdependency-textures-2025-07-02_assets_all_3191649383.bundle"
+    ],
+    "materials": [
+      "assets-_mx-characters-ch0060-_mxdependency-materials-2025-07-02_assets_all_3185954436.bundle",
+      "assets-_mx-spinecharacters-ch0060_spr-_mxdependency-materials-2025-07-02_assets_all_1104354567.bundle",
+      "assets-_mx-spinelobbies-ch0060_home-_mxdependency-materials-2025-07-02_assets_all_3583496008.bundle"
+    ],
+    "prefabs": [
+      "assets-_mx-characters-ch0060-_mxdependency-prefabs-2025-07-02_assets_all_2107326717.bundle",
+      "character-ch0060-_mxload-prefabs-2025-07-02_assets_all_2555093666.bundle"
+    ],
+    "animationclips": [
+      "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle",
+      "cafe-characteranimation-ch0060-_mxload-animationclips-2025-07-02_assets_all_449648857.bundle"
+    ],
+    "animatorcontrollers": [
+      "character-ch0060-_mxload-animatorcontrollers-2025-07-02_assets_all_3435400475.bundle"
+    ],
+    "timelines": [
+      "assets-_mx-spinelobbies-ch0060_home-_mxdependency-timelines-2025-07-02_assets_all_3142639622.bundle",
+      "ch0060_ex1_cutin_water_flow-_mxload-timelines-2025-07-02_assets_all_574845987.bundle",
+      "character-ch0060-_mxload-timelines-2025-07-02_assets_all_1460599463.bundle"
+    ],
+    "assets": [
+      "assets-_mx-characters-ch0060-_mxdependency-assets-2025-07-02_assets_all_2796228210.bundle",
+      "assets-_mx-spinecharacters-ch0060_spr-_mxdependency-assets-2025-07-02_assets_all_4254814292.bundle",
+      "assets-_mx-spinelobbies-ch0060_home-_mxdependency-assets-2025-07-02_assets_all_3473752552.bundle"
+    ],
+    "audio": [
+      "assets-_mx-characters-ch0060-_mxdependency-audio-2025-07-02_assets_all_3544730074.bundle"
+    ],
+    "other": [
+      "assets-_mx-spinecharacters-ch0060_spr-_mxdependency-textassets-2025-07-02_assets_all_1060553144.bundle",
+      "assets-_mx-spinelobbies-ch0060_home-_mxdependency-textassets-2025-07-02_assets_all_1955246934.bundle"
+    ]
+  },
+  "resolved_dependencies": [
+    "assets-_mx-characters-_mxcommon-_mxdependency-materials-2025-07-02_assets_all_357124188.bundle",
+    "assets-_mx-characters-_mxcommon-_mxdependency-meshes-2025-07-02_assets_all_2412847038.bundle",
+    "assets-_mx-characters-_mxcommon-_mxdependency-textures-2025-07-02_assets_all_2925187272.bundle",
+    "assets-_mx-characters-ch0060-_mxdependency-animationclips-2025-07-02_assets_all_3290790008.bundle",
+    "assets-_mx-characters-ch0060-_mxdependency-audio-2025-07-02_assets_all_3544730074.bundle",
+    "assets-_mx-characters-tsurugi_original-_mxdependency-materials-2025-07-02_assets_all_2458592430.bundle",
+    "assets-_mx-characters-tsurugi_original-_mxdependency-textures-2025-07-02_assets_all_960937685.bundle",
+    "assets-_mx-spinelobbies-ch0060_home-_mxdependency-textassets-2025-07-02_assets_all_1955246934.bundle",
+    "ch0060_ex1_cutin_water_flow-_mxload-timelines-2025-07-02_assets_all_574845987.bundle"
+  ],
+  "unresolved_cabs": [
+    "cab-231ec4d5e9dc2578a2660bf7a73174ea",
+    "cab-312c786d9932a27beb01918cab1e2ffd",
+    "cab-324df3896cbad5bd8c68ec679fa18df9",
+    "cab-38d7f184c16228480d78cd7ea10cae27",
+    "cab-39fe55e8868aab69e2cf9a8ae5dcef67",
+    "cab-428091522b4007f213bf16532c4528a1",
+    "cab-4e374e23f1bd4e7218b8fbcbec01546f",
+    "cab-5cb129b0d3e8597cc11ba43385244c60",
+    "cab-5d5c833969c3f3673a72d2107ae33f47",
+    "cab-72cabf238b0d84de1615649a40b6b13f",
+    "cab-7311d896d3a4d721cb5b05dd266e48cc",
+    "cab-82335ec62e008f890ad4bf87d2a330ec",
+    "cab-bc131866cc0135864ea429c4a50ab051",
+    "cab-d16eda0624bdb88399887006558e8c82",
+    "cab-d6a7e509eef8bc82327c4351cf15f45d"
+  ],
+  "head_transform": {
+    "bone": "Bip001 Head",
+    "position": {
+      "x": -3.657959627571295e-07,
+      "y": 0.008713273889361994,
+      "z": 0.6657137732972138
+    },
+    "source_path": "Bip001 Head <- Bip001 Neck <- Bip001 Spine1 <- Bip001 Spine <- Bip001 Pelvis <- Bip001 <- bone_root <- CH0060_Mesh"
+  },
+  "halo_anchor": {
+    "position": {
+      "x": 0.0,
+      "y": -0.20000000298023224,
+      "z": 1.0299999713897705
+    },
+    "rotation": {
+      "x": 0.7071067811865475,
+      "y": 0.0,
+      "z": 0.0,
+      "w": 0.7071067811865476
+    },
+    "scale": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 1.0
+    },
+    "source_path": "CH0060_Halo <- HaloRoot <- Echelon_CH0060",
+    "name": "CH0060_Halo",
+    "coordinate_space": "viewer"
+  },
+  "halo_follow": {
+    "name": "HaloRoot",
+    "source_path": "HaloRoot <- Cafe_CH0060",
+    "follow_target": "Bip001 Head",
+    "coordinate_space": "viewer",
+    "target_position": {
+      "x": -1.1445756478014409e-06,
+      "y": -0.19999982920295709,
+      "z": 1.030000134440463
+    },
+    "target_offset": {
+      "x": -7.787796850443114e-07,
+      "y": -0.20871310309231908,
+      "z": 0.3642863611432493
+    },
+    "target_relative_position": {
+      "x": -0.36428630352020264,
+      "y": -0.20871320366859436,
+      "z": 0.0
+    },
+    "clamp_min_offset": {
+      "x": -0.47999998927116394,
+      "y": -0.3400000035762787,
+      "z": -0.27000001072883606
+    },
+    "clamp_max_offset": {
+      "x": -0.25999999046325684,
+      "y": -0.07000000029802322,
+      "z": 0.27000001072883606
+    },
+    "follow_position_power": 0.10000000149011612,
+    "follow_rotation_power": 0.07000000029802322,
+    "fix_y_rotation": 0,
+    "local_forward": {
+      "x": 0.0,
+      "y": 1.0000001192092896,
+      "z": 0.0
+    },
+    "target_relative_rotation": {
+      "x": 0.5000001192092896,
+      "y": -0.49999937415122986,
+      "z": -0.5000000596046448,
+      "w": -0.5000007748603821
+    },
+    "initial_rotation": {
+      "x": -0.0,
+      "y": -0.0,
+      "z": -0.0,
+      "w": 1.0
+    },
+    "placement_tilt_deg": 40.0565,
+    "depth_mode": "tilt"
+  },
+  "halo_transform": {
+    "position": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "rotation": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "w": 1.0
+    },
+    "scale": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 1.0
+    },
+    "source_path": "CH0060_Halo <- HaloRoot <- CH0060",
+    "name": "Halo",
+    "coordinate_space": "viewer"
+  }
+}

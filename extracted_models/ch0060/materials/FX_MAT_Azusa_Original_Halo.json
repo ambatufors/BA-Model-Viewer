@@ -1,0 +1,49 @@
+{
+  "name": "FX_MAT_Azusa_Original_Halo",
+  "floats": {
+    "_Cull": 2.0,
+    "_DitherThreshold": 0.0,
+    "_DstBlend": 0.0,
+    "_DstBlendAlpha": 0.0,
+    "_GlowStrength0": 3.0,
+    "_GlowStrictness0": 0.3400000035762787,
+    "_GrayBrightness": 1.0,
+    "_SrcBlend": 1.0,
+    "_SrcBlendAlpha": 1.0,
+    "_ZWrite": 1.0
+  },
+  "colors": {
+    "_GlowMaskColor0": {
+      "r": 1.0,
+      "g": 0.6666666865348816,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "_GlowTint0": {
+      "r": 1.4980392456054688,
+      "g": 0.9362746477127075,
+      "b": 0.4494117498397827,
+      "a": 1.0
+    },
+    "_Tint": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    }
+  },
+  "textures": {
+    "_MainTex": {
+      "name": null,
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "ints": {}
+}

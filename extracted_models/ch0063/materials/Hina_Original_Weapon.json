@@ -1,0 +1,239 @@
+{
+  "name": "Hina_Original_Weapon",
+  "floats": {
+    "Vector1_60D1ACA5": 6.179999828338623,
+    "_AdditionalLightSharpness": 5.0,
+    "_AdditionalLightStrength": 1.0,
+    "_AdjustDynRange": 0.0,
+    "_AlphaClip": 0.0,
+    "_Blend": 0.0,
+    "_BumpScale": 1.0,
+    "_CrushScale": 0.0,
+    "_Cull": 2.0,
+    "_Cutoff": 0.5,
+    "_Damage": 0.0,
+    "_DetailNormalMapScale": 1.0,
+    "_DitherThreshold": 0.0,
+    "_DstBlend": 0.0,
+    "_Fire": 0.0,
+    "_FireValue": 0.0,
+    "_Float0": 0.0,
+    "_GlossMapScale": 1.0,
+    "_Glossiness": 0.46000000834465027,
+    "_GlossinessSource": 0.0,
+    "_GlossyReflections": 1.0,
+    "_Glow": 1.0,
+    "_GlowSpeed": 0.0,
+    "_GlowStrength0": 1.0,
+    "_GlowStrictness0": 30.0,
+    "_GrayBrightness": 1.0,
+    "_IsDither": 0.0,
+    "_IsWorld": 1.0,
+    "_LigPow": 2.0,
+    "_LigValue": 0.5419999957084656,
+    "_LightPow": 10.0,
+    "_LightStrong": 10.0,
+    "_LightValue": 0.10000000149011612,
+    "_Metallic": 0.9300000071525574,
+    "_Mode": 0.0,
+    "_NoiseColStrong": 0.0,
+    "_OcclusionStrength": 1.0,
+    "_OutlineThickness": 0.0024999999441206455,
+    "_Parallax": 0.019999999552965164,
+    "_ShaPow": 55.79999923706055,
+    "_ShaValue": 0.375,
+    "_Shadow2Pow": 0.8399999737739563,
+    "_ShadowPow": 30.700000762939453,
+    "_ShadowStrong": 20.0,
+    "_ShadowThreshold": 0.5,
+    "_ShadowValue": 0.5,
+    "_Shadowpow": 0.699999988079071,
+    "_Shininess": 0.5,
+    "_SmoothnessTextureChannel": 0.0,
+    "_SpecPow": 0.10000000149011612,
+    "_SpecSource": 0.0,
+    "_SpecStrong": 0.10000000149011612,
+    "_SpecularHighlights": 1.0,
+    "_SrcBlend": 1.0,
+    "_Surface": 0.0,
+    "_UVSec": 0.0,
+    "_UseGlow": 1.0,
+    "_UseOutlineAbsolute": 1.0,
+    "_UseOutlineNormal": 0.0,
+    "_UseOutlineVertexColor": 1.0,
+    "_WorkflowMode": 1.0,
+    "_ZWrite": 1.0,
+    "_pow": -0.8799999952316284,
+    "_value": 0.7940000295639038
+  },
+  "colors": {
+    "_CodeAddColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeAddRimColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeMultiplyColor": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_ColShadow": {
+      "r": 0.8962264060974121,
+      "g": 0.8159042596817017,
+      "b": 0.8263900279998779,
+      "a": 0.0
+    },
+    "_Color": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_DmgCol": {
+      "r": 0.5699999332427979,
+      "g": 0.5600000023841858,
+      "b": 0.5600000023841858,
+      "a": 0.0
+    },
+    "_EmissionColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "_FakeLightDir": {
+      "r": 0.10000000149011612,
+      "g": 0.6499999761581421,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_FireCol": {
+      "r": 0.9100000262260437,
+      "g": 0.7400000095367432,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_GlowColor": {
+      "r": 2.9960784912109375,
+      "g": 0.0,
+      "b": 2.901960849761963,
+      "a": 1.0
+    },
+    "_GlowMaskColor0": {
+      "r": 0.9490196704864502,
+      "g": 0.4745098352432251,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_GlowTint0": {
+      "r": 2.8272249698638916,
+      "g": 0.0,
+      "b": 4.293193340301514,
+      "a": 1.0
+    },
+    "_LigCol": {
+      "r": 0.9564197063446045,
+      "g": 0.8124777674674988,
+      "b": 0.9622641801834106,
+      "a": 0.0
+    },
+    "_LigColor": {
+      "r": 0.8207547068595886,
+      "g": 0.7007386684417725,
+      "b": 0.8046331405639648,
+      "a": 0.0
+    },
+    "_LigDir": {
+      "r": 0.7799999713897705,
+      "g": -1.0199999809265137,
+      "b": -1.8200000524520874,
+      "a": 0.0
+    },
+    "_NoiseDir": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_OutlineSolidColorTint": {
+      "r": 0.699999988079071,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "_OutlineTint": {
+      "r": 0.28301888704299927,
+      "g": 0.28301888704299927,
+      "b": 0.28301888704299927,
+      "a": 1.0
+    },
+    "_RimColor": {
+      "r": 0.6886792182922363,
+      "g": 0.47752758860588074,
+      "b": 0.6886792182922363,
+      "a": 0.0
+    },
+    "_ShaCol": {
+      "r": 0.7980307340621948,
+      "g": 0.7162246108055115,
+      "b": 0.8207547068595886,
+      "a": 0.0
+    },
+    "_ShadowCol": {
+      "r": 0.4450896382331848,
+      "g": 0.4164738655090332,
+      "b": 0.46226418018341064,
+      "a": 0.0
+    },
+    "_ShadowTint": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5,
+      "a": 1.0
+    },
+    "_SpecColor": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 0.0
+    },
+    "_col": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 0.0
+    }
+  },
+  "textures": {
+    "_MainTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ],
+      "name": "Hina_Original_Weapon"
+    },
+    "_SourceTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ],
+      "name": "Hina_Original_Weapon_Mask"
+    }
+  }
+}

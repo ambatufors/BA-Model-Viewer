@@ -1,0 +1,4234 @@
+{
+  "char_id": "CH0091",
+  "submesh_order": [
+    "Body",
+    "Face",
+    "EyeMouth",
+    "Hair",
+    "Eyebrow"
+  ],
+  "meshes": [
+    {
+      "name": "Body",
+      "file": "CH0091_Body.glb",
+      "verts": 1551,
+      "faces": 1926
+    },
+    {
+      "name": "Face",
+      "file": "CH0091_Face.glb",
+      "verts": 470,
+      "faces": 548
+    },
+    {
+      "name": "EyeMouth",
+      "file": "CH0091_EyeMouth.glb",
+      "verts": 203,
+      "faces": 198
+    },
+    {
+      "name": "Hair",
+      "file": "CH0091_Hair.glb",
+      "verts": 2345,
+      "faces": 3030
+    },
+    {
+      "name": "Eyebrow",
+      "file": "CH0091_Eyebrow.glb",
+      "verts": 56,
+      "faces": 48
+    },
+    {
+      "name": "Body01_Body",
+      "file": "CH0091_Body01_Body.glb",
+      "verts": 2210,
+      "faces": 3264
+    },
+    {
+      "name": "Body02_Body",
+      "file": "CH0091_Body02_Body.glb",
+      "verts": 1124,
+      "faces": 1636
+    },
+    {
+      "name": "Halo",
+      "file": "CH0091_Halo.glb",
+      "verts": 282,
+      "faces": 416
+    }
+  ],
+  "skinned_meshes": [
+    {
+      "name": "Body01",
+      "file": "skinned/CH0091_Body01.glb",
+      "verts": 2210,
+      "faces": 3264,
+      "bones": 73,
+      "mesh": "Hoshino_Swimsuit_Body01",
+      "root_bone": "Bip001 Pelvis",
+      "submesh_order": [
+        "Body"
+      ],
+      "animations": [
+        {
+          "name": "Hoshino_Swimsuit_Cafe_Idle",
+          "duration": 6.6666669845581055,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 2227,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Cafe_my_seahouse_01_tubes_01",
+          "duration": 17.733333587646484,
+          "sample_rate": 30.0,
+          "channels": 210,
+          "keyframes": 3045,
+          "skipped_channels": 222,
+          "source_bundle": "cafe-characteranimation-hoshino_swimsuit-_mxload-animationclips-2025-07-02_assets_all_102764557.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Cafe_Reaction",
+          "duration": 5.833333492279053,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 4168,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Cafe_Walk",
+          "duration": 3.8000001907348633,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 4352,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Exs",
+          "duration": 2.3333334922790527,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 2483,
+          "skipped_channels": 234,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Exs_Cutin",
+          "duration": 5.133333683013916,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 4542,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Formation_Idle",
+          "duration": 3.3333334922790527,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 1144,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Formation_Pickup",
+          "duration": 8.0,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 3038,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Move_End_Normal01",
+          "duration": 0.7333333492279053,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 1711,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Move_End_Normal02",
+          "duration": 0.7333333492279053,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 1093,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Move_Ing01",
+          "duration": 0.6000000238418579,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 1199,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Move_Ing02",
+          "duration": 0.6666666865348816,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 921,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Move_Jump01",
+          "duration": 1.0,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 1625,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Move_Jump02",
+          "duration": 1.0,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 1326,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal01_Public01",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 2660,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal02_Public01",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 2069,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack01_Delay",
+          "duration": 1.0,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 686,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack01_End",
+          "duration": 0.3333333730697632,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 845,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack01_Ing",
+          "duration": 0.9000000357627869,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 1465,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack01_Start",
+          "duration": 0.5666667222976685,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 1072,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack02_Delay",
+          "duration": 1.0,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 696,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack02_End",
+          "duration": 0.3333333730697632,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 728,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack02_Ing",
+          "duration": 0.9000000357627869,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 1105,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack02_Start",
+          "duration": 0.5666667222976685,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 903,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Callsign",
+          "duration": 1.5000001192092896,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 2141,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Callsign_Random",
+          "duration": 1.5000001192092896,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 2200,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Idle01",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 866,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Idle02",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 698,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Reload01",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 3138,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Reload02",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 3041,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Reload02_Random",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 2230,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Victory_End",
+          "duration": 1.6666667461395264,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 771,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Victory_End_Random",
+          "duration": 3.3333334922790527,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 664,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Victory_Start",
+          "duration": 3.000000238418579,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 3285,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Victory_Start_Random",
+          "duration": 3.000000238418579,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 1543,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Death01",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 2054,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Death02",
+          "duration": 1.8666667938232422,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 1818,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Dying_ing01",
+          "duration": 1.6000001430511475,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 655,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Dying_ing02",
+          "duration": 1.6000001430511475,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 661,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Panic01",
+          "duration": 1.4000000953674316,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 663,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Panic02",
+          "duration": 1.4000000953674316,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 657,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Retreat01",
+          "duration": 1.6666667461395264,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 1931,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Retreat02",
+          "duration": 1.6666667461395264,
+          "sample_rate": 30.0,
+          "channels": 231,
+          "keyframes": 1133,
+          "skipped_channels": 222,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        }
+      ],
+      "initial_renderer_visible": true,
+      "event_renderer_controlled": true,
+      "child_index": 3,
+      "go_name": "Hoshino_Swimsuit_Body01"
+    },
+    {
+      "name": "Body",
+      "file": "skinned/CH0091_Body.glb",
+      "verts": 4625,
+      "faces": 5750,
+      "bones": 62,
+      "mesh": "Hoshino_Swimsuit_Body",
+      "root_bone": "Bip001 Pelvis",
+      "submesh_order": [
+        "Body",
+        "Face",
+        "EyeMouth",
+        "Hair",
+        "Eyebrow"
+      ],
+      "animations": [
+        {
+          "name": "Hoshino_Swimsuit_Cafe_Idle",
+          "duration": 6.6666669845581055,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 1415,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Cafe_my_seahouse_01_tubes_01",
+          "duration": 17.733333587646484,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 4856,
+          "skipped_channels": 234,
+          "source_bundle": "cafe-characteranimation-hoshino_swimsuit-_mxload-animationclips-2025-07-02_assets_all_102764557.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Cafe_Reaction",
+          "duration": 5.833333492279053,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 3563,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Cafe_Walk",
+          "duration": 3.8000001907348633,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 3803,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Exs",
+          "duration": 2.3333334922790527,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 3160,
+          "skipped_channels": 267,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Exs_Cutin",
+          "duration": 5.133333683013916,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 2785,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Formation_Idle",
+          "duration": 3.3333334922790527,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 917,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Formation_Pickup",
+          "duration": 8.0,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 3016,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Move_End_Normal01",
+          "duration": 0.7333333492279053,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 1319,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Move_End_Normal02",
+          "duration": 0.7333333492279053,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 1318,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Move_Ing01",
+          "duration": 0.6000000238418579,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 1095,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Move_Ing02",
+          "duration": 0.6666666865348816,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 994,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Move_Jump01",
+          "duration": 1.0,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 1418,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Move_Jump02",
+          "duration": 1.0,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 1332,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal01_Public01",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 2535,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal02_Public01",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 2706,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack01_Delay",
+          "duration": 1.0,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 548,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack01_End",
+          "duration": 0.3333333730697632,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 695,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack01_Ing",
+          "duration": 0.9000000357627869,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 1289,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack01_Start",
+          "duration": 0.5666667222976685,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 801,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack02_Delay",
+          "duration": 1.0,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 861,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack02_End",
+          "duration": 0.3333333730697632,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 734,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack02_Ing",
+          "duration": 0.9000000357627869,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 1219,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack02_Start",
+          "duration": 0.5666667222976685,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 949,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Callsign",
+          "duration": 1.5000001192092896,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 1863,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Callsign_Random",
+          "duration": 1.5000001192092896,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 1880,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Idle01",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 764,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Idle02",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 805,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Reload01",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 2455,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Reload02",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 2409,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Reload02_Random",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 2514,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Victory_End",
+          "duration": 1.6666667461395264,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 611,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Victory_End_Random",
+          "duration": 3.3333334922790527,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 803,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Victory_Start",
+          "duration": 3.000000238418579,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 2869,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Victory_Start_Random",
+          "duration": 3.000000238418579,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 1574,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Death01",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 1988,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Death02",
+          "duration": 1.8666667938232422,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 2273,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Dying_ing01",
+          "duration": 1.6000001430511475,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 617,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Dying_ing02",
+          "duration": 1.6000001430511475,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 615,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Panic01",
+          "duration": 1.4000000953674316,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 580,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Panic02",
+          "duration": 1.4000000953674316,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 596,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Retreat01",
+          "duration": 1.6666667461395264,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 1542,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Retreat02",
+          "duration": 1.6666667461395264,
+          "sample_rate": 30.0,
+          "channels": 198,
+          "keyframes": 1544,
+          "skipped_channels": 255,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        }
+      ],
+      "initial_renderer_visible": true,
+      "child_index": 2,
+      "go_name": "Hoshino_Swimsuit_Body"
+    },
+    {
+      "name": "Weapon",
+      "file": "skinned/CH0091_Weapon.glb",
+      "verts": 2534,
+      "faces": 2580,
+      "bones": 5,
+      "mesh": "Hoshino_Swimsuit_Weapon",
+      "root_bone": "Bip001_Weapon",
+      "submesh_order": [
+        "Hoshino_Original_Weapon"
+      ],
+      "animations": [
+        {
+          "name": "Hoshino_Swimsuit_Cafe_Idle",
+          "duration": 6.6666669845581055,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 65,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Cafe_my_seahouse_01_tubes_01",
+          "duration": 17.733333587646484,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 124,
+          "skipped_channels": 411,
+          "source_bundle": "cafe-characteranimation-hoshino_swimsuit-_mxload-animationclips-2025-07-02_assets_all_102764557.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Cafe_Reaction",
+          "duration": 5.833333492279053,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 113,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Cafe_Walk",
+          "duration": 3.8000001907348633,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 117,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Exs",
+          "duration": 2.3333334922790527,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 218,
+          "skipped_channels": 444,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Exs_Cutin",
+          "duration": 5.133333683013916,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 266,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Formation_Idle",
+          "duration": 3.3333334922790527,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 66,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Formation_Pickup",
+          "duration": 8.0,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 149,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Move_End_Normal01",
+          "duration": 0.7333333492279053,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 107,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Move_End_Normal02",
+          "duration": 0.7333333492279053,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 105,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Move_Ing01",
+          "duration": 0.6000000238418579,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 64,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Move_Ing02",
+          "duration": 0.6666666865348816,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 94,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Move_Jump01",
+          "duration": 1.0,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 128,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Move_Jump02",
+          "duration": 1.0,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 117,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal01_Public01",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 163,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal02_Public01",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 183,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack01_Delay",
+          "duration": 1.0,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 50,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack01_End",
+          "duration": 0.3333333730697632,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 68,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack01_Ing",
+          "duration": 0.9000000357627869,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 169,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack01_Start",
+          "duration": 0.5666667222976685,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 86,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack02_Delay",
+          "duration": 1.0,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 47,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack02_End",
+          "duration": 0.3333333730697632,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 72,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack02_Ing",
+          "duration": 0.9000000357627869,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 168,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack02_Start",
+          "duration": 0.5666667222976685,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 85,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Callsign",
+          "duration": 1.5000001192092896,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 137,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Callsign_Random",
+          "duration": 1.5000001192092896,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 138,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Idle01",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 55,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Idle02",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 55,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Reload01",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 251,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Reload02",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 248,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Reload02_Random",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 410,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Victory_End",
+          "duration": 1.6666667461395264,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 52,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Victory_End_Random",
+          "duration": 3.3333334922790527,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 71,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Victory_Start",
+          "duration": 3.000000238418579,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 200,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Victory_Start_Random",
+          "duration": 3.000000238418579,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 86,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Death01",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 173,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Death02",
+          "duration": 1.8666667938232422,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 187,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Dying_ing01",
+          "duration": 1.6000001430511475,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 50,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Dying_ing02",
+          "duration": 1.6000001430511475,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 50,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Panic01",
+          "duration": 1.4000000953674316,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 52,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Panic02",
+          "duration": 1.4000000953674316,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 52,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Retreat01",
+          "duration": 1.6666667461395264,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 112,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Retreat02",
+          "duration": 1.6666667461395264,
+          "sample_rate": 30.0,
+          "channels": 21,
+          "keyframes": 71,
+          "skipped_channels": 432,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        }
+      ],
+      "initial_renderer_visible": true,
+      "visibility": {
+        "default_visible": true,
+        "hide_clip_patterns": [
+          "Cafe_"
+        ]
+      },
+      "child_index": 5,
+      "go_name": "Hoshino_Swimsuit_Weapon"
+    },
+    {
+      "name": "Body02",
+      "file": "skinned/CH0091_Body02.glb",
+      "verts": 1124,
+      "faces": 1636,
+      "bones": 39,
+      "mesh": "Hoshino_Swimsuit_Body02",
+      "root_bone": "Bip001 Pelvis",
+      "submesh_order": [
+        "Body"
+      ],
+      "animations": [
+        {
+          "name": "Hoshino_Swimsuit_Cafe_Idle",
+          "duration": 6.6666669845581055,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 1141,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Cafe_my_seahouse_01_tubes_01",
+          "duration": 17.733333587646484,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 2775,
+          "skipped_channels": 303,
+          "source_bundle": "cafe-characteranimation-hoshino_swimsuit-_mxload-animationclips-2025-07-02_assets_all_102764557.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Cafe_Reaction",
+          "duration": 5.833333492279053,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 2138,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Cafe_Walk",
+          "duration": 3.8000001907348633,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 2281,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Exs",
+          "duration": 2.3333334922790527,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 2279,
+          "skipped_channels": 336,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Exs_Cutin",
+          "duration": 5.133333683013916,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 1668,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Formation_Idle",
+          "duration": 3.3333334922790527,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 553,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Formation_Pickup",
+          "duration": 8.0,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 1516,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Move_End_Normal01",
+          "duration": 0.7333333492279053,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 898,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Move_End_Normal02",
+          "duration": 0.7333333492279053,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 889,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Move_Ing01",
+          "duration": 0.6000000238418579,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 581,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Move_Ing02",
+          "duration": 0.6666666865348816,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 717,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Move_Jump01",
+          "duration": 1.0,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 944,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Move_Jump02",
+          "duration": 1.0,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 1122,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal01_Public01",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 1744,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal02_Public01",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 1865,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack01_Delay",
+          "duration": 1.0,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 374,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack01_End",
+          "duration": 0.3333333730697632,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 489,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack01_Ing",
+          "duration": 0.9000000357627869,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 814,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack01_Start",
+          "duration": 0.5666667222976685,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 599,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack02_Delay",
+          "duration": 1.0,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 492,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack02_End",
+          "duration": 0.3333333730697632,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 524,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack02_Ing",
+          "duration": 0.9000000357627869,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 818,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack02_Start",
+          "duration": 0.5666667222976685,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 671,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Callsign",
+          "duration": 1.5000001192092896,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 1203,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Callsign_Random",
+          "duration": 1.5000001192092896,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 1266,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Idle01",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 469,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Idle02",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 494,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Reload01",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 1957,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Reload02",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 2019,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Reload02_Random",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 2026,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Victory_End",
+          "duration": 1.6666667461395264,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 383,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Victory_End_Random",
+          "duration": 3.3333334922790527,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 460,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Victory_Start",
+          "duration": 3.000000238418579,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 1758,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Victory_Start_Random",
+          "duration": 3.000000238418579,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 1285,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Death01",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 1299,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Death02",
+          "duration": 1.8666667938232422,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 1510,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Dying_ing01",
+          "duration": 1.6000001430511475,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 357,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Dying_ing02",
+          "duration": 1.6000001430511475,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 365,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Panic01",
+          "duration": 1.4000000953674316,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 380,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Panic02",
+          "duration": 1.4000000953674316,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 376,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Retreat01",
+          "duration": 1.6666667461395264,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 840,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Retreat02",
+          "duration": 1.6666667461395264,
+          "sample_rate": 30.0,
+          "channels": 129,
+          "keyframes": 840,
+          "skipped_channels": 324,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        }
+      ],
+      "initial_renderer_visible": true,
+      "event_renderer_controlled": true,
+      "child_index": 4,
+      "go_name": "Hoshino_Swimsuit_Body02"
+    },
+    {
+      "name": "Prop",
+      "file": "skinned/CH0091_Prop.glb",
+      "verts": 1897,
+      "faces": 2868,
+      "bones": 14,
+      "mesh": "Hoshino_Swimsuit_BeachProp_Outline",
+      "root_bone": "Bip001",
+      "submesh_order": [
+        "BeachProp",
+        "BeachProp_Alpha"
+      ],
+      "animations": [
+        {
+          "name": "Hoshino_Swimsuit_Cafe_Idle",
+          "duration": 6.6666669845581055,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 391,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Cafe_my_seahouse_01_tubes_01",
+          "duration": 17.733333587646484,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 356,
+          "skipped_channels": 381,
+          "source_bundle": "cafe-characteranimation-hoshino_swimsuit-_mxload-animationclips-2025-07-02_assets_all_102764557.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Cafe_Reaction",
+          "duration": 5.833333492279053,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 311,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Cafe_Walk",
+          "duration": 3.8000001907348633,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 329,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Exs",
+          "duration": 2.3333334922790527,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 789,
+          "skipped_channels": 414,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Exs_Cutin",
+          "duration": 5.133333683013916,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 1660,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Formation_Idle",
+          "duration": 3.3333334922790527,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 254,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Formation_Pickup",
+          "duration": 8.0,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 664,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Move_End_Normal01",
+          "duration": 0.7333333492279053,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 358,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Move_End_Normal02",
+          "duration": 0.7333333492279053,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 164,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Move_Ing01",
+          "duration": 0.6000000238418579,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 287,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Move_Ing02",
+          "duration": 0.6666666865348816,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 148,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Move_Jump01",
+          "duration": 1.0,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 429,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Move_Jump02",
+          "duration": 1.0,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 190,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal01_Public01",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 782,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal02_Public01",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 229,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack01_Delay",
+          "duration": 1.0,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 141,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack01_End",
+          "duration": 0.3333333730697632,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 180,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack01_Ing",
+          "duration": 0.9000000357627869,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 425,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack01_Start",
+          "duration": 0.5666667222976685,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 268,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack02_Delay",
+          "duration": 1.0,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 108,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack02_End",
+          "duration": 0.3333333730697632,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 128,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack02_Ing",
+          "duration": 0.9000000357627869,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 208,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Attack02_Start",
+          "duration": 0.5666667222976685,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 153,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Callsign",
+          "duration": 1.5000001192092896,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 616,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Callsign_Random",
+          "duration": 1.5000001192092896,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 608,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Idle01",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 192,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Idle02",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 118,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Reload01",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 805,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Reload02",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 375,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Normal_Reload02_Random",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 245,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Victory_End",
+          "duration": 1.6666667461395264,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 194,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Victory_End_Random",
+          "duration": 3.3333334922790527,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 302,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Victory_Start",
+          "duration": 3.000000238418579,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 1039,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Victory_Start_Random",
+          "duration": 3.000000238418579,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 538,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Death01",
+          "duration": 2.0,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 526,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Death02",
+          "duration": 1.8666667938232422,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 335,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Dying_ing01",
+          "duration": 1.6000001430511475,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 169,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Dying_ing02",
+          "duration": 1.6000001430511475,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 133,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Panic01",
+          "duration": 1.4000000953674316,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 170,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Panic02",
+          "duration": 1.4000000953674316,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 133,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Retreat01",
+          "duration": 1.6666667461395264,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 581,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        },
+        {
+          "name": "Hoshino_Swimsuit_Vital_Retreat02",
+          "duration": 1.6666667461395264,
+          "sample_rate": 30.0,
+          "channels": 51,
+          "keyframes": 168,
+          "skipped_channels": 402,
+          "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle"
+        }
+      ],
+      "initial_renderer_visible": true,
+      "child_index": 1,
+      "go_name": "Hoshino_Swimsuit_BeachProp_Outline",
+      "parent_bone": "bone_root",
+      "shared_skeleton_root": true,
+      "shared_skeleton_parent_part": "Body"
+    },
+    {
+      "name": "SeahouseTubes",
+      "file": "skinned/CH0091_SeahouseTubes.glb",
+      "verts": 2474,
+      "faces": 2582,
+      "bones": 9,
+      "mesh": "my_seahouse_01_tubes",
+      "root_bone": "bone_Body",
+      "submesh_order": [
+        "SeahouseTubes"
+      ],
+      "animations": [
+        {
+          "name": "Hoshino_Swimsuit_Cafe_my_seahouse_01_tubes_01",
+          "duration": 17.733333587646484,
+          "sample_rate": 30.0,
+          "channels": 30,
+          "keyframes": 5475,
+          "skipped_channels": 3,
+          "source_bundle": "assets-_mx-cafe-seahouse-tubes-_mxdependency-animationclips-2025-07-02_assets_all_2143471262.bundle"
+        }
+      ],
+      "visibility": {
+        "default_visible": false,
+        "show_clip_patterns": [
+          "Cafe_my_seahouse_01_tubes"
+        ]
+      },
+      "timeline_root": true,
+      "ignore_vertex_colors": true
+    }
+  ],
+  "textures": [
+    {
+      "name": "Hoshino_Original_EyeMouth",
+      "file": "textures/Hoshino_Original_EyeMouth.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "name": "Hoshino_Original_Face",
+      "file": "textures/Hoshino_Original_Face.png",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "Hoshino_Original_Face_Mask",
+      "file": "textures/Hoshino_Original_Face_Mask.png",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "Hoshino_Original_Halo",
+      "file": "textures/Hoshino_Original_Halo.png",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Hoshino_Original_Weapon",
+      "file": "textures/Hoshino_Original_Weapon.png",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Hoshino_Original_Weapon_Mask",
+      "file": "textures/Hoshino_Original_Weapon_Mask.png",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_BeachProp",
+      "file": "textures/Hoshino_Swimsuit_BeachProp.png",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_BeachProp_Mask",
+      "file": "textures/Hoshino_Swimsuit_BeachProp_Mask.png",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Body",
+      "file": "textures/Hoshino_Swimsuit_Body.png",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Body_Mask",
+      "file": "textures/Hoshino_Swimsuit_Body_Mask.png",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Face_Mask",
+      "file": "textures/Hoshino_Swimsuit_Face_Mask.png",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Hair",
+      "file": "textures/Hoshino_Swimsuit_Hair.png",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Hair_Mask",
+      "file": "textures/Hoshino_Swimsuit_Hair_Mask.png",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Hair_Spec",
+      "file": "textures/Hoshino_Swimsuit_Hair_Spec.png",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "Character_Mouth",
+      "file": "textures/Character_Mouth.png",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "tex_green_128",
+      "file": "textures/tex_green_128.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "my_seahouse_01_tubes",
+      "file": "textures/my_seahouse_01_tubes.png",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "Character_Mouth_2",
+      "file": "textures/Character_Mouth_2.png",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "Character_Mouth_Black",
+      "file": "textures/Character_Mouth_Black.png",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "Character_Mouth_High",
+      "file": "textures/Character_Mouth_High.png",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "Character_Mouth_Decagramaton",
+      "file": "textures/Character_Mouth_Decagramaton.png",
+      "size": [
+        1024,
+        1024
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "name": "Hoshino_Original_Face",
+      "file": "materials/Hoshino_Original_Face.json"
+    },
+    {
+      "name": "Hoshino_Original_Halo",
+      "file": "materials/Hoshino_Original_Halo.json"
+    },
+    {
+      "name": "Hoshino_Original_Weapon",
+      "file": "materials/Hoshino_Original_Weapon.json"
+    },
+    {
+      "name": "Hoshino_Swimsuit_BeachProp",
+      "file": "materials/Hoshino_Swimsuit_BeachProp.json"
+    },
+    {
+      "name": "Hoshino_Swimsuit_BeachProp_Alpha",
+      "file": "materials/Hoshino_Swimsuit_BeachProp_Alpha.json"
+    },
+    {
+      "name": "Hoshino_Swimsuit_Body",
+      "file": "materials/Hoshino_Swimsuit_Body.json"
+    },
+    {
+      "name": "Hoshino_Swimsuit_EyeMouth",
+      "file": "materials/Hoshino_Swimsuit_EyeMouth.json"
+    },
+    {
+      "name": "Hoshino_Swimsuit_Eyebrow",
+      "file": "materials/Hoshino_Swimsuit_Eyebrow.json"
+    },
+    {
+      "name": "Hoshino_Swimsuit_Face",
+      "file": "materials/Hoshino_Swimsuit_Face.json"
+    },
+    {
+      "name": "Hoshino_Swimsuit_Hair",
+      "file": "materials/Hoshino_Swimsuit_Hair.json"
+    },
+    {
+      "name": "SeahouseTubes",
+      "file": "materials/SeahouseTubes.json",
+      "alias_of": "Material #2557"
+    }
+  ],
+  "animations": [
+    {
+      "name": "Hoshino_Swimsuit_Cafe_Idle",
+      "sample_rate": 30.0,
+      "duration": 6.6666669845581055,
+      "channels": 453,
+      "keyframes": 3635,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 2.3000001907348633,
+          "function": "SetMouthTile",
+          "int": 206,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 3.5333335399627686,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Cafe_my_seahouse_01_tubes_01",
+      "sample_rate": 30.0,
+      "duration": 17.733333587646484,
+      "channels": 432,
+      "keyframes": 7430,
+      "skipped_curves": 0,
+      "source_bundle": "cafe-characteranimation-hoshino_swimsuit-_mxload-animationclips-2025-07-02_assets_all_102764557.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 7.233333587646484,
+          "function": "SetMouthTile",
+          "int": 405,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 7.833333969116211,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 9.300000190734863,
+          "function": "SetMouthTile",
+          "int": 206,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 11.100000381469727,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 12.633334159851074,
+          "function": "SetMouthTile",
+          "int": 207,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 14.7333345413208,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Cafe_Reaction",
+      "sample_rate": 30.0,
+      "duration": 5.833333492279053,
+      "channels": 453,
+      "keyframes": 7048,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.1666666716337204,
+          "function": "AniEvt_InstantiateFx",
+          "int": 0,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.2666666805744171,
+          "function": "SetMouthTile",
+          "int": 405,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 1.8000000715255737,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 2.133333444595337,
+          "function": "SetMouthTile",
+          "int": 700,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 3.6666667461395264,
+          "function": "AniEvt_InstantiateFx",
+          "int": 0,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 3.766666889190674,
+          "function": "SetMouthTile",
+          "int": 701,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 5.133333683013916,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Cafe_Walk",
+      "sample_rate": 30.0,
+      "duration": 3.8000001907348633,
+      "channels": 453,
+      "keyframes": 7408,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Exs",
+      "sample_rate": 30.0,
+      "duration": 2.3333334922790527,
+      "channels": 465,
+      "keyframes": 5696,
+      "skipped_curves": 20,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.2666666805744171,
+          "function": "SetMouthTile",
+          "int": 206,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.8666667342185974,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 1.8666667938232422,
+          "function": "SetMouthTile",
+          "int": 206,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 2.1000001430511475,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Exs_Cutin",
+      "sample_rate": 30.0,
+      "duration": 5.133333683013916,
+      "channels": 453,
+      "keyframes": 8420,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 1.033333420753479,
+          "function": "SetMouthTile",
+          "int": 206,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 2.1666667461395264,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 3.4000000953674316,
+          "function": "SetMouthTile",
+          "int": 206,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 4.333333492279053,
+          "function": "SetMouthTile",
+          "int": 207,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Formation_Idle",
+      "sample_rate": 30.0,
+      "duration": 3.3333334922790527,
+      "channels": 453,
+      "keyframes": 2149,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Formation_Pickup",
+      "sample_rate": 30.0,
+      "duration": 8.0,
+      "channels": 453,
+      "keyframes": 6098,
+      "skipped_curves": 8,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 2.566666841506958,
+          "function": "SetMouthTile",
+          "int": 405,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 4.233333587646484,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 4.466667175292969,
+          "function": "SetMouthTile",
+          "int": 206,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 7.200000286102295,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Move_End_Normal01",
+      "sample_rate": 30.0,
+      "duration": 0.7333333492279053,
+      "channels": 453,
+      "keyframes": 3082,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.3333333432674408,
+          "function": "SetMouthTile",
+          "int": 405,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.5666667222976685,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Move_End_Normal02",
+      "sample_rate": 30.0,
+      "duration": 0.7333333492279053,
+      "channels": 453,
+      "keyframes": 2268,
+      "skipped_curves": 20,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.3333333432674408,
+          "function": "SetMouthTile",
+          "int": 206,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.5,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Move_Ing01",
+      "sample_rate": 30.0,
+      "duration": 0.6000000238418579,
+      "channels": 453,
+      "keyframes": 2334,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Move_Ing02",
+      "sample_rate": 30.0,
+      "duration": 0.6666666865348816,
+      "channels": 453,
+      "keyframes": 1820,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 405,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Move_Jump01",
+      "sample_rate": 30.0,
+      "duration": 1.0,
+      "channels": 453,
+      "keyframes": 3150,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Move_Jump02",
+      "sample_rate": 30.0,
+      "duration": 1.0,
+      "channels": 453,
+      "keyframes": 2429,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.1666666716337204,
+          "function": "SetMouthTile",
+          "int": 206,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.6666666865348816,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Normal01_Public01",
+      "sample_rate": 30.0,
+      "duration": 2.0,
+      "channels": 453,
+      "keyframes": 5378,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.6333333849906921,
+          "function": "SetMouthTile",
+          "int": 405,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 1.5000001192092896,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Normal02_Public01",
+      "sample_rate": 30.0,
+      "duration": 2.0,
+      "channels": 453,
+      "keyframes": 4377,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.5333333611488342,
+          "function": "SetMouthTile",
+          "int": 206,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 1.4666668176651,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Normal_Attack01_Delay",
+      "sample_rate": 30.0,
+      "duration": 1.0,
+      "channels": 453,
+      "keyframes": 1280,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Normal_Attack01_End",
+      "sample_rate": 30.0,
+      "duration": 0.3333333730697632,
+      "channels": 453,
+      "keyframes": 1597,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Normal_Attack01_Ing",
+      "sample_rate": 30.0,
+      "duration": 0.9000000357627869,
+      "channels": 453,
+      "keyframes": 2953,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Normal_Attack01_Start",
+      "sample_rate": 30.0,
+      "duration": 0.5666667222976685,
+      "channels": 453,
+      "keyframes": 1978,
+      "skipped_curves": 20,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Normal_Attack02_Delay",
+      "sample_rate": 30.0,
+      "duration": 1.0,
+      "channels": 453,
+      "keyframes": 1477,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Normal_Attack02_End",
+      "sample_rate": 30.0,
+      "duration": 0.3333333730697632,
+      "channels": 453,
+      "keyframes": 1453,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Normal_Attack02_Ing",
+      "sample_rate": 30.0,
+      "duration": 0.9000000357627869,
+      "channels": 453,
+      "keyframes": 2312,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Normal_Attack02_Start",
+      "sample_rate": 30.0,
+      "duration": 0.5666667222976685,
+      "channels": 453,
+      "keyframes": 1810,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Normal_Callsign",
+      "sample_rate": 30.0,
+      "duration": 1.5000001192092896,
+      "channels": 453,
+      "keyframes": 4138,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.23333334922790527,
+          "function": "SetMouthTile",
+          "int": 206,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 1.0,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Normal_Callsign_Random",
+      "sample_rate": 30.0,
+      "duration": 1.5000001192092896,
+      "channels": 453,
+      "keyframes": 4209,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 405,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.20000001788139343,
+          "function": "SetMouthTile",
+          "int": 206,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 1.0,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Normal_Idle01",
+      "sample_rate": 30.0,
+      "duration": 2.0,
+      "channels": 453,
+      "keyframes": 1675,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Normal_Idle02",
+      "sample_rate": 30.0,
+      "duration": 2.0,
+      "channels": 453,
+      "keyframes": 1451,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 405,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Normal_Reload01",
+      "sample_rate": 30.0,
+      "duration": 2.0,
+      "channels": 453,
+      "keyframes": 5859,
+      "skipped_curves": 20,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 1.133333444595337,
+          "function": "SetMouthTile",
+          "int": 405,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 1.8333333730697632,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Normal_Reload02",
+      "sample_rate": 30.0,
+      "duration": 2.0,
+      "channels": 453,
+      "keyframes": 5287,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 1.100000023841858,
+          "function": "SetMouthTile",
+          "int": 405,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Normal_Reload02_Random",
+      "sample_rate": 30.0,
+      "duration": 2.0,
+      "channels": 453,
+      "keyframes": 4593,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.20000001788139343,
+          "function": "SetMouthTile",
+          "int": 206,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.5333333611488342,
+          "function": "SetMouthTile",
+          "int": 405,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 1.8000000715255737,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Victory_End",
+      "sample_rate": 30.0,
+      "duration": 1.6666667461395264,
+      "channels": 453,
+      "keyframes": 1442,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Victory_End_Random",
+      "sample_rate": 30.0,
+      "duration": 3.3333334922790527,
+      "channels": 453,
+      "keyframes": 1643,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 405,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Victory_Start",
+      "sample_rate": 30.0,
+      "duration": 3.000000238418579,
+      "channels": 453,
+      "keyframes": 6547,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.533333420753479,
+          "function": "SetMouthTile",
+          "int": 405,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 1.7000001668930054,
+          "function": "SetMouthTile",
+          "int": 206,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 2.3000001907348633,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Victory_Start_Random",
+      "sample_rate": 30.0,
+      "duration": 3.000000238418579,
+      "channels": 453,
+      "keyframes": 3322,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.7666667103767395,
+          "function": "SetMouthTile",
+          "int": 206,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 1.8666667938232422,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 2.366666793823242,
+          "function": "SetMouthTile",
+          "int": 405,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Vital_Death01",
+      "sample_rate": 30.0,
+      "duration": 2.0,
+      "channels": 453,
+      "keyframes": 4218,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.20000001788139343,
+          "function": "SetMouthTile",
+          "int": 601,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.9000000357627869,
+          "function": "SetMouthTile",
+          "int": 205,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Vital_Death02",
+      "sample_rate": 30.0,
+      "duration": 1.8666667938232422,
+      "channels": 453,
+      "keyframes": 3861,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 205,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.4333333671092987,
+          "function": "SetMouthTile",
+          "int": 205,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 1.4000000953674316,
+          "function": "SetMouthTile",
+          "int": 506,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Vital_Dying_ing01",
+      "sample_rate": 30.0,
+      "duration": 1.6000001430511475,
+      "channels": 453,
+      "keyframes": 1340,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 205,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Vital_Dying_ing02",
+      "sample_rate": 30.0,
+      "duration": 1.6000001430511475,
+      "channels": 453,
+      "keyframes": 1306,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 205,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Vital_Panic01",
+      "sample_rate": 30.0,
+      "duration": 1.4000000953674316,
+      "channels": 453,
+      "keyframes": 1314,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 205,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Vital_Panic02",
+      "sample_rate": 30.0,
+      "duration": 1.4000000953674316,
+      "channels": 453,
+      "keyframes": 1289,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 205,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Vital_Retreat01",
+      "sample_rate": 30.0,
+      "duration": 1.6666667461395264,
+      "channels": 453,
+      "keyframes": 3731,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 205,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "Hoshino_Swimsuit_Vital_Retreat02",
+      "sample_rate": 30.0,
+      "duration": 1.6666667461395264,
+      "channels": 453,
+      "keyframes": 2480,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 404,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_DisableChildRenderer",
+          "int": 3,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableChildRenderer",
+          "int": 4,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    }
+  ],
+  "source_bundles": {
+    "meshes": [
+      "assets-_mx-characters-hoshino_swimsuit-_mxdependency-meshes-2025-07-02_assets_all_829550010.bundle"
+    ],
+    "textures": [
+      "assets-_mx-characters-hoshino_swimsuit-_mxdependency-textures-2025-07-02_assets_all_3271841752.bundle",
+      "assets-_mx-spinecharacters-hoshino_swimsuit_spr-_mxdependency-textures-2025-07-02_assets_all_2535083784.bundle",
+      "assets-_mx-spinelobbies-hoshino_swimsuit_home-_mxdependency-textures-2025-07-02_assets_all_1439206171.bundle"
+    ],
+    "materials": [
+      "assets-_mx-characters-hoshino_swimsuit-_mxdependency-materials-2025-07-02_assets_all_2675075625.bundle",
+      "assets-_mx-spinecharacters-hoshino_swimsuit_spr-_mxdependency-materials-2025-07-02_assets_all_2027285045.bundle",
+      "assets-_mx-spinelobbies-hoshino_swimsuit_home-_mxdependency-materials-2025-07-02_assets_all_2609367543.bundle"
+    ],
+    "prefabs": [
+      "assets-_mx-characters-hoshino_swimsuit-_mxdependency-prefabs-2025-07-02_assets_all_3177029876.bundle",
+      "character-hoshino_swimsuit-_mxload-prefabs-2025-07-02_assets_all_1433858287.bundle"
+    ],
+    "animationclips": [
+      "assets-_mx-characters-hoshino_swimsuit-_mxdependency-animationclips-2025-07-02_assets_all_1442502960.bundle",
+      "cafe-characteranimation-hoshino_swimsuit-_mxload-animationclips-2025-07-02_assets_all_102764557.bundle"
+    ],
+    "animatorcontrollers": [
+      "character-hoshino_swimsuit-_mxload-animatorcontrollers-2025-07-02_assets_all_82496677.bundle"
+    ],
+    "timelines": [
+      "assets-_mx-spinelobbies-hoshino_swimsuit_home-_mxdependency-timelines-2025-07-02_assets_all_1150763340.bundle",
+      "character-hoshino_swimsuit-_mxload-timelines-2025-07-02_assets_all_2710169153.bundle"
+    ],
+    "assets": [
+      "assets-_mx-characters-hoshino_swimsuit-_mxdependency-assets-2025-07-02_assets_all_2016899141.bundle",
+      "assets-_mx-spinecharacters-hoshino_swimsuit_spr-_mxdependency-assets-2025-07-02_assets_all_1125396135.bundle",
+      "assets-_mx-spinelobbies-hoshino_swimsuit_home-_mxdependency-assets-2025-07-02_assets_all_2164687367.bundle"
+    ],
+    "audio": [
+      "assets-_mx-characters-hoshino_swimsuit-_mxdependency-audio-2025-07-02_assets_all_3364907073.bundle"
+    ],
+    "other": [
+      "assets-_mx-spinecharacters-hoshino_swimsuit_spr-_mxdependency-textassets-2025-07-02_assets_all_2440630812.bundle",
+      "assets-_mx-spinelobbies-hoshino_swimsuit_home-_mxdependency-textassets-2025-07-02_assets_all_1660566570.bundle"
+    ]
+  },
+  "resolved_dependencies": [
+    "assets-_mx-characters-hoshino_original-_mxdependency-materials-2025-07-02_assets_all_3217630684.bundle",
+    "assets-_mx-characters-hoshino_original-_mxdependency-textures-2025-07-02_assets_all_1269917620.bundle",
+    "assets-_mx-shaders-_mxdependency-shaders-2025-07-02_assets_all_1569685901.bundle",
+    "assets-_mx-spinecharacters-hoshino_swimsuit_spr-_mxdependency-textassets-2025-07-02_assets_all_2440630812.bundle",
+    "assets-_mx-spinelobbies-hoshino_swimsuit_home-_mxdependency-textassets-2025-07-02_assets_all_1660566570.bundle",
+    "prologdepengroup-assets-_mx-characters-_mxcommon-_mxprolog-2025-07-02_assets_all_169562978.bundle",
+    "prologdepengroup-assets-_mx-shaders-_mxprolog-2025-07-02_assets_all_222426929.bundle"
+  ],
+  "unresolved_cabs": [
+    "cab-312c786d9932a27beb01918cab1e2ffd",
+    "cab-4e374e23f1bd4e7218b8fbcbec01546f",
+    "cab-d6a7e509eef8bc82327c4351cf15f45d"
+  ],
+  "head_transform": {
+    "bone": "Bip001 Head",
+    "position": {
+      "x": -3.492913045378643e-07,
+      "y": 0.010219096351088471,
+      "z": 0.6314616694141072
+    },
+    "source_path": "Bip001 Head <- Bip001 Neck <- Bip001 Spine1 <- Bip001 Spine <- Bip001 Pelvis <- Bip001 <- bone_root <- Hoshino_Swimsuit_Mesh"
+  },
+  "halo_anchor": {
+    "position": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "rotation": {
+      "x": 0.7071067811865475,
+      "y": 0.0,
+      "z": 0.0,
+      "w": 0.7071067811865476
+    },
+    "scale": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 1.0
+    },
+    "source_path": "Hoshino_Swimsuit_Halo <- HaloRoot <- Hoshino_Swimsuit",
+    "name": "Hoshino_Swimsuit_Halo",
+    "coordinate_space": "viewer"
+  },
+  "halo_follow": {
+    "name": "HaloRoot",
+    "source_path": "HaloRoot <- Hoshino_Swimsuit",
+    "follow_target": "Bip001 Head",
+    "coordinate_space": "viewer",
+    "target_position": {
+      "x": -1.1147196472035614e-06,
+      "y": -0.19849403912532518,
+      "z": 0.9957480120033397
+    },
+    "target_offset": {
+      "x": -7.654283426656972e-07,
+      "y": -0.20871313547641365,
+      "z": 0.36428634258923254
+    },
+    "target_relative_position": {
+      "x": -0.36428630352020264,
+      "y": -0.20871320366859436,
+      "z": 0.0
+    },
+    "clamp_min_offset": {
+      "x": -0.47999998927116394,
+      "y": -0.3400000035762787,
+      "z": -0.27000001072883606
+    },
+    "clamp_max_offset": {
+      "x": -0.25999999046325684,
+      "y": -0.07000000029802322,
+      "z": 0.27000001072883606
+    },
+    "follow_position_power": 0.10000000149011612,
+    "follow_rotation_power": 0.07000000029802322,
+    "fix_y_rotation": 0,
+    "local_forward": {
+      "x": 0.0,
+      "y": 1.0000001192092896,
+      "z": 0.0
+    },
+    "target_relative_rotation": {
+      "x": 0.5000001192092896,
+      "y": -0.49999937415122986,
+      "z": -0.5000000596046448,
+      "w": -0.5000007748603821
+    },
+    "initial_rotation": {
+      "x": -0.0,
+      "y": -0.0,
+      "z": -0.0,
+      "w": 1.0
+    },
+    "placement_tilt_deg": 40.0,
+    "depth_mode": "tilt"
+  },
+  "halo_transform": {
+    "position": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "rotation": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "w": 1.0
+    },
+    "scale": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 1.0
+    },
+    "source_path": "Hoshino_Swimsuit_Halo <- HaloRoot <- Hoshino_Swimsuit",
+    "name": "Halo",
+    "coordinate_space": "viewer"
+  }
+}

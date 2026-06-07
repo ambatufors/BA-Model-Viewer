@@ -1,0 +1,67 @@
+{
+  "name": "FX_my_military_01_CH0145_chair_Face_Emotion",
+  "descendants": [
+    {
+      "go_name": "FX_my_military_01_CH0145_chair_Face_Emotion",
+      "path_id": 1187762849267471585,
+      "parent_path_id": 0,
+      "local_transform": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer",
+        "MB:CharacterAnimationEventEffect"
+      ]
+    },
+    {
+      "go_name": "Emo",
+      "path_id": -2800954774978603807,
+      "parent_path_id": 1187762849267471585,
+      "local_transform": {
+        "position": {
+          "x": -0.04490000009536743,
+          "y": 0.07289999723434448,
+          "z": -0.05909999832510948
+        },
+        "rotation": {
+          "x": 0.3937702476978302,
+          "y": -0.3507774770259857,
+          "z": 0.6852818131446838,
+          "w": 0.5022837519645691
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    }
+  ],
+  "attach": {
+    "parent_index": 2,
+    "timer_duration": 4.199999809265137,
+    "life_mode": 1
+  }
+}

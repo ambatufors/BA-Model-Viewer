@@ -1,0 +1,142 @@
+{
+  "name": "EN0020_Original_Weapon",
+  "shader": "MX/C-Weapon",
+  "floats": {
+    "_AdditionalLightSharpness": 5.0,
+    "_AdditionalLightStrength": 1.0,
+    "_AlphaClip": 0.0,
+    "_Blend": 0.0,
+    "_BumpScale": 1.0,
+    "_Cull": 2.0,
+    "_Cutoff": 0.5,
+    "_DitherThreshold": 0.0,
+    "_DstBlend": 0.0,
+    "_EnvironmentReflections": 1.0,
+    "_GlossMapScale": 0.0,
+    "_Glossiness": 0.0,
+    "_GlossyReflections": 0.0,
+    "_GlowStrength0": 3.0,
+    "_GlowStrictness0": 5.0,
+    "_GrayBrightness": 1.0,
+    "_IsDither": 0.0,
+    "_LightStrong": 10.0,
+    "_LightValue": 0.30000001192092896,
+    "_Metallic": 0.0,
+    "_OcclusionStrength": 1.0,
+    "_QueueOffset": 0.0,
+    "_ReceiveShadows": 1.0,
+    "_ShadowStrong": 5.0,
+    "_ShadowThreshold": 0.5180000066757202,
+    "_Smoothness": 0.5,
+    "_SmoothnessTextureChannel": 0.0,
+    "_SpecStrong": 0.4659999907016754,
+    "_SpecularHighlights": 1.0,
+    "_SrcBlend": 1.0,
+    "_Surface": 0.0,
+    "_UseGlow": 1.0,
+    "_WorkflowMode": 1.0,
+    "_ZWrite": 1.0
+  },
+  "colors": {
+    "_BaseColor": {
+      "r": 0.5879999995231628,
+      "g": 0.5879999995231628,
+      "b": 0.5879999995231628,
+      "a": 1.0
+    },
+    "_CodeAddColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeAddRimColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeMultiplyColor": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_Color": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_EmissionColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "_FakeLightDir": {
+      "r": 1.0,
+      "g": 0.7599999904632568,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_GlowMaskColor0": {
+      "r": 1.0,
+      "g": 0.8705883026123047,
+      "b": 0.5607843399047852,
+      "a": 1.0
+    },
+    "_GlowTint0": {
+      "r": 1.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "_OutlineSolidColorTint": {
+      "r": 0.699999988079071,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "_OutlineTint": {
+      "r": 0.5009999871253967,
+      "g": 0.5009999871253967,
+      "b": 0.5009999871253967,
+      "a": 1.0
+    },
+    "_ShadowTint": {
+      "r": 0.6000000238418579,
+      "g": 0.6000000238418579,
+      "b": 0.6000000238418579,
+      "a": 1.0
+    },
+    "_SpecColor": {
+      "r": 0.9245283007621765,
+      "g": 0.9245283007621765,
+      "b": 0.9245283007621765,
+      "a": 1.0
+    }
+  },
+  "textures": {
+    "_MainTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ]
+    },
+    "_SourceTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ]
+    }
+  }
+}

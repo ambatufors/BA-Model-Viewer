@@ -1,0 +1,58 @@
+{
+  "name": "FX_MAT_Flare_14",
+  "shader": "DSFX/FX_SHADER_AlwaysView_Add",
+  "floats": {},
+  "colors": {
+    "_Color": {
+      "r": 4.237094879150391,
+      "g": 4.237094879150391,
+      "b": 4.237094879150391,
+      "a": 1.0
+    }
+  },
+  "ints": {},
+  "textures": {
+    "_FX_TEX_FocusLine": {
+      "name": "FX_TEX_Flare_10",
+      "path_id": -8922516048446504532,
+      "size": [
+        512,
+        256
+      ],
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ]
+    },
+    "_TextureSample0": {
+      "name": null,
+      "path_id": null,
+      "size": null,
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ]
+    },
+    "_texcoord": {
+      "name": null,
+      "path_id": null,
+      "size": null,
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ]
+    }
+  }
+}

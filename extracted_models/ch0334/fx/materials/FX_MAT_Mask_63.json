@@ -1,0 +1,42 @@
+{
+  "name": "FX_MAT_Mask_63",
+  "shader": "DSFX/FX_SHADER_AlphaBlend_0",
+  "floats": {
+    "_Cull_Mode": 0.0,
+    "_Custom_Data_Offset_Use": 0.0,
+    "_Main_Texture_No": 0.0,
+    "_Multiply": 1.0,
+    "_RGBRGBA": 1.0,
+    "_ZOffsetFactor": 0.0,
+    "_ZOffsetUnits": 0.0,
+    "_ZTest_Mode": 4.0,
+    "_ZWrite_Mode": 0.0
+  },
+  "colors": {
+    "_Color": {
+      "r": 5.992156982421875,
+      "g": 5.992156982421875,
+      "b": 5.992156982421875,
+      "a": 1.0
+    }
+  },
+  "ints": {},
+  "textures": {
+    "_Texture": {
+      "name": "FX_TEX_Mask_63",
+      "path_id": 2350757474969685260,
+      "size": [
+        256,
+        16
+      ],
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ]
+    }
+  }
+}

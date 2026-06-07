@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "char_id": "CH0145",
+  "fx_functions": [
+    "AniEvt_InstantiateFx",
+    "AniEvt_PlayFx",
+    "InstantiateFx",
+    "PlayFx"
+  ],
+  "prefabs": [
+    "FX_CH0145_Cafe_Reaction_Emotion_01",
+    "FX_my_military_01_CH0145_chair_Face_Emotion"
+  ],
+  "events": [
+    {
+      "clip": "CH0145_Cafe_Reaction",
+      "time": 0.0,
+      "func": "InstantiateFx",
+      "prefab_path_id": 8843904004869244718,
+      "prefab": "FX_CH0145_Cafe_Reaction_Emotion_01",
+      "string_param": "",
+      "int_param": 0,
+      "float_param": 0.0
+    },
+    {
+      "clip": "CH0145_Cafe_my_military_01_CH0145_chair_01",
+      "time": 2.9666666984558105,
+      "func": "InstantiateFx",
+      "prefab_path_id": 1187762849267471585,
+      "prefab": "FX_my_military_01_CH0145_chair_Face_Emotion",
+      "string_param": "",
+      "int_param": 0,
+      "float_param": 0.0
+    }
+  ]
+}

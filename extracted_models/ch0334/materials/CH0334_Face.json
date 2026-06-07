@@ -1,0 +1,97 @@
+{
+  "name": "CH0334_Face",
+  "shader": "MX/C-Face",
+  "floats": {
+    "_AdditionalLightSharpness": 5.0,
+    "_AdditionalLightStrength": 1.0,
+    "_AdjustiveFaceShadow": 0.0,
+    "_Cull": 2.0,
+    "_DitherThreshold": 0.0,
+    "_DstBlend": 0.0,
+    "_DstBlendAlpha": 0.0,
+    "_GrayBrightness": 1.0,
+    "_MaskGSensitivity": 1.0,
+    "_OutlineZCorrection": 0.0,
+    "_RimAreaLeveler": 2.0,
+    "_RimAreaMultiplier": 3.0,
+    "_RimStrength": 1.0,
+    "_ShadowThreshold": 0.699999988079071,
+    "_SrcBlend": 1.0,
+    "_SrcBlendAlpha": 1.0,
+    "_ZWrite": 1.0
+  },
+  "colors": {
+    "_CodeAddColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeAddRimColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeMultiplyColor": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_OutlineSolidColorTint": {
+      "r": 0.699999988079071,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "_OutlineTint": {
+      "r": 0.6000000238418579,
+      "g": 0.48000001907348633,
+      "b": 0.5285776257514954,
+      "a": 1.0
+    },
+    "_ShadowLightDir": {
+      "r": -0.3419051766395569,
+      "g": 0.9397348761558533,
+      "b": -2.5331974029541016e-06,
+      "a": 0.0
+    },
+    "_ShadowTint": {
+      "r": 0.9529411792755127,
+      "g": 0.7803921699523926,
+      "b": 0.8352941274642944,
+      "a": 1.0
+    },
+    "_Tint": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    }
+  },
+  "textures": {
+    "_MainTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ],
+      "name": "CH0334_Face"
+    },
+    "_MaskTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ],
+      "name": "tex_green_128"
+    }
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "schema_version": 3,
+  "char_id": "CH0335",
+  "scope": "char",
+  "filter": "FX_CH0335_Cafe_Reaction_Shy_01:blush-only",
+  "prefab_roots": [
+    "FX_CH0335_Cafe_Reaction_Shy_01"
+  ],
+  "emotion_only": false,
+  "from_anim_events": true,
+  "bundle_count": 762,
+  "fx_parent_bones": [
+    {
+      "index": 2,
+      "name": "Bip001 Head",
+      "transform_path_id": -584499168092752900
+    }
+  ],
+  "prefabs": [
+    {
+      "name": "FX_CH0335_Cafe_Reaction_Shy_01",
+      "file": "prefabs/FX_CH0335_Cafe_Reaction_Shy_01.json",
+      "descendant_count": 11,
+      "attach": {
+        "parent_index": 2,
+        "timer_duration": 6,
+        "life_mode": 1
+      }
+    }
+  ],
+  "textures": [
+    {
+      "name": "FX_TEX_Shy_08",
+      "path_id": -5313888264715810000,
+      "size": [
+        512,
+        512
+      ],
+      "file": "textures/FX_TEX_Shy_08.png"
+    },
+    {
+      "name": "FX_TEX_Circle_Glow_01",
+      "path_id": 2238028599995704000,
+      "size": [
+        128,
+        128
+      ],
+      "file": "textures/FX_TEX_Circle_Glow_01.png"
+    },
+    {
+      "name": "FX_TEX_White_01",
+      "path_id": 6977316844502959000,
+      "size": [
+        4,
+        4
+      ],
+      "file": "textures/FX_TEX_White_01.png"
+    }
+  ],
+  "materials": [
+    {
+      "name": "FX_MAT_Shy_08",
+      "file": "materials/FX_MAT_Shy_08.json"
+    },
+    {
+      "name": "FX_MAT_Circle_Glow_01a",
+      "file": "materials/FX_MAT_Circle_Glow_01a.json"
+    }
+  ],
+  "meshes": [],
+  "particles": [
+    {
+      "go_name": "R Back",
+      "go_path_id": -1678635004211044400,
+      "root": "FX_CH0335_Cafe_Reaction_Shy_01",
+      "file": "particles/FX_CH0335_Cafe_Reaction_Shy_01__R_Back.json",
+      "renderer_materials": [
+        "FX_MAT_Circle_Glow_01a",
+        "FX_MAT_Circle_Glow_01a"
+      ],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "L",
+      "go_path_id": 7002101902497473000,
+      "root": "FX_CH0335_Cafe_Reaction_Shy_01",
+      "file": "particles/FX_CH0335_Cafe_Reaction_Shy_01__L.json",
+      "renderer_materials": [
+        "FX_MAT_Shy_08",
+        "FX_MAT_Shy_08"
+      ],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "L Back",
+      "go_path_id": 4083398850867749000,
+      "root": "FX_CH0335_Cafe_Reaction_Shy_01",
+      "file": "particles/FX_CH0335_Cafe_Reaction_Shy_01__L_Back.json",
+      "renderer_materials": [
+        "FX_MAT_Circle_Glow_01a",
+        "FX_MAT_Circle_Glow_01a"
+      ],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "R",
+      "go_path_id": 147451625807142880,
+      "root": "FX_CH0335_Cafe_Reaction_Shy_01",
+      "file": "particles/FX_CH0335_Cafe_Reaction_Shy_01__R.json",
+      "renderer_materials": [
+        "FX_MAT_Shy_08",
+        "FX_MAT_Shy_08"
+      ],
+      "renderer_mesh": null
+    }
+  ],
+  "anim_events_file": "anim_events.json"
+}

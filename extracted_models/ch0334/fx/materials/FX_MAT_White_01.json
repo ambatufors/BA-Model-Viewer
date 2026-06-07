@@ -1,0 +1,129 @@
+{
+  "name": "FX_MAT_White_01",
+  "shader": "DSFX/FX_SHADER_AlphaBlend_0",
+  "floats": {
+    "_AlphaClip": 0.0,
+    "_Blend": 0.0,
+    "_BlendOp": 0.0,
+    "_BumpScale": 1.0,
+    "_CameraFadingEnabled": 0.0,
+    "_CameraFarFadeDistance": 2.0,
+    "_CameraNearFadeDistance": 1.0,
+    "_ColorMask": 15.0,
+    "_ColorMode": 0.0,
+    "_Cull": 2.0,
+    "_Cull_Mode": 2.0,
+    "_Custom_Data_Offset_Use": 0.0,
+    "_Cutoff": 0.5,
+    "_DistortionBlend": 0.5,
+    "_DistortionEnabled": 0.0,
+    "_DistortionStrength": 1.0,
+    "_DistortionStrengthScaled": 0.10000000149011612,
+    "_DstBlend": 0.0,
+    "_EmissionEnabled": 0.0,
+    "_FlipbookBlending": 0.0,
+    "_FlipbookMode": 0.0,
+    "_GlossMapScale": 1.0,
+    "_Glossiness": 0.5,
+    "_GlossinessSource": 0.0,
+    "_GlossyReflections": 1.0,
+    "_LightingEnabled": 1.0,
+    "_Main_Texture_No": 0.0,
+    "_Mode": 0.0,
+    "_Multiply": 1.0,
+    "_QueueOffset": 0.0,
+    "_RGBRGBA": 1.0,
+    "_SampleGI": 0.0,
+    "_Shininess": 1.0,
+    "_Smoothness": 0.5,
+    "_SmoothnessSource": 0.0,
+    "_SmoothnessTextureChannel": 0.0,
+    "_SoftParticlesEnabled": 0.0,
+    "_SoftParticlesFarFadeDistance": 1.0,
+    "_SoftParticlesNearFadeDistance": 0.0,
+    "_SpecSource": 0.0,
+    "_SpecularHighlights": 1.0,
+    "_SrcBlend": 1.0,
+    "_Stencil": 0.0,
+    "_StencilComp": 8.0,
+    "_StencilOp": 0.0,
+    "_StencilReadMask": 255.0,
+    "_StencilWriteMask": 255.0,
+    "_Surface": 0.0,
+    "_UseUIAlphaClip": 0.0,
+    "_ZOffsetFactor": 0.0,
+    "_ZOffsetUnits": 0.0,
+    "_ZTest_Mode": 4.0,
+    "_ZWrite": 1.0,
+    "_ZWrite_Mode": 0.0
+  },
+  "colors": {
+    "_BaseColor": {
+      "r": 1.4980392456054688,
+      "g": 1.4980392456054688,
+      "b": 1.4980392456054688,
+      "a": 1.0
+    },
+    "_BaseColorAddSubDiff": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CameraFadeParams": {
+      "r": 0.0,
+      "g": 1e+308,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_Color": {
+      "r": 5.992156982421875,
+      "g": 5.992156982421875,
+      "b": 5.992156982421875,
+      "a": 1.0
+    },
+    "_ColorAddSubDiff": {
+      "r": -1.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_EmissionColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "_SoftParticleFadeParams": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_SpecColor": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    }
+  },
+  "ints": {},
+  "textures": {
+    "_Texture": {
+      "name": "FX_TEX_White_01",
+      "path_id": 6977316844502959008,
+      "size": [
+        4,
+        4
+      ],
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ]
+    }
+  }
+}

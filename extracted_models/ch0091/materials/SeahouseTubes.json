@@ -1,0 +1,37 @@
+{
+  "name": "SeahouseTubes",
+  "shader": "",
+  "floats": {
+    "_Cull": 2.0,
+    "_DstBlend": 0.0,
+    "_DstBlendAlpha": 0.0,
+    "_SrcBlend": 1.0,
+    "_SrcBlendAlpha": 1.0,
+    "_ZOffsetFactor": 0.0,
+    "_ZOffsetUnits": 0.0,
+    "_ZTest": 4.0,
+    "_ZWrite": 1.0
+  },
+  "colors": {
+    "_Color": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    }
+  },
+  "textures": {
+    "_MainTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ],
+      "name": "my_seahouse_01_tubes"
+    }
+  },
+  "alias_of": "Material #2557"
+}

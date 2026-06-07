@@ -1,0 +1,27 @@
+.git.backup-*/
+.omx
+extracted_shaders/
+__pycache__
+.pytest-tmp
+.pytest_cache
+
+# Local research / diagnostics not included in the clean GitHub import.
+Characters.h
+debug_shaders.txt
+doc/
+tests/
+
+# Keep only the selected export/runtime tools.
+tools/**
+!tools/
+!tools/__init__.py
+!tools/export_character.py
+!tools/skinned_gltf.py
+!tools/bundle_resolver.py
+!tools/animation_clip_decoder.py
+!tools/external_prop_attach.py
+!tools/export_halo_mesh.py
+!tools/fx/
+!tools/fx/dump_fx.py
+!tools/indexing/
+!tools/indexing/build_index.py

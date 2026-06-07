@@ -1,0 +1,42 @@
+{
+  "name": "FX_MAT_Circle_Glow_01a",
+  "shader": "DSFX/FX_SHADER_AlphaBlend_Add",
+  "floats": {
+    "_Cull_Mode": 2.0,
+    "_Custom_Data_Offset_Use": 0.0,
+    "_Main_Texture_No": 1.0,
+    "_Multiply": 1.0,
+    "_RGBRGBA": 0.0,
+    "_ZOffsetFactor": 0.0,
+    "_ZOffsetUnits": 0.0,
+    "_ZTest_Mode": 4.0,
+    "_ZWrite_Mode": 0.0
+  },
+  "colors": {
+    "_Color": {
+      "r": 1.4980392456054688,
+      "g": 1.4980392456054688,
+      "b": 1.4980392456054688,
+      "a": 1.0
+    }
+  },
+  "ints": {},
+  "textures": {
+    "_Texture": {
+      "name": "FX_TEX_Circle_Glow_01",
+      "path_id": 2238028599995704187,
+      "size": [
+        128,
+        128
+      ],
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ]
+    }
+  }
+}

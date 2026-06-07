@@ -1,0 +1,156 @@
+{
+  "name": "CH0334_Weapon01",
+  "shader": "MX/C-Weapon",
+  "floats": {
+    "_AdditionalLightSharpness": 5.0,
+    "_AdditionalLightStrength": 1.0,
+    "_BaseBrightness": 0.0,
+    "_Cull": 2.0,
+    "_Cutoff": 0.20000000298023224,
+    "_DitherThreshold": 0.0,
+    "_DstBlend": 0.0,
+    "_DstBlendAlpha": 0.0,
+    "_GlowStrength": 0.0,
+    "_GlowStrength0": 6.150000095367432,
+    "_GlowStrictness0": 10.0,
+    "_GrayBrightness": 1.0,
+    "_InlineAmount": 1.0,
+    "_InvViewPower": 2.0,
+    "_InvViewStrength": 0.0,
+    "_IsDither": 0.0,
+    "_LightStrong": 40.0,
+    "_LightValue": 0.5,
+    "_MaskGSensitivity": 1.0,
+    "_OutlineZCorrection": 0.0,
+    "_RimAreaLeveler": 2.0,
+    "_RimAreaMultiplier": 3.0,
+    "_RimStrength": 1.0,
+    "_ShadowStrong": 5.0,
+    "_ShadowThreshold": 0.5,
+    "_SpecStrong": 0.20000000298023224,
+    "_SrcBlend": 1.0,
+    "_SrcBlendAlpha": 1.0,
+    "_UseGlow": 0.0,
+    "_ViewLightEdge": 0.0,
+    "_ViewOffset": 0.0,
+    "_ViewPower": 2.0,
+    "_ViewStrength": 0.0,
+    "_ZWrite": 1.0
+  },
+  "colors": {
+    "_CodeAddColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeAddRimColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeMultiplyColor": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_Color": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_FakeLightDir": {
+      "r": 0.10000000149011612,
+      "g": 0.6499999761581421,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_GlowMaskColor0": {
+      "r": 0.3137255012989044,
+      "g": 0.7254902124404907,
+      "b": 0.8862745761871338,
+      "a": 1.0
+    },
+    "_GlowTint": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "_GlowTint0": {
+      "r": 0.0802198275923729,
+      "g": 0.48514997959136963,
+      "b": 0.7605247497558594,
+      "a": 1.0
+    },
+    "_InlineTint": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5,
+      "a": 1.0
+    },
+    "_OutlineSolidColorTint": {
+      "r": 0.699999988079071,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "_OutlineTint": {
+      "r": 0.34951457381248474,
+      "g": 0.37378641963005066,
+      "b": 0.5,
+      "a": 1.0
+    },
+    "_ShadowTint": {
+      "r": 0.7346405386924744,
+      "g": 0.7215686440467834,
+      "b": 0.800000011920929,
+      "a": 1.0
+    },
+    "_SpecColor": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_Tint": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_TwoSideTint": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    }
+  },
+  "textures": {
+    "_MainTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ],
+      "name": "CH0334_Weapon01"
+    },
+    "_SourceTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ],
+      "name": "CH0334_Weapon01_Mask"
+    }
+  }
+}

@@ -1,0 +1,1317 @@
+{
+  "char_id": "CH0246",
+  "submesh_order": [
+    "Hair",
+    "Body",
+    "Face",
+    "Eyebrow",
+    "EyeMouth"
+  ],
+  "meshes": [
+    {
+      "name": "Hair",
+      "file": "CH0246_Hair.glb",
+      "verts": 2697,
+      "faces": 3485
+    },
+    {
+      "name": "Body",
+      "file": "CH0246_Body.glb",
+      "verts": 4420,
+      "faces": 6315
+    },
+    {
+      "name": "Face",
+      "file": "CH0246_Face.glb",
+      "verts": 563,
+      "faces": 714
+    },
+    {
+      "name": "Eyebrow",
+      "file": "CH0246_Eyebrow.glb",
+      "verts": 84,
+      "faces": 80
+    },
+    {
+      "name": "EyeMouth",
+      "file": "CH0246_EyeMouth.glb",
+      "verts": 175,
+      "faces": 178
+    },
+    {
+      "name": "Halo",
+      "file": "CH0246_Halo.glb",
+      "verts": 226,
+      "faces": 464
+    }
+  ],
+  "skinned_meshes": [
+    {
+      "name": "Weapon",
+      "file": "skinned/CH0246_Weapon.glb",
+      "verts": 4200,
+      "faces": 3763,
+      "bones": 3,
+      "mesh": "CH0246_Weapon",
+      "root_bone": "Bip001_Weapon",
+      "submesh_order": [
+        "Weapon"
+      ],
+      "animations": [
+        {
+          "name": "CH0246_Cafe_Idle",
+          "duration": 10.333333969116211,
+          "sample_rate": 30.0,
+          "channels": 15,
+          "keyframes": 58,
+          "skipped_channels": 417,
+          "source_bundle": "assets-_mx-characters-ch0246-_mxdependency-animationclips-2026-04-27_assets_all_2710024431.bundle"
+        },
+        {
+          "name": "CH0246_Cafe_my_gehennaparty_01_sofa_01_01",
+          "duration": 21.33333396911621,
+          "sample_rate": 30.0,
+          "channels": 15,
+          "keyframes": 99,
+          "skipped_channels": 417,
+          "source_bundle": "cafe-characteranimation-ch0246-_mxload-animationclips-2026-04-27_assets_all_893292315.bundle"
+        },
+        {
+          "name": "CH0246_Cafe_my_gehennaparty_01_sofa_01_01_Idle",
+          "duration": 6.666667461395264,
+          "sample_rate": 30.0,
+          "channels": 15,
+          "keyframes": 30,
+          "skipped_channels": 417,
+          "source_bundle": "cafe-characteranimation-ch0246-_mxload-animationclips-2026-04-27_assets_all_893292315.bundle"
+        },
+        {
+          "name": "CH0246_Cafe_Reaction",
+          "duration": 6.833333492279053,
+          "sample_rate": 30.0,
+          "channels": 15,
+          "keyframes": 133,
+          "skipped_channels": 417,
+          "source_bundle": "assets-_mx-characters-ch0246-_mxdependency-animationclips-2026-04-27_assets_all_2710024431.bundle"
+        },
+        {
+          "name": "CH0246_Cafe_Walk",
+          "duration": 1.3333333730697632,
+          "sample_rate": 30.0,
+          "channels": 15,
+          "keyframes": 45,
+          "skipped_channels": 417,
+          "source_bundle": "assets-_mx-characters-ch0246-_mxdependency-animationclips-2026-04-27_assets_all_2710024431.bundle"
+        },
+        {
+          "name": "CH0246_Exs_Cutin",
+          "duration": 6.533333778381348,
+          "sample_rate": 30.0,
+          "channels": 15,
+          "keyframes": 158,
+          "skipped_channels": 417,
+          "source_bundle": "assets-_mx-characters-ch0246-_mxdependency-animationclips-2026-04-27_assets_all_2710024431.bundle"
+        },
+        {
+          "name": "CH0246_Formation_Idle",
+          "duration": 4.0,
+          "sample_rate": 30.0,
+          "channels": 15,
+          "keyframes": 51,
+          "skipped_channels": 417,
+          "source_bundle": "assets-_mx-characters-ch0246-_mxdependency-animationclips-2026-04-27_assets_all_2710024431.bundle"
+        },
+        {
+          "name": "CH0246_Formation_Pickup",
+          "duration": 12.433333396911621,
+          "sample_rate": 30.0,
+          "channels": 15,
+          "keyframes": 172,
+          "skipped_channels": 417,
+          "source_bundle": "assets-_mx-characters-ch0246-_mxdependency-animationclips-2026-04-27_assets_all_2710024431.bundle"
+        },
+        {
+          "name": "CH0246_Public01",
+          "duration": 7.000000476837158,
+          "sample_rate": 30.0,
+          "channels": 15,
+          "keyframes": 168,
+          "skipped_channels": 417,
+          "source_bundle": "assets-_mx-characters-ch0246-_mxdependency-animationclips-2026-04-27_assets_all_2710024431.bundle"
+        },
+        {
+          "name": "CH0246_Tactical_Start",
+          "duration": 1.6666667461395264,
+          "sample_rate": 30.0,
+          "channels": 15,
+          "keyframes": 74,
+          "skipped_channels": 417,
+          "source_bundle": "assets-_mx-characters-ch0246-_mxdependency-animationclips-2026-04-27_assets_all_2710024431.bundle"
+        }
+      ],
+      "initial_renderer_visible": true,
+      "visibility": {
+        "default_visible": true,
+        "hide_clip_patterns": [
+          "Cafe_"
+        ]
+      },
+      "child_index": 3,
+      "go_name": "CH0246_Weapon"
+    },
+    {
+      "name": "Prop_Mesh",
+      "file": "skinned/CH0246_Prop_Mesh.glb",
+      "verts": 460,
+      "faces": 832,
+      "bones": 4,
+      "mesh": "CH0246_Prop_Mesh",
+      "root_bone": "Bone_Bomb_01",
+      "submesh_order": [
+        "Prop"
+      ],
+      "animations": [
+        {
+          "name": "CH0246_Cafe_Idle",
+          "duration": 10.333333969116211,
+          "sample_rate": 30.0,
+          "channels": 18,
+          "keyframes": 73,
+          "skipped_channels": 414,
+          "source_bundle": "assets-_mx-characters-ch0246-_mxdependency-animationclips-2026-04-27_assets_all_2710024431.bundle"
+        },
+        {
+          "name": "CH0246_Cafe_my_gehennaparty_01_sofa_01_01",
+          "duration": 21.33333396911621,
+          "sample_rate": 30.0,
+          "channels": 18,
+          "keyframes": 1222,
+          "skipped_channels": 414,
+          "source_bundle": "cafe-characteranimation-ch0246-_mxload-animationclips-2026-04-27_assets_all_893292315.bundle"
+        },
+        {
+          "name": "CH0246_Cafe_my_gehennaparty_01_sofa_01_01_Idle",
+          "duration": 6.666667461395264,
+          "sample_rate": 30.0,
+          "channels": 18,
+          "keyframes": 248,
+          "skipped_channels": 414,
+          "source_bundle": "cafe-characteranimation-ch0246-_mxload-animationclips-2026-04-27_assets_all_893292315.bundle"
+        },
+        {
+          "name": "CH0246_Cafe_Reaction",
+          "duration": 6.833333492279053,
+          "sample_rate": 30.0,
+          "channels": 18,
+          "keyframes": 204,
+          "skipped_channels": 414,
+          "source_bundle": "assets-_mx-characters-ch0246-_mxdependency-animationclips-2026-04-27_assets_all_2710024431.bundle"
+        },
+        {
+          "name": "CH0246_Cafe_Walk",
+          "duration": 1.3333333730697632,
+          "sample_rate": 30.0,
+          "channels": 18,
+          "keyframes": 59,
+          "skipped_channels": 414,
+          "source_bundle": "assets-_mx-characters-ch0246-_mxdependency-animationclips-2026-04-27_assets_all_2710024431.bundle"
+        },
+        {
+          "name": "CH0246_Exs_Cutin",
+          "duration": 6.533333778381348,
+          "sample_rate": 30.0,
+          "channels": 18,
+          "keyframes": 379,
+          "skipped_channels": 414,
+          "source_bundle": "assets-_mx-characters-ch0246-_mxdependency-animationclips-2026-04-27_assets_all_2710024431.bundle"
+        },
+        {
+          "name": "CH0246_Formation_Idle",
+          "duration": 4.0,
+          "sample_rate": 30.0,
+          "channels": 18,
+          "keyframes": 44,
+          "skipped_channels": 414,
+          "source_bundle": "assets-_mx-characters-ch0246-_mxdependency-animationclips-2026-04-27_assets_all_2710024431.bundle"
+        },
+        {
+          "name": "CH0246_Formation_Pickup",
+          "duration": 12.433333396911621,
+          "sample_rate": 30.0,
+          "channels": 18,
+          "keyframes": 220,
+          "skipped_channels": 414,
+          "source_bundle": "assets-_mx-characters-ch0246-_mxdependency-animationclips-2026-04-27_assets_all_2710024431.bundle"
+        },
+        {
+          "name": "CH0246_Public01",
+          "duration": 7.000000476837158,
+          "sample_rate": 30.0,
+          "channels": 18,
+          "keyframes": 567,
+          "skipped_channels": 414,
+          "source_bundle": "assets-_mx-characters-ch0246-_mxdependency-animationclips-2026-04-27_assets_all_2710024431.bundle"
+        },
+        {
+          "name": "CH0246_Tactical_Start",
+          "duration": 1.6666667461395264,
+          "sample_rate": 30.0,
+          "channels": 18,
+          "keyframes": 87,
+          "skipped_channels": 414,
+          "source_bundle": "assets-_mx-characters-ch0246-_mxdependency-animationclips-2026-04-27_assets_all_2710024431.bundle"
+        }
+      ],
+      "initial_renderer_visible": true,
+      "child_index": 1,
+      "go_name": "CH0246_Prop_Mesh"
+    },
+    {
+      "name": "Body",
+      "file": "skinned/CH0246_Body.glb",
+      "verts": 7939,
+      "faces": 10772,
+      "bones": 131,
+      "mesh": "CH0246_Body",
+      "root_bone": "Bip001 Pelvis",
+      "submesh_order": [
+        "Hair",
+        "Body",
+        "Face",
+        "Eyebrow",
+        "EyeMouth"
+      ],
+      "animations": [
+        {
+          "name": "CH0246_Cafe_Idle",
+          "duration": 10.333333969116211,
+          "sample_rate": 30.0,
+          "channels": 402,
+          "keyframes": 4512,
+          "skipped_channels": 30,
+          "source_bundle": "assets-_mx-characters-ch0246-_mxdependency-animationclips-2026-04-27_assets_all_2710024431.bundle"
+        },
+        {
+          "name": "CH0246_Cafe_my_gehennaparty_01_sofa_01_01",
+          "duration": 21.33333396911621,
+          "sample_rate": 30.0,
+          "channels": 402,
+          "keyframes": 14305,
+          "skipped_channels": 30,
+          "source_bundle": "cafe-characteranimation-ch0246-_mxload-animationclips-2026-04-27_assets_all_893292315.bundle"
+        },
+        {
+          "name": "CH0246_Cafe_my_gehennaparty_01_sofa_01_01_Idle",
+          "duration": 6.666667461395264,
+          "sample_rate": 30.0,
+          "channels": 402,
+          "keyframes": 2427,
+          "skipped_channels": 30,
+          "source_bundle": "cafe-characteranimation-ch0246-_mxload-animationclips-2026-04-27_assets_all_893292315.bundle"
+        },
+        {
+          "name": "CH0246_Cafe_Reaction",
+          "duration": 6.833333492279053,
+          "sample_rate": 30.0,
+          "channels": 402,
+          "keyframes": 11436,
+          "skipped_channels": 30,
+          "source_bundle": "assets-_mx-characters-ch0246-_mxdependency-animationclips-2026-04-27_assets_all_2710024431.bundle"
+        },
+        {
+          "name": "CH0246_Cafe_Walk",
+          "duration": 1.3333333730697632,
+          "sample_rate": 30.0,
+          "channels": 402,
+          "keyframes": 2340,
+          "skipped_channels": 30,
+          "source_bundle": "assets-_mx-characters-ch0246-_mxdependency-animationclips-2026-04-27_assets_all_2710024431.bundle"
+        },
+        {
+          "name": "CH0246_Exs_Cutin",
+          "duration": 6.533333778381348,
+          "sample_rate": 30.0,
+          "channels": 402,
+          "keyframes": 11440,
+          "skipped_channels": 30,
+          "source_bundle": "assets-_mx-characters-ch0246-_mxdependency-animationclips-2026-04-27_assets_all_2710024431.bundle"
+        },
+        {
+          "name": "CH0246_Formation_Idle",
+          "duration": 4.0,
+          "sample_rate": 30.0,
+          "channels": 402,
+          "keyframes": 1750,
+          "skipped_channels": 30,
+          "source_bundle": "assets-_mx-characters-ch0246-_mxdependency-animationclips-2026-04-27_assets_all_2710024431.bundle"
+        },
+        {
+          "name": "CH0246_Formation_Pickup",
+          "duration": 12.433333396911621,
+          "sample_rate": 30.0,
+          "channels": 402,
+          "keyframes": 12726,
+          "skipped_channels": 30,
+          "source_bundle": "assets-_mx-characters-ch0246-_mxdependency-animationclips-2026-04-27_assets_all_2710024431.bundle"
+        },
+        {
+          "name": "CH0246_Public01",
+          "duration": 7.000000476837158,
+          "sample_rate": 30.0,
+          "channels": 402,
+          "keyframes": 13195,
+          "skipped_channels": 30,
+          "source_bundle": "assets-_mx-characters-ch0246-_mxdependency-animationclips-2026-04-27_assets_all_2710024431.bundle"
+        },
+        {
+          "name": "CH0246_Tactical_Start",
+          "duration": 1.6666667461395264,
+          "sample_rate": 30.0,
+          "channels": 402,
+          "keyframes": 4247,
+          "skipped_channels": 30,
+          "source_bundle": "assets-_mx-characters-ch0246-_mxdependency-animationclips-2026-04-27_assets_all_2710024431.bundle"
+        }
+      ],
+      "initial_renderer_visible": true,
+      "child_index": 0,
+      "go_name": "CH0246_Body"
+    }
+  ],
+  "textures": [
+    {
+      "name": "CH0246_Body",
+      "file": "textures/CH0246_Body.png",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "CH0246_Body_Mask",
+      "file": "textures/CH0246_Body_Mask.png",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "CH0246_EyeMouth",
+      "file": "textures/CH0246_EyeMouth.png",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "CH0246_Face",
+      "file": "textures/CH0246_Face.png",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "CH0246_Hair",
+      "file": "textures/CH0246_Hair.png",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "CH0246_Hair_Mask",
+      "file": "textures/CH0246_Hair_Mask.png",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "CH0246_Hair_Spec",
+      "file": "textures/CH0246_Hair_Spec.png",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "CH0246_Halo",
+      "file": "textures/CH0246_Halo.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "CH0246_Prop",
+      "file": "textures/CH0246_Prop.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "name": "CH0246_Prop_Mask",
+      "file": "textures/CH0246_Prop_Mask.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "name": "CH0246_Weapon",
+      "file": "textures/CH0246_Weapon.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "CH0246_Weapon_Mask",
+      "file": "textures/CH0246_Weapon_Mask.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "Character_Mouth",
+      "file": "textures/Character_Mouth.png",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "tex_green_128",
+      "file": "textures/tex_green_128.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "Character_Mouth_2",
+      "file": "textures/Character_Mouth_2.png",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "Character_Mouth_Black",
+      "file": "textures/Character_Mouth_Black.png",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "Character_Mouth_High",
+      "file": "textures/Character_Mouth_High.png",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "Character_Mouth_Decagramaton",
+      "file": "textures/Character_Mouth_Decagramaton.png",
+      "size": [
+        1024,
+        1024
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "name": "CH0246_Body",
+      "file": "materials/CH0246_Body.json"
+    },
+    {
+      "name": "CH0246_EyeMouth",
+      "file": "materials/CH0246_EyeMouth.json"
+    },
+    {
+      "name": "CH0246_Eyebrow",
+      "file": "materials/CH0246_Eyebrow.json"
+    },
+    {
+      "name": "CH0246_Face",
+      "file": "materials/CH0246_Face.json"
+    },
+    {
+      "name": "CH0246_Hair",
+      "file": "materials/CH0246_Hair.json"
+    },
+    {
+      "name": "CH0246_Halo",
+      "file": "materials/CH0246_Halo.json"
+    },
+    {
+      "name": "CH0246_Prop",
+      "file": "materials/CH0246_Prop.json"
+    },
+    {
+      "name": "CH0246_Weapon",
+      "file": "materials/CH0246_Weapon.json"
+    }
+  ],
+  "animations": [
+    {
+      "name": "CH0246_Cafe_Idle",
+      "sample_rate": 30.0,
+      "duration": 10.333333969116211,
+      "channels": 432,
+      "keyframes": 4609,
+      "skipped_curves": 5689,
+      "source_bundle": "assets-_mx-characters-ch0246-_mxdependency-animationclips-2026-04-27_assets_all_2710024431.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 5.7999420166015625,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 10.333333015441895,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0246_Cafe_my_gehennaparty_01_sofa_01_01",
+      "sample_rate": 30.0,
+      "duration": 21.33333396911621,
+      "channels": 432,
+      "keyframes": 15551,
+      "skipped_curves": 0,
+      "source_bundle": "cafe-characteranimation-ch0246-_mxload-animationclips-2026-04-27_assets_all_893292315.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 2.999969959259033,
+          "function": "SetMouthTile",
+          "int": 701,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 3.6666300296783447,
+          "function": "SetMouthTile",
+          "int": 603,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 4.933283805847168,
+          "function": "SetMouthTile",
+          "int": 701,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 6.499935150146484,
+          "function": "SetMouthTile",
+          "int": 402,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 7.499925136566162,
+          "function": "SetMouthTile",
+          "int": 603,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 9.06657600402832,
+          "function": "SetMouthTile",
+          "int": 604,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 9.266573905944824,
+          "function": "SetMouthTile",
+          "int": 402,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 11.433218955993652,
+          "function": "SetMouthTile",
+          "int": 305,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 11.566551208496094,
+          "function": "SetMouthTile",
+          "int": 702,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 13.533198356628418,
+          "function": "SetMouthTile",
+          "int": 403,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 13.766529083251953,
+          "function": "SetMouthTile",
+          "int": 701,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 15.89984130859375,
+          "function": "SetMouthTile",
+          "int": 700,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 17.199827194213867,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 17.999820709228516,
+          "function": "SetMouthTile",
+          "int": 700,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 18.666479110717773,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0246_Cafe_my_gehennaparty_01_sofa_01_01_Idle",
+      "sample_rate": 30.0,
+      "duration": 6.666667461395264,
+      "channels": 432,
+      "keyframes": 2699,
+      "skipped_curves": 0,
+      "source_bundle": "cafe-characteranimation-ch0246-_mxload-animationclips-2026-04-27_assets_all_893292315.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 6.6666669845581055,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0246_Cafe_Reaction",
+      "sample_rate": 30.0,
+      "duration": 6.833333492279053,
+      "channels": 432,
+      "keyframes": 11664,
+      "skipped_curves": 15811,
+      "source_bundle": "assets-_mx-characters-ch0246-_mxdependency-animationclips-2026-04-27_assets_all_2710024431.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.09999899566173553,
+          "function": "SetMouthTile",
+          "int": 701,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.6666600108146667,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.699999988079071,
+          "function": "AniEvt_InstantiateFx",
+          "int": 0,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 1.033323049545288,
+          "function": "SetMouthTile",
+          "int": 603,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 2.3999760150909424,
+          "function": "SetMouthTile",
+          "int": 701,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 3.166635036468506,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 3.9332940578460693,
+          "function": "SetMouthTile",
+          "int": 700,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 5.266613960266113,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 6.833333492279053,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0246_Cafe_Walk",
+      "sample_rate": 30.0,
+      "duration": 1.3333333730697632,
+      "channels": 432,
+      "keyframes": 2423,
+      "skipped_curves": 3416,
+      "source_bundle": "assets-_mx-characters-ch0246-_mxdependency-animationclips-2026-04-27_assets_all_2710024431.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 1.3333333730697632,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0246_Exs_Cutin",
+      "sample_rate": 30.0,
+      "duration": 6.533333778381348,
+      "channels": 432,
+      "keyframes": 11843,
+      "skipped_curves": 19677,
+      "source_bundle": "assets-_mx-characters-ch0246-_mxdependency-animationclips-2026-04-27_assets_all_2710024431.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 2.666640043258667,
+          "function": "SetMouthTile",
+          "int": 501,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 3.0333030223846436,
+          "function": "SetMouthTile",
+          "int": 603,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 3.7666289806365967,
+          "function": "SetMouthTile",
+          "int": 705,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 4.399955749511719,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 5.199947834014893,
+          "function": "SetMouthTile",
+          "int": 501,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 6.5333333015441895,
+          "function": "SetMouthTile",
+          "int": 501,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0246_Exs_Cutin_Cam_01",
+      "sample_rate": 30.0,
+      "duration": 2.2333333492279053,
+      "channels": 6,
+      "keyframes": 31,
+      "skipped_curves": 70,
+      "source_bundle": "assets-_mx-characters-ch0246-_mxdependency-animationclips-2026-04-27_assets_all_2710024431.bundle"
+    },
+    {
+      "name": "CH0246_Exs_Cutin_Cam_02",
+      "sample_rate": 30.0,
+      "duration": 3.9666669368743896,
+      "channels": 6,
+      "keyframes": 74,
+      "skipped_curves": 93,
+      "source_bundle": "assets-_mx-characters-ch0246-_mxdependency-animationclips-2026-04-27_assets_all_2710024431.bundle"
+    },
+    {
+      "name": "CH0246_Formation_Idle",
+      "sample_rate": 30.0,
+      "duration": 4.0,
+      "channels": 432,
+      "keyframes": 1830,
+      "skipped_curves": 2486,
+      "source_bundle": "assets-_mx-characters-ch0246-_mxdependency-animationclips-2026-04-27_assets_all_2710024431.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 4.0,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0246_Formation_Pickup",
+      "sample_rate": 30.0,
+      "duration": 12.433333396911621,
+      "channels": 432,
+      "keyframes": 12970,
+      "skipped_curves": 40761,
+      "source_bundle": "assets-_mx-characters-ch0246-_mxdependency-animationclips-2026-04-27_assets_all_2710024431.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.2666666805744171,
+          "function": "SetMouthTile",
+          "int": 203,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 2.266666889190674,
+          "function": "SetMouthTile",
+          "int": 301,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 5.6666669845581055,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 7.033333778381348,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0246_Public01",
+      "sample_rate": 30.0,
+      "duration": 7.000000476837158,
+      "channels": 432,
+      "keyframes": 13786,
+      "skipped_curves": 23441,
+      "source_bundle": "assets-_mx-characters-ch0246-_mxdependency-animationclips-2026-04-27_assets_all_2710024431.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableDitherLines",
+          "int": 0,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.49999499320983887,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.6666666865348816,
+          "function": "AniEvt_DisableDitherLines",
+          "int": 0,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 1.4999849796295166,
+          "function": "SetMouthTile",
+          "int": 301,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 2.166645050048828,
+          "function": "SetMouthTile",
+          "int": 701,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 3.999959945678711,
+          "function": "SetMouthTile",
+          "int": 701,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 4.2666239738464355,
+          "function": "SetMouthTile",
+          "int": 301,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 6.800000190734863,
+          "function": "AniEvt_EnableDitherLines",
+          "int": 0,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 7.0,
+          "function": "SetMouthTile",
+          "int": 301,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0246_Tactical_Start",
+      "sample_rate": 30.0,
+      "duration": 1.6666667461395264,
+      "channels": 432,
+      "keyframes": 4358,
+      "skipped_curves": 7921,
+      "source_bundle": "assets-_mx-characters-ch0246-_mxdependency-animationclips-2026-04-27_assets_all_2710024431.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 701,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 1.1999880075454712,
+          "function": "SetMouthTile",
+          "int": 304,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 1.6666666269302368,
+          "function": "SetMouthTile",
+          "int": 304,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    }
+  ],
+  "source_bundles": {
+    "meshes": [
+      "assets-_mx-characters-ch0246-_mxdependency-meshes-2026-04-27_assets_all_2368559329.bundle",
+      "assets-_mx-scenes-skillcut-ch0246-_mxdependency-meshes-2026-04-27_assets_all_570513029.bundle"
+    ],
+    "textures": [
+      "assets-_mx-characters-ch0246-_mxdependency-textures-2026-04-27_assets_all_4034551687.bundle",
+      "assets-_mx-scenes-skillcut-ch0246-_mxdependency-textures-2026-04-27_assets_all_1027834070.bundle",
+      "assets-_mx-spinecharacters-ch0246_spr-_mxdependency-textures-2025-07-02_assets_all_2402296980.bundle",
+      "assets-_mx-spinelobbies-ch0246_home-_mxdependency-textures-2026-04-27_assets_all_2950905911.bundle"
+    ],
+    "materials": [
+      "assets-_mx-characters-ch0246-_mxdependency-materials-2026-04-27_assets_all_1520058138.bundle",
+      "assets-_mx-scenes-skillcut-ch0246-_mxdependency-materials-2026-04-27_assets_all_1139243616.bundle",
+      "assets-_mx-spinecharacters-ch0246_spr-_mxdependency-materials-2025-07-02_assets_all_1430967513.bundle",
+      "assets-_mx-spinelobbies-ch0246_home-_mxdependency-materials-2026-04-27_assets_all_1362638203.bundle"
+    ],
+    "prefabs": [
+      "assets-_mx-characters-ch0246-_mxdependency-prefabs-2026-04-27_assets_all_177030258.bundle",
+      "assets-_mx-scenes-skillcut-ch0246-_mxdependency-prefabs-2026-04-27_assets_all_3331079644.bundle",
+      "character-ch0246-_mxload-prefabs-2026-04-27_assets_all_510189392.bundle"
+    ],
+    "animationclips": [
+      "assets-_mx-characters-ch0246-_mxdependency-animationclips-2026-04-27_assets_all_2710024431.bundle",
+      "cafe-characteranimation-ch0246-_mxload-animationclips-2026-04-27_assets_all_893292315.bundle"
+    ],
+    "animatorcontrollers": [
+      "character-ch0246-_mxload-animatorcontrollers-2026-04-27_assets_all_3076515742.bundle"
+    ],
+    "timelines": [
+      "assets-_mx-spinelobbies-ch0246_home-_mxdependency-timelines-2026-04-27_assets_all_3016276424.bundle",
+      "character-ch0246-_mxload-timelines-2026-04-27_assets_all_1654113659.bundle"
+    ],
+    "assets": [
+      "assets-_mx-scenes-skillcut-ch0246-_mxdependency-assets-2026-04-27_assets_all_72203202.bundle",
+      "assets-_mx-spinecharacters-ch0246_spr-_mxdependency-assets-2025-07-02_assets_all_2623144323.bundle",
+      "assets-_mx-spinelobbies-ch0246_home-_mxdependency-assets-2026-04-27_assets_all_4215332592.bundle"
+    ],
+    "audio": [
+      "assets-_mx-characters-ch0246-_mxdependency-audio-2026-04-27_assets_all_1260484966.bundle"
+    ],
+    "other": [
+      "assets-_mx-spinecharacters-ch0246_spr-_mxdependency-textassets-2025-07-02_assets_all_1461247922.bundle",
+      "assets-_mx-spinelobbies-ch0246_home-_mxdependency-textassets-2026-04-27_assets_all_3901502050.bundle"
+    ]
+  },
+  "resolved_dependencies": [
+    "assets-_mx-characters-ch0069-_mxdependency-textures-2025-07-02_assets_all_2155042979.bundle",
+    "assets-_mx-characters-ch0088-_mxdependency-textures-2025-07-02_assets_all_3701290396.bundle",
+    "assets-_mx-characters-ch0100-_mxdependency-materials-2025-07-02_assets_all_3285550928.bundle",
+    "assets-_mx-characters-ch0138-_mxdependency-textures-2025-07-02_assets_all_2663280992.bundle",
+    "assets-_mx-characters-ch0158-_mxdependency-textures-2025-07-02_assets_all_2008620973.bundle",
+    "assets-_mx-characters-ch0161-_mxdependency-materials-2025-07-02_assets_all_665009796.bundle",
+    "assets-_mx-characters-ch0179-_mxdependency-textures-2025-07-02_assets_all_3340916112.bundle",
+    "assets-_mx-characters-ch0187-_mxdependency-textures-2025-07-02_assets_all_4022381632.bundle",
+    "assets-_mx-characters-ch0191-_mxdependency-textures-2025-07-02_assets_all_2340719755.bundle",
+    "assets-_mx-characters-ch0195-_mxdependency-textures-2025-07-02_assets_all_324744709.bundle",
+    "assets-_mx-characters-ch0200-_mxdependency-textures-2025-07-02_assets_all_1943637711.bundle",
+    "assets-_mx-characters-ch0204-_mxdependency-textures-2025-07-02_assets_all_4155529458.bundle",
+    "assets-_mx-characters-ch0209-_mxdependency-textures-2025-07-02_assets_all_3591724035.bundle",
+    "assets-_mx-characters-ch0211-_mxdependency-textures-2025-07-02_assets_all_2225225664.bundle",
+    "assets-_mx-characters-ch0218-_mxdependency-textures-2025-07-02_assets_all_2251113509.bundle",
+    "assets-_mx-characters-ch0246-_mxdependency-animationclips-2026-04-27_assets_all_2710024431.bundle",
+    "assets-_mx-characters-ch0258-_mxdependency-textures-2025-07-02_assets_all_4118836656.bundle",
+    "assets-_mx-characters-ch0264-_mxdependency-textures-2026-03-01_assets_all_2307802444.bundle",
+    "assets-_mx-characters-ch0305-_mxdependency-textures-2026-03-01_assets_all_1022997383.bundle",
+    "assets-_mx-characters-ch9996-_mxdependency-textures-2025-07-02_assets_all_3753525517.bundle",
+    "assets-_mx-characters-ch9998-_mxdependency-textures-2025-07-02_assets_all_1823298369.bundle",
+    "assets-_mx-shaders-_mxdependency-shaders-2025-07-02_assets_all_2584508817.bundle",
+    "assets-_mx-spinecharacters-ch0246_spr-_mxdependency-textassets-2025-07-02_assets_all_1461247922.bundle",
+    "assets-_mx-spinelobbies-ch0246_home-_mxdependency-textassets-2026-04-27_assets_all_3901502050.bundle",
+    "character-animatorbase-_mxload-animatorcontrollers-2025-07-30_assets_all_1765084147.bundle",
+    "character-animatorbase-_mxload-animatorcontrollers-2025-07-30_assets_all_3828619736.bundle",
+    "character-ch0246-_mxload-animatorcontrollers-2026-04-27_assets_all_3076515742.bundle",
+    "character-ch0246-_mxload-timelines-2026-04-27_assets_all_1654113659.bundle",
+    "MX_unitybuiltinshaders_4156112658.bundle",
+    "prologdepengroup-assets-_mx-characters-_mxcommon-_mxprolog-2025-07-02_assets_all_169562978.bundle",
+    "prologdepengroup-assets-_mx-shaders-_mxprolog-2025-07-02_assets_all_222426929.bundle"
+  ],
+  "unresolved_cabs": [
+    "cab-03e5db26c8705c9710fa9d4b6da5ee38",
+    "cab-07e859d69fe41d0a65aa898e735f46bb",
+    "cab-231ec4d5e9dc2578a2660bf7a73174ea",
+    "cab-2cfd1ea6d62495fccc91f0cad87ed0ee",
+    "cab-324df3896cbad5bd8c68ec679fa18df9",
+    "cab-39fe55e8868aab69e2cf9a8ae5dcef67",
+    "cab-4e374e23f1bd4e7218b8fbcbec01546f",
+    "cab-53401623f8a591296abff6ac84e785a4",
+    "cab-553943772aa45121f526ca87b300458a",
+    "cab-5cb129b0d3e8597cc11ba43385244c60",
+    "cab-6f8b9185a9facbe194e7535bdbef5322",
+    "cab-72cabf238b0d84de1615649a40b6b13f",
+    "cab-946fefe28207186bd26723b002c6d166",
+    "cab-9bda60ce64214d6b0a5a27ffdf49c997",
+    "cab-c264ac29fdc17e42beb7c09ff3023bc9",
+    "cab-ca0208eb64f87a9485064d0a71d40223",
+    "cab-d4b85e21d5ff252299084422d5d42e81",
+    "cab-d6a7e509eef8bc82327c4351cf15f45d",
+    "cab-da612a6f27ce6597619dc86a9309e50e",
+    "cab-edd528ec4be9edc2737957929a97d439",
+    "cab-febf13fab2ef2aeaade1adebfb99084d"
+  ],
+  "head_transform": {
+    "bone": "Bip001 Head",
+    "position": {
+      "x": -2.914483390740486e-07,
+      "y": 0.010178049128424554,
+      "z": 0.6364441276695177
+    },
+    "source_path": "Bip001 Head <- Bip001 Neck <- Bip001 Spine1 <- Bip001 Spine <- Bip001 Pelvis <- Bip001 <- bone_root <- CH0246_Mesh"
+  },
+  "halo_anchor": {
+    "position": {
+      "x": -1.688041004658421e-06,
+      "y": 0.0014646508002064962,
+      "z": -0.029269349079030338
+    },
+    "rotation": {
+      "x": 0.7071068205942314,
+      "y": 2.527916443955886e-07,
+      "z": -1.684979828858649e-07,
+      "w": 0.7071067417787963
+    },
+    "scale": {
+      "x": 0.9999999999999999,
+      "y": 0.9999999999999998,
+      "z": 0.9999999999999999
+    },
+    "source_path": "CH0246_Halo <- HaloRoot <- CH0246",
+    "name": "CH0246_Halo",
+    "coordinate_space": "viewer"
+  },
+  "halo_follow": {
+    "name": "HaloRoot",
+    "source_path": "HaloRoot <- CH0246",
+    "follow_target": "Bip001 Head",
+    "coordinate_space": "viewer",
+    "target_position": {
+      "x": -9.220652275184907e-07,
+      "y": -0.1985351272235419,
+      "z": 1.0007304468398877
+    },
+    "target_offset": {
+      "x": -6.30616888444442e-07,
+      "y": -0.20871317635196646,
+      "z": 0.3642863191703699
+    },
+    "target_relative_position": {
+      "x": -0.36428630352020264,
+      "y": -0.20871320366859436,
+      "z": 0.0
+    },
+    "clamp_min_offset": {
+      "x": -0.47999998927116394,
+      "y": -0.3400000035762787,
+      "z": -0.27000001072883606
+    },
+    "clamp_max_offset": {
+      "x": -0.25999999046325684,
+      "y": -0.07000000029802322,
+      "z": 0.27000001072883606
+    },
+    "follow_position_power": 0.10000000149011612,
+    "follow_rotation_power": 0.07000000029802322,
+    "fix_y_rotation": 0,
+    "local_forward": {
+      "x": 0.0,
+      "y": 1.0000001192092896,
+      "z": 0.0
+    },
+    "target_relative_rotation": {
+      "x": 0.5000001192092896,
+      "y": -0.49999937415122986,
+      "z": -0.5000000596046448,
+      "w": -0.5000007748603821
+    },
+    "initial_rotation": {
+      "x": -0.0,
+      "y": -0.0,
+      "z": -0.0,
+      "w": 1.0
+    },
+    "placement_tilt_deg": 40.0,
+    "depth_mode": "tilt"
+  },
+  "halo_transform": {
+    "position": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "rotation": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "w": 1.0
+    },
+    "scale": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 1.0
+    },
+    "source_path": "CH0246_Halo <- HaloRoot <- CH0246",
+    "name": "Halo",
+    "coordinate_space": "viewer"
+  }
+}

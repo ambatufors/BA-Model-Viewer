@@ -1,0 +1,172 @@
+{
+  "name": "Hoshino_Swimsuit_Body",
+  "shader": "MX/C-General/Layer4",
+  "floats": {
+    "_AdditionalLightSharpness": 5.0,
+    "_AdditionalLightStrength": 1.0,
+    "_Cull": 0.0,
+    "_Cutoff": 0.5,
+    "_DitherThreshold": 0.0,
+    "_DstBlend": 0.0,
+    "_DstBlendAlpha": 0.0,
+    "_GlowStrength": 0.0,
+    "_GrayBrightness": 1.0,
+    "_MaskGSensitivity": 2.0,
+    "_OutlineZCorrection": 0.0,
+    "_SrcBlend": 1.0,
+    "_SrcBlendAlpha": 1.0,
+    "_ZWrite": 1.0
+  },
+  "colors": {
+    "_BaseBrightness4": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeAddColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeAddRimColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeMultiplyColor": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_GlowTint": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "_InvViewPower4": {
+      "r": 1.0,
+      "g": 10.0,
+      "b": 12.0,
+      "a": 7.0
+    },
+    "_InvViewStrength4": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.30000001192092896,
+      "a": 0.5
+    },
+    "_OutlineSolidColorTint": {
+      "r": 0.699999988079071,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "_OutlineTint": {
+      "r": 0.7590000033378601,
+      "g": 0.5607306361198425,
+      "b": 0.548338770866394,
+      "a": 1.0
+    },
+    "_RimAreaMultiplier4": {
+      "r": 3.0,
+      "g": 3.0,
+      "b": 5.0,
+      "a": 3.0
+    },
+    "_RimStrength4": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 0.5,
+      "a": 0.5
+    },
+    "_ShadowThreshold4": {
+      "r": 0.15000000596046448,
+      "g": 0.8999999761581421,
+      "b": 0.699999988079071,
+      "a": 1.0
+    },
+    "_ShadowTintB4": {
+      "r": 0.6944642066955566,
+      "g": 0.8584905862808228,
+      "b": 0.9080000519752502,
+      "a": 0.7830188870429993
+    },
+    "_ShadowTintG4": {
+      "r": 0.7093420028686523,
+      "g": 0.7588164806365967,
+      "b": 0.7077059149742126,
+      "a": 0.7736775875091553
+    },
+    "_ShadowTintR4": {
+      "r": 0.9622641801834106,
+      "g": 0.6114720702171326,
+      "b": 0.7878236174583435,
+      "a": 0.7202296257019043
+    },
+    "_Tint": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_TwoSideTint": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_ViewLightEdge4": {
+      "r": 0.0,
+      "g": 1.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "_ViewOffset4": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.699999988079071,
+      "a": 0.6000000238418579
+    },
+    "_ViewPower4": {
+      "r": 1.0,
+      "g": 20.0,
+      "b": 7.199999809265137,
+      "a": 5.0
+    },
+    "_ViewStrength4": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.05000000074505806,
+      "a": 0.4000000059604645
+    }
+  },
+  "textures": {
+    "_MainTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ],
+      "name": "Hoshino_Swimsuit_Body"
+    },
+    "_MaskTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ],
+      "name": "Hoshino_Swimsuit_Body_Mask"
+    }
+  }
+}

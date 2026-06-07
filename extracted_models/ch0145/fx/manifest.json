@@ -1,0 +1,46 @@
+{
+  "char_id": "CH0145",
+  "note": "FX cutin eye-spin overlay meshes + sprite sheet. Spawned by FX_CH0145_EX01_Motion_Eyes_01 / FX_CH0145_EX01_Motion_Cam_Eyes_01 during the Exs_Cutin clip. Not yet wired into the runtime.",
+  "meshes": [
+    {
+      "name": "FX_MESH_Eye_Spin_01",
+      "verts": 96,
+      "faces": 108,
+      "file": "fx/meshes/FX_MESH_Eye_Spin_01.glb"
+    },
+    {
+      "name": "FX_MESH_Eye_Spin_02",
+      "verts": 102,
+      "faces": 108,
+      "file": "fx/meshes/FX_MESH_Eye_Spin_02.glb"
+    }
+  ],
+  "textures": [
+    {
+      "name": "FX_TEX_Eye_Motion_19",
+      "file": "fx/textures/FX_TEX_Eye_Motion_19.png",
+      "size": [
+        256,
+        256
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "name": "FX_MAT_Eyes_01",
+      "file": "fx/materials/FX_MAT_Eyes_01.json"
+    },
+    {
+      "name": "FX_MAT_Eye_Motion_19",
+      "file": "fx/materials/FX_MAT_Eye_Motion_19.json"
+    },
+    {
+      "name": "CH0145_Eyebrow",
+      "file": "fx/materials/CH0145_Eyebrow.json"
+    },
+    {
+      "name": "CH0145_EyeMouth",
+      "file": "fx/materials/CH0145_EyeMouth.json"
+    }
+  ]
+}

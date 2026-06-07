@@ -1,0 +1,209 @@
+{
+  "schema_version": 3,
+  "char_id": "CH0145",
+  "scope": "char",
+  "filter": null,
+  "prefab_roots": [
+    "FX_CH0145_Cafe_Reaction_Emotion_01",
+    "FX_my_military_01_CH0145_chair_Face_Emotion"
+  ],
+  "emotion_only": false,
+  "from_anim_events": true,
+  "bundle_count": 126,
+  "fx_parent_bones": [
+    {
+      "index": 0,
+      "name": "bone_root",
+      "transform_path_id": 1883448127292761308
+    },
+    {
+      "index": 1,
+      "name": "Bip001 Pelvis",
+      "transform_path_id": -4026829052103236388
+    },
+    {
+      "index": 2,
+      "name": "Bip001 Head",
+      "transform_path_id": 9187597108370793692
+    },
+    {
+      "index": 3,
+      "name": "Bip001 L Hand",
+      "transform_path_id": -1579069410898352932
+    },
+    {
+      "index": 4,
+      "name": "Bip001 R Hand",
+      "transform_path_id": -5037919838293990180
+    },
+    {
+      "index": 5,
+      "name": "fire_01",
+      "transform_path_id": 5919357547775583452
+    },
+    {
+      "index": 6,
+      "name": null,
+      "transform_path_id": 0
+    },
+    {
+      "index": 7,
+      "name": "Bip001 eye_L",
+      "transform_path_id": 2310360006516401372
+    },
+    {
+      "index": 8,
+      "name": "Bip001 eye_R",
+      "transform_path_id": 7927410959251727580
+    }
+  ],
+  "prefabs": [
+    {
+      "name": "FX_CH0145_Cafe_Reaction_Emotion_01",
+      "file": "prefabs/FX_CH0145_Cafe_Reaction_Emotion_01.json",
+      "descendant_count": 5,
+      "attach": {
+        "parent_index": 2,
+        "timer_duration": 2.5,
+        "life_mode": 1
+      }
+    },
+    {
+      "name": "FX_my_military_01_CH0145_chair_Face_Emotion",
+      "file": "prefabs/FX_my_military_01_CH0145_chair_Face_Emotion.json",
+      "descendant_count": 2,
+      "attach": {
+        "parent_index": 2,
+        "timer_duration": 4.199999809265137,
+        "life_mode": 1
+      }
+    }
+  ],
+  "textures": [
+    {
+      "name": "FX_TEX_Emotion_01",
+      "path_id": 3530711793430108559,
+      "size": [
+        256,
+        256
+      ],
+      "file": "textures/FX_TEX_Emotion_01.png"
+    },
+    {
+      "name": "FX_TEX_Shy_08",
+      "path_id": -5313888264715810056,
+      "size": [
+        512,
+        512
+      ],
+      "file": "textures/FX_TEX_Shy_08.png"
+    },
+    {
+      "name": "FX_TEX_Circle_Glow_01",
+      "path_id": 2238028599995704187,
+      "size": [
+        128,
+        128
+      ],
+      "file": "textures/FX_TEX_Circle_Glow_01.png"
+    },
+    {
+      "name": "FX_TEX_White_01",
+      "path_id": 6977316844502959008,
+      "size": [
+        4,
+        4
+      ],
+      "file": "textures/FX_TEX_White_01.png"
+    }
+  ],
+  "materials": [
+    {
+      "name": "FX_MAT_Emotion_10",
+      "file": "materials/FX_MAT_Emotion_10.json"
+    },
+    {
+      "name": "FX_MAT_Shy_08",
+      "file": "materials/FX_MAT_Shy_08.json"
+    },
+    {
+      "name": "FX_MAT_Circle_Glow_01a",
+      "file": "materials/FX_MAT_Circle_Glow_01a.json"
+    }
+  ],
+  "meshes": [],
+  "particles": [
+    {
+      "go_name": "Emo",
+      "go_path_id": -2800954774978603807,
+      "root": "FX_my_military_01_CH0145_chair_Face_Emotion",
+      "file": "particles/FX_my_military_01_CH0145_chair_Face_Emotion__Emo.json",
+      "renderer_materials": [
+        "FX_MAT_Emotion_10",
+        "FX_MAT_Emotion_10"
+      ],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "FX_my_military_01_CH0145_chair_Face_Emotion",
+      "go_path_id": 1187762849267471585,
+      "root": "FX_my_military_01_CH0145_chair_Face_Emotion",
+      "file": "particles/FX_my_military_01_CH0145_chair_Face_Emotion__FX_my_military_01_CH0145_chair_Face_Emotion.json",
+      "renderer_materials": [],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "L",
+      "go_path_id": -4016466707361511634,
+      "root": "FX_CH0145_Cafe_Reaction_Emotion_01",
+      "file": "particles/FX_CH0145_Cafe_Reaction_Emotion_01__L.json",
+      "renderer_materials": [
+        "FX_MAT_Shy_08",
+        "FX_MAT_Shy_08"
+      ],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "R",
+      "go_path_id": -8588515806289017042,
+      "root": "FX_CH0145_Cafe_Reaction_Emotion_01",
+      "file": "particles/FX_CH0145_Cafe_Reaction_Emotion_01__R.json",
+      "renderer_materials": [
+        "FX_MAT_Shy_08",
+        "FX_MAT_Shy_08"
+      ],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "R Back",
+      "go_path_id": 9132776752284944174,
+      "root": "FX_CH0145_Cafe_Reaction_Emotion_01",
+      "file": "particles/FX_CH0145_Cafe_Reaction_Emotion_01__R_Back.json",
+      "renderer_materials": [
+        "FX_MAT_Circle_Glow_01a",
+        "FX_MAT_Circle_Glow_01a"
+      ],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "L Back",
+      "go_path_id": -5181515747736828114,
+      "root": "FX_CH0145_Cafe_Reaction_Emotion_01",
+      "file": "particles/FX_CH0145_Cafe_Reaction_Emotion_01__L_Back.json",
+      "renderer_materials": [
+        "FX_MAT_Circle_Glow_01a",
+        "FX_MAT_Circle_Glow_01a"
+      ],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "FX_CH0145_Cafe_Reaction_Emotion_01",
+      "go_path_id": 8843904004869244718,
+      "root": "FX_CH0145_Cafe_Reaction_Emotion_01",
+      "file": "particles/FX_CH0145_Cafe_Reaction_Emotion_01__FX_CH0145_Cafe_Reaction_Emotion_01.json",
+      "renderer_materials": [],
+      "renderer_mesh": null
+    }
+  ],
+  "anim_events_file": "anim_events.json"
+}

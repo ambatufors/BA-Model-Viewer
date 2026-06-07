@@ -1,0 +1,504 @@
+{
+  "char_id": "CH0060",
+  "halo_root_variant": "CH0060",
+  "particles": [
+    {
+      "name": "FX_blood",
+      "chain": "FX_blood <- HaloRoot <- CH0060",
+      "variant": "CH0060",
+      "local_transform": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0015000104904174805,
+          "z": -0.001300022006034851
+        },
+        "rotation": {
+          "x": -0.7071068286895752,
+          "y": -0.0,
+          "z": -0.0,
+          "w": 0.7071068286895752
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "duration": 5.0,
+      "looping": true,
+      "prewarm": true,
+      "play_on_awake": true,
+      "start_delay": {
+        "state": 0,
+        "scalar": 0.0,
+        "min_scalar": 0.0,
+        "has_min_curve": false,
+        "has_max_curve": false
+      },
+      "simulation_space": null,
+      "simulation_speed": 1.0,
+      "scaling_mode": 0,
+      "initial": {
+        "start_size": {
+          "state": 3,
+          "scalar": 0.029999999329447746,
+          "min_scalar": 0.05000000074505806,
+          "has_min_curve": false,
+          "has_max_curve": false
+        },
+        "start_size_x": null,
+        "start_size_y": {
+          "state": 3,
+          "scalar": 1.0,
+          "min_scalar": 1.0,
+          "has_min_curve": false,
+          "has_max_curve": false
+        },
+        "start_size_z": {
+          "state": 3,
+          "scalar": 1.0,
+          "min_scalar": 1.0,
+          "has_min_curve": false,
+          "has_max_curve": false
+        },
+        "three_d_start_size": null,
+        "start_rotation": {
+          "state": 0,
+          "scalar": 0.0,
+          "min_scalar": 0.0,
+          "has_min_curve": false,
+          "has_max_curve": false
+        },
+        "start_rotation_x": {
+          "state": 0,
+          "scalar": 0.0,
+          "min_scalar": 0.0,
+          "has_min_curve": false,
+          "has_max_curve": false
+        },
+        "start_rotation_y": {
+          "state": 0,
+          "scalar": 0.0,
+          "min_scalar": 0.0,
+          "has_min_curve": false,
+          "has_max_curve": false
+        },
+        "three_d_start_rotation": null,
+        "start_color": {
+          "state": 0,
+          "min_color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "max_color": {
+            "r": 0.6792452931404114,
+            "g": 0.009611943736672401,
+            "b": 0.032183688133955,
+            "a": 1.0
+          },
+          "maxGradient": [
+            {
+              "kind": "color",
+              "index": 0,
+              "time": 0.0,
+              "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+              }
+            },
+            {
+              "kind": "color",
+              "index": 1,
+              "time": 1.0,
+              "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+              }
+            },
+            {
+              "kind": "alpha",
+              "index": 0,
+              "time": 0.0
+            },
+            {
+              "kind": "alpha",
+              "index": 1,
+              "time": 1.0
+            }
+          ],
+          "minGradient": [
+            {
+              "kind": "color",
+              "index": 0,
+              "time": 0.0,
+              "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+              }
+            },
+            {
+              "kind": "color",
+              "index": 1,
+              "time": 1.0,
+              "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+              }
+            },
+            {
+              "kind": "alpha",
+              "index": 0,
+              "time": 0.0
+            },
+            {
+              "kind": "alpha",
+              "index": 1,
+              "time": 1.0
+            }
+          ]
+        },
+        "start_lifetime": {
+          "state": 3,
+          "scalar": 5.0,
+          "min_scalar": 4.0,
+          "has_min_curve": false,
+          "has_max_curve": false
+        },
+        "start_speed": {
+          "state": 0,
+          "scalar": 0.0,
+          "min_scalar": 5.0,
+          "has_min_curve": false,
+          "has_max_curve": false
+        },
+        "gravity_modifier": {
+          "state": 0,
+          "scalar": 0.009999999776482582,
+          "min_scalar": 0.0,
+          "has_min_curve": false,
+          "has_max_curve": false
+        },
+        "max_num_particles": 15,
+        "inherit_velocity": null,
+        "size_axes": null,
+        "rotation_axes": null
+      },
+      "shape": {
+        "enabled": true,
+        "type": 4,
+        "radius": 0.11999999731779099,
+        "radius_thickness": 0.0,
+        "arc": 360.0,
+        "arc_mode": 2,
+        "angle": 0.0,
+        "length": 5.0,
+        "box": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "donut_radius": 0.20000000298023224,
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": -40.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "random_direction_amount": 0.0,
+        "align_to_direction": false,
+        "random_position_amount": 0.0
+      },
+      "emission": {
+        "enabled": true,
+        "rate_over_time": {
+          "state": 0,
+          "scalar": 3.0,
+          "min_scalar": 10.0,
+          "has_min_curve": false,
+          "has_max_curve": false
+        },
+        "rate_over_distance": {
+          "state": 0,
+          "scalar": 0.0,
+          "min_scalar": 0.0,
+          "has_min_curve": false,
+          "has_max_curve": false
+        },
+        "bursts": []
+      },
+      "color_over_life": {
+        "enabled": false,
+        "gradient": {
+          "state": 1,
+          "min_color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "max_color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "maxGradient": [
+            {
+              "kind": "color",
+              "index": 0,
+              "time": 0.0,
+              "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+              }
+            },
+            {
+              "kind": "color",
+              "index": 1,
+              "time": 1.0,
+              "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+              }
+            },
+            {
+              "kind": "alpha",
+              "index": 0,
+              "time": 0.0
+            },
+            {
+              "kind": "alpha",
+              "index": 1,
+              "time": 1.0
+            }
+          ],
+          "minGradient": [
+            {
+              "kind": "color",
+              "index": 0,
+              "time": 0.0,
+              "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+              }
+            },
+            {
+              "kind": "color",
+              "index": 1,
+              "time": 1.0,
+              "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+              }
+            },
+            {
+              "kind": "alpha",
+              "index": 0,
+              "time": 0.0
+            },
+            {
+              "kind": "alpha",
+              "index": 1,
+              "time": 1.0
+            }
+          ]
+        }
+      },
+      "size_over_life": {
+        "enabled": false,
+        "separate_axes": true,
+        "curve": {
+          "state": 1,
+          "scalar": 1.0,
+          "min_scalar": 1.0,
+          "has_min_curve": false,
+          "has_max_curve": true
+        },
+        "y": {
+          "state": 1,
+          "scalar": 1.0,
+          "min_scalar": 1.0,
+          "has_min_curve": false,
+          "has_max_curve": true
+        },
+        "z": {
+          "state": 1,
+          "scalar": 1.0,
+          "min_scalar": 1.0,
+          "has_min_curve": false,
+          "has_max_curve": true
+        }
+      },
+      "rotation_over_life": {
+        "enabled": false,
+        "x": {
+          "state": 0,
+          "scalar": 0.0,
+          "min_scalar": 0.0,
+          "has_min_curve": false,
+          "has_max_curve": false
+        },
+        "y": {
+          "state": 0,
+          "scalar": 0.0,
+          "min_scalar": 0.0,
+          "has_min_curve": false,
+          "has_max_curve": false
+        },
+        "z": null
+      },
+      "velocity_over_life": {
+        "enabled": false,
+        "x": {
+          "state": 0,
+          "scalar": 0.0,
+          "min_scalar": 0.0,
+          "has_min_curve": false,
+          "has_max_curve": false
+        },
+        "y": {
+          "state": 0,
+          "scalar": 0.0,
+          "min_scalar": 0.0,
+          "has_min_curve": false,
+          "has_max_curve": false
+        },
+        "z": {
+          "state": 0,
+          "scalar": 0.0,
+          "min_scalar": 0.0,
+          "has_min_curve": false,
+          "has_max_curve": false
+        },
+        "in_world_space": false,
+        "orbital_x": {
+          "state": 0,
+          "scalar": 0.0,
+          "min_scalar": 0.0,
+          "has_min_curve": false,
+          "has_max_curve": false
+        },
+        "orbital_y": {
+          "state": 0,
+          "scalar": 0.0,
+          "min_scalar": 0.0,
+          "has_min_curve": false,
+          "has_max_curve": false
+        },
+        "orbital_z": {
+          "state": 0,
+          "scalar": 0.0,
+          "min_scalar": 0.0,
+          "has_min_curve": false,
+          "has_max_curve": false
+        },
+        "orbital_offset_x": {
+          "state": 0,
+          "scalar": 0.0,
+          "min_scalar": 0.0,
+          "has_min_curve": false,
+          "has_max_curve": false
+        },
+        "orbital_offset_y": {
+          "state": 0,
+          "scalar": 0.0,
+          "min_scalar": 0.0,
+          "has_min_curve": false,
+          "has_max_curve": false
+        },
+        "orbital_offset_z": {
+          "state": 0,
+          "scalar": 0.0,
+          "min_scalar": 0.0,
+          "has_min_curve": false,
+          "has_max_curve": false
+        },
+        "radial": {
+          "state": 0,
+          "scalar": 0.0,
+          "min_scalar": 0.0,
+          "has_min_curve": false,
+          "has_max_curve": false
+        },
+        "speed_modifier": {
+          "state": 0,
+          "scalar": 1.0,
+          "min_scalar": 1.0,
+          "has_min_curve": false,
+          "has_max_curve": false
+        }
+      },
+      "uv": {
+        "enabled": false,
+        "mode": 0,
+        "tiles_x": 2,
+        "tiles_y": 1,
+        "animation_type": 0,
+        "row_index": 0,
+        "cycles": 1.0,
+        "random_row": null,
+        "use_random_row": null,
+        "start_frame": {
+          "state": 0,
+          "scalar": 0.0,
+          "min_scalar": 0.0,
+          "has_min_curve": false,
+          "has_max_curve": false
+        },
+        "frame_over_time": {
+          "state": 0,
+          "scalar": 0.5,
+          "min_scalar": 0.9998999834060669,
+          "has_min_curve": false,
+          "has_max_curve": false
+        }
+      },
+      "renderer": {
+        "render_mode": 1,
+        "alignment": 0,
+        "min_particle_size": 0.0,
+        "max_particle_size": 1.0,
+        "sort_mode": 0,
+        "sorting_fudge": 0.0,
+        "length_scale": -3.0,
+        "velocity_scale": 0.0,
+        "camera_velocity_scale": 0.0,
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "material_name": "FX_MAT_Water_Step_01",
+        "mesh_path_id": null,
+        "mesh_name": null
+      }
+    }
+  ]
+}

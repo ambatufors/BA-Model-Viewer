@@ -1,0 +1,115 @@
+{
+  "name": "my_event091_strategytable_02",
+  "shader": "",
+  "floats": {
+    "_Cull": 2.0,
+    "_Cutoff": 0.5,
+    "_DstBlend": 0.0,
+    "_DstBlendAlpha": 0.0,
+    "_EmissionStrength": 0.0,
+    "_LightmapStrength": 1.0,
+    "_ReflectAnglePower": 2.0,
+    "_ReflectBaseAmount": 0.0,
+    "_ReflectStrength": 0.0,
+    "_ShadowAttenRefl": 0.0,
+    "_ShadowAttenSpec": 0.20000000298023224,
+    "_SpecPower": 1.0,
+    "_SrcBlend": 1.0,
+    "_SrcBlendAlpha": 1.0,
+    "_ZOffsetFactor": 0.0,
+    "_ZOffsetUnits": 0.0,
+    "_ZTest": 4.0,
+    "_ZWrite": 1.0
+  },
+  "colors": {
+    "_CodeAddColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeAddRimColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeMultiplyColor": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_Color": {
+      "r": 2.0,
+      "g": 2.0,
+      "b": 2.0,
+      "a": 1.0
+    },
+    "_SpecLightColor": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_SpecLightDir": {
+      "r": 0.0,
+      "g": 0.9399999976158142,
+      "b": 0.34200000762939453,
+      "a": 0.0
+    }
+  },
+  "textures": {
+    "_EmissionTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ]
+    },
+    "_MainTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ],
+      "name": "my_event091_strategytable_02"
+    },
+    "_PrefabLightmapTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ]
+    },
+    "_ReflectTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ]
+    },
+    "_SpecTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ]
+    }
+  }
+}

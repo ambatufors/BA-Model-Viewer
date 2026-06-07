@@ -1,0 +1,84 @@
+{
+  "name": "FX_MAT_White_02",
+  "shader": "DSFX/FX_SHADER_AlphaBlend_0",
+  "floats": {
+    "_AlphaClip": 0.0,
+    "_Blend": 0.0,
+    "_BumpScale": 1.0,
+    "_Cull": 2.0,
+    "_Cull_Mode": 2.0,
+    "_Custom_Data_Main_Offset_Use": 0.0,
+    "_Custom_Data_Mask_Offset_Use": 0.0,
+    "_Custom_Data_Offset_Use": 0.0,
+    "_Cutoff": 0.5,
+    "_DetailNormalMapScale": 1.0,
+    "_DstBlend": 0.0,
+    "_GlossMapScale": 1.0,
+    "_Glossiness": 0.5,
+    "_GlossyReflections": 1.0,
+    "_Main_Speed_X": 0.0,
+    "_Main_Speed_Y": 0.0,
+    "_Main_Texture_No": 0.0,
+    "_Mask_Speed_X": 0.0,
+    "_Mask_Speed_Y": 0.0,
+    "_Metallic": 0.0,
+    "_Multiply": 1.0,
+    "_OcclusionStrength": 1.0,
+    "_Parallax": 0.019999999552965164,
+    "_RGBRGBA": 1.0,
+    "_SmoothnessTextureChannel": 0.0,
+    "_SpecularHighlights": 1.0,
+    "_SrcBlend": 1.0,
+    "_Step_Custom_DataVertex_color_Use": 0.0,
+    "_Step_Power": 1.0,
+    "_Step_Scroll_Use": 1.0,
+    "_Surface": 0.0,
+    "_UVSec": 0.0,
+    "_Vertex_Alpha_Use": 0.0,
+    "_WorkflowMode": 1.0,
+    "_ZOffsetFactor": 0.0,
+    "_ZOffsetUnits": 0.0,
+    "_ZTest_Mode": 4.0,
+    "_ZWrite": 1.0,
+    "_ZWrite_Mode": 0.0
+  },
+  "colors": {
+    "_Color": {
+      "r": 11.98431396484375,
+      "g": 11.98431396484375,
+      "b": 11.98431396484375,
+      "a": 1.0
+    },
+    "_EmissionColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "_SpecColor": {
+      "r": 0.19999995827674866,
+      "g": 0.19999995827674866,
+      "b": 0.19999995827674866,
+      "a": 1.0
+    }
+  },
+  "ints": {},
+  "textures": {
+    "_Texture": {
+      "name": "FX_TEX_White_01",
+      "path_id": 6977316844502959008,
+      "size": [
+        4,
+        4
+      ],
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ]
+    }
+  }
+}

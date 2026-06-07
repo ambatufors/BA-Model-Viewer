@@ -1,0 +1,129 @@
+{
+  "name": "CH0247_Prop02",
+  "shader": "MX/C-Weapon",
+  "floats": {
+    "_AdditionalLightSharpness": 5.0,
+    "_AdditionalLightStrength": 0.9700000286102295,
+    "_Cull": 0.0,
+    "_Cutoff": 0.5,
+    "_DitherThreshold": 0.0,
+    "_DstBlend": 0.0,
+    "_DstBlendAlpha": 0.0,
+    "_GlowStrength0": 0.0,
+    "_GlowStrictness0": 3.0,
+    "_GrayBrightness": 1.0,
+    "_IsDither": 0.0,
+    "_LightStrong": 10.0,
+    "_LightValue": 0.6359999775886536,
+    "_RimAreaMultiplier": 3.0,
+    "_RimStrength": 1.0,
+    "_ShadowStrong": 10.0,
+    "_ShadowThreshold": 0.550000011920929,
+    "_SpecStrong": 0.10000000149011612,
+    "_SrcBlend": 1.0,
+    "_SrcBlendAlpha": 1.0,
+    "_UseGlow": 0.0,
+    "_ZOffsetFactor": 0.0,
+    "_ZOffsetUnits": 0.0,
+    "_ZTest": 4.0,
+    "_ZWrite": 1.0
+  },
+  "colors": {
+    "_CodeAddColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeAddRimColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeMultiplyColor": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_Color": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_FakeLightDir": {
+      "r": 0.10000000149011612,
+      "g": 0.6499999761581421,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_GlowMaskColor0": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_GlowTint0": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "_OutlineSolidColorTint": {
+      "r": 0.699999988079071,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "_OutlineTint": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5,
+      "a": 1.0
+    },
+    "_ShadowTint": {
+      "r": 0.5410733222961426,
+      "g": 0.5943396091461182,
+      "b": 0.5648305416107178,
+      "a": 1.0
+    },
+    "_SpecColor": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_Tint": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    }
+  },
+  "textures": {
+    "_MainTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ],
+      "name": "CH0247_Prop02"
+    },
+    "_SourceTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ],
+      "name": "CH0247_Prop02_Mask"
+    }
+  }
+}

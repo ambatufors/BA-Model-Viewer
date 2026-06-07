@@ -1,0 +1,1163 @@
+{
+  "schema_version": 3,
+  "char_id": "CH0334",
+  "scope": "char",
+  "filter": null,
+  "prefab_roots": [
+    "FX_CH0334_Cafe_Reaction_Emotion_01",
+    "FX_CH0334_Cafe_Reaction_Head_01",
+    "FX_CH0334_Callsign_Emotion_01",
+    "FX_CH0334_Victory_01",
+    "FX_CH0334_Victory_Random_Head_01",
+    "FX_CH0334_Victory_Random_01",
+    "FX_CH0334_Victory_Start_Interaction_01_Emotion_01",
+    "FX_my_event088_maintenancestation_Head"
+  ],
+  "emotion_only": false,
+  "from_anim_events": true,
+  "bundle_count": 764,
+  "fx_parent_bones": [
+    {
+      "index": 0,
+      "name": "bone_root",
+      "transform_path_id": -4206330977831600041
+    },
+    {
+      "index": 1,
+      "name": "Bip001 Pelvis",
+      "transform_path_id": 1538306830021509207
+    },
+    {
+      "index": 2,
+      "name": "Bip001 Head",
+      "transform_path_id": -8399797792813203369
+    },
+    {
+      "index": 3,
+      "name": "Bip001 L Hand",
+      "transform_path_id": -8126020260509761449
+    },
+    {
+      "index": 4,
+      "name": "Bip001 R Hand",
+      "transform_path_id": 3893523334865698903
+    },
+    {
+      "index": 5,
+      "name": "fire_01",
+      "transform_path_id": 5405927794885083223
+    },
+    {
+      "index": 6,
+      "name": null,
+      "transform_path_id": 0
+    },
+    {
+      "index": 7,
+      "name": "Bip001 eye_L",
+      "transform_path_id": -9112055525926485929
+    },
+    {
+      "index": 8,
+      "name": "Bip001 eye_R",
+      "transform_path_id": 6497698766272610391
+    },
+    {
+      "index": 9,
+      "name": "Bip001",
+      "transform_path_id": 7089936071142162519
+    }
+  ],
+  "prefabs": [
+    {
+      "name": "FX_CH0334_Cafe_Reaction_Emotion_01",
+      "file": "prefabs/FX_CH0334_Cafe_Reaction_Emotion_01.json",
+      "descendant_count": 10,
+      "attach": {
+        "parent_index": 0,
+        "timer_duration": 6.0,
+        "life_mode": 1
+      }
+    },
+    {
+      "name": "FX_CH0334_Cafe_Reaction_Head_01",
+      "file": "prefabs/FX_CH0334_Cafe_Reaction_Head_01.json",
+      "descendant_count": 2,
+      "attach": {
+        "parent_index": 2,
+        "timer_duration": 2.5,
+        "life_mode": 1
+      }
+    },
+    {
+      "name": "FX_CH0334_Callsign_Emotion_01",
+      "file": "prefabs/FX_CH0334_Callsign_Emotion_01.json",
+      "descendant_count": 5,
+      "attach": {
+        "parent_index": 0,
+        "timer_duration": 1.2000000476837158,
+        "life_mode": 1
+      }
+    },
+    {
+      "name": "FX_CH0334_Victory_01",
+      "file": "prefabs/FX_CH0334_Victory_01.json",
+      "descendant_count": 16,
+      "attach": {
+        "parent_index": 0,
+        "timer_duration": 3.5,
+        "life_mode": 1
+      }
+    },
+    {
+      "name": "FX_CH0334_Victory_Random_Head_01",
+      "file": "prefabs/FX_CH0334_Victory_Random_Head_01.json",
+      "descendant_count": 2,
+      "attach": {
+        "parent_index": 2,
+        "timer_duration": 1.0,
+        "life_mode": 1
+      }
+    },
+    {
+      "name": "FX_CH0334_Victory_Random_01",
+      "file": "prefabs/FX_CH0334_Victory_Random_01.json",
+      "descendant_count": 22,
+      "attach": {
+        "parent_index": 0,
+        "timer_duration": 5.0,
+        "life_mode": 1
+      }
+    },
+    {
+      "name": "FX_CH0334_Victory_Start_Interaction_01_Emotion_01",
+      "file": "prefabs/FX_CH0334_Victory_Start_Interaction_01_Emotion_01.json",
+      "descendant_count": 8,
+      "attach": {
+        "parent_index": 0,
+        "timer_duration": 4.0,
+        "life_mode": 1
+      }
+    },
+    {
+      "name": "FX_my_event088_maintenancestation_Head",
+      "file": "prefabs/FX_my_event088_maintenancestation_Head.json",
+      "descendant_count": 3,
+      "attach": {
+        "parent_index": 2,
+        "timer_duration": 19.0,
+        "life_mode": 1
+      }
+    }
+  ],
+  "textures": [
+    {
+      "name": "FX_TEX_Circle_Ngone_01",
+      "path_id": -6321504943851128079,
+      "size": [
+        128,
+        128
+      ],
+      "file": "textures/FX_TEX_Circle_Ngone_01.png"
+    },
+    {
+      "name": "FX_TEX_Gra_W_01",
+      "path_id": -2619523782826305410,
+      "size": [
+        512,
+        16
+      ],
+      "file": "textures/FX_TEX_Gra_W_01.png"
+    },
+    {
+      "name": "FX_TEX_Color_01",
+      "path_id": 5173492568033275995,
+      "size": [
+        4,
+        16
+      ],
+      "file": "textures/FX_TEX_Color_01__4x16.png"
+    },
+    {
+      "name": "FX_TEX_Flare_01a",
+      "path_id": 916604894585360682,
+      "size": [
+        256,
+        256
+      ],
+      "file": "textures/FX_TEX_Flare_01a.png"
+    },
+    {
+      "name": "FX_TEX_Mask_62",
+      "path_id": -7561261976403023089,
+      "size": [
+        64,
+        4
+      ],
+      "file": "textures/FX_TEX_Mask_62.png"
+    },
+    {
+      "name": "FX_TEX_Mask_63",
+      "path_id": 2350757474969685260,
+      "size": [
+        256,
+        16
+      ],
+      "file": "textures/FX_TEX_Mask_63.png"
+    },
+    {
+      "name": "FX_TEX_Noise_48c",
+      "path_id": -6022230596627295794,
+      "size": [
+        128,
+        128
+      ],
+      "file": "textures/FX_TEX_Noise_48c.png"
+    },
+    {
+      "name": "FX_TEX_CH0334_Img_HUD_01",
+      "path_id": -3875292505228744195,
+      "size": [
+        2048,
+        2048
+      ],
+      "file": "textures/FX_TEX_CH0334_Img_HUD_01.png"
+    },
+    {
+      "name": "FX_TEX_Color_01",
+      "path_id": -2164856630162558323,
+      "size": [
+        128,
+        16
+      ],
+      "file": "textures/FX_TEX_Color_01__128x16.png"
+    },
+    {
+      "name": "FX_TEX_Noise_48d",
+      "path_id": -1702237486994446282,
+      "size": [
+        128,
+        128
+      ],
+      "file": "textures/FX_TEX_Noise_48d.png"
+    },
+    {
+      "name": "FX_TEX_CH0334_Img_HUD_02",
+      "path_id": 2776801447355914080,
+      "size": [
+        256,
+        128
+      ],
+      "file": "textures/FX_TEX_CH0334_Img_HUD_02.png"
+    },
+    {
+      "name": "FX_TEX_Noise_48b",
+      "path_id": 4802689468136594893,
+      "size": [
+        32,
+        32
+      ],
+      "file": "textures/FX_TEX_Noise_48b.png"
+    },
+    {
+      "name": "FX_TEX_Gra_W_02l",
+      "path_id": 8658853164804233491,
+      "size": [
+        512,
+        32
+      ],
+      "file": "textures/FX_TEX_Gra_W_02l.png"
+    },
+    {
+      "name": "FX_TEX_Gra_W_09",
+      "path_id": -5730490640060272832,
+      "size": [
+        64,
+        64
+      ],
+      "file": "textures/FX_TEX_Gra_W_09.png"
+    },
+    {
+      "name": "FX_TEX_Rect_Glow_03",
+      "path_id": -5449523881670253814,
+      "size": [
+        512,
+        512
+      ],
+      "file": "textures/FX_TEX_Rect_Glow_03.png"
+    },
+    {
+      "name": "FX_TEX_Stretch_Scroll_01b",
+      "path_id": -2669318377281975098,
+      "size": [
+        512,
+        512
+      ],
+      "file": "textures/FX_TEX_Stretch_Scroll_01b.png"
+    },
+    {
+      "name": "FX_TEX_Hand_Trail_04",
+      "path_id": 2215834916762830183,
+      "size": [
+        512,
+        512
+      ],
+      "file": "textures/FX_TEX_Hand_Trail_04.png"
+    },
+    {
+      "name": "FX_TEX_Rect_Glow_02a",
+      "path_id": -8317080977510299967,
+      "size": [
+        512,
+        64
+      ],
+      "file": "textures/FX_TEX_Rect_Glow_02a.png"
+    },
+    {
+      "name": "FX_TEX_Noise_02_Heli",
+      "path_id": -757548725098065653,
+      "size": [
+        128,
+        128
+      ],
+      "file": "textures/FX_TEX_Noise_02_Heli.png"
+    },
+    {
+      "name": "FX_TEX_Flare_10",
+      "path_id": -8922516048446504532,
+      "size": [
+        512,
+        256
+      ],
+      "file": "textures/FX_TEX_Flare_10.png"
+    },
+    {
+      "name": "FX_TEX_Flare_03",
+      "path_id": -1799308435620999168,
+      "size": [
+        512,
+        512
+      ],
+      "file": "textures/FX_TEX_Flare_03.png"
+    },
+    {
+      "name": "FX_TEX_Circle_01",
+      "path_id": 1149648528816154761,
+      "size": [
+        512,
+        512
+      ],
+      "file": "textures/FX_TEX_Circle_01.png"
+    },
+    {
+      "name": "FX_TEX_Circle_Glow_01",
+      "path_id": 2238028599995704187,
+      "size": [
+        128,
+        128
+      ],
+      "file": "textures/FX_TEX_Circle_Glow_01.png"
+    },
+    {
+      "name": "FX_TEX_White_01",
+      "path_id": 6977316844502959008,
+      "size": [
+        4,
+        4
+      ],
+      "file": "textures/FX_TEX_White_01.png"
+    }
+  ],
+  "materials": [
+    {
+      "name": "FX_MAT_Gra_W_02_Alpha",
+      "file": "materials/FX_MAT_Gra_W_02_Alpha.json"
+    },
+    {
+      "name": "FX_MAT_Color_01",
+      "file": "materials/FX_MAT_Color_01.json"
+    },
+    {
+      "name": "FX_MAT_Circle_Ngone_01",
+      "file": "materials/FX_MAT_Circle_Ngone_01.json"
+    },
+    {
+      "name": "FX_MAT_Circle_Glow_01",
+      "file": "materials/FX_MAT_Circle_Glow_01.json"
+    },
+    {
+      "name": "FX_MAT_Circle_Glow_01",
+      "file": "materials/FX_MAT_Circle_Glow_01.json"
+    },
+    {
+      "name": "FX_MAT_White_02",
+      "file": "materials/FX_MAT_White_02.json"
+    },
+    {
+      "name": "FX_MAT_Mask_63",
+      "file": "materials/FX_MAT_Mask_63.json"
+    },
+    {
+      "name": "FX_MAT_Trail_75a",
+      "file": "materials/FX_MAT_Trail_75a.json"
+    },
+    {
+      "name": "FX_MAT_White_05",
+      "file": "materials/FX_MAT_White_05.json"
+    },
+    {
+      "name": "FX_MAT_Aura_Distort_06h",
+      "file": "materials/FX_MAT_Aura_Distort_06h.json"
+    },
+    {
+      "name": "FX_MAT_CH0334_Img_HUD_02",
+      "file": "materials/FX_MAT_CH0334_Img_HUD_02.json"
+    },
+    {
+      "name": "FX_MAT_CH0334_HUD_01",
+      "file": "materials/FX_MAT_CH0334_HUD_01.json"
+    },
+    {
+      "name": "FX_MAT_CH0334_Img_HUD_01",
+      "file": "materials/FX_MAT_CH0334_Img_HUD_01.json"
+    },
+    {
+      "name": "FX_MAT_Mask_62a",
+      "file": "materials/FX_MAT_Mask_62a.json"
+    },
+    {
+      "name": "FX_MAT_CH0334_HUD_Line_01",
+      "file": "materials/FX_MAT_CH0334_HUD_Line_01.json"
+    },
+    {
+      "name": "FX_MAT_Circle_Glow_14",
+      "file": "materials/FX_MAT_Circle_Glow_14.json"
+    },
+    {
+      "name": "FX_MAT_Circle_01er",
+      "file": "materials/FX_MAT_Circle_01er.json"
+    },
+    {
+      "name": "FX_MAT_White_13",
+      "file": "materials/FX_MAT_White_13.json"
+    },
+    {
+      "name": "FX_MAT_White_01",
+      "file": "materials/FX_MAT_White_01.json"
+    },
+    {
+      "name": "FX_MAT_Rect_Glow_02a_01",
+      "file": "materials/FX_MAT_Rect_Glow_02a_01.json"
+    },
+    {
+      "name": "FX_MAT_Flare_14",
+      "file": "materials/FX_MAT_Flare_14.json"
+    },
+    {
+      "name": "FX_MAT_Flare_03a",
+      "file": "materials/FX_MAT_Flare_03a.json"
+    }
+  ],
+  "meshes": [
+    {
+      "name": "FX_MESH_CH0334_Acc_Head",
+      "file": "meshes/FX_MESH_CH0334_Acc_Head.glb",
+      "verts": 72,
+      "faces": 78
+    },
+    {
+      "name": "FX_MESH_Plane_16",
+      "file": "meshes/FX_MESH_Plane_16.glb",
+      "verts": 9,
+      "faces": 4
+    },
+    {
+      "name": "FX_MESH_Emotion_02",
+      "file": "meshes/FX_MESH_Emotion_02.glb",
+      "verts": 12,
+      "faces": 10
+    },
+    {
+      "name": "FX_MESH_Plane_Ring_002",
+      "file": "meshes/FX_MESH_Plane_Ring_002.glb",
+      "verts": 259,
+      "faces": 432
+    },
+    {
+      "name": "FX_Ngone_01",
+      "file": "meshes/FX_Ngone_01.glb",
+      "verts": 24,
+      "faces": 8
+    },
+    {
+      "name": "FX_MESH_CH0334_HUD_02_2",
+      "file": "meshes/FX_MESH_CH0334_HUD_02_2.glb",
+      "verts": 120,
+      "faces": 118
+    },
+    {
+      "name": "FX_MESH_Spark_Line_01_2",
+      "file": "meshes/FX_MESH_Spark_Line_01_2.glb",
+      "verts": 153,
+      "faces": 256
+    },
+    {
+      "name": "FX_MESH_Spark_Line_01_3",
+      "file": "meshes/FX_MESH_Spark_Line_01_3.glb",
+      "verts": 153,
+      "faces": 256
+    },
+    {
+      "name": "FX_Circle_01",
+      "file": "meshes/FX_Circle_01.glb",
+      "verts": 130,
+      "faces": 128
+    },
+    {
+      "name": "Plane006",
+      "file": "meshes/Plane006.glb",
+      "verts": 84,
+      "faces": 96
+    },
+    {
+      "name": "FX_MESH_CH0326_Star_01_1",
+      "file": "meshes/FX_MESH_CH0326_Star_01_1.glb",
+      "verts": 83,
+      "faces": 120
+    }
+  ],
+  "particles": [
+    {
+      "go_name": "Head_Acc_1",
+      "go_path_id": 3218154574243418407,
+      "root": "FX_my_event088_maintenancestation_Head",
+      "file": "particles/FX_my_event088_maintenancestation_Head__Head_Acc_1.json",
+      "renderer_materials": [
+        "FX_MAT_White_13"
+      ],
+      "renderer_mesh": "FX_MESH_CH0334_Acc_Head",
+      "renderer_mesh_file": "meshes/FX_MESH_CH0334_Acc_Head.glb"
+    },
+    {
+      "go_name": "Head_Acc",
+      "go_path_id": -3258813258490916569,
+      "root": "FX_my_event088_maintenancestation_Head",
+      "file": "particles/FX_my_event088_maintenancestation_Head__Head_Acc.json",
+      "renderer_materials": [
+        "FX_MAT_White_13"
+      ],
+      "renderer_mesh": "FX_MESH_CH0334_Acc_Head",
+      "renderer_mesh_file": "meshes/FX_MESH_CH0334_Acc_Head.glb"
+    },
+    {
+      "go_name": "FX_my_event088_maintenancestation_Head",
+      "go_path_id": -1413194144137883353,
+      "root": "FX_my_event088_maintenancestation_Head",
+      "file": "particles/FX_my_event088_maintenancestation_Head__FX_my_event088_maintenancestation_Head.json",
+      "renderer_materials": [],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "spark_mesh [6]",
+      "go_path_id": 160904184299118747,
+      "root": "FX_CH0334_Victory_01",
+      "file": "particles/FX_CH0334_Victory_01__spark_mesh_6.json",
+      "renderer_materials": [
+        "FX_MAT_Rect_Glow_02a_01"
+      ],
+      "renderer_mesh": "FX_MESH_Spark_Line_01_2",
+      "renderer_mesh_file": "meshes/FX_MESH_Spark_Line_01_2.glb"
+    },
+    {
+      "go_name": "spark_particle",
+      "go_path_id": 3350742464478699675,
+      "root": "FX_CH0334_Victory_01",
+      "file": "particles/FX_CH0334_Victory_01__spark_particle.json",
+      "renderer_materials": [
+        "FX_MAT_Circle_Glow_14"
+      ],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "hand_trail_2",
+      "go_path_id": -7293574727390433635,
+      "root": "FX_CH0334_Callsign_Emotion_01",
+      "file": "particles/FX_CH0334_Callsign_Emotion_01__hand_trail_2.json",
+      "renderer_materials": [
+        "FX_MAT_Trail_75a"
+      ],
+      "renderer_mesh": "FX_MESH_Spark_Line_01_3",
+      "renderer_mesh_file": "meshes/FX_MESH_Spark_Line_01_3.glb"
+    },
+    {
+      "go_name": "star_mesh [3]",
+      "go_path_id": 998712488173640069,
+      "root": "FX_CH0334_Victory_Random_01",
+      "file": "particles/FX_CH0334_Victory_Random_01__star_mesh_3.json",
+      "renderer_materials": [
+        "FX_MAT_Mask_63"
+      ],
+      "renderer_mesh": "FX_MESH_CH0326_Star_01_1",
+      "renderer_mesh_file": "meshes/FX_MESH_CH0326_Star_01_1.glb"
+    },
+    {
+      "go_name": "glow_back",
+      "go_path_id": 9129324631027991276,
+      "root": "FX_CH0334_Victory_Start_Interaction_01_Emotion_01",
+      "file": "particles/FX_CH0334_Victory_Start_Interaction_01_Emotion_01__glow_back.json",
+      "renderer_materials": [
+        "FX_MAT_Gra_W_02_Alpha"
+      ],
+      "renderer_mesh": "FX_Circle_01",
+      "renderer_mesh_file": "meshes/FX_Circle_01.glb"
+    },
+    {
+      "go_name": "Glow_L",
+      "go_path_id": -5983584678949232485,
+      "root": "FX_CH0334_Victory_01",
+      "file": "particles/FX_CH0334_Victory_01__Glow_L.json",
+      "renderer_materials": [
+        "FX_MAT_Circle_Glow_01"
+      ],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "particle_twinkle_2",
+      "go_path_id": -3758566687459239547,
+      "root": "FX_CH0334_Victory_Random_01",
+      "file": "particles/FX_CH0334_Victory_Random_01__particle_twinkle_2.json",
+      "renderer_materials": [
+        "FX_MAT_Circle_Glow_01"
+      ],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "_trans",
+      "go_path_id": 4089348105676724911,
+      "root": "FX_CH0334_Cafe_Reaction_Emotion_01",
+      "file": "particles/FX_CH0334_Cafe_Reaction_Emotion_01__trans.json",
+      "renderer_materials": [],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "touch_1",
+      "go_path_id": -2424974617257764475,
+      "root": "FX_CH0334_Victory_Random_01",
+      "file": "particles/FX_CH0334_Victory_Random_01__touch_1.json",
+      "renderer_materials": [
+        "FX_MAT_Mask_62a"
+      ],
+      "renderer_mesh": "FX_MESH_Plane_16",
+      "renderer_mesh_file": "meshes/FX_MESH_Plane_16.glb"
+    },
+    {
+      "go_name": "HUD_sub_1",
+      "go_path_id": -3123249679175771771,
+      "root": "FX_CH0334_Victory_Random_01",
+      "file": "particles/FX_CH0334_Victory_Random_01__HUD_sub_1.json",
+      "renderer_materials": [
+        "FX_MAT_CH0334_Img_HUD_02"
+      ],
+      "renderer_mesh": "FX_MESH_CH0334_HUD_02_2",
+      "renderer_mesh_file": "meshes/FX_MESH_CH0334_HUD_02_2.glb"
+    },
+    {
+      "go_name": "FX_CH0334_Victory_01",
+      "go_path_id": 2210920699246272667,
+      "root": "FX_CH0334_Victory_01",
+      "file": "particles/FX_CH0334_Victory_01__FX_CH0334_Victory_01.json",
+      "renderer_materials": [],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "glow-mesh",
+      "go_path_id": -6827377813627026708,
+      "root": "FX_CH0334_Victory_Start_Interaction_01_Emotion_01",
+      "file": "particles/FX_CH0334_Victory_Start_Interaction_01_Emotion_01__glow-mesh.json",
+      "renderer_materials": [
+        "FX_MAT_Circle_Ngone_01"
+      ],
+      "renderer_mesh": "FX_Ngone_01",
+      "renderer_mesh_file": "meshes/FX_Ngone_01.glb"
+    },
+    {
+      "go_name": "FX_CH0334_Victory_Start_Interaction_01_Emotion_01",
+      "go_path_id": -6961845419236867348,
+      "root": "FX_CH0334_Victory_Start_Interaction_01_Emotion_01",
+      "file": "particles/FX_CH0334_Victory_Start_Interaction_01_Emotion_01__FX_CH0334_Victory_Start_Interaction_01_Emotion_01.json",
+      "renderer_materials": [],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "st_particle",
+      "go_path_id": 2396352639124576943,
+      "root": "FX_CH0334_Cafe_Reaction_Emotion_01",
+      "file": "particles/FX_CH0334_Cafe_Reaction_Emotion_01__st_particle.json",
+      "renderer_materials": [
+        "FX_MAT_Circle_Glow_14"
+      ],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "hand_trail_1",
+      "go_path_id": 6919096686965452445,
+      "root": "FX_CH0334_Callsign_Emotion_01",
+      "file": "particles/FX_CH0334_Callsign_Emotion_01__hand_trail_1.json",
+      "renderer_materials": [
+        "FX_MAT_Trail_75a"
+      ],
+      "renderer_mesh": "FX_MESH_Spark_Line_01_3",
+      "renderer_mesh_file": "meshes/FX_MESH_Spark_Line_01_3.glb"
+    },
+    {
+      "go_name": "find_emotion [11]",
+      "go_path_id": 3348191693273569967,
+      "root": "FX_CH0334_Cafe_Reaction_Emotion_01",
+      "file": "particles/FX_CH0334_Cafe_Reaction_Emotion_01__find_emotion_11.json",
+      "renderer_materials": [
+        "FX_MAT_Color_01"
+      ],
+      "renderer_mesh": "FX_MESH_Emotion_02",
+      "renderer_mesh_file": "meshes/FX_MESH_Emotion_02.glb"
+    },
+    {
+      "go_name": "glow-mesh",
+      "go_path_id": 2369214801891760815,
+      "root": "FX_CH0334_Cafe_Reaction_Emotion_01",
+      "file": "particles/FX_CH0334_Cafe_Reaction_Emotion_01__glow-mesh.json",
+      "renderer_materials": [
+        "FX_MAT_Circle_Ngone_01"
+      ],
+      "renderer_mesh": "FX_Ngone_01",
+      "renderer_mesh_file": "meshes/FX_Ngone_01.glb"
+    },
+    {
+      "go_name": "st_particle",
+      "go_path_id": -5031702838700948756,
+      "root": "FX_CH0334_Victory_Start_Interaction_01_Emotion_01",
+      "file": "particles/FX_CH0334_Victory_Start_Interaction_01_Emotion_01__st_particle.json",
+      "renderer_materials": [
+        "FX_MAT_Circle_Glow_14"
+      ],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "bokeh [6]",
+      "go_path_id": 7988948976183024005,
+      "root": "FX_CH0334_Victory_Random_01",
+      "file": "particles/FX_CH0334_Victory_Random_01__bokeh_6.json",
+      "renderer_materials": [],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "rect_particle",
+      "go_path_id": -5539685590162793809,
+      "root": "FX_CH0334_Cafe_Reaction_Emotion_01",
+      "file": "particles/FX_CH0334_Cafe_Reaction_Emotion_01__rect_particle.json",
+      "renderer_materials": [
+        "FX_MAT_White_01"
+      ],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "dot_particle",
+      "go_path_id": -2890186286117742203,
+      "root": "FX_CH0334_Victory_Random_01",
+      "file": "particles/FX_CH0334_Victory_Random_01__dot_particle.json",
+      "renderer_materials": [
+        "FX_MAT_White_02"
+      ],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "_trans",
+      "go_path_id": 5600726131299129733,
+      "root": "FX_CH0334_Victory_Random_01",
+      "file": "particles/FX_CH0334_Victory_Random_01__trans.json",
+      "renderer_materials": [],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "spark_mesh [1]",
+      "go_path_id": 4013805161034473627,
+      "root": "FX_CH0334_Victory_01",
+      "file": "particles/FX_CH0334_Victory_01__spark_mesh_1.json",
+      "renderer_materials": [
+        "FX_MAT_Rect_Glow_02a_01"
+      ],
+      "renderer_mesh": "FX_MESH_Spark_Line_01_2",
+      "renderer_mesh_file": "meshes/FX_MESH_Spark_Line_01_2.glb"
+    },
+    {
+      "go_name": "Head_Acc",
+      "go_path_id": 6717023672740749794,
+      "root": "FX_CH0334_Cafe_Reaction_Head_01",
+      "file": "particles/FX_CH0334_Cafe_Reaction_Head_01__Head_Acc.json",
+      "renderer_materials": [
+        "FX_MAT_White_05"
+      ],
+      "renderer_mesh": "FX_MESH_CH0334_Acc_Head",
+      "renderer_mesh_file": "meshes/FX_MESH_CH0334_Acc_Head.glb"
+    },
+    {
+      "go_name": "spark_particle",
+      "go_path_id": -8529462136368209765,
+      "root": "FX_CH0334_Victory_01",
+      "file": "particles/FX_CH0334_Victory_01__spark_particle.json",
+      "renderer_materials": [
+        "FX_MAT_Circle_Glow_14"
+      ],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "FX_CH0334_Acc_Base_02",
+      "go_path_id": -534983508954335384,
+      "root": "FX_CH0334_Victory_Random_Head_01",
+      "file": "particles/FX_CH0334_Victory_Random_Head_01__FX_CH0334_Acc_Base_02.json",
+      "renderer_materials": [
+        "FX_MAT_White_05"
+      ],
+      "renderer_mesh": "FX_MESH_CH0334_Acc_Head",
+      "renderer_mesh_file": "meshes/FX_MESH_CH0334_Acc_Head.glb"
+    },
+    {
+      "go_name": "Glow_R",
+      "go_path_id": 4014663761734394011,
+      "root": "FX_CH0334_Victory_01",
+      "file": "particles/FX_CH0334_Victory_01__Glow_R.json",
+      "renderer_materials": [
+        "FX_MAT_Circle_Glow_01"
+      ],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "star_particle",
+      "go_path_id": 2580027599745827564,
+      "root": "FX_CH0334_Victory_Start_Interaction_01_Emotion_01",
+      "file": "particles/FX_CH0334_Victory_Start_Interaction_01_Emotion_01__star_particle.json",
+      "renderer_materials": [
+        "FX_MAT_Flare_03a"
+      ],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "touch_3",
+      "go_path_id": 7983684706493536645,
+      "root": "FX_CH0334_Victory_Random_01",
+      "file": "particles/FX_CH0334_Victory_Random_01__touch_3.json",
+      "renderer_materials": [
+        "FX_MAT_Mask_62a"
+      ],
+      "renderer_mesh": "FX_MESH_Plane_16",
+      "renderer_mesh_file": "meshes/FX_MESH_Plane_16.glb"
+    },
+    {
+      "go_name": "star_mesh [1]",
+      "go_path_id": 6406494009819994501,
+      "root": "FX_CH0334_Victory_Random_01",
+      "file": "particles/FX_CH0334_Victory_Random_01__star_mesh_1.json",
+      "renderer_materials": [
+        "FX_MAT_Mask_63"
+      ],
+      "renderer_mesh": "FX_MESH_CH0326_Star_01_1",
+      "renderer_mesh_file": "meshes/FX_MESH_CH0326_Star_01_1.glb"
+    },
+    {
+      "go_name": "particle_twinkle_1",
+      "go_path_id": 9190913215781017989,
+      "root": "FX_CH0334_Victory_Random_01",
+      "file": "particles/FX_CH0334_Victory_Random_01__particle_twinkle_1.json",
+      "renderer_materials": [
+        "FX_MAT_Circle_Glow_01"
+      ],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "bokeh [6]",
+      "go_path_id": 4939570817384956652,
+      "root": "FX_CH0334_Victory_Start_Interaction_01_Emotion_01",
+      "file": "particles/FX_CH0334_Victory_Start_Interaction_01_Emotion_01__bokeh_6.json",
+      "renderer_materials": [],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "FX_CH0334_Callsign_Emotion_01",
+      "go_path_id": 3670526209464561309,
+      "root": "FX_CH0334_Callsign_Emotion_01",
+      "file": "particles/FX_CH0334_Callsign_Emotion_01__FX_CH0334_Callsign_Emotion_01.json",
+      "renderer_materials": [],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "star_particle [54]",
+      "go_path_id": 4854850911582908061,
+      "root": "FX_CH0334_Callsign_Emotion_01",
+      "file": "particles/FX_CH0334_Callsign_Emotion_01__star_particle_54.json",
+      "renderer_materials": [
+        "FX_MAT_Flare_03a"
+      ],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "spark_particle",
+      "go_path_id": 4777211522658066587,
+      "root": "FX_CH0334_Victory_01",
+      "file": "particles/FX_CH0334_Victory_01__spark_particle.json",
+      "renderer_materials": [
+        "FX_MAT_Circle_Glow_14"
+      ],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "glow-mesh",
+      "go_path_id": -500604385623533179,
+      "root": "FX_CH0334_Victory_Random_01",
+      "file": "particles/FX_CH0334_Victory_Random_01__glow-mesh.json",
+      "renderer_materials": [
+        "FX_MAT_Circle_Ngone_01"
+      ],
+      "renderer_mesh": "FX_Ngone_01",
+      "renderer_mesh_file": "meshes/FX_Ngone_01.glb"
+    },
+    {
+      "go_name": "glow_back",
+      "go_path_id": 3151989700796750511,
+      "root": "FX_CH0334_Cafe_Reaction_Emotion_01",
+      "file": "particles/FX_CH0334_Cafe_Reaction_Emotion_01__glow_back.json",
+      "renderer_materials": [
+        "FX_MAT_Gra_W_02_Alpha"
+      ],
+      "renderer_mesh": "FX_Circle_01",
+      "renderer_mesh_file": "meshes/FX_Circle_01.glb"
+    },
+    {
+      "go_name": "Par_1",
+      "go_path_id": -8158216340723875092,
+      "root": "FX_CH0334_Victory_Start_Interaction_01_Emotion_01",
+      "file": "particles/FX_CH0334_Victory_Start_Interaction_01_Emotion_01__Par_1.json",
+      "renderer_materials": [
+        "FX_MAT_Circle_01er"
+      ],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "spark_mesh [6]",
+      "go_path_id": 5370093821738147995,
+      "root": "FX_CH0334_Victory_01",
+      "file": "particles/FX_CH0334_Victory_01__spark_mesh_6.json",
+      "renderer_materials": [
+        "FX_MAT_Rect_Glow_02a_01"
+      ],
+      "renderer_mesh": "FX_MESH_Spark_Line_01_2",
+      "renderer_mesh_file": "meshes/FX_MESH_Spark_Line_01_2.glb"
+    },
+    {
+      "go_name": "spark_particle",
+      "go_path_id": -8018296355793280869,
+      "root": "FX_CH0334_Victory_01",
+      "file": "particles/FX_CH0334_Victory_01__spark_particle.json",
+      "renderer_materials": [
+        "FX_MAT_Circle_Glow_14"
+      ],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "boke [100]",
+      "go_path_id": -5954191368487233147,
+      "root": "FX_CH0334_Victory_Random_01",
+      "file": "particles/FX_CH0334_Victory_Random_01__boke_100.json",
+      "renderer_materials": [],
+      "renderer_mesh": "Plane006",
+      "renderer_mesh_file": "meshes/Plane006.glb"
+    },
+    {
+      "go_name": "HUD_Ch",
+      "go_path_id": 8979995701925976453,
+      "root": "FX_CH0334_Victory_Random_01",
+      "file": "particles/FX_CH0334_Victory_Random_01__HUD_Ch.json",
+      "renderer_materials": [
+        "FX_MAT_CH0334_Img_HUD_01"
+      ],
+      "renderer_mesh": "FX_MESH_CH0334_HUD_02_2",
+      "renderer_mesh_file": "meshes/FX_MESH_CH0334_HUD_02_2.glb"
+    },
+    {
+      "go_name": "FX_CH0334_Cafe_Reaction_Emotion_01",
+      "go_path_id": -9050720078799299921,
+      "root": "FX_CH0334_Cafe_Reaction_Emotion_01",
+      "file": "particles/FX_CH0334_Cafe_Reaction_Emotion_01__FX_CH0334_Cafe_Reaction_Emotion_01.json",
+      "renderer_materials": [],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "Glow_L",
+      "go_path_id": -694808226132598629,
+      "root": "FX_CH0334_Victory_01",
+      "file": "particles/FX_CH0334_Victory_01__Glow_L.json",
+      "renderer_materials": [
+        "FX_MAT_Circle_Glow_01"
+      ],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "FX_CH0334_Victory_Random_Head_01",
+      "go_path_id": -7220841594999490712,
+      "root": "FX_CH0334_Victory_Random_Head_01",
+      "file": "particles/FX_CH0334_Victory_Random_Head_01__FX_CH0334_Victory_Random_Head_01.json",
+      "renderer_materials": [],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "Glow_R",
+      "go_path_id": -5297456695838908261,
+      "root": "FX_CH0334_Victory_01",
+      "file": "particles/FX_CH0334_Victory_01__Glow_R.json",
+      "renderer_materials": [
+        "FX_MAT_Circle_Glow_01"
+      ],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "star_particle [54]",
+      "go_path_id": -7947238583356920163,
+      "root": "FX_CH0334_Callsign_Emotion_01",
+      "file": "particles/FX_CH0334_Callsign_Emotion_01__star_particle_54.json",
+      "renderer_materials": [
+        "FX_MAT_Flare_03a"
+      ],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "FX_CH0334_Victory_Random_01",
+      "go_path_id": -4102022454693127803,
+      "root": "FX_CH0334_Victory_Random_01",
+      "file": "particles/FX_CH0334_Victory_Random_01__FX_CH0334_Victory_Random_01.json",
+      "renderer_materials": [],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "HUD_1",
+      "go_path_id": -4529247922395932283,
+      "root": "FX_CH0334_Victory_Random_01",
+      "file": "particles/FX_CH0334_Victory_Random_01__HUD_1.json",
+      "renderer_materials": [
+        "FX_MAT_CH0334_HUD_01"
+      ],
+      "renderer_mesh": "FX_MESH_CH0334_HUD_02_2",
+      "renderer_mesh_file": "meshes/FX_MESH_CH0334_HUD_02_2.glb"
+    },
+    {
+      "go_name": "wind_wave",
+      "go_path_id": 1183591361107583131,
+      "root": "FX_CH0334_Victory_01",
+      "file": "particles/FX_CH0334_Victory_01__wind_wave.json",
+      "renderer_materials": [
+        "FX_MAT_Aura_Distort_06h"
+      ],
+      "renderer_mesh": "FX_MESH_Plane_Ring_002",
+      "renderer_mesh_file": "meshes/FX_MESH_Plane_Ring_002.glb"
+    },
+    {
+      "go_name": "HUD_scan_line",
+      "go_path_id": 2331272954529061253,
+      "root": "FX_CH0334_Victory_Random_01",
+      "file": "particles/FX_CH0334_Victory_Random_01__HUD_scan_line.json",
+      "renderer_materials": [
+        "FX_MAT_CH0334_HUD_Line_01"
+      ],
+      "renderer_mesh": "FX_MESH_CH0334_HUD_02_2",
+      "renderer_mesh_file": "meshes/FX_MESH_CH0334_HUD_02_2.glb"
+    },
+    {
+      "go_name": "glow_back",
+      "go_path_id": 3698072807434099077,
+      "root": "FX_CH0334_Victory_Random_01",
+      "file": "particles/FX_CH0334_Victory_Random_01__glow_back.json",
+      "renderer_materials": [
+        "FX_MAT_Gra_W_02_Alpha"
+      ],
+      "renderer_mesh": "FX_Circle_01",
+      "renderer_mesh_file": "meshes/FX_Circle_01.glb"
+    },
+    {
+      "go_name": "flare_line_in",
+      "go_path_id": 3036949761782126981,
+      "root": "FX_CH0334_Victory_Random_01",
+      "file": "particles/FX_CH0334_Victory_Random_01__flare_line_in.json",
+      "renderer_materials": [
+        "FX_MAT_Flare_14"
+      ],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "FX_CH0334_Cafe_Reaction_Head_01",
+      "go_path_id": 2305425588228071906,
+      "root": "FX_CH0334_Cafe_Reaction_Head_01",
+      "file": "particles/FX_CH0334_Cafe_Reaction_Head_01__FX_CH0334_Cafe_Reaction_Head_01.json",
+      "renderer_materials": [],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "dot_particle_1",
+      "go_path_id": -8664569442122196603,
+      "root": "FX_CH0334_Victory_Random_01",
+      "file": "particles/FX_CH0334_Victory_Random_01__dot_particle_1.json",
+      "renderer_materials": [
+        "FX_MAT_White_02"
+      ],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "dot_particle_2",
+      "go_path_id": 4023960332552640901,
+      "root": "FX_CH0334_Victory_Random_01",
+      "file": "particles/FX_CH0334_Victory_Random_01__dot_particle_2.json",
+      "renderer_materials": [
+        "FX_MAT_White_02"
+      ],
+      "renderer_mesh": null
+    },
+    {
+      "go_name": "spark_mesh [3]",
+      "go_path_id": 1953739902568685723,
+      "root": "FX_CH0334_Victory_01",
+      "file": "particles/FX_CH0334_Victory_01__spark_mesh_3.json",
+      "renderer_materials": [
+        "FX_MAT_Rect_Glow_02a_01"
+      ],
+      "renderer_mesh": "FX_MESH_Spark_Line_01_2",
+      "renderer_mesh_file": "meshes/FX_MESH_Spark_Line_01_2.glb"
+    },
+    {
+      "go_name": "touch_2",
+      "go_path_id": 3934776225492507013,
+      "root": "FX_CH0334_Victory_Random_01",
+      "file": "particles/FX_CH0334_Victory_Random_01__touch_2.json",
+      "renderer_materials": [
+        "FX_MAT_Mask_62a"
+      ],
+      "renderer_mesh": "FX_MESH_Plane_16",
+      "renderer_mesh_file": "meshes/FX_MESH_Plane_16.glb"
+    },
+    {
+      "go_name": "boke [100]",
+      "go_path_id": 1768855350637216492,
+      "root": "FX_CH0334_Victory_Start_Interaction_01_Emotion_01",
+      "file": "particles/FX_CH0334_Victory_Start_Interaction_01_Emotion_01__boke_100.json",
+      "renderer_materials": [],
+      "renderer_mesh": "Plane006",
+      "renderer_mesh_file": "meshes/Plane006.glb"
+    },
+    {
+      "go_name": "star_particle",
+      "go_path_id": 9212280076106078895,
+      "root": "FX_CH0334_Cafe_Reaction_Emotion_01",
+      "file": "particles/FX_CH0334_Cafe_Reaction_Emotion_01__star_particle.json",
+      "renderer_materials": [
+        "FX_MAT_Flare_03a"
+      ],
+      "renderer_mesh": null
+    }
+  ],
+  "anim_events_file": "anim_events.json"
+}
