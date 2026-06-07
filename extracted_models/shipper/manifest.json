@@ -43,7 +43,37 @@
           "channels": 381,
           "keyframes": 3108,
           "skipped_channels": 72,
-          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle"
+          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle",
+          "events": [
+            {
+              "time": 0.0,
+              "function": "SetMouthTile",
+              "int": 704,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 2.3000001907348633,
+              "function": "SetMouthTile",
+              "int": 604,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 2.766666889190674,
+              "function": "SetMouthTile",
+              "int": 402,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 3.7666666507720947,
+              "function": "SetMouthTile",
+              "int": 402,
+              "float": 0.0,
+              "data": ""
+            }
+          ]
         },
         {
           "name": "CutIn_Ex2_Zone02_Op_01_Field_Player_NP0283_NonWeapon_03",
@@ -61,7 +91,23 @@
           "channels": 381,
           "keyframes": 1596,
           "skipped_channels": 72,
-          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle"
+          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle",
+          "events": [
+            {
+              "time": 0.0,
+              "function": "SetMouthTile",
+              "int": 704,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 2.3000001907348633,
+              "function": "SetMouthTile",
+              "int": 707,
+              "float": 0.0,
+              "data": ""
+            }
+          ]
         },
         {
           "name": "CutIn_Ex2_Zone02_Op_01_Field_Player_NP0283_NonWeapon_05",
@@ -79,7 +125,16 @@
           "channels": 378,
           "keyframes": 4228,
           "skipped_channels": 135,
-          "source_bundle": "field-cafe-characteranimation-field_player_ch0283-_mxload-animationclips-2026-04-27_assets_all_2026725918.bundle"
+          "source_bundle": "field-cafe-characteranimation-field_player_ch0283-_mxload-animationclips-2026-04-27_assets_all_2026725918.bundle",
+          "events": [
+            {
+              "time": 0.0,
+              "function": "SetMouthTile",
+              "int": 300,
+              "float": 0.0,
+              "data": ""
+            }
+          ]
         },
         {
           "name": "Field_Player_NP0283_NonWeapon_bench_Ing",
@@ -88,7 +143,114 @@
           "channels": 378,
           "keyframes": 12985,
           "skipped_channels": 135,
-          "source_bundle": "field-cafe-characteranimation-field_player_ch0283-_mxload-animationclips-2026-04-27_assets_all_2026725918.bundle"
+          "source_bundle": "field-cafe-characteranimation-field_player_ch0283-_mxload-animationclips-2026-04-27_assets_all_2026725918.bundle",
+          "events": [
+            {
+              "time": 0.0,
+              "function": "SetMouthTile",
+              "int": 704,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 0.6666666865348816,
+              "function": "SetMouthTile",
+              "int": 705,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 1.6666667461395264,
+              "function": "SetMouthTile",
+              "int": 706,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 1.9000000953674316,
+              "function": "SetMouthTile",
+              "int": 403,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 3.1666667461395264,
+              "function": "SetMouthTile",
+              "int": 706,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 3.433333396911621,
+              "function": "SetMouthTile",
+              "int": 403,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 6.466667175292969,
+              "function": "SetMouthTile",
+              "int": 602,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 6.700000286102295,
+              "function": "SetMouthTile",
+              "int": 300,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 8.0,
+              "function": "SetMouthTile",
+              "int": 706,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 8.300000190734863,
+              "function": "SetMouthTile",
+              "int": 403,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 10.200000762939453,
+              "function": "SetMouthTile",
+              "int": 505,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 10.366666793823242,
+              "function": "SetMouthTile",
+              "int": 403,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 13.333333969116211,
+              "function": "SetMouthTile",
+              "int": 602,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 13.90000057220459,
+              "function": "SetMouthTile",
+              "int": 705,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 15.566667556762695,
+              "function": "SetMouthTile",
+              "int": 300,
+              "float": 0.0,
+              "data": ""
+            }
+          ]
         },
         {
           "name": "Field_Player_NP0283_NonWeapon_bench_Start",
@@ -97,7 +259,58 @@
           "channels": 378,
           "keyframes": 12049,
           "skipped_channels": 135,
-          "source_bundle": "field-cafe-characteranimation-field_player_ch0283-_mxload-animationclips-2026-04-27_assets_all_2026725918.bundle"
+          "source_bundle": "field-cafe-characteranimation-field_player_ch0283-_mxload-animationclips-2026-04-27_assets_all_2026725918.bundle",
+          "events": [
+            {
+              "time": 0.0,
+              "function": "SetMouthTile",
+              "int": 704,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 0.03333333507180214,
+              "function": "PlayAudio",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 3.8666279315948486,
+              "function": "SetMouthTile",
+              "int": 705,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 5.433279037475586,
+              "function": "SetMouthTile",
+              "int": 704,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 6.499935150146484,
+              "function": "SetMouthTile",
+              "int": 704,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 7.533257961273193,
+              "function": "SetMouthTile",
+              "int": 705,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 8.333250045776367,
+              "function": "SetMouthTile",
+              "int": 704,
+              "float": 0.0,
+              "data": ""
+            }
+          ]
         },
         {
           "name": "Field_Player_NP0283_NonWeapon_Field_Get_Item",
@@ -106,7 +319,37 @@
           "channels": 381,
           "keyframes": 5254,
           "skipped_channels": 81,
-          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle"
+          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle",
+          "events": [
+            {
+              "time": 0.0,
+              "function": "AniEvt_InstantiateFx",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 0.0,
+              "function": "SetMouthTile",
+              "int": 401,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 0.19999799132347107,
+              "function": "SetMouthTile",
+              "int": 705,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 1.1999880075454712,
+              "function": "SetMouthTile",
+              "int": 704,
+              "float": 0.0,
+              "data": ""
+            }
+          ]
         },
         {
           "name": "Field_Player_NP0283_NonWeapon_Move_Ing",
@@ -115,7 +358,44 @@
           "channels": 379,
           "keyframes": 3452,
           "skipped_channels": 81,
-          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle"
+          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle",
+          "events": [
+            {
+              "time": 0.0,
+              "function": "SetMouthTile",
+              "int": 300,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 0.10000000149011612,
+              "function": "PlayAudioFootstep",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 0.4333333373069763,
+              "function": "PlayAudioFootstep",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 0.7666666507720947,
+              "function": "PlayAudioFootstep",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 1.100000023841858,
+              "function": "PlayAudioFootstep",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            }
+          ]
         },
         {
           "name": "Field_Player_NP0283_NonWeapon_Normal_Idle",
@@ -124,7 +404,23 @@
           "channels": 381,
           "keyframes": 1771,
           "skipped_channels": 81,
-          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle"
+          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle",
+          "events": [
+            {
+              "time": 0.0,
+              "function": "SetMouthTile",
+              "int": 300,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 0.0,
+              "function": "AniEvt_InstantiateFx",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            }
+          ]
         },
         {
           "name": "Field_Player_NP0283_NonWeapon_Normal_Idle_Think",
@@ -133,7 +429,30 @@
           "channels": 381,
           "keyframes": 6677,
           "skipped_channels": 81,
-          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle"
+          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle",
+          "events": [
+            {
+              "time": 0.0,
+              "function": "SetMouthTile",
+              "int": 401,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 8.666580200195312,
+              "function": "SetMouthTile",
+              "int": 402,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 10.199897766113281,
+              "function": "SetMouthTile",
+              "int": 401,
+              "float": 0.0,
+              "data": ""
+            }
+          ]
         },
         {
           "name": "Field_Player_NP0283_NonWeapon_Prop_Field_Ex2_Zone02_Cat_01_End",
@@ -142,7 +461,65 @@
           "channels": 378,
           "keyframes": 6039,
           "skipped_channels": 81,
-          "source_bundle": "field-cafe-characteranimation-field_player_ch0283-_mxload-animationclips-2026-04-27_assets_all_2026725918.bundle"
+          "source_bundle": "field-cafe-characteranimation-field_player_ch0283-_mxload-animationclips-2026-04-27_assets_all_2026725918.bundle",
+          "events": [
+            {
+              "time": 0.0,
+              "function": "AniEvt_InstantiateFx",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 0.0,
+              "function": "SetMouthTile",
+              "int": 300,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 0.1666666716337204,
+              "function": "PlayAudio",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 0.1666666716337204,
+              "function": "PlayAudio",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 1.6333333253860474,
+              "function": "PlayAudio",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 1.6666666269302368,
+              "function": "PlayAudio",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 2.3000001907348633,
+              "function": "SetMouthTile",
+              "int": 705,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 4.300000190734863,
+              "function": "SetMouthTile",
+              "int": 300,
+              "float": 0.0,
+              "data": ""
+            }
+          ]
         },
         {
           "name": "Field_Player_NP0283_NonWeapon_Prop_Field_Ex2_Zone02_Cat_01_Ing",
@@ -151,7 +528,44 @@
           "channels": 377,
           "keyframes": 1830,
           "skipped_channels": 75,
-          "source_bundle": "field-cafe-characteranimation-field_player_ch0283-_mxload-animationclips-2026-04-27_assets_all_2026725918.bundle"
+          "source_bundle": "field-cafe-characteranimation-field_player_ch0283-_mxload-animationclips-2026-04-27_assets_all_2026725918.bundle",
+          "events": [
+            {
+              "time": 0.0,
+              "function": "SetMouthTile",
+              "int": 300,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 0.10000000149011612,
+              "function": "PlayAudio",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 0.10000000149011612,
+              "function": "PlayAudio",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 1.5,
+              "function": "PlayAudio",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 1.5,
+              "function": "PlayAudio",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            }
+          ]
         },
         {
           "name": "Field_Player_NP0283_NonWeapon_Prop_Field_Ex2_Zone02_Cat_01_Start",
@@ -160,7 +574,30 @@
           "channels": 378,
           "keyframes": 4176,
           "skipped_channels": 81,
-          "source_bundle": "field-cafe-characteranimation-field_player_ch0283-_mxload-animationclips-2026-04-27_assets_all_2026725918.bundle"
+          "source_bundle": "field-cafe-characteranimation-field_player_ch0283-_mxload-animationclips-2026-04-27_assets_all_2026725918.bundle",
+          "events": [
+            {
+              "time": 0.0,
+              "function": "SetMouthTile",
+              "int": 300,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 0.1666666716337204,
+              "function": "PlayAudio",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 0.20000000298023224,
+              "function": "PlayAudio",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            }
+          ]
         },
         {
           "name": "Field_Player_NP0283_NonWeapon_Search",
@@ -169,7 +606,30 @@
           "channels": 381,
           "keyframes": 4779,
           "skipped_channels": 81,
-          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle"
+          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle",
+          "events": [
+            {
+              "time": 0.0,
+              "function": "SetMouthTile",
+              "int": 402,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 0.9999899864196777,
+              "function": "SetMouthTile",
+              "int": 402,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 2.3333098888397217,
+              "function": "SetMouthTile",
+              "int": 402,
+              "float": 0.0,
+              "data": ""
+            }
+          ]
         },
         {
           "name": "Field_Player_NP0283_NonWeapon_Walk_Ing",
@@ -178,7 +638,44 @@
           "channels": 381,
           "keyframes": 3639,
           "skipped_channels": 81,
-          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle"
+          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle",
+          "events": [
+            {
+              "time": 0.0,
+              "function": "SetMouthTile",
+              "int": 704,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 0.13333334028720856,
+              "function": "PlayAudioFootstep",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 0.7333333492279053,
+              "function": "PlayAudioFootstep",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 1.3333333730697632,
+              "function": "PlayAudioFootstep",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 2.0,
+              "function": "PlayAudioFootstep",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            }
+          ]
         }
       ]
     },
@@ -202,7 +699,37 @@
           "channels": 69,
           "keyframes": 587,
           "skipped_channels": 384,
-          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle"
+          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle",
+          "events": [
+            {
+              "time": 0.0,
+              "function": "SetMouthTile",
+              "int": 704,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 2.3000001907348633,
+              "function": "SetMouthTile",
+              "int": 604,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 2.766666889190674,
+              "function": "SetMouthTile",
+              "int": 402,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 3.7666666507720947,
+              "function": "SetMouthTile",
+              "int": 402,
+              "float": 0.0,
+              "data": ""
+            }
+          ]
         },
         {
           "name": "CutIn_Ex2_Zone02_Op_01_Field_Player_NP0283_NonWeapon_03",
@@ -220,7 +747,23 @@
           "channels": 69,
           "keyframes": 343,
           "skipped_channels": 384,
-          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle"
+          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle",
+          "events": [
+            {
+              "time": 0.0,
+              "function": "SetMouthTile",
+              "int": 704,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 2.3000001907348633,
+              "function": "SetMouthTile",
+              "int": 707,
+              "float": 0.0,
+              "data": ""
+            }
+          ]
         },
         {
           "name": "CutIn_Ex2_Zone02_Op_01_Field_Player_NP0283_NonWeapon_05",
@@ -238,7 +781,16 @@
           "channels": 72,
           "keyframes": 604,
           "skipped_channels": 441,
-          "source_bundle": "field-cafe-characteranimation-field_player_ch0283-_mxload-animationclips-2026-04-27_assets_all_2026725918.bundle"
+          "source_bundle": "field-cafe-characteranimation-field_player_ch0283-_mxload-animationclips-2026-04-27_assets_all_2026725918.bundle",
+          "events": [
+            {
+              "time": 0.0,
+              "function": "SetMouthTile",
+              "int": 300,
+              "float": 0.0,
+              "data": ""
+            }
+          ]
         },
         {
           "name": "Field_Player_NP0283_NonWeapon_bench_Ing",
@@ -247,7 +799,114 @@
           "channels": 72,
           "keyframes": 746,
           "skipped_channels": 441,
-          "source_bundle": "field-cafe-characteranimation-field_player_ch0283-_mxload-animationclips-2026-04-27_assets_all_2026725918.bundle"
+          "source_bundle": "field-cafe-characteranimation-field_player_ch0283-_mxload-animationclips-2026-04-27_assets_all_2026725918.bundle",
+          "events": [
+            {
+              "time": 0.0,
+              "function": "SetMouthTile",
+              "int": 704,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 0.6666666865348816,
+              "function": "SetMouthTile",
+              "int": 705,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 1.6666667461395264,
+              "function": "SetMouthTile",
+              "int": 706,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 1.9000000953674316,
+              "function": "SetMouthTile",
+              "int": 403,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 3.1666667461395264,
+              "function": "SetMouthTile",
+              "int": 706,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 3.433333396911621,
+              "function": "SetMouthTile",
+              "int": 403,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 6.466667175292969,
+              "function": "SetMouthTile",
+              "int": 602,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 6.700000286102295,
+              "function": "SetMouthTile",
+              "int": 300,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 8.0,
+              "function": "SetMouthTile",
+              "int": 706,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 8.300000190734863,
+              "function": "SetMouthTile",
+              "int": 403,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 10.200000762939453,
+              "function": "SetMouthTile",
+              "int": 505,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 10.366666793823242,
+              "function": "SetMouthTile",
+              "int": 403,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 13.333333969116211,
+              "function": "SetMouthTile",
+              "int": 602,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 13.90000057220459,
+              "function": "SetMouthTile",
+              "int": 705,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 15.566667556762695,
+              "function": "SetMouthTile",
+              "int": 300,
+              "float": 0.0,
+              "data": ""
+            }
+          ]
         },
         {
           "name": "Field_Player_NP0283_NonWeapon_bench_Start",
@@ -256,7 +915,58 @@
           "channels": 72,
           "keyframes": 985,
           "skipped_channels": 441,
-          "source_bundle": "field-cafe-characteranimation-field_player_ch0283-_mxload-animationclips-2026-04-27_assets_all_2026725918.bundle"
+          "source_bundle": "field-cafe-characteranimation-field_player_ch0283-_mxload-animationclips-2026-04-27_assets_all_2026725918.bundle",
+          "events": [
+            {
+              "time": 0.0,
+              "function": "SetMouthTile",
+              "int": 704,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 0.03333333507180214,
+              "function": "PlayAudio",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 3.8666279315948486,
+              "function": "SetMouthTile",
+              "int": 705,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 5.433279037475586,
+              "function": "SetMouthTile",
+              "int": 704,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 6.499935150146484,
+              "function": "SetMouthTile",
+              "int": 704,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 7.533257961273193,
+              "function": "SetMouthTile",
+              "int": 705,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 8.333250045776367,
+              "function": "SetMouthTile",
+              "int": 704,
+              "float": 0.0,
+              "data": ""
+            }
+          ]
         },
         {
           "name": "Field_Player_NP0283_NonWeapon_Field_Get_Item",
@@ -265,7 +975,37 @@
           "channels": 72,
           "keyframes": 375,
           "skipped_channels": 390,
-          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle"
+          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle",
+          "events": [
+            {
+              "time": 0.0,
+              "function": "AniEvt_InstantiateFx",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 0.0,
+              "function": "SetMouthTile",
+              "int": 401,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 0.19999799132347107,
+              "function": "SetMouthTile",
+              "int": 705,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 1.1999880075454712,
+              "function": "SetMouthTile",
+              "int": 704,
+              "float": 0.0,
+              "data": ""
+            }
+          ]
         },
         {
           "name": "Field_Player_NP0283_NonWeapon_Move_Ing",
@@ -274,7 +1014,44 @@
           "channels": 72,
           "keyframes": 442,
           "skipped_channels": 388,
-          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle"
+          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle",
+          "events": [
+            {
+              "time": 0.0,
+              "function": "SetMouthTile",
+              "int": 300,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 0.10000000149011612,
+              "function": "PlayAudioFootstep",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 0.4333333373069763,
+              "function": "PlayAudioFootstep",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 0.7666666507720947,
+              "function": "PlayAudioFootstep",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 1.100000023841858,
+              "function": "PlayAudioFootstep",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            }
+          ]
         },
         {
           "name": "Field_Player_NP0283_NonWeapon_Normal_Idle",
@@ -283,7 +1060,23 @@
           "channels": 72,
           "keyframes": 158,
           "skipped_channels": 390,
-          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle"
+          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle",
+          "events": [
+            {
+              "time": 0.0,
+              "function": "SetMouthTile",
+              "int": 300,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 0.0,
+              "function": "AniEvt_InstantiateFx",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            }
+          ]
         },
         {
           "name": "Field_Player_NP0283_NonWeapon_Normal_Idle_Think",
@@ -292,7 +1085,30 @@
           "channels": 72,
           "keyframes": 323,
           "skipped_channels": 390,
-          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle"
+          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle",
+          "events": [
+            {
+              "time": 0.0,
+              "function": "SetMouthTile",
+              "int": 401,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 8.666580200195312,
+              "function": "SetMouthTile",
+              "int": 402,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 10.199897766113281,
+              "function": "SetMouthTile",
+              "int": 401,
+              "float": 0.0,
+              "data": ""
+            }
+          ]
         },
         {
           "name": "Field_Player_NP0283_NonWeapon_Prop_Field_Ex2_Zone02_Cat_01_End",
@@ -301,7 +1117,65 @@
           "channels": 72,
           "keyframes": 407,
           "skipped_channels": 387,
-          "source_bundle": "field-cafe-characteranimation-field_player_ch0283-_mxload-animationclips-2026-04-27_assets_all_2026725918.bundle"
+          "source_bundle": "field-cafe-characteranimation-field_player_ch0283-_mxload-animationclips-2026-04-27_assets_all_2026725918.bundle",
+          "events": [
+            {
+              "time": 0.0,
+              "function": "AniEvt_InstantiateFx",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 0.0,
+              "function": "SetMouthTile",
+              "int": 300,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 0.1666666716337204,
+              "function": "PlayAudio",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 0.1666666716337204,
+              "function": "PlayAudio",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 1.6333333253860474,
+              "function": "PlayAudio",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 1.6666666269302368,
+              "function": "PlayAudio",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 2.3000001907348633,
+              "function": "SetMouthTile",
+              "int": 705,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 4.300000190734863,
+              "function": "SetMouthTile",
+              "int": 300,
+              "float": 0.0,
+              "data": ""
+            }
+          ]
         },
         {
           "name": "Field_Player_NP0283_NonWeapon_Prop_Field_Ex2_Zone02_Cat_01_Ing",
@@ -310,7 +1184,44 @@
           "channels": 72,
           "keyframes": 193,
           "skipped_channels": 380,
-          "source_bundle": "field-cafe-characteranimation-field_player_ch0283-_mxload-animationclips-2026-04-27_assets_all_2026725918.bundle"
+          "source_bundle": "field-cafe-characteranimation-field_player_ch0283-_mxload-animationclips-2026-04-27_assets_all_2026725918.bundle",
+          "events": [
+            {
+              "time": 0.0,
+              "function": "SetMouthTile",
+              "int": 300,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 0.10000000149011612,
+              "function": "PlayAudio",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 0.10000000149011612,
+              "function": "PlayAudio",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 1.5,
+              "function": "PlayAudio",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 1.5,
+              "function": "PlayAudio",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            }
+          ]
         },
         {
           "name": "Field_Player_NP0283_NonWeapon_Prop_Field_Ex2_Zone02_Cat_01_Start",
@@ -319,7 +1230,30 @@
           "channels": 72,
           "keyframes": 372,
           "skipped_channels": 387,
-          "source_bundle": "field-cafe-characteranimation-field_player_ch0283-_mxload-animationclips-2026-04-27_assets_all_2026725918.bundle"
+          "source_bundle": "field-cafe-characteranimation-field_player_ch0283-_mxload-animationclips-2026-04-27_assets_all_2026725918.bundle",
+          "events": [
+            {
+              "time": 0.0,
+              "function": "SetMouthTile",
+              "int": 300,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 0.1666666716337204,
+              "function": "PlayAudio",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 0.20000000298023224,
+              "function": "PlayAudio",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            }
+          ]
         },
         {
           "name": "Field_Player_NP0283_NonWeapon_Search",
@@ -328,7 +1262,30 @@
           "channels": 72,
           "keyframes": 272,
           "skipped_channels": 390,
-          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle"
+          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle",
+          "events": [
+            {
+              "time": 0.0,
+              "function": "SetMouthTile",
+              "int": 402,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 0.9999899864196777,
+              "function": "SetMouthTile",
+              "int": 402,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 2.3333098888397217,
+              "function": "SetMouthTile",
+              "int": 402,
+              "float": 0.0,
+              "data": ""
+            }
+          ]
         },
         {
           "name": "Field_Player_NP0283_NonWeapon_Walk_Ing",
@@ -337,7 +1294,44 @@
           "channels": 72,
           "keyframes": 272,
           "skipped_channels": 390,
-          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle"
+          "source_bundle": "assets-_mx-field-characters-_mxdependency-animationclips-2026-04-27_assets_all_3028449280.bundle",
+          "events": [
+            {
+              "time": 0.0,
+              "function": "SetMouthTile",
+              "int": 704,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 0.13333334028720856,
+              "function": "PlayAudioFootstep",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 0.7333333492279053,
+              "function": "PlayAudioFootstep",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 1.3333333730697632,
+              "function": "PlayAudioFootstep",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            },
+            {
+              "time": 2.0,
+              "function": "PlayAudioFootstep",
+              "int": 0,
+              "float": 0.0,
+              "data": ""
+            }
+          ]
         }
       ]
     }

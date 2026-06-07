@@ -767,6 +767,33 @@ function buildExpressionTracks(animations) {
   return tracks;
 }
 
+function collectAnimationSummaries(assetData) {
+  const byName = new Map();
+  for (const animation of assetData?.animations || []) {
+    if (animation?.name && !byName.has(animation.name)) {
+      byName.set(animation.name, animation);
+    }
+  }
+  for (const meshInfo of assetData?.skinned_meshes || []) {
+    for (const animation of meshInfo?.animations || []) {
+      if (!animation?.name) continue;
+      const current = byName.get(animation.name);
+      // Prefer the summary that carries events/renderer toggles, but keep
+      // the first one otherwise. NP0283 field/cafe exports store animation
+      // summaries under skinned_meshes only, so top-level assetData.animations
+      // is empty there.
+      if (
+        !current ||
+        ((!current.events?.length && animation.events?.length) ||
+          (!current.renderer_toggles && animation.renderer_toggles))
+      ) {
+        byName.set(animation.name, animation);
+      }
+    }
+  }
+  return [...byName.values()];
+}
+
 function expressionEventAtTime(events, time) {
   if (!events?.length) return null;
   let selected = null;
@@ -2161,13 +2188,14 @@ export async function loadCharacter(
     const visibleParts = [];
     const pendingFollows = [];
     const pendingParentAttach = [];
-    const expressionTracks = buildExpressionTracks(assetData.animations);
+    const animationSummaries = collectAnimationSummaries(assetData);
+    const expressionTracks = buildExpressionTracks(animationSummaries);
     const eyeMouthMaterials = [];
     const expressionRendererTargets = new Map();
     const rendererToggleParts = [];
     const animationClipNames = [
       ...new Set(
-        (assetData.animations || []).map((item) => item?.name).filter(Boolean)
+        animationSummaries.map((item) => item?.name).filter(Boolean)
       )
     ].sort();
     const defaultClipName = pickDefaultAnimationClip(animationClipNames);
