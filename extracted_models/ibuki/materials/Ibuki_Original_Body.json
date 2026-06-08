@@ -1,0 +1,172 @@
+{
+  "name": "Ibuki_Original_Body",
+  "shader": "MX/C-General/Layer4",
+  "floats": {
+    "_AdditionalLightSharpness": 5.0,
+    "_AdditionalLightStrength": 1.0,
+    "_Cull": 0.0,
+    "_Cutoff": 0.20000000298023224,
+    "_DitherThreshold": 0.0,
+    "_DstBlend": 0.0,
+    "_DstBlendAlpha": 0.0,
+    "_GlowStrength": 0.0,
+    "_GrayBrightness": 1.0,
+    "_MaskGSensitivity": 1.2999999523162842,
+    "_OutlineZCorrection": 0.0,
+    "_SrcBlend": 1.0,
+    "_SrcBlendAlpha": 1.0,
+    "_ZWrite": 1.0
+  },
+  "colors": {
+    "_BaseBrightness4": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeAddColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeAddRimColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeMultiplyColor": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_GlowTint": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_InvViewPower4": {
+      "r": 32.0,
+      "g": 18.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_InvViewStrength4": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_OutlineSolidColorTint": {
+      "r": 0.699999988079071,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "_OutlineTint": {
+      "r": 0.4901960790157318,
+      "g": 0.3289215564727783,
+      "b": 0.3289215564727783,
+      "a": 1.0
+    },
+    "_RimAreaMultiplier4": {
+      "r": 5.0,
+      "g": 5.0,
+      "b": 5.0,
+      "a": 5.0
+    },
+    "_RimStrength4": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_ShadowThreshold4": {
+      "r": 0.3199999928474426,
+      "g": 0.6000000238418579,
+      "b": 0.44999998807907104,
+      "a": 0.7770000100135803
+    },
+    "_ShadowTintB4": {
+      "r": 0.7735849022865295,
+      "g": 0.47792813181877136,
+      "b": 0.40566039085388184,
+      "a": 0.6705882549285889
+    },
+    "_ShadowTintG4": {
+      "r": 0.6467430591583252,
+      "g": 0.49885421991348267,
+      "b": 0.40566039085388184,
+      "a": 0.6705882549285889
+    },
+    "_ShadowTintR4": {
+      "r": 0.6312744617462158,
+      "g": 0.5660377740859985,
+      "b": 0.40566039085388184,
+      "a": 1.0
+    },
+    "_Tint": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_TwoSideTint": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_ViewLightEdge4": {
+      "r": 0.0,
+      "g": 0.3330000042915344,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_ViewOffset4": {
+      "r": 2.200000047683716,
+      "g": 0.0,
+      "b": 0.5,
+      "a": 0.0
+    },
+    "_ViewPower4": {
+      "r": 5.0,
+      "g": 14.0,
+      "b": 20.0,
+      "a": 1.0
+    },
+    "_ViewStrength4": {
+      "r": 0.0,
+      "g": 1.0,
+      "b": 0.0,
+      "a": 0.0
+    }
+  },
+  "textures": {
+    "_MainTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ],
+      "name": "Ibuki_Original_Body"
+    },
+    "_MaskTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ],
+      "name": "Ibuki_Original_Body_Mask"
+    }
+  }
+}

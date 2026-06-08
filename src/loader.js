@@ -31,7 +31,7 @@ import { createHaloParticleSystem } from "./haloParticles.js";
 import { createModelFx } from "./modelFx.js";
 
 let modelsIndex = [];
-const ASSET_CACHE_VERSION = "build-4"; //You should poke this after modifying the code
+const ASSET_CACHE_VERSION = "build-5"; //You should poke this after modifying the code
 const HEAD_MESH_BASE_NAMES = new Set([
   "Face",
   "Hair",
@@ -281,7 +281,10 @@ function isHaloMeshInfo(meshInfo) {
 
 function isRuntimeStaticMeshInfo(meshInfo) {
   return (
-    isHaloMeshInfo(meshInfo) || !!meshInfo?.fx_prop || !!meshInfo?.follow_target
+    isHaloMeshInfo(meshInfo) ||
+    !!meshInfo?.fx_prop ||
+    !!meshInfo?.follow_target ||
+    meshInfo?.source_kind === "character_prop"
   );
 }
 
