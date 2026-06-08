@@ -638,6 +638,8 @@ def _skinned_export_name(
     if "cutin" in source.lower() and _is_weapon_name(source):
         return "Cutin_Weapon"
     if _is_weapon_name(source) or _is_weapon_name(go_name):
+        if "shield" in f"{source} {go_name}".lower():
+            return "Shield_Weapon"
         if source.lower().endswith("weapon001") or go_name.lower().endswith("weapon001"):
             return "Weapon001"
         variant = re.search(r"(?:^|_)weapon[_-]?(\d+)$", stripped, re.I)
@@ -1180,7 +1182,14 @@ def export_skinned_smr(
 
     primitives = []
     face_count = 0
+    prune_bone_indices = _prune_face_bone_indices(char_id, name, joint_transforms)
     for submesh_index, triangles in enumerate(handler.get_triangles()):
+        triangles = _prune_triangles_by_bone(
+            triangles,
+            handler.m_BoneIndices,
+            handler.m_BoneWeights,
+            prune_bone_indices,
+        )
         indices = _primitive_indices(triangles)
         face_count += len(triangles)
         index_accessor = builder.add_accessor(
@@ -1331,6 +1340,57 @@ def _renderer_toggle_clips_for_go(
         )
     out.sort(key=lambda item: item["name"])
     return out
+
+
+def _prune_face_bone_indices(
+    char_id: str,
+    export_name: str,
+    joint_transforms: list[Any],
+) -> set[int]:
+    if char_id.upper() == "CH0258" and export_name == "Shield_Weapon":
+        return {
+            index
+            for index, transform in enumerate(joint_transforms)
+            if re.fullmatch(r"bone_bullet\d+", _transform_name(transform), re.I)
+        }
+    return set()
+
+
+def _vertex_uses_any_bone(
+    vertex_index: int,
+    bone_indices: Any,
+    bone_weights: Any,
+    prune_indices: set[int],
+) -> bool:
+    if not prune_indices:
+        return False
+    try:
+        indices = bone_indices[vertex_index]
+        weights = bone_weights[vertex_index] if bone_weights else []
+    except Exception:
+        return False
+    for bone_index, weight in zip(indices, weights):
+        if int(bone_index) in prune_indices and float(weight) > 1e-5:
+            return True
+    return False
+
+
+def _prune_triangles_by_bone(
+    triangles: list[tuple[int, ...]],
+    bone_indices: Any,
+    bone_weights: Any,
+    prune_indices: set[int],
+) -> list[tuple[int, ...]]:
+    if not prune_indices:
+        return triangles
+    return [
+        triangle
+        for triangle in triangles
+        if not any(
+            _vertex_uses_any_bone(vertex, bone_indices, bone_weights, prune_indices)
+            for vertex in triangle
+        )
+    ]
 
 
 def export_character_skinned_assets(

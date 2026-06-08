@@ -201,6 +201,15 @@ def _dedupe_manifest_items(items: list[dict]) -> list[dict]:
     return out
 
 
+def _manifest_resolved_dependencies(paths: list[Path]) -> list[str]:
+    """Keep manifest diagnostics focused on character/runtime dependencies."""
+    return [
+        path.name
+        for path in paths
+        if not path.name.lower().startswith("assets-_mx-cafe-")
+    ]
+
+
 def find_bundles(char_id: str) -> dict:
     """Find all bundles for a character ID."""
     if not GAME_DIR.exists():
@@ -299,7 +308,7 @@ def _collect_renderer_material_targets(
             go_name = str(data.m_GameObject.read().m_Name)
         except Exception:
             continue
-        if "halo" not in go_name.lower() and go_name not in _source_part_names(char_id, "Halo"):
+        if go_name.lower() not in {name.lower() for name in _source_part_names(char_id, "Halo")}:
             continue
         for mat_ref in getattr(data, "m_Materials", []) or []:
             try:
@@ -1273,7 +1282,7 @@ def main():
         "materials": _dedupe_manifest_items(mat_data + extra_mat_data),
         "animations": [item.summary() for item in animation_data],
         "source_bundles": {k: [b.name for b in v] for k, v in bundles.items() if v},
-        "resolved_dependencies": [b.name for b in resolution.added_dependencies],
+        "resolved_dependencies": _manifest_resolved_dependencies(resolution.added_dependencies),
         "unresolved_cabs": resolution.unresolved_cabs,
     }
     if halo_transform and not halo_anchor:
