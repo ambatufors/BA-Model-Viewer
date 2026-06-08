@@ -607,6 +607,9 @@ _PROP_OUTLINE_TOKENS = (
     "bag",
     "train",
     "face",
+    "table",
+    "crayon",
+    "drawing",
 )
 
 
