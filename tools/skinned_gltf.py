@@ -586,6 +586,23 @@ def _is_ch0091_cafe_skinned_outline(
     )
 
 
+def _is_ch0303_food_prop(
+    char_id: str,
+    go_name: str,
+    mesh_name: str,
+    owner_path: str = "",
+) -> bool:
+    if char_id.upper() != "CH0303":
+        return False
+    lowered = f"{go_name} {mesh_name}".lower()
+    if "ch0222_food_outline" not in lowered:
+        return False
+    # The truth asset carries a reused CH0222 Food name, but the renderer is
+    # owned by CH0303_Mesh and bound to CH0303_Food material/bones. Keep this
+    # narrowly scoped so cafe/strategy scene props are not pulled in.
+    return owner_path.lower().startswith("ch0303_mesh/")
+
+
 def _is_outline_name(name: str) -> bool:
     normalized = name.lower().replace("_", "").replace("-", "")
     return "outline" in normalized or "outlline" in normalized
@@ -631,6 +648,8 @@ def _skinned_export_name(
     ch0091_cafe_name = _ch0091_cafe_outline_export_name(char_id, go_name, mesh_name)
     if ch0091_cafe_name:
         return ch0091_cafe_name
+    if char_id.upper() == "CH0303" and "ch0222_food_outline" in f"{go_name} {mesh_name}".lower():
+        return "Food"
     if char_id.upper() == "CH0172" and "my_event091_strategytable_prop_02" in f"{go_name} {mesh_name}".lower():
         return "Prop02"
     if char_id.upper() == "CH0174" and "dron01_outline" in f"{go_name} {mesh_name}".lower():
@@ -958,12 +977,15 @@ def _is_skinned_export_candidate(
     is_ch0091_cafe_skinned_outline = _is_ch0091_cafe_skinned_outline(
         char_id, go_name, mesh_name, owner_path
     )
+    is_ch0303_food_prop = _is_ch0303_food_prop(char_id, go_name, mesh_name, owner_path)
     if not _name_has_source_prefix(go_name, char_id, source_ids):
         if _is_owned_external_weapon(char_id, go_name, mesh_name, owner_path, avatar_paths, source_ids):
             pass
         elif is_ch0172_strategy_table_prop:
             pass
         elif is_ch0091_cafe_skinned_outline:
+            pass
+        elif is_ch0303_food_prop:
             pass
         elif not (char_id.upper() == "CH0335" and (_is_brush_name(go_name) or _is_brush_name(mesh_name))):
             return False
@@ -981,6 +1003,8 @@ def _is_skinned_export_candidate(
     if is_ch0091_cafe_beach_prop_outline:
         return True
     if is_ch0091_cafe_skinned_outline:
+        return True
+    if is_ch0303_food_prop:
         return True
     if _is_named_prop_mesh(go_name) or _is_named_prop_mesh(mesh_name):
         return True
