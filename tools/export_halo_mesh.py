@@ -31,6 +31,7 @@ FORCE_SOURCE_TRANSFORM_HALO_CHARS = {"CH0145"}
 FORCE_VIEWER_DOWN_HALO_CHARS = {"CH0145"}
 VIEWER_PITCH_DOWN_HALO_DEG = {"CH0145": -60.0}
 PRESERVE_DEPTH_HALO_CHARS = {"CH0145", "CH0304"}
+CIRCULAR_SCALE_ONLY_HALO_CHARS = {"CH0220"}
 VIEWER_GROUP_ROTATION = np.array(
     [
         [1.0, 0.0, 0.0],
@@ -753,6 +754,151 @@ def scale_only_matrix(matrix: np.ndarray) -> np.ndarray | None:
     return out
 
 
+def circular_scale_only_matrix(
+    matrix: np.ndarray,
+    tri: trimesh.Trimesh | None,
+) -> np.ndarray | None:
+    out = scale_only_matrix(matrix)
+    if tri is None:
+        return out
+
+    points = np.asarray(getattr(tri, "vertices", []), dtype=np.float64)
+    if points.ndim != 2 or points.shape[1] != 3 or len(points) == 0:
+        return out
+
+    raw_extents = np.ptp(points, axis=0)
+    if not np.all(np.isfinite(raw_extents)) or np.count_nonzero(raw_extents > 1e-8) < 2:
+        return out
+
+    depth_axis = int(np.argmin(raw_extents))
+    plane_axes = [axis for axis in range(3) if axis != depth_axis]
+    plane_scales = np.array([abs(float(out[axis, axis])) for axis in plane_axes], dtype=np.float64)
+    if not np.all(np.isfinite(plane_scales)) or np.any(plane_scales <= 1e-8):
+        return out
+
+    target = float(np.min(plane_scales))
+    for axis in plane_axes:
+        out[axis, axis] = np.copysign(target, out[axis, axis])
+    return out
+
+
+def circular_preserve_rotation_matrix(
+    matrix: np.ndarray,
+    tri: trimesh.Trimesh | None,
+) -> np.ndarray | None:
+    if tri is None:
+        return matrix.copy()
+
+    points = np.asarray(getattr(tri, "vertices", []), dtype=np.float64)
+    if points.ndim != 2 or points.shape[1] != 3 or len(points) == 0:
+        return matrix.copy()
+
+    raw_extents = np.ptp(points, axis=0)
+    if not np.all(np.isfinite(raw_extents)) or np.count_nonzero(raw_extents > 1e-8) < 2:
+        return matrix.copy()
+
+    out = matrix.copy()
+    depth_axis = int(np.argmin(raw_extents))
+    plane_axes = [axis for axis in range(3) if axis != depth_axis]
+    plane_scales = np.array(
+        [np.linalg.norm(out[:3, axis]) for axis in plane_axes],
+        dtype=np.float64,
+    )
+    if not np.all(np.isfinite(plane_scales)) or np.any(plane_scales <= 1e-8):
+        return out
+
+    target = float(np.min(plane_scales))
+    for axis in plane_axes:
+        column = out[:3, axis]
+        length = float(np.linalg.norm(column))
+        if length > 1e-12:
+            out[:3, axis] = column / length * target
+    return out
+
+
+def flip_viewer_halo_face_down(
+    matrix: np.ndarray,
+    tri: trimesh.Trimesh | None,
+) -> np.ndarray:
+    normal = average_vertex_normal(tri)
+    if normal is None:
+        normal = plane_normal(np.asarray(getattr(tri, "vertices", []), dtype=np.float64))
+    flipped = matrix @ face_direction_flip_matrix(tri)
+    if normal is None:
+        return flipped
+    viewer_normal = VIEWER_GROUP_ROTATION @ transform_normal(flipped, normal)
+    if float(viewer_normal[1]) <= 0.0:
+        return flipped
+    return matrix
+
+
+def average_face_normal(tri: trimesh.Trimesh | None) -> np.ndarray | None:
+    if tri is None:
+        return None
+    normals = np.asarray(getattr(tri, "face_normals", []), dtype=np.float64)
+    areas = np.asarray(getattr(tri, "area_faces", []), dtype=np.float64)
+    if normals.ndim != 2 or normals.shape[1] != 3 or len(normals) == 0:
+        return None
+    if areas.ndim != 1 or len(areas) != len(normals):
+        areas = np.ones(len(normals), dtype=np.float64)
+    weighted = (normals * areas[:, None]).sum(axis=0)
+    return normalize_vector(weighted)
+
+
+def predicted_export_viewer_normal(matrix: np.ndarray, source_normal: np.ndarray) -> np.ndarray:
+    normal = VIEWER_GROUP_ROTATION @ transform_normal(matrix, source_normal)
+    # trimesh's glTF export preserves geometry winding while node transforms
+    # carry handedness. Positive-determinant node transforms read back with the
+    # opposite face direction compared with Unity's OBJ normal basis; negative
+    # determinant transforms already include that handedness flip.
+    determinant = float(np.linalg.det(matrix[:3, :3]))
+    if determinant >= 0.0:
+        normal = -normal
+    return normalize_vector(normal)
+
+
+def face_direction_flip_matrix(tri: trimesh.Trimesh | None) -> np.ndarray:
+    out = np.eye(4, dtype=np.float64)
+    if tri is None:
+        out[0, 0] = 1.0
+        out[1, 1] = -1.0
+        out[2, 2] = -1.0
+        return out
+
+    points = np.asarray(getattr(tri, "vertices", []), dtype=np.float64)
+    if points.ndim != 2 or points.shape[1] != 3 or len(points) == 0:
+        out[0, 0] = 1.0
+        out[1, 1] = -1.0
+        out[2, 2] = -1.0
+        return out
+
+    extents = np.ptp(points, axis=0)
+    depth_axis = int(np.argmin(extents))
+    plane_axes = [axis for axis in range(3) if axis != depth_axis]
+    axis = max(plane_axes, key=lambda idx: float(extents[idx]))
+    for idx in range(3):
+        out[idx, idx] = 1.0 if idx == axis else -1.0
+    return out
+
+
+def preserve_source_face_direction(
+    source_matrix: np.ndarray,
+    simplified_matrix: np.ndarray | None,
+    tri: trimesh.Trimesh | None,
+) -> np.ndarray | None:
+    if simplified_matrix is None:
+        return None
+    source_normal = average_face_normal(tri)
+    if source_normal is None:
+        return simplified_matrix
+
+    source_viewer_normal = predicted_export_viewer_normal(source_matrix, source_normal)
+    simplified_viewer_normal = predicted_export_viewer_normal(simplified_matrix, source_normal)
+    if float(np.dot(source_viewer_normal, simplified_viewer_normal)) >= 0.0:
+        return simplified_matrix
+    return simplified_matrix @ face_direction_flip_matrix(tri)
+
+
 def mesh_world_matrix(mesh_filter, char_id: str, tri: trimesh.Trimesh | None = None) -> np.ndarray | None:
     try:
         char_key = char_id.upper()
@@ -777,7 +923,12 @@ def mesh_world_matrix(mesh_filter, char_id: str, tri: trimesh.Trimesh | None = N
                 VIEWER_PITCH_DOWN_HALO_DEG[char_key],
             )
         if not halo_mesh_should_use_transform(tri, char_key):
-            return scale_only_matrix(matrix)
+            if char_key in CIRCULAR_SCALE_ONLY_HALO_CHARS:
+                return flip_viewer_halo_face_down(
+                    circular_preserve_rotation_matrix(matrix, tri),
+                    tri,
+                )
+            return preserve_source_face_direction(matrix, scale_only_matrix(matrix), tri)
         return matrix
     except Exception:
         return None
@@ -965,6 +1116,31 @@ def exported_static_halo_tilt_deg(env, char_id: str) -> float | None:
     return None
 
 
+def source_static_halo_tilt_deg(env, char_id: str) -> float | None:
+    for _go_name, mesh_filter, _chain_names in find_mesh_filters(env, char_id):
+        try:
+            tri = obj_to_trimesh(mesh_filter.m_Mesh.read())
+            go = mesh_filter.m_GameObject.read()
+            transform = get_transform_object(go)
+        except Exception:
+            continue
+        if tri is None or transform is None:
+            continue
+        matrix = prefab_to_mesh_basis(composed_transform_matrix(transform))
+        points = transform_points(matrix, np.asarray(tri.vertices, dtype=np.float64))
+        return tilt_to_viewer_up(points)
+    return None
+
+
+def placement_static_halo_tilt_deg(env, char_id: str) -> float | None:
+    char_key = char_id.upper()
+    if char_key in CIRCULAR_SCALE_ONLY_HALO_CHARS:
+        source_tilt = source_static_halo_tilt_deg(env, char_key)
+        if source_tilt is not None:
+            return source_tilt
+    return exported_static_halo_tilt_deg(env, char_key)
+
+
 def halo_depth_mode_for_tilt(tilt: float | None) -> str | None:
     if tilt is None:
         return None
@@ -974,7 +1150,7 @@ def halo_depth_mode_for_tilt(tilt: float | None) -> str | None:
 def apply_halo_follow_depth_mode(env, char_id: str, halo_follow: dict | None) -> dict | None:
     if not halo_follow:
         return halo_follow
-    tilt = exported_static_halo_tilt_deg(env, char_id)
+    tilt = placement_static_halo_tilt_deg(env, char_id)
     if tilt is None:
         return halo_follow
     halo_follow["placement_tilt_deg"] = float(round(tilt, 4))
