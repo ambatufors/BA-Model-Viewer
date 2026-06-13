@@ -140,6 +140,10 @@ CH0091_SEAHOUSE_TUBES_BUNDLES = {
     "animationclips": "assets-_mx-cafe-seahouse-tubes-_mxdependency-animationclips-2025-07-02_assets_all_2143471262.bundle",
 }
 
+HALO_PART_ALIASES = {
+    "CH0300": ("CH0225_Halo",),
+}
+
 EXTERNAL_PROP_CONFIG_FILE = ROOT / "tools" / "external_prop_config.json"
 
 
@@ -168,6 +172,12 @@ def _source_body_names(char_id: str) -> set[str]:
 
 def _source_part_names(char_id: str, part_name: str) -> set[str]:
     return {f"{source}_{part_name}" for source in _source_ids(char_id)}
+
+
+def _source_halo_names(char_id: str) -> set[str]:
+    return _source_part_names(char_id, "Halo") | set(
+        HALO_PART_ALIASES.get(char_id.upper(), ())
+    )
 
 
 def _has_source_prefix(name: str, char_id: str) -> bool:
@@ -308,7 +318,7 @@ def _collect_renderer_material_targets(
             go_name = str(data.m_GameObject.read().m_Name)
         except Exception:
             continue
-        if go_name.lower() not in {name.lower() for name in _source_part_names(char_id, "Halo")}:
+        if go_name.lower() not in {name.lower() for name in _source_halo_names(char_id)}:
             continue
         for mat_ref in getattr(data, "m_Materials", []) or []:
             try:
@@ -476,7 +486,7 @@ def export_submeshes(env, char_id: str, output_dir: Path, submesh_names: list):
     # Export Halo and other static MeshRenderer objects
     # Compare halo names case-insensitively because some prefabs use
     # "Ch####_Halo" rather than the canonical "CH####_Halo".
-    halo_names_lower = {name.lower() for name in _source_part_names(char_id, "Halo")}
+    halo_names_lower = {name.lower() for name in _source_halo_names(char_id)}
     for obj in env.objects:
         if obj.type.name != "MeshRenderer":
             continue
@@ -488,15 +498,16 @@ def export_submeshes(env, char_id: str, output_dir: Path, submesh_names: list):
             continue
 
         static_fx_spec = _static_fx_mesh_spec(char_id, go_name)
+        is_halo_name = go_name.lower() in halo_names_lower
         if go_name in exported_go_names:
             continue
-        if not static_fx_spec and not _has_source_prefix(go_name, char_id):
+        if not static_fx_spec and not (_has_source_prefix(go_name, char_id) or is_halo_name):
             continue
         if not static_fx_spec and any(skip in go_name.lower() for skip in ["weapon", "prop", "outline", "glass"]):
             continue
         # Only export the base halo. Alternate carrier/scenario halos overlap
         # the default character when the viewer has no variant selector.
-        if not static_fx_spec and go_name.lower() not in halo_names_lower:
+        if not static_fx_spec and not is_halo_name:
             continue
 
         exported_go_names.add(go_name)
@@ -575,7 +586,12 @@ def export_submeshes(env, char_id: str, output_dir: Path, submesh_names: list):
                     face.append(used_verts[key])
                 face_indices.append(face)
 
-            mesh_name = static_fx_spec["name"] if static_fx_spec else _strip_source_prefix(go_name, char_id)
+            mesh_name = (
+                static_fx_spec["name"]
+                if static_fx_spec
+                else "Halo" if is_halo_name
+                else _strip_source_prefix(go_name, char_id)
+            )
             sub_mesh = trimesh.Trimesh(
                 vertices=np.array(new_verts, dtype=np.float32),
                 faces=np.array(face_indices, dtype=np.int32),
@@ -636,7 +652,7 @@ def extract_halo_transform(env, char_id: str):
     """Extract Halo GameObject's local transform from the prefab hierarchy."""
     # Match case-insensitively: some prefabs use mixed-case GameObject names
     # like "Ch0145_Halo" instead of the canonical "CH0145_Halo".
-    halo_names = {name.lower() for name in _source_part_names(char_id, "Halo")}
+    halo_names = {name.lower() for name in _source_halo_names(char_id)}
     for obj in env.objects:
         if obj.type.name != "Transform" and obj.type.name != "RectTransform":
             continue

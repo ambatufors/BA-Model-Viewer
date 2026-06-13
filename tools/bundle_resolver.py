@@ -15,6 +15,9 @@ CHARACTER_BUNDLE_ALIASES = {
     "ch0072": ("mari_original", "mari"),
     "ch0091": ("hoshino_swimsuit",),
     "ch0184": ("yuuka_original",),
+    # CH0300's hammock is authored as the paired SM030001 model: its mesh and
+    # standalone Normal/Vital/Appear clips live in SM030001 bundles.
+    "ch0300": ("sm030001",),
 }
 CHARACTER_OBJECT_ALIASES = {
     "ch0072": ("Mari_Original",),

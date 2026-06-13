@@ -25,6 +25,9 @@ COMMON_TEXTURE_BUNDLE = "assets-_mx-characters-_mxcommon-_mxdependency-textures-
 KNOWN_MESH_DEPS = {
     "ch0060": ["tsurugi_original"],
 }
+HALO_OBJECT_ALIASES = {
+    "CH0300": ("ch0225",),
+}
 DEPTH_FLIP_HALO_CHARS = {"CH0060", "CH0069", "CH0326"}
 BAKED_GEOMETRY_HALO_CHARS = {"CH0335"}
 FORCE_SOURCE_TRANSFORM_HALO_CHARS = {"CH0145"}
@@ -79,6 +82,17 @@ def find_bundles(root: Path, char_id: str) -> list[Path]:
 
 def object_keys(char_id: str) -> tuple[str, ...]:
     return tuple(source.lower() for source in character_object_ids(char_id))
+
+
+def halo_object_keys(char_id: str) -> tuple[str, ...]:
+    return tuple(
+        dict.fromkeys(
+            (
+                *object_keys(char_id),
+                *HALO_OBJECT_ALIASES.get(char_id.upper(), ()),
+            )
+        )
+    )
 
 
 def object_key_matches(name: str, key: str) -> bool:
@@ -942,7 +956,7 @@ def safe_mesh_name(go_name: str, char_id: str) -> str:
     # variant pulled in via the common bundle, and the per-char selector
     # picks the alias-keyed candidate (higher score) over the unrelated
     # *_Original_Halo from a shared CAB.
-    keys = object_keys(char_id)
+    keys = halo_object_keys(char_id)
     if any(go_name.lower() == f"{key}_halo" for key in keys):
         return "Halo"
     name = re.sub(r"[^A-Za-z0-9_]+", "_", go_name).strip("_")
@@ -1029,7 +1043,7 @@ def export_trimesh_with_transform(output_path: Path, tri: trimesh.Trimesh, trans
 
 
 def halo_candidate_score(char_id: str, go_name: str, chain_names: list[str]) -> int:
-    keys = object_keys(char_id)
+    keys = halo_object_keys(char_id)
     lower_chain = [name.lower() for name in chain_names]
     score = 0
 
@@ -1053,7 +1067,7 @@ def find_mesh_filters(env, char_id: str) -> list[tuple[str, object, list[str]]]:
     found: dict[str, tuple[int, int, str, object, list[str]]] = {}
     seen: set[int] = set()
     order = 0
-    keys = object_keys(char_id)
+    keys = halo_object_keys(char_id)
 
     for obj in env.objects:
         if obj.type.name != "MeshFilter":

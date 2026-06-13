@@ -305,8 +305,7 @@ def _collect_skeleton_transforms(smr: Any) -> tuple[list[Any], list[Any]]:
     return ordered, joint_transforms
 
 
-def _make_node(transform: Any) -> dict[str, Any]:
-    node = {"name": _transform_name(transform)}
+def _apply_transform_to_node(node: dict[str, Any], transform: Any) -> None:
     try:
         pos = transform.m_LocalPosition
         if pos.x or pos.y or pos.z:
@@ -325,7 +324,20 @@ def _make_node(transform: Any) -> dict[str, Any]:
             node["scale"] = _vector3(scale)
     except Exception:
         pass
+
+
+def _make_node(transform: Any) -> dict[str, Any]:
+    node = {"name": _transform_name(transform)}
+    _apply_transform_to_node(node, transform)
     return node
+
+
+def _skinned_renderer_owner_transform(smr: Any) -> Any | None:
+    try:
+        go = smr.m_GameObject.read()
+        return _game_object_transform(go)
+    except Exception:
+        return None
 
 
 def _safe_mesh_name(mesh: Any, fallback: str) -> str:
@@ -464,6 +476,13 @@ def _skinned_export_candidate_score(
             score += 400
         if "bone_waterproofcase_00" in root_bone_path.lower():
             score -= 250
+    if char_id.upper() == "CH0300" and export_name.lower() == "hammock":
+        lowered = f"{go_name} {mesh_name}".lower()
+        root_lower = root_bone_path.lower()
+        if "sm030001_outline" in lowered and "prop_body/bone_support_r_004" in root_lower:
+            score += 500
+        if "sm030001_outline" in lowered and root_lower.endswith("/bone_book"):
+            score -= 100
     return score
 
 
@@ -603,6 +622,20 @@ def _is_ch0303_food_prop(
     return owner_path.lower().startswith("ch0303_mesh/")
 
 
+def _is_ch0300_hammock_prop(
+    char_id: str,
+    go_name: str,
+    mesh_name: str,
+    owner_path: str = "",
+) -> bool:
+    if char_id.upper() != "CH0300":
+        return False
+    lowered = f"{go_name} {mesh_name}".lower()
+    if "sm030001_outline" not in lowered:
+        return False
+    return owner_path.lower().startswith("sm030001_mesh/")
+
+
 def _is_outline_name(name: str) -> bool:
     normalized = name.lower().replace("_", "").replace("-", "")
     return "outline" in normalized or "outlline" in normalized
@@ -648,6 +681,8 @@ def _skinned_export_name(
     ch0091_cafe_name = _ch0091_cafe_outline_export_name(char_id, go_name, mesh_name)
     if ch0091_cafe_name:
         return ch0091_cafe_name
+    if char_id.upper() == "CH0300" and "sm030001_outline" in f"{go_name} {mesh_name}".lower():
+        return "Hammock"
     if char_id.upper() == "CH0303" and "ch0222_food_outline" in f"{go_name} {mesh_name}".lower():
         return "Food"
     if char_id.upper() == "CH0172" and "my_event091_strategytable_prop_02" in f"{go_name} {mesh_name}".lower():
@@ -700,6 +735,14 @@ def _visibility_rule_for_export_name(export_name: str, char_id: str = "") -> dic
         return {"default_visible": False, "show_clip_patterns": ["Exs_Cutin_Sportswear"]}
     if char_id.upper() == "CH0264" and lowered == "prop03":
         return {"default_visible": False, "show_clip_patterns": ["Exs_Cutin_Dummy"]}
+    if char_id.upper() == "CH0300" and lowered == "hammock":
+        return {
+            "default_visible": False,
+            "show_clip_patterns": [
+                "^SM030001_",
+                "^CH0300_(Appear|Normal_Idle|Vital_Death|Vital_Panic|Vital_Retreat|Exs_Cutin)$",
+            ],
+        }
     if char_id.upper() == "CH0172":
         if lowered == "hand01_mesh":
             return {"default_visible": True, "hide_clip_patterns": ["Cafe_my_event091_strategytable"]}
@@ -977,9 +1020,12 @@ def _is_skinned_export_candidate(
     is_ch0091_cafe_skinned_outline = _is_ch0091_cafe_skinned_outline(
         char_id, go_name, mesh_name, owner_path
     )
+    is_ch0300_hammock_prop = _is_ch0300_hammock_prop(char_id, go_name, mesh_name, owner_path)
     is_ch0303_food_prop = _is_ch0303_food_prop(char_id, go_name, mesh_name, owner_path)
     if not _name_has_source_prefix(go_name, char_id, source_ids):
         if _is_owned_external_weapon(char_id, go_name, mesh_name, owner_path, avatar_paths, source_ids):
+            pass
+        elif is_ch0300_hammock_prop:
             pass
         elif is_ch0172_strategy_table_prop:
             pass
@@ -1003,6 +1049,8 @@ def _is_skinned_export_candidate(
     if is_ch0091_cafe_beach_prop_outline:
         return True
     if is_ch0091_cafe_skinned_outline:
+        return True
+    if is_ch0300_hammock_prop:
         return True
     if is_ch0303_food_prop:
         return True
@@ -1118,6 +1166,7 @@ def export_skinned_smr(
     char_id: str = "",
     animations: list[DecodedAnimation] | None = None,
     source_ids: Iterable[str] | None = None,
+    include_renderer_transform: bool = False,
 ) -> SkinnedExport:
     mesh = smr.m_Mesh.read()
     handler = MeshHandler(mesh)
@@ -1158,6 +1207,10 @@ def export_skinned_smr(
     transform_to_node: dict[int, int] = {}
     path_to_nodes: dict[str, set[int]] = {}
     nodes: list[dict[str, Any]] = [{"name": f"{name}_Mesh"}]
+    if include_renderer_transform:
+        owner_transform = _skinned_renderer_owner_transform(smr)
+        if owner_transform is not None:
+            _apply_transform_to_node(nodes[0], owner_transform)
     for transform in all_transforms:
         node_id = len(nodes)
         transform_to_node[_transform_path_id(transform)] = node_id
@@ -1400,6 +1453,17 @@ def _vertex_uses_any_bone(
     return False
 
 
+def _ch0300_hammock_clip_aliases() -> dict[str, str]:
+    return {
+        "CH0300_Appear": "SM030001_Appear",
+        "CH0300_Normal_Idle": "SM030001_Normal_Idle",
+        "CH0300_Vital_Death": "SM030001_Vital_Death",
+        "CH0300_Vital_Panic": "SM030001_Vital_Panic",
+        "CH0300_Vital_Retreat": "SM030001_Vital_Retreat",
+        "CH0300_Exs_Cutin": "SM030001_Exs_Cutin_SkillProp",
+    }
+
+
 def _prune_triangles_by_bone(
     triangles: list[tuple[int, ...]],
     bone_indices: Any,
@@ -1541,6 +1605,7 @@ def export_character_skinned_assets(
         go_name = candidate["go_name"]
         mesh_name = candidate["mesh_name"]
         owner_path = candidate["owner_path"]
+        is_ch0300_hammock_prop = _is_ch0300_hammock_prop(char_id, go_name, mesh_name, owner_path)
         out_path = skinned_dir / f"{char_id}_{out_name}.glb"
         try:
             item = export_skinned_smr(
@@ -1550,6 +1615,7 @@ def export_character_skinned_assets(
                 char_id=char_id,
                 animations=animations,
                 source_ids=source_ids,
+                include_renderer_transform=is_ch0300_hammock_prop,
             )
             data = item.__dict__.copy()
             data["file"] = f"skinned/{item.file}"
@@ -1581,6 +1647,8 @@ def export_character_skinned_assets(
                 data["parent_bone"] = "bone_root"
                 data["shared_skeleton_root"] = True
                 data["shared_skeleton_parent_part"] = "Body"
+            if is_ch0300_hammock_prop:
+                data["clip_aliases"] = _ch0300_hammock_clip_aliases()
             exported.append(data)
             print(
                 f"  [Skin] {out_name}: {item.verts} verts, {item.faces} tris, "
