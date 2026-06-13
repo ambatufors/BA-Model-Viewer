@@ -31,7 +31,7 @@ import { createHaloParticleSystem } from "./haloParticles.js";
 import { createModelFx } from "./modelFx.js";
 
 let modelsIndex = [];
-const ASSET_CACHE_VERSION = "build-7"; //You should poke this after modifying the code
+const ASSET_CACHE_VERSION = "build-9"; //You should poke this after modifying the code
 const HEAD_MESH_BASE_NAMES = new Set([
   "Face",
   "Hair",
@@ -71,6 +71,10 @@ function withCacheVersion(url) {
 
 function getMeshBaseName(name) {
   const source = String(name || "");
+  const faceMeshMatch = source.match(/(?:^|_)(Face\d*)(?:_Mesh)?$/i);
+  if (faceMeshMatch) return faceMeshMatch[1];
+  const skillDiceMatch = source.match(/(?:^|_)(Skill_Dice)(?:_Outline|_Mesh)?$/i);
+  if (skillDiceMatch) return skillDiceMatch[1];
   const prop02Match = source.match(/(?:^|_)(Prop02)(?:_Eye\d+)?(?:_Mesh)?$/i);
   if (prop02Match) return prop02Match[1];
   const brushMatch = source.match(/(?:^|_)(Brush(?:_\d+)?)$/i);
