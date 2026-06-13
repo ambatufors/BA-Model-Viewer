@@ -1,0 +1,1391 @@
+{
+  "char_id": "CH0307",
+  "submesh_order": [
+    "Body",
+    "Hair",
+    "Face",
+    "EyeMouth",
+    "Eyebrow"
+  ],
+  "meshes": [
+    {
+      "name": "Halo",
+      "file": "CH0307_Halo.glb",
+      "verts": 256,
+      "faces": 392
+    }
+  ],
+  "skinned_meshes": [
+    {
+      "name": "Body",
+      "file": "skinned/CH0307_Body.glb",
+      "verts": 8143,
+      "faces": 11168,
+      "bones": 106,
+      "mesh": "CH0307_Body",
+      "root_bone": "Bip001 Pelvis",
+      "submesh_order": [
+        "Body",
+        "Hair",
+        "Face",
+        "EyeMouth",
+        "Eyebrow"
+      ],
+      "animations": [
+        {
+          "name": "CH0307_Cafe_Idle",
+          "duration": 4.0,
+          "sample_rate": 30.0,
+          "channels": 324,
+          "keyframes": 1245,
+          "skipped_channels": 36,
+          "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle"
+        },
+        {
+          "name": "CH0307_Cafe_my_event090_electronicgate_01",
+          "duration": 33.333335876464844,
+          "sample_rate": 30.0,
+          "channels": 325,
+          "keyframes": 15093,
+          "skipped_channels": 30,
+          "source_bundle": "cafe-characteranimation-ch0307-_mxload-animationclips-2026-03-24_assets_all_2314618907.bundle"
+        },
+        {
+          "name": "CH0307_Cafe_Reaction",
+          "duration": 7.500000476837158,
+          "sample_rate": 30.0,
+          "channels": 327,
+          "keyframes": 5913,
+          "skipped_channels": 36,
+          "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle"
+        },
+        {
+          "name": "CH0307_Cafe_Walk",
+          "duration": 1.2000000476837158,
+          "sample_rate": 30.0,
+          "channels": 321,
+          "keyframes": 1848,
+          "skipped_channels": 36,
+          "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle"
+        },
+        {
+          "name": "CH0307_Exs_Cutin",
+          "duration": 10.000000953674316,
+          "sample_rate": 30.0,
+          "channels": 327,
+          "keyframes": 8566,
+          "skipped_channels": 30,
+          "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle"
+        },
+        {
+          "name": "CH0307_Exs_Cutin_Soldier_Helmet_AR_01",
+          "duration": 10.000000953674316,
+          "sample_rate": 30.0,
+          "channels": 98,
+          "keyframes": 1000,
+          "skipped_channels": 103,
+          "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle"
+        },
+        {
+          "name": "CH0307_Exs_Cutin_Soldier_Helmet_AR_02",
+          "duration": 10.000000953674316,
+          "sample_rate": 30.0,
+          "channels": 98,
+          "keyframes": 1729,
+          "skipped_channels": 103,
+          "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle"
+        },
+        {
+          "name": "CH0307_Formation_Idle",
+          "duration": 4.0,
+          "sample_rate": 30.0,
+          "channels": 324,
+          "keyframes": 1265,
+          "skipped_channels": 30,
+          "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle"
+        },
+        {
+          "name": "CH0307_Formation_Pickup",
+          "duration": 10.500000953674316,
+          "sample_rate": 30.0,
+          "channels": 327,
+          "keyframes": 5374,
+          "skipped_channels": 30,
+          "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle"
+        },
+        {
+          "name": "CH0307_Public01",
+          "duration": 7.1666669845581055,
+          "sample_rate": 30.0,
+          "channels": 327,
+          "keyframes": 7779,
+          "skipped_channels": 36,
+          "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle"
+        },
+        {
+          "name": "CH0307_Tactical_Start",
+          "duration": 1.6666667461395264,
+          "sample_rate": 30.0,
+          "channels": 327,
+          "keyframes": 1413,
+          "skipped_channels": 36,
+          "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle"
+        }
+      ],
+      "initial_renderer_visible": true,
+      "child_index": 1,
+      "go_name": "CH0307_Body"
+    },
+    {
+      "name": "Stick",
+      "file": "skinned/CH0307_Stick.glb",
+      "verts": 761,
+      "faces": 1390,
+      "bones": 3,
+      "mesh": "CH0307_Stick",
+      "root_bone": "bone_missile_01",
+      "submesh_order": [
+        "Stick"
+      ],
+      "animations": [
+        {
+          "name": "CH0307_Cafe_Idle",
+          "duration": 4.0,
+          "sample_rate": 30.0,
+          "channels": 15,
+          "keyframes": 40,
+          "skipped_channels": 345,
+          "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle"
+        },
+        {
+          "name": "CH0307_Cafe_my_event090_electronicgate_01",
+          "duration": 33.333335876464844,
+          "sample_rate": 30.0,
+          "channels": 9,
+          "keyframes": 466,
+          "skipped_channels": 346,
+          "source_bundle": "cafe-characteranimation-ch0307-_mxload-animationclips-2026-03-24_assets_all_2314618907.bundle"
+        },
+        {
+          "name": "CH0307_Cafe_Reaction",
+          "duration": 7.500000476837158,
+          "sample_rate": 30.0,
+          "channels": 15,
+          "keyframes": 109,
+          "skipped_channels": 348,
+          "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle"
+        },
+        {
+          "name": "CH0307_Cafe_Walk",
+          "duration": 1.2000000476837158,
+          "sample_rate": 30.0,
+          "channels": 15,
+          "keyframes": 49,
+          "skipped_channels": 342,
+          "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle"
+        },
+        {
+          "name": "CH0307_Exs_Cutin",
+          "duration": 10.000000953674316,
+          "sample_rate": 30.0,
+          "channels": 9,
+          "keyframes": 165,
+          "skipped_channels": 348,
+          "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle"
+        },
+        {
+          "name": "CH0307_Exs_Cutin_Soldier_Helmet_AR_01",
+          "duration": 10.000000953674316,
+          "sample_rate": 30.0,
+          "channels": 2,
+          "keyframes": 4,
+          "skipped_channels": 199,
+          "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle"
+        },
+        {
+          "name": "CH0307_Exs_Cutin_Soldier_Helmet_AR_02",
+          "duration": 10.000000953674316,
+          "sample_rate": 30.0,
+          "channels": 2,
+          "keyframes": 4,
+          "skipped_channels": 199,
+          "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle"
+        },
+        {
+          "name": "CH0307_Formation_Idle",
+          "duration": 4.0,
+          "sample_rate": 30.0,
+          "channels": 9,
+          "keyframes": 29,
+          "skipped_channels": 345,
+          "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle"
+        },
+        {
+          "name": "CH0307_Formation_Pickup",
+          "duration": 10.500000953674316,
+          "sample_rate": 30.0,
+          "channels": 9,
+          "keyframes": 163,
+          "skipped_channels": 348,
+          "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle"
+        },
+        {
+          "name": "CH0307_Public01",
+          "duration": 7.1666669845581055,
+          "sample_rate": 30.0,
+          "channels": 15,
+          "keyframes": 250,
+          "skipped_channels": 348,
+          "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle"
+        },
+        {
+          "name": "CH0307_Tactical_Start",
+          "duration": 1.6666667461395264,
+          "sample_rate": 30.0,
+          "channels": 15,
+          "keyframes": 36,
+          "skipped_channels": 348,
+          "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle"
+        }
+      ],
+      "initial_renderer_visible": true,
+      "child_index": 3,
+      "go_name": "CH0307_Stick"
+    },
+    {
+      "name": "Weapon",
+      "file": "skinned/CH0307_Weapon.glb",
+      "verts": 1201,
+      "faces": 1121,
+      "bones": 3,
+      "mesh": "CH0307_Weapon",
+      "root_bone": "Bip001_Weapon",
+      "submesh_order": [
+        "Weapon"
+      ],
+      "animations": [
+        {
+          "name": "CH0307_Cafe_Idle",
+          "duration": 4.0,
+          "sample_rate": 30.0,
+          "channels": 15,
+          "keyframes": 40,
+          "skipped_channels": 345,
+          "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle"
+        },
+        {
+          "name": "CH0307_Cafe_my_event090_electronicgate_01",
+          "duration": 33.333335876464844,
+          "sample_rate": 30.0,
+          "channels": 15,
+          "keyframes": 213,
+          "skipped_channels": 340,
+          "source_bundle": "cafe-characteranimation-ch0307-_mxload-animationclips-2026-03-24_assets_all_2314618907.bundle"
+        },
+        {
+          "name": "CH0307_Cafe_Reaction",
+          "duration": 7.500000476837158,
+          "sample_rate": 30.0,
+          "channels": 15,
+          "keyframes": 109,
+          "skipped_channels": 348,
+          "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle"
+        },
+        {
+          "name": "CH0307_Cafe_Walk",
+          "duration": 1.2000000476837158,
+          "sample_rate": 30.0,
+          "channels": 15,
+          "keyframes": 49,
+          "skipped_channels": 342,
+          "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle"
+        },
+        {
+          "name": "CH0307_Exs_Cutin",
+          "duration": 10.000000953674316,
+          "sample_rate": 30.0,
+          "channels": 15,
+          "keyframes": 177,
+          "skipped_channels": 342,
+          "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle"
+        },
+        {
+          "name": "CH0307_Exs_Cutin_Soldier_Helmet_AR_01",
+          "duration": 10.000000953674316,
+          "sample_rate": 30.0,
+          "channels": 10,
+          "keyframes": 77,
+          "skipped_channels": 191,
+          "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle"
+        },
+        {
+          "name": "CH0307_Exs_Cutin_Soldier_Helmet_AR_02",
+          "duration": 10.000000953674316,
+          "sample_rate": 30.0,
+          "channels": 10,
+          "keyframes": 52,
+          "skipped_channels": 191,
+          "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle"
+        },
+        {
+          "name": "CH0307_Formation_Idle",
+          "duration": 4.0,
+          "sample_rate": 30.0,
+          "channels": 15,
+          "keyframes": 53,
+          "skipped_channels": 339,
+          "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle"
+        },
+        {
+          "name": "CH0307_Formation_Pickup",
+          "duration": 10.500000953674316,
+          "sample_rate": 30.0,
+          "channels": 15,
+          "keyframes": 88,
+          "skipped_channels": 342,
+          "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle"
+        },
+        {
+          "name": "CH0307_Public01",
+          "duration": 7.1666669845581055,
+          "sample_rate": 30.0,
+          "channels": 15,
+          "keyframes": 130,
+          "skipped_channels": 348,
+          "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle"
+        },
+        {
+          "name": "CH0307_Tactical_Start",
+          "duration": 1.6666667461395264,
+          "sample_rate": 30.0,
+          "channels": 15,
+          "keyframes": 37,
+          "skipped_channels": 348,
+          "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle"
+        }
+      ],
+      "initial_renderer_visible": true,
+      "visibility": {
+        "default_visible": true,
+        "hide_clip_patterns": [
+          "^Cafe_",
+          "my_event088"
+        ]
+      },
+      "child_index": 2,
+      "go_name": "CH0307_Weapon"
+    }
+  ],
+  "textures": [
+    {
+      "name": "CH0307_Body",
+      "file": "textures/CH0307_Body.png",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "CH0307_Body_Mask",
+      "file": "textures/CH0307_Body_Mask.png",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "CH0307_EyeMouth",
+      "file": "textures/CH0307_EyeMouth.png",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "CH0307_Face",
+      "file": "textures/CH0307_Face.png",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "CH0307_Hair",
+      "file": "textures/CH0307_Hair.png",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "CH0307_Hair_Mask",
+      "file": "textures/CH0307_Hair_Mask.png",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "CH0307_Hair_Spec",
+      "file": "textures/CH0307_Hair_Spec.png",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "CH0307_Halo",
+      "file": "textures/CH0307_Halo.png",
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "name": "CH0307_Stick",
+      "file": "textures/CH0307_Stick.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "name": "CH0307_Stick_Mask",
+      "file": "textures/CH0307_Stick_Mask.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "name": "CH0307_Weapon",
+      "file": "textures/CH0307_Weapon.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "CH0307_Weapon_Mask",
+      "file": "textures/CH0307_Weapon_Mask.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "Character_Mouth",
+      "file": "textures/Character_Mouth.png",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "tex_green_128",
+      "file": "textures/tex_green_128.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "Character_Mouth_2",
+      "file": "textures/Character_Mouth_2.png",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "Character_Mouth_Black",
+      "file": "textures/Character_Mouth_Black.png",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "Character_Mouth_High",
+      "file": "textures/Character_Mouth_High.png",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "Character_Mouth_Decagramaton",
+      "file": "textures/Character_Mouth_Decagramaton.png",
+      "size": [
+        1024,
+        1024
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "name": "CH0307_Body",
+      "file": "materials/CH0307_Body.json"
+    },
+    {
+      "name": "CH0307_EyeMouth",
+      "file": "materials/CH0307_EyeMouth.json"
+    },
+    {
+      "name": "CH0307_Eyebrow",
+      "file": "materials/CH0307_Eyebrow.json"
+    },
+    {
+      "name": "CH0307_Face",
+      "file": "materials/CH0307_Face.json"
+    },
+    {
+      "name": "CH0307_Hair",
+      "file": "materials/CH0307_Hair.json"
+    },
+    {
+      "name": "CH0307_Halo",
+      "file": "materials/CH0307_Halo.json"
+    },
+    {
+      "name": "CH0307_Stick",
+      "file": "materials/CH0307_Stick.json"
+    },
+    {
+      "name": "CH0307_Weapon",
+      "file": "materials/CH0307_Weapon.json"
+    }
+  ],
+  "animations": [
+    {
+      "name": "CH0307_Cafe_Idle",
+      "sample_rate": 30.0,
+      "duration": 4.0,
+      "channels": 360,
+      "keyframes": 1342,
+      "skipped_curves": 210,
+      "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0307_Cafe_my_event090_electronicgate_01",
+      "sample_rate": 30.0,
+      "duration": 33.333335876464844,
+      "channels": 355,
+      "keyframes": 16348,
+      "skipped_curves": 1667,
+      "source_bundle": "cafe-characteranimation-ch0307-_mxload-animationclips-2026-03-24_assets_all_2314618907.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 604,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.49999499320983887,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 5.8999409675598145,
+          "function": "SetMouthTile",
+          "int": 402,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 10.933223724365234,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 15.966506958007812,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 17.733156204223633,
+          "function": "SetMouthTile",
+          "int": 402,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 18.833145141601562,
+          "function": "SetMouthTile",
+          "int": 401,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 21.46645164489746,
+          "function": "SetMouthTile",
+          "int": 402,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 22.299776077270508,
+          "function": "SetMouthTile",
+          "int": 604,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 28.29971694946289,
+          "function": "SetMouthTile",
+          "int": 402,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 31.999679565429688,
+          "function": "SetMouthTile",
+          "int": 604,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0307_Cafe_Reaction",
+      "sample_rate": 30.0,
+      "duration": 7.500000476837158,
+      "channels": 363,
+      "keyframes": 6338,
+      "skipped_curves": 526,
+      "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_InstantiateFx",
+          "int": 0,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 1.8999810218811035,
+          "function": "SetMouthTile",
+          "int": 705,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 2.5999739170074463,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 4.3666229248046875,
+          "function": "SetMouthTile",
+          "int": 705,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 6.599934101104736,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0307_Cafe_Walk",
+      "sample_rate": 30.0,
+      "duration": 1.2000000476837158,
+      "channels": 357,
+      "keyframes": 2010,
+      "skipped_curves": 293,
+      "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0307_Exs_Cutin",
+      "sample_rate": 30.0,
+      "duration": 10.000000953674316,
+      "channels": 357,
+      "keyframes": 8905,
+      "skipped_curves": 1060,
+      "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle",
+      "events": [
+        {
+          "time": 0.03333333507180214,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 5.299950122833252,
+          "function": "SetMouthTile",
+          "int": 705,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 6.099942207336426,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 8.399918556213379,
+          "function": "SetMouthTile",
+          "int": 705,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0307_Exs_Cutin_Cam",
+      "sample_rate": 30.0,
+      "duration": 10.000000953674316,
+      "channels": 6,
+      "keyframes": 170,
+      "skipped_curves": 32,
+      "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle"
+    },
+    {
+      "name": "CH0307_Exs_Cutin_Soldier_Helmet_AR_01",
+      "sample_rate": 30.0,
+      "duration": 10.000000953674316,
+      "channels": 201,
+      "keyframes": 1768,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle"
+    },
+    {
+      "name": "CH0307_Exs_Cutin_Soldier_Helmet_AR_02",
+      "sample_rate": 30.0,
+      "duration": 10.000000953674316,
+      "channels": 201,
+      "keyframes": 2193,
+      "skipped_curves": 0,
+      "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle"
+    },
+    {
+      "name": "CH0307_Formation_Idle",
+      "sample_rate": 30.0,
+      "duration": 4.0,
+      "channels": 354,
+      "keyframes": 1389,
+      "skipped_curves": 224,
+      "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0307_Formation_Pickup",
+      "sample_rate": 30.0,
+      "duration": 10.500000953674316,
+      "channels": 357,
+      "keyframes": 5807,
+      "skipped_curves": 721,
+      "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 705,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.9999899864196777,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 4.333290100097656,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 6.333270072937012,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 7.39992618560791,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 9.733236312866211,
+          "function": "SetMouthTile",
+          "int": 705,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0307_Public01",
+      "sample_rate": 30.0,
+      "duration": 7.1666669845581055,
+      "channels": 363,
+      "keyframes": 8399,
+      "skipped_curves": 387,
+      "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 0.0,
+          "function": "AniEvt_EnableDitherLines",
+          "int": 0,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 1.633316993713379,
+          "function": "SetMouthTile",
+          "int": 705,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 2.3333098888397217,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    },
+    {
+      "name": "CH0307_Tactical_Start",
+      "sample_rate": 30.0,
+      "duration": 1.6666667461395264,
+      "channels": 363,
+      "keyframes": 1519,
+      "skipped_curves": 212,
+      "source_bundle": "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle",
+      "events": [
+        {
+          "time": 0.0,
+          "function": "SetMouthTile",
+          "int": 704,
+          "float": 0.0,
+          "data": ""
+        },
+        {
+          "time": 1.2666540145874023,
+          "function": "SetMouthTile",
+          "int": 705,
+          "float": 0.0,
+          "data": ""
+        }
+      ]
+    }
+  ],
+  "source_bundles": {
+    "meshes": [
+      "assets-_mx-characters-ch0307-_mxdependency-meshes-2026-03-24_assets_all_290687130.bundle",
+      "assets-_mx-scenes-skillcut-ch0307-_mxdependency-meshes-2026-03-24_assets_all_1318025561.bundle"
+    ],
+    "textures": [
+      "assets-_mx-characters-ch0307-_mxdependency-textures-2026-03-24_assets_all_1771045966.bundle",
+      "assets-_mx-scenes-skillcut-ch0307-_mxdependency-textures-2026-03-24_assets_all_8051753.bundle",
+      "assets-_mx-spinecharacters-ch0307_spr-_mxdependency-textures-2025-07-02_assets_all_2837244855.bundle",
+      "assets-_mx-spinelobbies-ch0307_home-_mxdependency-textures-2026-03-24_assets_all_1680221883.bundle"
+    ],
+    "materials": [
+      "assets-_mx-characters-ch0307-_mxdependency-materials-2026-03-24_assets_all_3741416090.bundle",
+      "assets-_mx-scenes-skillcut-ch0307-_mxdependency-materials-2026-03-24_assets_all_1022092913.bundle",
+      "assets-_mx-spinecharacters-ch0307_spr-_mxdependency-materials-2025-07-02_assets_all_1099109496.bundle",
+      "assets-_mx-spinelobbies-ch0307_home-_mxdependency-materials-2026-03-24_assets_all_2625035481.bundle"
+    ],
+    "prefabs": [
+      "assets-_mx-characters-ch0307-_mxdependency-prefabs-2026-03-24_assets_all_566887421.bundle",
+      "assets-_mx-scenes-skillcut-ch0307-_mxdependency-prefabs-2026-03-24_assets_all_1621799035.bundle",
+      "character-ch0307-_mxload-prefabs-2026-03-24_assets_all_1535002712.bundle"
+    ],
+    "animationclips": [
+      "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle",
+      "cafe-characteranimation-ch0307-_mxload-animationclips-2026-03-24_assets_all_2314618907.bundle"
+    ],
+    "animatorcontrollers": [
+      "character-ch0307-_mxload-animatorcontrollers-2026-03-24_assets_all_4137123343.bundle"
+    ],
+    "timelines": [
+      "assets-_mx-characters-ch0307-_mxdependency-timelines-2026-03-24_assets_all_3645186683.bundle",
+      "assets-_mx-spinelobbies-ch0307_home-_mxdependency-timelines-2026-03-24_assets_all_2351462632.bundle",
+      "ch0307_public_spawn-_mxload-timelines-2026-03-24_assets_all_2322033460.bundle",
+      "character-ch0307-_mxload-timelines-2026-03-24_assets_all_1601793452.bundle"
+    ],
+    "assets": [
+      "assets-_mx-characters-ch0307-_mxdependency-assets-2026-03-24_assets_all_3545718651.bundle",
+      "assets-_mx-scenes-skillcut-ch0307-_mxdependency-assets-2026-03-24_assets_all_2175149009.bundle",
+      "assets-_mx-spinecharacters-ch0307_spr-_mxdependency-assets-2025-07-02_assets_all_28012698.bundle",
+      "assets-_mx-spinelobbies-ch0307_home-_mxdependency-assets-2026-03-24_assets_all_2912104952.bundle"
+    ],
+    "audio": [
+      "assets-_mx-characters-ch0307-_mxdependency-audio-2026-03-24_assets_all_1143510687.bundle"
+    ],
+    "other": [
+      "assets-_mx-spinecharacters-ch0307_spr-_mxdependency-textassets-2025-07-02_assets_all_4106599617.bundle",
+      "assets-_mx-spinelobbies-ch0307_home-_mxdependency-textassets-2026-03-24_assets_all_2956157503.bundle"
+    ]
+  },
+  "resolved_dependencies": [
+    "assets-_mx-3dobject-common_skill_healbomb_weapon-_mxdependency-materials-2025-07-02_assets_all_460363787.bundle",
+    "assets-_mx-3dobject-common_skill_healbomb_weapon-_mxdependency-textures-2025-07-02_assets_all_3328225827.bundle",
+    "assets-_mx-3dobject-dron-_mxdependency-textures-2025-07-02_assets_all_3933771995.bundle",
+    "assets-_mx-academy-location_millennium-_mxdependency-textures-2025-07-02_assets_all_3463590103.bundle",
+    "assets-_mx-characters-_mxcommon-_mxdependency-textures-2025-07-02_assets_all_2925187272.bundle",
+    "assets-_mx-characters-akane_original-_mxdependency-materials-2025-07-02_assets_all_3531647379.bundle",
+    "assets-_mx-characters-akane_original-_mxdependency-textures-2025-07-02_assets_all_3978894944.bundle",
+    "assets-_mx-characters-atsuko_original-_mxdependency-textures-2025-07-02_assets_all_1411280536.bundle",
+    "assets-_mx-characters-azusa_original-_mxdependency-textures-2025-07-02_assets_all_1810424242.bundle",
+    "assets-_mx-characters-ch0058-_mxdependency-textures-2025-07-02_assets_all_1911284923.bundle",
+    "assets-_mx-characters-ch0060-_mxdependency-textures-2025-07-02_assets_all_4284568125.bundle",
+    "assets-_mx-characters-ch0061-_mxdependency-textures-2025-07-02_assets_all_2883736629.bundle",
+    "assets-_mx-characters-ch0066-_mxdependency-materials-2025-07-02_assets_all_757555935.bundle",
+    "assets-_mx-characters-ch0066-_mxdependency-meshes-2025-07-02_assets_all_1040006227.bundle",
+    "assets-_mx-characters-ch0066-_mxdependency-textures-2025-07-02_assets_all_2879156615.bundle",
+    "assets-_mx-characters-ch0069-_mxdependency-textures-2025-07-02_assets_all_2155042979.bundle",
+    "assets-_mx-characters-ch0071-_mxdependency-textures-2025-07-02_assets_all_1236706425.bundle",
+    "assets-_mx-characters-ch0079-_mxdependency-textures-2025-07-02_assets_all_4106558138.bundle",
+    "assets-_mx-characters-ch0081-_mxdependency-materials-2025-07-02_assets_all_444474389.bundle",
+    "assets-_mx-characters-ch0081-_mxdependency-textures-2025-07-02_assets_all_2946040866.bundle",
+    "assets-_mx-characters-ch0082-_mxdependency-materials-2025-07-02_assets_all_2041228166.bundle",
+    "assets-_mx-characters-ch0082-_mxdependency-textures-2025-07-02_assets_all_2477032520.bundle",
+    "assets-_mx-characters-ch0087-_mxdependency-textures-2025-07-02_assets_all_1393089911.bundle",
+    "assets-_mx-characters-ch0088-_mxdependency-materials-2025-07-02_assets_all_992827955.bundle",
+    "assets-_mx-characters-ch0088-_mxdependency-textures-2025-07-02_assets_all_3701290396.bundle",
+    "assets-_mx-characters-ch0089-_mxdependency-textures-2025-07-02_assets_all_1198827097.bundle",
+    "assets-_mx-characters-ch0092-_mxdependency-textures-2025-07-02_assets_all_1961221713.bundle",
+    "assets-_mx-characters-ch0098-_mxdependency-textures-2025-07-02_assets_all_2362214407.bundle",
+    "assets-_mx-characters-ch0099-_mxdependency-materials-2025-07-02_assets_all_1723324393.bundle",
+    "assets-_mx-characters-ch0099-_mxdependency-meshes-2025-07-02_assets_all_435125469.bundle",
+    "assets-_mx-characters-ch0099-_mxdependency-textures-2025-07-02_assets_all_935304140.bundle",
+    "assets-_mx-characters-ch0100-_mxdependency-textures-2025-07-02_assets_all_4090774334.bundle",
+    "assets-_mx-characters-ch0101-_mxdependency-materials-2025-07-02_assets_all_4031048395.bundle",
+    "assets-_mx-characters-ch0101-_mxdependency-meshes-2025-07-02_assets_all_588345760.bundle",
+    "assets-_mx-characters-ch0101-_mxdependency-textures-2025-07-02_assets_all_711250335.bundle",
+    "assets-_mx-characters-ch0113-_mxdependency-textures-2025-07-02_assets_all_266839942.bundle",
+    "assets-_mx-characters-ch0114-_mxdependency-materials-2025-07-02_assets_all_3622760400.bundle",
+    "assets-_mx-characters-ch0114-_mxdependency-meshes-2025-07-02_assets_all_1505762537.bundle",
+    "assets-_mx-characters-ch0114-_mxdependency-textures-2025-07-02_assets_all_1169307102.bundle",
+    "assets-_mx-characters-ch0123-_mxdependency-audio-2025-07-02_assets_all_3402021821.bundle",
+    "assets-_mx-characters-ch0135-_mxdependency-materials-2025-07-02_assets_all_2270158699.bundle",
+    "assets-_mx-characters-ch0135-_mxdependency-textures-2025-07-02_assets_all_965456140.bundle",
+    "assets-_mx-characters-ch0137-_mxdependency-textures-2025-07-02_assets_all_1746783552.bundle",
+    "assets-_mx-characters-ch0138-_mxdependency-textures-2025-07-02_assets_all_2663280992.bundle",
+    "assets-_mx-characters-ch0144-_mxdependency-textures-2025-07-02_assets_all_1413782090.bundle",
+    "assets-_mx-characters-ch0145-_mxdependency-textures-2025-07-02_assets_all_3559180642.bundle",
+    "assets-_mx-characters-ch0152-_mxdependency-textures-2025-07-02_assets_all_4086894180.bundle",
+    "assets-_mx-characters-ch0156-_mxdependency-textures-2025-07-02_assets_all_1882306831.bundle",
+    "assets-_mx-characters-ch0159-_mxdependency-textures-2025-07-02_assets_all_3898513030.bundle",
+    "assets-_mx-characters-ch0160-_mxdependency-textures-2025-07-02_assets_all_1115423510.bundle",
+    "assets-_mx-characters-ch0161-_mxdependency-textures-2025-07-02_assets_all_3574552830.bundle",
+    "assets-_mx-characters-ch0163-_mxdependency-textures-2025-07-02_assets_all_4033618982.bundle",
+    "assets-_mx-characters-ch0164-_mxdependency-materials-2025-07-02_assets_all_2738651856.bundle",
+    "assets-_mx-characters-ch0164-_mxdependency-textures-2025-07-02_assets_all_3709948145.bundle",
+    "assets-_mx-characters-ch0165-_mxdependency-textures-2025-07-02_assets_all_3918910415.bundle",
+    "assets-_mx-characters-ch0166-_mxdependency-materials-2025-09-26_assets_all_2017331405.bundle",
+    "assets-_mx-characters-ch0166-_mxdependency-textures-2025-09-26_assets_all_3771356284.bundle",
+    "assets-_mx-characters-ch0175-_mxdependency-textures-2025-07-02_assets_all_1425592520.bundle",
+    "assets-_mx-characters-ch0176-_mxdependency-textures-2025-07-02_assets_all_1686061257.bundle",
+    "assets-_mx-characters-ch0178-_mxdependency-materials-2025-07-02_assets_all_358817636.bundle",
+    "assets-_mx-characters-ch0178-_mxdependency-textures-2025-07-02_assets_all_1139725434.bundle",
+    "assets-_mx-characters-ch0179-_mxdependency-materials-2025-07-02_assets_all_2863860014.bundle",
+    "assets-_mx-characters-ch0179-_mxdependency-textures-2025-07-02_assets_all_3340916112.bundle",
+    "assets-_mx-characters-ch0181-_mxdependency-textures-2025-07-02_assets_all_3163158727.bundle",
+    "assets-_mx-characters-ch0182-_mxdependency-materials-2025-07-02_assets_all_2464872782.bundle",
+    "assets-_mx-characters-ch0182-_mxdependency-textures-2025-07-02_assets_all_1735324514.bundle",
+    "assets-_mx-characters-ch0183-_mxdependency-textures-2025-07-02_assets_all_2672209082.bundle",
+    "assets-_mx-characters-ch0184-_mxdependency-textures-2025-07-02_assets_all_809921204.bundle",
+    "assets-_mx-characters-ch0187-_mxdependency-textures-2025-07-02_assets_all_4022381632.bundle",
+    "assets-_mx-characters-ch0188-_mxdependency-textures-2025-07-02_assets_all_357223377.bundle",
+    "assets-_mx-characters-ch0189-_mxdependency-materials-2025-07-02_assets_all_2522592597.bundle",
+    "assets-_mx-characters-ch0189-_mxdependency-textures-2025-07-02_assets_all_2787477191.bundle",
+    "assets-_mx-characters-ch0190-_mxdependency-textures-2025-07-02_assets_all_557836812.bundle",
+    "assets-_mx-characters-ch0191-_mxdependency-textures-2025-07-02_assets_all_2340719755.bundle",
+    "assets-_mx-characters-ch0192-_mxdependency-textures-2025-07-02_assets_all_2413791124.bundle",
+    "assets-_mx-characters-ch0193-_mxdependency-textures-2025-07-02_assets_all_3439726882.bundle",
+    "assets-_mx-characters-ch0194-_mxdependency-textures-2025-07-02_assets_all_3392990375.bundle",
+    "assets-_mx-characters-ch0195-_mxdependency-materials-2025-07-02_assets_all_1431575031.bundle",
+    "assets-_mx-characters-ch0195-_mxdependency-textures-2025-07-02_assets_all_324744709.bundle",
+    "assets-_mx-characters-ch0197-_mxdependency-textures-2025-07-02_assets_all_3402412579.bundle",
+    "assets-_mx-characters-ch0200-_mxdependency-textures-2025-07-02_assets_all_1943637711.bundle",
+    "assets-_mx-characters-ch0204-_mxdependency-textures-2025-07-02_assets_all_4155529458.bundle",
+    "assets-_mx-characters-ch0209-_mxdependency-materials-2025-07-02_assets_all_2246174696.bundle",
+    "assets-_mx-characters-ch0209-_mxdependency-meshes-2025-07-02_assets_all_11549547.bundle",
+    "assets-_mx-characters-ch0209-_mxdependency-textures-2025-07-02_assets_all_3591724035.bundle",
+    "assets-_mx-characters-ch0211-_mxdependency-textures-2025-07-02_assets_all_2225225664.bundle",
+    "assets-_mx-characters-ch0214-_mxdependency-textures-2025-07-02_assets_all_1721533250.bundle",
+    "assets-_mx-characters-ch0215-_mxdependency-textures-2025-07-02_assets_all_3393178476.bundle",
+    "assets-_mx-characters-ch0217-_mxdependency-textures-2025-07-02_assets_all_730514000.bundle",
+    "assets-_mx-characters-ch0218-_mxdependency-materials-2025-07-02_assets_all_1040592176.bundle",
+    "assets-_mx-characters-ch0218-_mxdependency-textures-2025-07-02_assets_all_2251113509.bundle",
+    "assets-_mx-characters-ch0219-_mxdependency-textures-2025-07-02_assets_all_1051686518.bundle",
+    "assets-_mx-characters-ch0224-_mxdependency-textures-2025-07-02_assets_all_2729812528.bundle",
+    "assets-_mx-characters-ch0225-_mxdependency-textures-2025-07-02_assets_all_2651326155.bundle",
+    "assets-_mx-characters-ch0230-_mxdependency-textures-2025-07-02_assets_all_734540434.bundle",
+    "assets-_mx-characters-ch0231-_mxdependency-textures-2025-07-02_assets_all_3728068207.bundle",
+    "assets-_mx-characters-ch0232-_mxdependency-textures-2025-07-02_assets_all_1389400312.bundle",
+    "assets-_mx-characters-ch0233-_mxdependency-materials-2025-07-02_assets_all_2221193215.bundle",
+    "assets-_mx-characters-ch0233-_mxdependency-textures-2025-07-02_assets_all_1746592825.bundle",
+    "assets-_mx-characters-ch0235-_mxdependency-materials-2025-07-02_assets_all_1424230778.bundle",
+    "assets-_mx-characters-ch0235-_mxdependency-meshes-2025-07-02_assets_all_329764732.bundle",
+    "assets-_mx-characters-ch0235-_mxdependency-textures-2025-07-02_assets_all_3290835274.bundle",
+    "assets-_mx-characters-ch0238-_mxdependency-materials-2025-07-02_assets_all_3943989294.bundle",
+    "assets-_mx-characters-ch0238-_mxdependency-textures-2025-07-02_assets_all_2793181077.bundle",
+    "assets-_mx-characters-ch0239-_mxdependency-textures-2025-07-02_assets_all_3314553682.bundle",
+    "assets-_mx-characters-ch0240-_mxdependency-materials-2025-07-02_assets_all_3056007235.bundle",
+    "assets-_mx-characters-ch0240-_mxdependency-textures-2025-07-02_assets_all_1233203964.bundle",
+    "assets-_mx-characters-ch0245-_mxdependency-textures-2025-07-02_assets_all_3761480177.bundle",
+    "assets-_mx-characters-ch0258-_mxdependency-materials-2025-07-02_assets_all_376171127.bundle",
+    "assets-_mx-characters-ch0258-_mxdependency-meshes-2025-07-02_assets_all_4017150382.bundle",
+    "assets-_mx-characters-ch0258-_mxdependency-textures-2025-07-02_assets_all_4118836656.bundle",
+    "assets-_mx-characters-ch0260-_mxdependency-textures-2025-07-02_assets_all_596653845.bundle",
+    "assets-_mx-characters-ch0262-_mxdependency-textures-2025-07-02_assets_all_4172049285.bundle",
+    "assets-_mx-characters-ch0266-_mxdependency-textures-2025-07-02_assets_all_3118723185.bundle",
+    "assets-_mx-characters-ch0274-_mxdependency-materials-2025-07-02_assets_all_684978147.bundle",
+    "assets-_mx-characters-ch0274-_mxdependency-textures-2025-07-02_assets_all_637016961.bundle",
+    "assets-_mx-characters-ch0280-_mxdependency-materials-2025-07-02_assets_all_4130297989.bundle",
+    "assets-_mx-characters-ch0280-_mxdependency-textures-2025-07-02_assets_all_2508074765.bundle",
+    "assets-_mx-characters-ch0282-_mxdependency-textures-2025-07-02_assets_all_969924907.bundle",
+    "assets-_mx-characters-ch0295-_mxdependency-materials-2025-07-02_assets_all_4099353054.bundle",
+    "assets-_mx-characters-ch0295-_mxdependency-textures-2025-07-02_assets_all_135953147.bundle",
+    "assets-_mx-characters-ch0307-_mxdependency-animationclips-2026-03-24_assets_all_3967921601.bundle",
+    "assets-_mx-characters-ch0307-_mxdependency-audio-2026-03-24_assets_all_1143510687.bundle",
+    "assets-_mx-characters-ch0307-_mxdependency-timelines-2026-03-24_assets_all_3645186683.bundle",
+    "assets-_mx-characters-ch0325-_mxdependency-textures-2025-09-26_assets_all_13278395.bundle",
+    "assets-_mx-characters-ch0336-_mxdependency-audio-2026-01-26_assets_all_2487259636.bundle",
+    "assets-_mx-characters-ch9996-_mxdependency-textures-2025-07-02_assets_all_3753525517.bundle",
+    "assets-_mx-characters-ch9997-_mxdependency-textures-2025-07-02_assets_all_3691648446.bundle",
+    "assets-_mx-characters-ch9998-_mxdependency-textures-2025-07-02_assets_all_1823298369.bundle",
+    "assets-_mx-characters-ch9999-_mxdependency-textures-2025-07-02_assets_all_3344276734.bundle",
+    "assets-_mx-characters-cherino_original-_mxdependency-textures-2025-07-02_assets_all_3118239920.bundle",
+    "assets-_mx-characters-hanae_original-_mxdependency-textures-2025-07-02_assets_all_56435159.bundle",
+    "assets-_mx-characters-hina_original-_mxdependency-textures-2025-07-02_assets_all_3606613956.bundle",
+    "assets-_mx-characters-hoshino_original-_mxdependency-textures-2025-07-02_assets_all_1269917620.bundle",
+    "assets-_mx-characters-hoshino_swimsuit-_mxdependency-textures-2025-07-02_assets_all_3271841752.bundle",
+    "assets-_mx-characters-izuna_original-_mxdependency-textures-2025-07-02_assets_all_256835412.bundle",
+    "assets-_mx-characters-juri_original-_mxdependency-textures-2025-07-02_assets_all_4102532428.bundle",
+    "assets-_mx-characters-kazusa_original-_mxdependency-textures-2025-07-02_assets_all_2860489390.bundle",
+    "assets-_mx-characters-kirara_original-_mxdependency-textures-2025-07-02_assets_all_1564482993.bundle",
+    "assets-_mx-characters-kirino_original-_mxdependency-textures-2025-07-02_assets_all_1331733920.bundle",
+    "assets-_mx-characters-maki_original-_mxdependency-materials-2025-07-02_assets_all_777815690.bundle",
+    "assets-_mx-characters-maki_original-_mxdependency-textures-2025-07-02_assets_all_3375874089.bundle",
+    "assets-_mx-characters-marina_original-_mxdependency-textures-2025-07-02_assets_all_1771042525.bundle",
+    "assets-_mx-characters-misaki_original-_mxdependency-materials-2025-07-02_assets_all_1561099242.bundle",
+    "assets-_mx-characters-misaki_original-_mxdependency-textures-2025-07-02_assets_all_3559539342.bundle",
+    "assets-_mx-characters-moe_original-_mxdependency-textures-2025-07-02_assets_all_508949460.bundle",
+    "assets-_mx-characters-momiji_original-_mxdependency-textures-2025-07-02_assets_all_1602881888.bundle",
+    "assets-_mx-characters-mutsuki_newyear-_mxdependency-materials-2025-07-02_assets_all_3047014726.bundle",
+    "assets-_mx-characters-mutsuki_newyear-_mxdependency-textures-2025-07-02_assets_all_4103104100.bundle",
+    "assets-_mx-characters-mutsuki_original-_mxdependency-textures-2025-07-02_assets_all_869230490.bundle",
+    "assets-_mx-characters-neru_original-_mxdependency-materials-2025-07-02_assets_all_85046666.bundle",
+    "assets-_mx-characters-neru_original-_mxdependency-textures-2025-07-02_assets_all_3510484564.bundle",
+    "assets-_mx-characters-reizyo_original-_mxdependency-textures-2025-07-02_assets_all_759035985.bundle",
+    "assets-_mx-characters-serika_newyear-_mxdependency-textures-2025-07-02_assets_all_800026178.bundle",
+    "assets-_mx-characters-shigure_original-_mxdependency-textures-2025-07-02_assets_all_1097798558.bundle",
+    "assets-_mx-characters-shun_original-_mxdependency-materials-2025-07-02_assets_all_1214426826.bundle",
+    "assets-_mx-characters-shun_original-_mxdependency-textures-2025-07-02_assets_all_3205153129.bundle",
+    "assets-_mx-characters-tsubaki_original-_mxdependency-textures-2025-07-02_assets_all_2392533049.bundle",
+    "assets-_mx-effectsfreezed-material-_mxdependency-materials-2025-07-02_assets_all_3681437736.bundle",
+    "assets-_mx-effectsfreezed-mesh-_mxdependency-meshes-2025-07-02_assets_all_3051118648.bundle",
+    "assets-_mx-effectsfreezed-texture-_mxdependency-textures-2025-07-02_assets_all_4180623603.bundle",
+    "assets-_mx-effectsfreezed-texture-gacha-_mxdependency-textures-2025-07-02_assets_all_1727795866.bundle",
+    "assets-_mx-effectsfreezed-texture-system-_mxdependency-textures-2025-07-02_assets_all_977826343.bundle",
+    "assets-_mx-effectsfreezed-texture-text-_mxdependency-textures-2025-07-02_assets_all_1994398172.bundle",
+    "assets-_mx-effectsfreezed-ui-uicraftduration-_mxdependency-textures-2025-07-02_assets_all_941711380.bundle",
+    "assets-_mx-effectsfreezed-ui-uisweepanimation-_mxdependency-textures-2025-07-02_assets_all_3687080458.bundle",
+    "assets-_mx-etceffects-scenariofx-ui_fx_bg_flash-_mxdependency-textures-2025-07-02_assets_all_1927057128.bundle",
+    "assets-_mx-etceffects-scenariofx-ui_fx_bg_scroll-_mxdependency-textures-2025-07-02_assets_all_2360258616.bundle",
+    "assets-_mx-etceffects-scenariofx-ui_fx_bg_tvnoise-_mxdependency-textures-2025-07-02_assets_all_2688808343.bundle",
+    "assets-_mx-etceffects-uifx-battleskip-_mxdependency-textures-2025-07-02_assets_all_3686852892.bundle",
+    "assets-_mx-etceffects-uifx-conquestfx-_mxdependency-textures-2025-07-02_assets_all_2450363167.bundle",
+    "assets-_mx-etceffects-uifx-location_worldraid_814-_mxdependency-textures-2025-07-02_assets_all_431869763.bundle",
+    "assets-_mx-etceffects-uifx-uiconquestfx-_mxdependency-textures-2025-07-02_assets_all_4069720926.bundle",
+    "assets-_mx-etceffects-uifx-uicraftduration-_mxdependency-textures-2025-07-02_assets_all_318344511.bundle",
+    "assets-_mx-etceffects-uifx-uidicerace-_mxdependency-textures-2025-07-02_assets_all_3725782490.bundle",
+    "assets-_mx-etceffects-uifx-uieventcardshopfx-_mxdependency-textures-2025-07-02_assets_all_3761745688.bundle",
+    "assets-_mx-etceffects-uifx-uieventlobbyconquest_822fx-_mxdependency-textures-2025-07-02_assets_all_1838314700.bundle",
+    "assets-_mx-etceffects-uifx-uiminigameshootingfx-_mxdependency-textures-2025-07-02_assets_all_1757560518.bundle",
+    "assets-_mx-etceffects-uifx-uiscenariomodefx-_mxdependency-textures-2025-07-02_assets_all_1257391157.bundle",
+    "assets-_mx-etceffects-uifx-uitopconfrontationgauge-_mxdependency-textures-2025-07-02_assets_all_825128835.bundle",
+    "assets-_mx-etceffects-uifx-uiworldraidzoneballoon-_mxdependency-textures-2025-07-02_assets_all_1654057297.bundle",
+    "assets-_mx-field-effect-_mxdependency-textures-2025-07-02_assets_all_1302519176.bundle",
+    "assets-_mx-minigame-dicerace-_mxdependency-textures-2025-07-02_assets_all_1755163309.bundle",
+    "assets-_mx-minigame-rhythm-_mxdependency-textures-2025-07-02_assets_all_1878220767.bundle",
+    "assets-_mx-minigame-rhythm0002-_mxdependency-textures-2025-07-02_assets_all_537287817.bundle",
+    "assets-_mx-minigame-shooting-_mxdependency-textures-2025-07-02_assets_all_2049254968.bundle",
+    "assets-_mx-minigame-tbg-_mxdependency-textures-2025-07-02_assets_all_3259721095.bundle",
+    "assets-_mx-npcs-_mxcommon-_mxdependency-textures-2025-07-02_assets_all_2909850548.bundle",
+    "assets-_mx-npcs-aev_yoheki_vulcan-_mxdependency-textures-2025-07-02_assets_all_1415308075.bundle",
+    "assets-_mx-npcs-armoredcar_wakamo_mg-_mxdependency-textures-2025-07-02_assets_all_3057192007.bundle",
+    "assets-_mx-npcs-avantgardekun_millenium_ar-_mxdependency-textures-2025-07-02_assets_all_1208218162.bundle",
+    "assets-_mx-npcs-balltank_millenium_vulcan-_mxdependency-textures-2025-07-02_assets_all_1669929319.bundle",
+    "assets-_mx-npcs-ch0171_enemy-_mxdependency-materials-2025-07-02_assets_all_1624402044.bundle",
+    "assets-_mx-npcs-ch0171_enemy-_mxdependency-textures-2025-07-02_assets_all_916943198.bundle",
+    "assets-_mx-npcs-ch0173_enemy-_mxdependency-textures-2025-07-02_assets_all_229664586.bundle",
+    "assets-_mx-npcs-droid_helmet_ar-_mxdependency-textures-2025-07-02_assets_all_187747038.bundle",
+    "assets-_mx-npcs-droid_kaiserpmc_ar-_mxdependency-textures-2025-07-02_assets_all_4127815942.bundle",
+    "assets-_mx-npcs-droid_kaiserpmc_shield-_mxdependency-textures-2025-07-02_assets_all_3199420329.bundle",
+    "assets-_mx-npcs-en0002-_mxdependency-textures-2025-07-02_assets_all_2340294208.bundle",
+    "assets-_mx-npcs-en0003-_mxdependency-materials-2025-07-02_assets_all_101631022.bundle",
+    "assets-_mx-npcs-en0003-_mxdependency-textures-2025-07-02_assets_all_4141031572.bundle",
+    "assets-_mx-npcs-en0005_original-_mxdependency-materials-2025-07-02_assets_all_3871885243.bundle",
+    "assets-_mx-npcs-en0005_original-_mxdependency-meshes-2025-07-02_assets_all_109595437.bundle",
+    "assets-_mx-npcs-en0005_original-_mxdependency-textures-2025-07-02_assets_all_3051182059.bundle",
+    "assets-_mx-npcs-en0006_original-_mxdependency-textures-2025-07-02_assets_all_3055780782.bundle",
+    "assets-_mx-npcs-en0007_original-_mxdependency-textures-2025-07-02_assets_all_3899463996.bundle",
+    "assets-_mx-npcs-en0008_original_01-_mxdependency-textures-2025-07-02_assets_all_592235795.bundle",
+    "assets-_mx-npcs-en0009_original-_mxdependency-textures-2025-07-02_assets_all_3071694351.bundle",
+    "assets-_mx-npcs-en0010_original-_mxdependency-materials-2025-07-02_assets_all_2670094223.bundle",
+    "assets-_mx-npcs-en0010_original-_mxdependency-textures-2025-07-02_assets_all_935094114.bundle",
+    "assets-_mx-npcs-en0011_original_01-_mxdependency-textures-2025-07-02_assets_all_2668504768.bundle",
+    "assets-_mx-npcs-flavia_yustuinaswim_rl-_mxdependency-textures-2025-07-02_assets_all_1951601697.bundle",
+    "assets-_mx-npcs-ghosttales_katashiro-_mxdependency-textures-2025-07-02_assets_all_3899173430.bundle",
+    "assets-_mx-npcs-goz_original-_mxdependency-textures-2025-07-02_assets_all_3683233750.bundle",
+    "assets-_mx-npcs-haunted_umbrella-_mxdependency-textures-2025-07-02_assets_all_916907997.bundle",
+    "assets-_mx-npcs-hod_colour-_mxdependency-textures-2025-07-02_assets_all_376123597.bundle",
+    "assets-_mx-npcs-hod_indoor-_mxdependency-textures-2025-07-02_assets_all_3258096711.bundle",
+    "assets-_mx-npcs-hod_original-_mxdependency-materials-2025-07-02_assets_all_3384622132.bundle",
+    "assets-_mx-npcs-hod_original-_mxdependency-textures-2025-07-02_assets_all_2074118648.bundle",
+    "assets-_mx-npcs-kaitenfx_mk0-_mxdependency-textures-2025-07-02_assets_all_3000072265.bundle",
+    "assets-_mx-npcs-kaitenfx_mk0_insane-_mxdependency-textures-2025-07-02_assets_all_344229001.bundle",
+    "assets-_mx-npcs-kaitenranger_op-_mxdependency-textures-2025-07-02_assets_all_4168826126.bundle",
+    "assets-_mx-npcs-kaitenranger_pink_rl-_mxdependency-textures-2025-07-02_assets_all_3369947044.bundle",
+    "assets-_mx-npcs-kether_decagram_vulcan-_mxdependency-textures-2025-07-02_assets_all_2118901133.bundle",
+    "assets-_mx-npcs-mafia_genryumon_mg-_mxdependency-textures-2025-07-02_assets_all_69220355.bundle",
+    "assets-_mx-npcs-mikaenemy_original-_mxdependency-textures-2025-07-02_assets_all_2558446172.bundle",
+    "assets-_mx-npcs-perorozilla_colour-_mxdependency-textures-2025-07-02_assets_all_947656346.bundle",
+    "assets-_mx-npcs-perorozilla_original-_mxdependency-textures-2025-07-02_assets_all_1644562526.bundle",
+    "assets-_mx-npcs-perorozilla_outdoor-_mxdependency-textures-2025-07-02_assets_all_2019741777.bundle",
+    "assets-_mx-npcs-soldier_helmet_ar-_mxdependency-materials-2025-07-02_assets_all_4187054528.bundle",
+    "assets-_mx-npcs-soldier_helmet_ar-_mxdependency-meshes-2025-07-02_assets_all_1377058005.bundle",
+    "assets-_mx-npcs-soldier_helmet_ar-_mxdependency-textures-2025-07-02_assets_all_2830901551.bundle",
+    "assets-_mx-npcs-techsoldier_decagram_ar_original-_mxdependency-textures-2025-07-02_assets_all_3569887646.bundle",
+    "assets-_mx-npcs-toki_cnc_mg_boss-_mxdependency-textures-2025-07-02_assets_all_603093392.bundle",
+    "assets-_mx-npcs-truck_horch_02-_mxdependency-textures-2025-07-02_assets_all_630234550.bundle",
+    "assets-_mx-npcs-twinsturret_highlander_mg-_mxdependency-textures-2025-07-02_assets_all_2053299317.bundle",
+    "assets-_mx-npcs-wakamo_hovercraft_original-_mxdependency-textures-2025-07-02_assets_all_815840838.bundle",
+    "assets-_mx-npcs-wakamo_swimsuit_original-_mxdependency-textures-2025-07-02_assets_all_3485712124.bundle",
+    "assets-_mx-obstacles-hyakkiyakonorthtown_fireplug_standard-_mxdependency-meshes-2025-07-02_assets_all_2362491687.bundle",
+    "assets-_mx-obstacles-snowmountain_snow_01-_mxdependency-materials-2025-07-02_assets_all_426529391.bundle",
+    "assets-_mx-obstacles-snowmountain_snow_01-_mxdependency-textures-2025-07-02_assets_all_3679598494.bundle",
+    "assets-_mx-prodresources-sccutscene_13000_03-_mxdependency-textures-2025-07-02_assets_all_1997996134.bundle",
+    "assets-_mx-prodresources-sccutscene_52000_02-_mxdependency-materials-2025-07-02_assets_all_3526161781.bundle",
+    "assets-_mx-prodresources-sccutscene_52000_02-_mxdependency-textures-2025-07-02_assets_all_767663234.bundle",
+    "assets-_mx-prodresources-sccutscene_52000_03-_mxdependency-textures-2025-07-02_assets_all_535713196.bundle",
+    "assets-_mx-scenes-_mxcommon-_mxdependency-textures-2025-07-02_assets_all_3101134648.bundle",
+    "assets-_mx-scenes-_mxcommon-_mxdependency-textures-2025-08-26_assets_all_3759215195.bundle",
+    "assets-_mx-scenes-battle-basement-_mxdependency-textures-2025-07-02_assets_all_1540642580.bundle",
+    "assets-_mx-scenes-battle-beach-_mxdependency-textures-2025-07-02_assets_all_4134575927.bundle",
+    "assets-_mx-scenes-battle-destroyedhighway-_mxdependency-textures-2025-07-02_assets_all_4034533133.bundle",
+    "assets-_mx-scenes-battle-hotsprings-_mxdependency-textures-2025-07-02_assets_all_903235132.bundle",
+    "assets-_mx-scenes-battle-hyakkiyakomatsuri-_mxdependency-textures-2025-07-02_assets_all_3442046652.bundle",
+    "assets-_mx-scenes-battle-mainstreet-_mxdependency-textures-2025-07-02_assets_all_1015028095.bundle",
+    "assets-_mx-scenes-battle-moviestreet-_mxdependency-textures-2025-07-02_assets_all_1969731578.bundle",
+    "assets-_mx-scenes-battle-trainroof-_mxdependency-textures-2025-07-02_assets_all_2578662647.bundle",
+    "assets-_mx-scenes-battle-trinityisland-_mxdependency-textures-2025-07-02_assets_all_2946166792.bundle",
+    "assets-_mx-scenes-raid-52102-_mxdependency-textures-2025-07-02_assets_all_8898904.bundle",
+    "assets-_mx-scenes-raid-en0009-_mxdependency-textures-2025-07-02_assets_all_2280158285.bundle",
+    "assets-_mx-scenes-raid-hieronymus-_mxdependency-textures-2025-07-02_assets_all_1670001101.bundle",
+    "assets-_mx-scenes-raid-shirokuro-_mxcommon-_mxdependency-textures-2025-07-02_assets_all_1401928247.bundle",
+    "assets-_mx-scenes-skillcut-ch0099-_mxdependency-textures-2025-07-02_assets_all_4233396709.bundle",
+    "assets-_mx-scenes-skillcut-ch0222-_mxdependency-textures-2025-07-02_assets_all_3480906379.bundle",
+    "assets-_mx-scenes-skillcut-ch0280-_mxdependency-textures-2025-07-02_assets_all_2366486132.bundle",
+    "assets-_mx-shaders-_mxdependency-shaders-2025-07-02_assets_all_2584508817.bundle",
+    "assets-_mx-shaders-_mxdependency-shaders-2026-01-26_assets_all_1470504896.bundle",
+    "assets-_mx-spinecharacters-ch0307_spr-_mxdependency-textassets-2025-07-02_assets_all_4106599617.bundle",
+    "assets-_mx-spinelobbies-_mxcommon-_mxdependency-materials-2025-07-02_assets_all_149539334.bundle",
+    "assets-_mx-spinelobbies-_mxcommon-_mxdependency-textures-2025-07-02_assets_all_1219719739.bundle",
+    "assets-_mx-spinelobbies-ch0307_home-_mxdependency-textassets-2026-03-24_assets_all_2956157503.bundle",
+    "assets-_mx-undercover-characters-_mxdependency-textures-2025-07-02_assets_all_2497477401.bundle",
+    "ch0307_public_spawn-_mxload-timelines-2026-03-24_assets_all_2322033460.bundle",
+    "character-animatorbase-_mxload-animatorcontrollers-2025-07-30_assets_all_1765084147.bundle",
+    "character-animatorbase-_mxload-animatorcontrollers-2025-07-30_assets_all_3828619736.bundle",
+    "character-ch0307-_mxload-animatorcontrollers-2026-03-24_assets_all_4137123343.bundle",
+    "character-ch0307-_mxload-timelines-2026-03-24_assets_all_1601793452.bundle",
+    "effect-ui-charactergrowthfx-_mxload-textures-2025-07-02_assets_all_3393069208.bundle",
+    "effect-ui-popup_skill_lvupfx-_mxload-textures-2025-07-02_assets_all_3550358129.bundle",
+    "MX_unitybuiltinshaders_4156112658.bundle",
+    "packages-com.unity.render-pipelines.universal-runtime-materials-_mxdependency-materials-2025-07-02_assets_all_3006197376.bundle",
+    "packages-com.unity.render-pipelines.universal-shaders-particles-_mxdependency-shaders-2025-07-02_assets_all_1438154298.bundle",
+    "prologdepengroup-assets-_mx-addressableasset-audio-_mxprolog-2025-07-02_assets_all_656424305.bundle",
+    "prologdepengroup-assets-_mx-addressableasset-character-_mxprolog-2025-07-30_assets_all_954253030.bundle",
+    "prologdepengroup-assets-_mx-characters-_mxcommon-_mxprolog-2025-07-02_assets_all_169562978.bundle",
+    "prologdepengroup-assets-_mx-effectsfreezed-material-_mxprolog-2025-07-02_assets_all_3649530835.bundle",
+    "prologdepengroup-assets-_mx-effectsfreezed-mesh-_mxprolog-2025-07-02_assets_all_1143786693.bundle",
+    "prologdepengroup-assets-_mx-effectsfreezed-texture-_mxprolog-2025-07-02_assets_all_4045394622.bundle",
+    "prologdepengroup-assets-_mx-effectsfreezed-ui-uicraftduration-_mxprolog-2025-07-02_assets_all_553510536.bundle",
+    "prologdepengroup-assets-_mx-obstacles-common_sandbag-_mxprolog-2025-07-02_assets_all_3124249910.bundle",
+    "prologdepengroup-assets-_mx-program-animators-_mxprolog-2025-07-02_assets_all_3956634714.bundle",
+    "prologdepengroup-assets-_mx-shaders-_mxprolog-2025-07-02_assets_all_222426929.bundle",
+    "prologdepengroup-assets-_mx-spinelobbies-_mxcommon-_mxprolog-2025-07-02_assets_all_578882636.bundle",
+    "prologgroup-assets-_mx-addressableasset-audio-audiomixer-_mxprolog-2025-07-02_assets_all_2673925038.bundle",
+    "prologgroup-assets-_mx-addressableasset-audio-sfx_common-_mxprolog-2025-07-02_assets_all_2363618612.bundle",
+    "prologgroup-assets-_mx-addressableasset-uis-00_images-imagefont-_mxprolog-2025-07-02_assets_all_421024945.bundle"
+  ],
+  "unresolved_cabs": [
+    "cab-4e374e23f1bd4e7218b8fbcbec01546f"
+  ],
+  "head_transform": {
+    "bone": "Bip001 Head",
+    "position": {
+      "x": -3.6867693111147544e-07,
+      "y": 0.00871326871275456,
+      "z": 0.6657137739621504
+    },
+    "source_path": "Bip001 Head <- Bip001 Neck <- Bip001 Spine1 <- Bip001 Spine <- Bip001 Pelvis <- Bip001 <- bone_root <- CH0307_Mesh"
+  },
+  "halo_anchor": {
+    "position": {
+      "x": -0.5404632007550703,
+      "y": -0.3154759520790125,
+      "z": 0.0018629168873653956
+    },
+    "rotation": {
+      "x": -0.31286698260582685,
+      "y": 0.5978079652403997,
+      "z": 0.5753320282427087,
+      "w": -0.4623126054612718
+    },
+    "scale": {
+      "x": 0.9999999999999999,
+      "y": 1.0,
+      "z": 0.9999999999999999
+    },
+    "source_path": "CH0307_Halo <- HaloRoot <- CH0307",
+    "name": "CH0307_Halo",
+    "coordinate_space": "viewer"
+  },
+  "halo_follow": {
+    "name": "HaloRoot",
+    "source_path": "HaloRoot <- CH0307",
+    "follow_target": "Bip001 Head",
+    "coordinate_space": "viewer",
+    "target_position": {
+      "x": -1.2092467048911642e-06,
+      "y": -0.19999988949919256,
+      "z": 1.0300001035251873
+    },
+    "target_offset": {
+      "x": -8.405697737796888e-07,
+      "y": -0.2087131582119471,
+      "z": 0.36428632956303686
+    },
+    "target_relative_position": {
+      "x": -0.36428630352020264,
+      "y": -0.20871320366859436,
+      "z": 0.0
+    },
+    "clamp_min_offset": {
+      "x": -0.47999998927116394,
+      "y": -0.3400000035762787,
+      "z": -0.27000001072883606
+    },
+    "clamp_max_offset": {
+      "x": -0.25999999046325684,
+      "y": -0.07000000029802322,
+      "z": 0.27000001072883606
+    },
+    "follow_position_power": 0.10000000149011612,
+    "follow_rotation_power": 0.07000000029802322,
+    "fix_y_rotation": 0,
+    "local_forward": {
+      "x": 0.0,
+      "y": 1.0000001192092896,
+      "z": 0.0
+    },
+    "target_relative_rotation": {
+      "x": 0.5000001192092896,
+      "y": -0.49999937415122986,
+      "z": -0.5000000596046448,
+      "w": -0.5000007748603821
+    },
+    "initial_rotation": {
+      "x": -0.0,
+      "y": -0.0,
+      "z": -0.0,
+      "w": 1.0
+    },
+    "placement_tilt_deg": 39.9998,
+    "depth_mode": "tilt"
+  },
+  "halo_transform": {
+    "position": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "rotation": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "w": 1.0
+    },
+    "scale": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 1.0
+    },
+    "source_path": "CH0307_Halo <- HaloRoot <- CH0307",
+    "name": "Halo",
+    "coordinate_space": "viewer"
+  }
+}

@@ -641,6 +641,8 @@ function collectUvComponents(geometry, group = null) {
       width: maxX - minX,
       height: maxZ - minZ,
       yExtent: maxY - minY,
+      positionMin: new THREE.Vector3(minX, minY, minZ),
+      positionMax: new THREE.Vector3(maxX, maxY, maxZ),
       uvArea: (maxU - minU) * (maxV - minV),
       vertexCount: vertices.size
     });
@@ -665,7 +667,12 @@ function findMouthRegion(components) {
   // Prefer the largest such cluster (most likely the lip outline).
   candidates.sort((a, b) => b.uvArea - a.uvArea);
   const c = candidates[0];
-  return { min: c.min, max: c.max };
+  return {
+    min: c.min,
+    max: c.max,
+    positionMin: c.positionMin,
+    positionMax: c.positionMax
+  };
 }
 
 // Returns { mouth } where mouth is { min, max } or null.
@@ -687,6 +694,93 @@ function computeEyeMouthRegions(geometry, group = null) {
     mouth = computeLegacyMouthUvBounds(geometry, group);
   }
   return { mouth };
+}
+
+function cloneUvBounds(bounds) {
+  if (!bounds) return null;
+  return {
+    min: bounds.min.clone(),
+    max: bounds.max.clone()
+  };
+}
+
+function computeMouthSampleUvBounds(bounds) {
+  if (!bounds) return null;
+  const width = bounds.max.x - bounds.min.x;
+  const height = bounds.max.y - bounds.min.y;
+  if (!(width > 0 && height > 0)) return cloneUvBounds(bounds);
+
+  // Some EyeMouth meshes (CH0307) pack the same full-width mouth geometry into
+  // half of the canonical mouth UV cell. Hit-test the real component, but sample
+  // the tile against the restored canonical-width cell so the lip curve does not
+  // split across the mirrored mouth topology.
+  if (width < height * 0.85) {
+    const targetWidth = Math.min(0.30, width * 2.0);
+    if (bounds.min.x > 0.08) {
+      return {
+        min: new THREE.Vector2(
+          Math.max(0, bounds.max.x - targetWidth),
+          bounds.min.y
+        ),
+        max: bounds.max.clone()
+      };
+    }
+    if (bounds.max.x < 0.17) {
+      return {
+        min: bounds.min.clone(),
+        max: new THREE.Vector2(
+          Math.min(0.30, bounds.min.x + targetWidth),
+          bounds.max.y
+        )
+      };
+    }
+  }
+
+  return cloneUvBounds(bounds);
+}
+
+function shouldSampleMouthTileByPosition(bounds) {
+  if (!bounds?.positionMin || !bounds?.positionMax) return false;
+  const width = bounds.max.x - bounds.min.x;
+  const height = bounds.max.y - bounds.min.y;
+  return width > 0 && height > 0 && width < height * 0.85;
+}
+
+function bleedTransparentMouthTileRgb(ctx, width, height) {
+  const imageData = ctx.getImageData(0, 0, width, height);
+  const data = imageData.data;
+  const source = new Uint8ClampedArray(data);
+  const neighborOffsets = [
+    [-1, -1],
+    [0, -1],
+    [1, -1],
+    [-1, 0],
+    [1, 0],
+    [-1, 1],
+    [0, 1],
+    [1, 1]
+  ];
+
+  for (let y = 0; y < height; y++) {
+    for (let x = 0; x < width; x++) {
+      const offset = (y * width + x) * 4;
+      if (source[offset + 3] !== 0) continue;
+
+      for (const [dx, dy] of neighborOffsets) {
+        const nx = x + dx;
+        const ny = y + dy;
+        if (nx < 0 || nx >= width || ny < 0 || ny >= height) continue;
+        const neighborOffset = (ny * width + nx) * 4;
+        if (source[neighborOffset + 3] === 0) continue;
+        data[offset] = source[neighborOffset];
+        data[offset + 1] = source[neighborOffset + 1];
+        data[offset + 2] = source[neighborOffset + 2];
+        break;
+      }
+    }
+  }
+
+  ctx.putImageData(imageData, 0, 0);
 }
 
 function resolveMouthTileIndex(mouthTexST, cols, rows) {
@@ -2336,9 +2430,13 @@ export async function loadCharacter(
           canvas.height = th;
           const ctx = canvas.getContext("2d");
           ctx.drawImage(img, col * tw, row * th, tw, th, 0, 0, tw, th);
+          bleedTransparentMouthTileRgb(ctx, canvas.width, canvas.height);
           const tex = new THREE.CanvasTexture(canvas);
           tex.flipY = false;
           tex.colorSpace = THREE.LinearSRGBColorSpace;
+          tex.generateMipmaps = false;
+          tex.minFilter = THREE.LinearFilter;
+          tex.magFilter = THREE.LinearFilter;
           mouthTiles.push(tex);
         }
       }
@@ -2727,10 +2825,17 @@ export async function loadCharacter(
         const defaultTile = mouthTiles[defaultIdx] || mouthTiles[0] || null;
         const regions = computeEyeMouthRegions(child.geometry, groupInfo);
         const mouthBounds = regions.mouth;
+        const mouthSampleBounds = computeMouthSampleUvBounds(mouthBounds);
+        const useMouthPositionSample =
+          shouldSampleMouthTileByPosition(mouthBounds);
         const sourceName = meshInfo?.name || "";
         console.log(
           `[${charId}] EyeMouth submesh '${sourceName}': mouth=`,
           mouthBounds,
+          " sample=",
+          mouthSampleBounds,
+          " positionSample=",
+          useMouthPositionSample,
           ` defaultIdx=${defaultIdx} mouthTiles.len=${mouthTiles.length} hasTile=${!!defaultTile}`
         );
         const material = new THREE.ShaderMaterial({
@@ -2764,12 +2869,30 @@ export async function loadCharacter(
             },
             u_MouthUVMax: {
               value: mouthBounds?.max || new THREE.Vector2(0, 0)
+            },
+            u_MouthSampleUVMin: {
+              value: mouthSampleBounds?.min || new THREE.Vector2(0, 0)
+            },
+            u_MouthSampleUVMax: {
+              value: mouthSampleBounds?.max || new THREE.Vector2(0, 0)
+            },
+            u_MouthUsePositionSample: {
+              value: useMouthPositionSample
+            },
+            u_MouthPositionMin: {
+              value: mouthBounds?.positionMin || new THREE.Vector3(0, 0, 0)
+            },
+            u_MouthPositionMax: {
+              value: mouthBounds?.positionMax || new THREE.Vector3(0, 0, 0)
             }
           },
           vertexShader: eyeMouthVertSrc,
           fragmentShader: eyeMouthFragSrc,
           side: THREE.DoubleSide,
-          transparent: true,
+          // Unity MX/C-EyesMouth is Geometry+1/Opaque, not a transparent pass.
+          transparent: false,
+          depthWrite: true,
+          depthTest: true,
           polygonOffset: true,
           polygonOffsetFactor: -1,
           polygonOffsetUnits: -1

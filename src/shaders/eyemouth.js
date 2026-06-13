@@ -4,9 +4,11 @@ precision highp float;
 #include <common>
 #include <skinning_pars_vertex>
 varying vec2 vUv;
+varying vec3 vMouthPosition;
 
 void main() {
     vUv = uv;
+    vMouthPosition = position;
     #include <skinbase_vertex>
     #include <begin_vertex>
     #include <skinning_vertex>
@@ -17,6 +19,7 @@ void main() {
 export const eyeMouthFragSrc = `
 precision highp float;
 varying vec2 vUv;
+varying vec3 vMouthPosition;
 
 uniform sampler2D u_MainTex;
 uniform bool u_HasMainTex;
@@ -29,6 +32,11 @@ uniform bool u_HasMouthTileTex;
 uniform bool u_MouthFlipX;
 uniform vec2 u_MouthUVMin;
 uniform vec2 u_MouthUVMax;
+uniform vec2 u_MouthSampleUVMin;
+uniform vec2 u_MouthSampleUVMax;
+uniform bool u_MouthUsePositionSample;
+uniform vec3 u_MouthPositionMin;
+uniform vec3 u_MouthPositionMax;
 
 void main() {
     vec4 tex = u_HasMainTex ? texture2D(u_MainTex, vUv) : vec4(0.0);
@@ -37,13 +45,22 @@ void main() {
     if (u_HasMouthTileTex
         && vUv.y >= u_MouthUVMin.y && vUv.y <= u_MouthUVMax.y
         && vUv.x >= u_MouthUVMin.x && vUv.x <= u_MouthUVMax.x) {
-        vec2 uvSize = u_MouthUVMax - u_MouthUVMin;
-        vec2 center = (u_MouthUVMin + u_MouthUVMax) * 0.5;
+        vec2 sampleCoord = vUv;
+        vec2 sampleMin = u_MouthSampleUVMin;
+        vec2 sampleMax = u_MouthSampleUVMax;
+        if (u_MouthUsePositionSample) {
+            sampleCoord = vMouthPosition.xz;
+            sampleMin = u_MouthPositionMin.xz;
+            sampleMax = u_MouthPositionMax.xz;
+        }
+        vec2 uvSize = sampleMax - sampleMin;
+        vec2 center = (sampleMin + sampleMax) * 0.5;
 
         // Map to square using larger dimension, centered
         float maxDim = max(uvSize.x, uvSize.y);
         vec2 squareMin = center - maxDim * 0.5;
-        vec2 squareUV = (vUv - squareMin) / maxDim;
+        vec2 squareUV = (sampleCoord - squareMin) / maxDim;
+        if (u_MouthUsePositionSample) squareUV.y = 1.0 - squareUV.y;
 
         // SetHorizontallyFlippedMouthTile events flip the tile horizontally
         // around its centre while preserving the rest of the EyeMouth UV.
