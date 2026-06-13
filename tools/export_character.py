@@ -304,7 +304,7 @@ def _collect_renderer_material_targets(
             f"{source}_Body", f"{source}_Hair", f"{source}_Face",
             f"{source}_EyeMouth", f"{source}_Weapon", f"{source}_Halo",
             f"{source}_Prop", f"{source}_Prop02", f"{source}_SkillProp",
-            f"{source}_SkillProb_Cutin", f"{source}_Brush_01",
+            f"{source}_SkillProb_Cutin", f"{source}_Skill_Dice", f"{source}_Brush_01",
             f"{source}_Eyebrow", f"{source}_Eyebrow2",
         })
     body_names = _source_body_names(char_id)

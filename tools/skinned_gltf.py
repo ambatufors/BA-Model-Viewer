@@ -661,6 +661,7 @@ _PROP_OUTLINE_TOKENS = (
     "table",
     "crayon",
     "drawing",
+    "dice",
 )
 
 
@@ -993,7 +994,10 @@ def _initial_renderer_visible_override_for_export_name(export_name: str, char_id
 
 
 def _event_renderer_controlled_for_export_name(export_name: str, char_id: str = "") -> bool:
-    return char_id.upper() == "CH0091" and export_name.lower() in {"body01", "body02"}
+    lowered = export_name.lower()
+    if char_id.upper() == "CH0091" and lowered in {"body01", "body02"}:
+        return True
+    return re.fullmatch(r"face\d*_mesh", lowered) is not None
 
 
 def _ignore_vertex_colors_for_export_name(export_name: str, char_id: str = "") -> bool:
