@@ -31,7 +31,7 @@ import { createHaloParticleSystem } from "./haloParticles.js";
 import { createModelFx } from "./modelFx.js";
 
 let modelsIndex = [];
-const ASSET_CACHE_VERSION = "build-6"; //You should poke this after modifying the code
+const ASSET_CACHE_VERSION = "build-7"; //You should poke this after modifying the code
 const HEAD_MESH_BASE_NAMES = new Set([
   "Face",
   "Hair",
@@ -354,6 +354,11 @@ function findSharedSkeletonParentBone(group, boneName, partName) {
   const preferredRoot = findFxOverlaySkinnedRoot(group, partName);
   const preferredBone = findObjectByName(preferredRoot, boneName);
   return preferredBone || findObjectByName(group, boneName);
+}
+
+function findParentAttachBone(group, boneName, partName) {
+  if (partName) return findSharedSkeletonParentBone(group, boneName, partName);
+  return findObjectByName(group, boneName);
 }
 
 function findFxOverlayParentBone({
@@ -1374,10 +1379,21 @@ function createAnimationState(
       if (!part?.root || !part?.clips?.length) return;
       const mixer = new THREE.AnimationMixer(part.root);
       mixers.push(mixer);
+      const clipAliases = part.clipAliases || part.clip_aliases || {};
+      const aliasEntries =
+        clipAliases && typeof clipAliases === "object"
+          ? Object.entries(clipAliases)
+          : [];
       for (const clip of part.clips) {
-        const records = clipRecordsByName.get(clip.name) || [];
-        records.push({ mixer, clip, action: null });
-        clipRecordsByName.set(clip.name, records);
+        const recordNames = new Set([clip.name]);
+        for (const [aliasName, sourceName] of aliasEntries) {
+          if (sourceName === clip.name) recordNames.add(aliasName);
+        }
+        for (const recordName of recordNames) {
+          const records = clipRecordsByName.get(recordName) || [];
+          records.push({ mixer, clip, action: null });
+          clipRecordsByName.set(recordName, records);
+        }
       }
       state.clipNames = [
         ...new Set([...(options.clipNames || []), ...clipRecordsByName.keys()])
@@ -2901,7 +2917,11 @@ export async function loadCharacter(
       }
       if (meshInfo.isSkinned && gltf.animations?.length) {
         if (charId === "CH0336") stripCH0336RootTranslation(gltf.animations);
-        const animatedPart = { root: gltf.scene, clips: gltf.animations };
+        const animatedPart = {
+          root: gltf.scene,
+          clips: gltf.animations,
+          clipAliases: meshInfo.clip_aliases || meshInfo.clipAliases || null
+        };
         if (animationState) animationState.addPart(animatedPart);
         else animatedParts.push(animatedPart);
       }
@@ -3200,7 +3220,11 @@ export async function loadCharacter(
               pending.meshInfo.parent_bone,
               sharedSkeletonParentPart
             )
-          : findObjectByName(group, pending.meshInfo.parent_bone);
+          : findParentAttachBone(
+              group,
+              pending.meshInfo.parent_bone,
+              pending.meshInfo.parent_part_name || pending.meshInfo.parent_part
+            );
         if (!bone) {
           if (warnMissing) {
             console.warn(

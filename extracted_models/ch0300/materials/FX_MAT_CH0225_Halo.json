@@ -1,0 +1,49 @@
+{
+  "name": "FX_MAT_CH0225_Halo",
+  "shader": "MX/C-Halo/UnlitTextured",
+  "floats": {
+    "_Cull": 2.0,
+    "_DitherThreshold": 0.0,
+    "_DstBlend": 10.0,
+    "_DstBlendAlpha": 10.0,
+    "_GlowStrength0": 0.5,
+    "_GlowStrictness0": 4.0,
+    "_GrayBrightness": 1.0,
+    "_SrcBlend": 5.0,
+    "_SrcBlendAlpha": 1.0,
+    "_ZWrite": 0.0
+  },
+  "colors": {
+    "_GlowMaskColor0": {
+      "r": 0.2392157018184662,
+      "g": 0.686274528503418,
+      "b": 0.9647059440612793,
+      "a": 1.0
+    },
+    "_GlowTint0": {
+      "r": 0.046665094792842865,
+      "g": 0.4286905527114868,
+      "b": 0.921582043170929,
+      "a": 1.0
+    },
+    "_Tint": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 0.9843137264251709
+    }
+  },
+  "textures": {
+    "_MainTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ],
+      "name": "CH0225_Halo"
+    }
+  }
+}
