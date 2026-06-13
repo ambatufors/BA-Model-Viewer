@@ -211,6 +211,31 @@ def _dedupe_manifest_items(items: list[dict]) -> list[dict]:
     return out
 
 
+def _runtime_static_meshes_for_manifest(meshes: list[dict], skinned_meshes: list[dict]) -> list[dict]:
+    """Only advertise static runtime companions when skinned meshes are present.
+
+    The exporter still writes static submesh GLBs for inspection/fallback, but
+    manifest consumers should not load standard Body/Face/EyeMouth/etc. static
+    submeshes on top of the skinned Body. Doing so creates duplicate face
+    overlays once animation moves the skinned face away from the rest pose.
+    """
+    if not skinned_meshes:
+        return meshes
+
+    runtime_meshes = []
+    for mesh in meshes:
+        name = str(mesh.get("name") or "")
+        base = name.rsplit("_", 1)[-1]
+        if (
+            base.lower() == "halo"
+            or mesh.get("fx_prop")
+            or mesh.get("follow_target")
+            or mesh.get("source_kind") == "character_prop"
+        ):
+            runtime_meshes.append(mesh)
+    return runtime_meshes
+
+
 def _manifest_resolved_dependencies(paths: list[Path]) -> list[str]:
     """Keep manifest diagnostics focused on character/runtime dependencies."""
     return [
@@ -1292,7 +1317,7 @@ def main():
     manifest = {
         "char_id": char_id,
         "submesh_order": mat_order,
-        "meshes": mesh_data,
+        "meshes": _runtime_static_meshes_for_manifest(mesh_data, skinned_data),
         "skinned_meshes": skinned_data,
         "textures": _dedupe_manifest_items(tex_data + extra_tex_data + common_data),
         "materials": _dedupe_manifest_items(mat_data + extra_mat_data),
