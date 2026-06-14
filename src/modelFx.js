@@ -38,14 +38,50 @@ const UNITY_RENDER_ALIGNMENT_WORLD = 1;
 const UNITY_RENDER_ALIGNMENT_LOCAL = 2;
 const UNITY_RENDER_ALIGNMENT_FACING = 3;
 const UNITY_RENDER_ALIGNMENT_VELOCITY = 4;
+// Unity TextureWrapMode -> THREE wrapping. Unity enum order (per docs):
+// 0=Repeat, 1=Clamp, 2=Mirror, 3=MirrorOnce. THREE has no MirrorOnce — map it
+// to MirroredRepeat (closest; Unity clamps after one mirror, but BA fx never
+// relies on that). Default is Clamp: BA fx gradient ramps (e.g. FX_TEX_Gra_W_01,
+// the CH0325 head_red blush sweep) are authored Clamp, and clamping is the safe
+// default for an unknown overlay — Repeat silently TILES a scrolled ramp into
+// multiple stacked sweeps instead of one rising front.
+const UNITY_WRAP_REPEAT = 0;
+const UNITY_WRAP_CLAMP = 1;
+const UNITY_WRAP_MIRROR = 2;
+const UNITY_WRAP_MIRROR_ONCE = 3;
+function unityWrapToThree(wrap) {
+  switch (Number(wrap)) {
+    case UNITY_WRAP_REPEAT:
+      return THREE.RepeatWrapping;
+    case UNITY_WRAP_MIRROR:
+    case UNITY_WRAP_MIRROR_ONCE:
+      return THREE.MirroredRepeatWrapping;
+    case UNITY_WRAP_CLAMP:
+    default:
+      return THREE.ClampToEdgeWrapping;
+  }
+}
+
 // Soft ceiling for the fx tint peak channel. Keeps extreme-HDR
 // materials (e.g. FX_MAT_White_05 _Color=23.97) blooming as a glow instead of
 // a flashbang white block. Sits above the bloom threshold (scene.js = 1.5) so
 // capped effects still bloom. See colorVec clamp in FxEmitter.init.
 const FX_COLOR_CEILING = 2.5;
-const MESH_PARTICLE_FRAME_FIXES = {
+// Mesh-mode FX particles are authored in a bone-local frame that does not line up
+// with the exported glTF bone node (the FBX->glTF export keeps skinning correct
+// via inverse bind matrices, but a child parented to the bone node inherits a
+// rotated frame). The correction is DATA-DRIVEN: tools/fx/compute_mesh_frame_fix.py
+// derives it per mesh by best-fitting the FX shell onto the character's own face
+// geometry and writes index.json meshes[].frame_quat. The viewer reads that here.
+// This legacy table only covers meshes dumped before that field existed.
+const LEGACY_MESH_PARTICLE_FRAME_FIXES = {
   FX_MESH_CH0334_Acc_Head: { scale: [-1, 1, 1] },
 };
+
+function resolveMeshFrameFix(meshName, dataFix) {
+  if (dataFix && (dataFix.quat || dataFix.rotation || dataFix.scale)) return dataFix;
+  return LEGACY_MESH_PARTICLE_FRAME_FIXES[meshName] || null;
+}
 const tmpWorldQuat = new THREE.Quaternion();
 const tmpParentWorldQuat = new THREE.Quaternion();
 
@@ -57,6 +93,7 @@ const tmpParentWorldQuat = new THREE.Quaternion();
 //   (One,      1-SrcAlpha) -> Normal + premult    (AlphaBlend_Add / _Add_Mask / Step)
 //   (SrcAlpha, One)        -> Additive            (AlwaysView_Add)
 //   (One,      One)        -> Additive + premult  (Additive_0)
+//   (DstColor, Zero)       -> Custom multiplicative (Multiplicative_0)
 // Distortion shaders (Zero,Zero in Pass0; real work in a grab pass) can't be a
 // single blend — fall back to faint additive so they don't render as a blob.
 // Historically every fx material was forced AdditiveBlending, which turned
@@ -64,12 +101,46 @@ const tmpParentWorldQuat = new THREE.Quaternion();
 // blob on a black bg. This resolver restores per-material blend fidelity.
 function resolveFxBlend(shaderName) {
   const s = String(shaderName || "");
+  if (/Multiplicative/.test(s)) {
+    return {
+      blending: THREE.CustomBlending,
+      blendSrc: THREE.DstColorFactor,
+      blendDst: THREE.ZeroFactor,
+      blendEquation: THREE.AddEquation,
+      premultiply: false,
+      multiplicative: true,
+    };
+  }
   if (/Distort/.test(s)) return { blending: THREE.AdditiveBlending, premultiply: false };
   if (/AlphaBlend_Add|_Add_Mask|\bStep/.test(s)) return { blending: THREE.NormalBlending, premultiply: true };
   if (/AlphaBlend/.test(s)) return { blending: THREE.NormalBlending, premultiply: false };
   if (/AlwaysView_Add/.test(s)) return { blending: THREE.AdditiveBlending, premultiply: false };
   if (/Additive/.test(s)) return { blending: THREE.AdditiveBlending, premultiply: true };
   return { blending: THREE.AdditiveBlending, premultiply: false };
+}
+
+// Unity Cull mode (material _Cull_Mode / _Cull): 0=Off, 1=Front, 2=Back -> THREE
+// side. Mesh-mode FX shells (e.g. the CH0325 head_red head shell) are authored
+// Cull Back; rendering them DoubleSide exposes the shell's inner surface at its
+// open rim (the neck/chin), which read as a bright streak under the chin. Honor
+// the authored cull so only the outward faces draw. Default DoubleSide keeps flat
+// quad/decal particles visible from both sides.
+function resolveMeshCullSide(matData) {
+  const cull = Number(matData?.floats?._Cull_Mode ?? matData?.floats?._Cull ?? 0);
+  if (cull === 1) return THREE.BackSide; // Cull Front -> draw back faces
+  if (cull === 2) return THREE.FrontSide; // Cull Back -> draw front faces
+  return THREE.DoubleSide; // Cull Off
+}
+
+function applyFxBlendState(material, blend) {
+  const b = blend || { blending: THREE.AdditiveBlending, premultiply: false };
+  material.blending = b.blending;
+  if (b.blendSrc != null) material.blendSrc = b.blendSrc;
+  if (b.blendDst != null) material.blendDst = b.blendDst;
+  if (b.blendSrcAlpha != null) material.blendSrcAlpha = b.blendSrcAlpha;
+  if (b.blendDstAlpha != null) material.blendDstAlpha = b.blendDstAlpha;
+  if (b.blendEquation != null) material.blendEquation = b.blendEquation;
+  material.premultipliedAlpha = !!b.premultiply;
 }
 
 function materialDepthTestEnabled(matData) {
@@ -97,11 +168,13 @@ function resolveFxRenderState(matData, renderer) {
   const sortingFudge = Number(renderer?.sorting_fudge ?? 0);
   const sortingOrder = Number(renderer?.sorting_order ?? 0);
   const isStretchParticle = Number(renderer?.render_mode) === UNITY_RENDER_MODE_STRETCH;
+  const isMultiplicative = /Multiplicative/.test(shaderName);
   // Matches the DSFX transparent families resolveFxBlend already recognizes; a
   // missing material (soft-glow fallback) is also an additive overlay.
   const isFxOverlay =
-    !shaderName || /Distort|AlphaBlend|Additive|AlwaysView|\bStep/.test(shaderName);
-  const disableDepthTestForSurfaceOverlay = isFxOverlay && !isStretchParticle;
+    !shaderName ||
+    /Distort|AlphaBlend|Additive|AlwaysView|Multiplicative|\bStep/.test(shaderName);
+  const disableDepthTestForSurfaceOverlay = isFxOverlay && !isStretchParticle && !isMultiplicative;
   // Unity's transparent queue draws back-to-front; a MORE-NEGATIVE sorting_fudge
   // biases an object nearer so it draws later (on top). Mirror that: renderOrder
   // rises as fudge falls, with sorting_order as the coarse key. Base 20 keeps fx
@@ -128,13 +201,15 @@ function clamp01(value) {
 }
 const POST_DURATION_GRACE = 4.0; // seconds — keep prefab alive for trailing particles after lengthInSec
 
-function applyMeshParticleFrameFix(group, meshName) {
-  const fix = MESH_PARTICLE_FRAME_FIXES[meshName];
+function applyMeshParticleFrameFix(group, fix) {
   if (fix?.scale) {
     group.scale.set(fix.scale[0], fix.scale[1], fix.scale[2]);
   }
   if (fix?.rotation) {
     group.rotation.set(fix.rotation[0], fix.rotation[1], fix.rotation[2]);
+  }
+  if (fix?.quat) {
+    group.quaternion.set(fix.quat[0], fix.quat[1], fix.quat[2], fix.quat[3]);
   }
 }
 
@@ -263,6 +338,23 @@ function sampleMinMaxAt(spec, t, fallback = 1) {
     return scalar * evaluateCurve(spec.maxCurve, t, 1);
   }
   return Number.isFinite(scalar) ? scalar : fallback;
+}
+
+function readTextureSlotTransform(slot) {
+  const scale = Array.isArray(slot?.scale) ? slot.scale : null;
+  const offset = Array.isArray(slot?.offset) ? slot.offset : null;
+  const sx = Number(scale?.[0] ?? 1) || 1;
+  const sy = Number(scale?.[1] ?? 1) || 1;
+  const ox = Number(offset?.[0] ?? 0) || 0;
+  const oy = Number(offset?.[1] ?? 0) || 0;
+  return {
+    scale: new THREE.Vector2(sx, sy),
+    offset: new THREE.Vector2(ox, oy),
+    isNonIdentity: Math.abs(sx - 1) > 1e-6 ||
+      Math.abs(sy - 1) > 1e-6 ||
+      Math.abs(ox) > 1e-6 ||
+      Math.abs(oy) > 1e-6,
+  };
 }
 
 // Sample a particle's START color. Unity's startColor is a MinMaxGradient whose
@@ -441,7 +533,7 @@ function buildBillboardGeometry(capacity) {
 
 function makeBillboardMaterial(texture, tilesX, tilesY, frameU, frameV, color, texMode, blend, renderState, billboard = true, pivot = null) {
   const b = blend || { blending: THREE.AdditiveBlending, premultiply: false };
-  return new THREE.ShaderMaterial({
+  const material = new THREE.ShaderMaterial({
     uniforms: {
       u_Tex: { value: texture },
       u_Tiles: { value: new THREE.Vector2(tilesX || 1, tilesY || 1) },
@@ -454,6 +546,9 @@ function makeBillboardMaterial(texture, tilesX, tilesY, frameU, frameV, color, t
       // 1 = premultiply rgb by alpha (for One,1-SrcAlpha "AlphaBlend_Add" shaders
       // rendered via THREE NormalBlending, and One,One "Additive_0").
       u_Premultiply: { value: b.premultiply ? 1 : 0 },
+      // Unity Multiplicative_0 uses Blend DstColor Zero, so transparent pixels
+      // must output white (no-op) rather than rely on destination alpha blending.
+      u_Multiplicative: { value: b.multiplicative ? 1 : 0 },
     },
     vertexShader: /* glsl */ `
       attribute vec3 instanceCenter;
@@ -513,6 +608,7 @@ function makeBillboardMaterial(texture, tilesX, tilesY, frameU, frameV, color, t
       uniform vec4 u_Color;
       uniform int u_TexMode;
       uniform int u_Premultiply;
+      uniform int u_Multiplicative;
       varying vec2 vUv;
       varying vec2 vFrame;
       varying vec2 vFlip;
@@ -541,9 +637,14 @@ function makeBillboardMaterial(texture, tilesX, tilesY, frameU, frameV, color, t
           c = vec4(tex.rgb, texAlpha) * u_Color * vColor;
         }
         if (c.a < 0.005) discard;
-        // Premultiplied-alpha blend (Unity One,1-SrcAlpha / One,One): fold alpha
-        // into rgb so THREE NormalBlending reproduces the additive-over result.
-        if (u_Premultiply == 1) c.rgb *= c.a;
+        if (u_Multiplicative == 1) {
+          c.rgb = mix(vec3(1.0), c.rgb, clamp(c.a, 0.0, 1.0));
+          c.a = 1.0;
+        } else if (u_Premultiply == 1) {
+          // Premultiplied-alpha blend (Unity One,1-SrcAlpha / One,One): fold
+          // alpha into rgb so THREE reproduces the additive-over result.
+          c.rgb *= c.a;
+        }
         gl_FragColor = c;
       }
     `,
@@ -562,6 +663,8 @@ function makeBillboardMaterial(texture, tilesX, tilesY, frameU, frameV, color, t
     // matches the shader's manual premultiply exactly.
     premultipliedAlpha: !!b.premultiply,
   });
+  applyFxBlendState(material, b);
+  return material;
 }
 
 // Compute a single (u, v) tile offset based on UVModule.frameOverTime.scalar.
@@ -698,6 +801,13 @@ class FxEmitter {
     const colorModule = particleData.ColorModule || {};
     this.colorOverLifetime = colorModule.enabled ? colorModule.gradient : null;
     this.lifetimeColorAlphaOnly = false;
+    const customDataModule = particleData.CustomDataModule || {};
+    const customDataVectorMode = customDataModule.enabled && Number(customDataModule.mode0) === 1;
+    this.customDataUvOffsetX = customDataVectorMode ? customDataModule.vector0_0 : null;
+    this.customDataUvOffsetY = customDataVectorMode ? customDataModule.vector0_1 : null;
+    this.usesCustomUvOffset = false;
+    this.textureUvScale = new THREE.Vector2(1, 1);
+    this.textureUvOffsetBase = new THREE.Vector2(0, 0);
     const sizeModule = particleData.SizeModule || {};
     this.sizeOverLifetime = sizeModule.enabled ? sizeModule.curve : null;
     this.sizeOverLifetimeY = sizeModule.enabled && sizeModule.separateAxes ? sizeModule.y : null;
@@ -742,7 +852,7 @@ class FxEmitter {
     this.meshParticleObjects = null;
   }
 
-  init(textureCache, materialLookup, meshLookup = {}) {
+  init(textureCache, materialLookup, meshLookup = {}, meshFrameFixLookup = {}) {
     const { geometry, attrs } = buildBillboardGeometry(this.capacity);
     this.geometry = geometry;
     this.attrs = attrs;
@@ -786,6 +896,7 @@ class FxEmitter {
       materialTintedTexture && gradientRgbOnlyFadesFromInvisibleDark(this.colorOverLifetime);
 
     let mainTexture = null;
+    let mainTextureSlot = null;
     let maskTexture = null;
     if (isMaskComposite) {
       // Use mask as the renderable shape, main as solid tint (skip the
@@ -793,6 +904,7 @@ class FxEmitter {
       maskTexture = resolveSlot(tex_slot._Tex_Mask);
       stabilizeMaskTexture(maskTexture);
       mainTexture = maskTexture; // fragment shader uses one sampler
+      mainTextureSlot = tex_slot._Tex_Mask || tex_slot._Tex_Main || tex_slot._MainTex || null;
     } else {
       const candidates = [
         tex_slot._Texture,
@@ -804,6 +916,7 @@ class FxEmitter {
         const resolved = resolveSlot(slot);
         if (resolved) {
           mainTexture = resolved;
+          mainTextureSlot = slot;
           break;
         }
       }
@@ -814,6 +927,17 @@ class FxEmitter {
       texture = makeSoftGlowTexture();
       this._fallbackTexture = texture;
     }
+    const textureTransform = readTextureSlotTransform(mainTextureSlot);
+    this.textureUvScale.copy(textureTransform.scale);
+    this.textureUvOffsetBase.copy(textureTransform.offset);
+    this.usesCustomUvOffset =
+      Number(matData?.floats?._Custom_Data_MainMask_Offset_Use ?? 0) > 0 &&
+      !!(this.customDataUvOffsetX || this.customDataUvOffsetY);
+    // NOTE: wrap mode is applied once at load (ensureTextures) from each asset's
+    // Unity-authored m_WrapU/m_WrapV — it is NOT forced to Repeat here. A scaled
+    // or scrolled UV (textureTransform.isNonIdentity / usesCustomUvOffset) does
+    // not imply tiling: BA gradient ramps are Clamp, and forcing Repeat tiled the
+    // CH0325 head_red blush into 3 stacked sweeps instead of one rising front.
 
     // BA fx _Color is authored as HDR (values reach 2–24×). Unity renders the
     // raw value × texture, so the HDR drives both color and the bloom that makes
@@ -877,13 +1001,17 @@ class FxEmitter {
       this.meshTemplate = meshTemplate;
       this.mesh = new THREE.Group();
       this.mesh.name = `FxMeshEmitter_${this.data.go_name || "unnamed"}`;
-      // Mesh particles are authored in Unity particle frames, not the
-      // character GLB frame. CH0334's antenna glow needs an X mirror only:
-      // rotating around Z also flips local Y and makes it float above the
-      // antenna.
-      applyMeshParticleFrameFix(this.mesh, renderer.mesh);
+      // Mesh particles are authored in a bone-local frame that differs from the
+      // exported glTF bone node, so apply the data-driven frame fix (index.json
+      // meshes[].frame_quat, computed by tools/fx/compute_mesh_frame_fix.py),
+      // falling back to the legacy table for pre-field dumps.
+      applyMeshParticleFrameFix(
+        this.mesh,
+        resolveMeshFrameFix(renderer.mesh, meshFrameFixLookup[renderer.mesh])
+      );
+      const meshCullSide = resolveMeshCullSide(matData);
       this.meshParticleObjects = this.particles.map(() =>
-        this._createMeshParticleObject(texture, colorVec, fxBlend)
+        this._createMeshParticleObject(texture, colorVec, fxBlend, fxRenderState, meshCullSide)
       );
       for (const obj of this.meshParticleObjects) {
         obj.visible = false;
@@ -898,7 +1026,7 @@ class FxEmitter {
     this.mesh.renderOrder = fxRenderState.renderOrder;
   }
 
-  _createMeshParticleObject(texture, baseColor, blend) {
+  _createMeshParticleObject(texture, baseColor, blend, renderState = null, cullSide = THREE.DoubleSide) {
     const b = blend || { blending: THREE.AdditiveBlending, premultiply: false };
     const root = this.meshTemplate.clone(true);
     root.frustumCulled = false;
@@ -912,8 +1040,8 @@ class FxEmitter {
         transparent: true,
         opacity: baseColor.w,
         depthWrite: false,
-        depthTest: true,
-        side: THREE.DoubleSide,
+        depthTest: renderState?.depthTest ?? true,
+        side: cullSide,
         toneMapped: false,
         blending: b.blending,
         // Matches makeBillboardMaterial: the patched fragment below premultiplies
@@ -922,6 +1050,9 @@ class FxEmitter {
         // would darken the disc instead of fading it).
         premultipliedAlpha: !!b.premultiply,
       });
+      applyFxBlendState(mat, b);
+      mat.userData.fxUvScale = this.textureUvScale.clone();
+      mat.userData.fxUvOffset = this.textureUvOffsetBase.clone();
       // BA DSFX glow-disc materials (FX_Circle_01, FX_Ngone_01) ship a grey
       // radial texture with alpha=255 and derive coverage from RGB luminance
       // (the shader's _RGBRGBA path). MeshBasicMaterial otherwise samples the
@@ -932,19 +1063,23 @@ class FxEmitter {
       // like in-game.
       mat.onBeforeCompile = (shader) => {
         shader.uniforms.u_Premultiply = { value: b.premultiply ? 1 : 0 };
+        shader.uniforms.u_Multiplicative = { value: b.multiplicative ? 1 : 0 };
+        shader.uniforms.u_FxUvScale = { value: mat.userData.fxUvScale };
+        shader.uniforms.u_FxUvOffset = { value: mat.userData.fxUvOffset };
         shader.fragmentShader = shader.fragmentShader
           .replace(
             "#include <common>",
-            "#include <common>\nuniform int u_Premultiply;\nvec4 fxRawTexel;"
+            "#include <common>\nuniform int u_Premultiply;\nuniform int u_Multiplicative;\nuniform vec2 u_FxUvScale;\nuniform vec2 u_FxUvOffset;\nvec4 fxRawTexel;"
           )
           .replace(
             "#include <map_fragment>",
             `#ifdef USE_MAP
-              fxRawTexel = texture2D( map, vMapUv );
+              vec2 fxMapUv = vMapUv * u_FxUvScale + u_FxUvOffset;
+              fxRawTexel = texture2D( map, fxMapUv );
+              diffuseColor *= fxRawTexel;
             #else
               fxRawTexel = vec4(1.0);
-            #endif
-            #include <map_fragment>`
+            #endif`
           )
           .replace(
             "#include <dithering_fragment>",
@@ -953,12 +1088,18 @@ class FxEmitter {
               float fxLum = max(max(fxRawTexel.r, fxRawTexel.g), fxRawTexel.b);
               float fxCov = fxRawTexel.a < 0.99 ? fxRawTexel.a * fxLum : fxLum;
               gl_FragColor.a = opacity * fxCov;
-              if (u_Premultiply == 1) gl_FragColor.rgb *= gl_FragColor.a;
+              if (u_Multiplicative == 1) {
+                gl_FragColor.rgb = mix(vec3(1.0), gl_FragColor.rgb, clamp(gl_FragColor.a, 0.0, 1.0));
+                gl_FragColor.a = 1.0;
+              } else if (u_Premultiply == 1) {
+                gl_FragColor.rgb *= gl_FragColor.a;
+              }
             }`
           );
       };
       child.material = mat;
       child.frustumCulled = false;
+      child.renderOrder = renderState?.renderOrder ?? 0;
       materials.push(mat);
     });
     root.userData.fxMaterials = materials;
@@ -1124,6 +1265,14 @@ class FxEmitter {
         : null;
       const lifetimeRgb = this.lifetimeColorAlphaOnly ? null : lifetimeColor;
       const fade = 1;
+      const customUvOffsetX =
+        this.usesCustomUvOffset && this.customDataUvOffsetX
+          ? sampleMinMaxAt(this.customDataUvOffsetX, t, 0)
+          : 0;
+      const customUvOffsetY =
+        this.usesCustomUvOffset && this.customDataUvOffsetY
+          ? sampleMinMaxAt(this.customDataUvOffsetY, t, 0)
+          : 0;
       const sizeScaleX = this.sizeOverLifetime ? sampleMinMaxAt(this.sizeOverLifetime, t, 1) : 1;
       const sizeScaleY = this.sizeOverLifetimeY ? sampleMinMaxAt(this.sizeOverLifetimeY, t, 1) : sizeScaleX;
       obj.scale.set(
@@ -1140,6 +1289,10 @@ class FxEmitter {
         );
         mat.opacity =
           base.w * (p.color.a ?? 1) * (lifetimeColor?.a ?? 1) * fade;
+        mat.userData.fxUvOffset?.set(
+          this.textureUvOffsetBase.x + customUvOffsetX,
+          this.textureUvOffsetBase.y + customUvOffsetY
+        );
       }
     }
   }
@@ -1222,10 +1375,11 @@ class FxEmitter {
 }
 
 class ActiveSpawn {
-  constructor(prefabName, prefabTree, attach, particleDatas, anchor, fallbackRoot, textureCache, materialLookup, meshCache, camera) {
+  constructor(prefabName, prefabTree, attach, particleDatas, anchor, fallbackRoot, textureCache, materialLookup, meshCache, camera, meshFrameFixLookup = {}) {
     this.prefabName = prefabName;
     this.attach = attach || null;
     this.camera = camera || null;
+    this.meshFrameFixLookup = meshFrameFixLookup || {};
     this.expired = false;
     this.emitters = [];
     this.skippedParticleSystems = 0;
@@ -1293,7 +1447,7 @@ class ActiveSpawn {
         continue;
       }
       const emitter = new FxEmitter(data, { camera: this.camera });
-      emitter.init(textureCache, materialLookup, meshCache);
+      emitter.init(textureCache, materialLookup, meshCache, this.meshFrameFixLookup);
       this.emitters.push(emitter);
       const parent = (data.go_path_id != null && this.pidToGroup.get(data.go_path_id)) || this.root;
       parent.add(emitter.mesh);
@@ -1368,6 +1522,21 @@ export async function createModelFx({
     prefabMeta.set(p.name, p);
   }
 
+  // Per-mesh frame-fix lookup (name -> { quat?, rotation?, scale? }) from the
+  // index. Computed offline by tools/fx/compute_mesh_frame_fix.py so the viewer
+  // carries no per-mesh rotation constants in code.
+  const meshFrameFixLookup = {};
+  for (const m of fxIndex?.meshes || []) {
+    if (!m?.name) continue;
+    if (m.frame_quat || m.frame_rotation || m.frame_scale) {
+      meshFrameFixLookup[m.name] = {
+        quat: m.frame_quat,
+        rotation: m.frame_rotation,
+        scale: m.frame_scale,
+      };
+    }
+  }
+
   // Bone-index lookup. fxParentBones is an array of { index, name, transform_path_id }.
   // index_param 0 → bone_root (~animator root). Empty/null name → fallback to character root.
   const fxParentBones = fxIndex?.fx_parent_bones || [];
@@ -1427,6 +1596,11 @@ export async function createModelFx({
         const tex = await texLoader.loadAsync(bust(basePath + t.file));
         tex.flipY = false;
         tex.colorSpace = THREE.LinearSRGBColorSpace;
+        // Honor the Unity-authored wrap mode (captured per-asset by dump_fx.py).
+        // Wrap is intrinsic to the texture asset, so set it here once at load.
+        // Missing fields (older v2/v3 dumps) fall back to Clamp via unityWrapToThree.
+        tex.wrapS = unityWrapToThree(t.wrap_u);
+        tex.wrapT = unityWrapToThree(t.wrap_v);
         if (t.path_id != null) textureCache[t.path_id] = tex;
         if (!(t.name in textureCache)) textureCache[t.name] = tex;
       } catch (err) {
@@ -1619,7 +1793,8 @@ export async function createModelFx({
         textureCache,
         materialLookup,
         meshCache,
-        camera
+        camera,
+        meshFrameFixLookup
       );
       if (!spawn.emitters.length) {
         spawn.dispose();

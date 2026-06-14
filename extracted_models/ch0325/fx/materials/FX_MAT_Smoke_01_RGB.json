@@ -1,0 +1,154 @@
+{
+  "name": "FX_MAT_Smoke_01_RGB",
+  "shader": "DSFX/FX_SHADER_Explosion_Smoke_Blur_0",
+  "floats": {
+    "_111": 10.300000190734863,
+    "_BColor_Sharpness": 7.599999904632568,
+    "_BColor_Sharpness1": 20.0,
+    "_BCustom_Data_Use": 1.0,
+    "_BDisappear_Offset": 0.0,
+    "_BStep_Glow_Value": 20.0,
+    "_Col1Sharp": 25.0,
+    "_Col2Sharp": 25.0,
+    "_Color1Sharpness": 20.0,
+    "_Color2Sharpness": 15.0,
+    "_Color_Custom_Data_Use": 1.0,
+    "_Cull": 2.0,
+    "_Cull_Mode": 2.0,
+    "_Custom_Data_Distort_Power_Use": 1.0,
+    "_Custom_Data_MainMask_Offset_Use": 0.0,
+    "_Custom_Data_Main_Offset_Use": 0.0,
+    "_Custom_Data_Offset_Use": 1.0,
+    "_Custom_Data_Shadow_Use": 1.0,
+    "_Custom_Data_Step_Use": 1.0,
+    "_Custom_Data_Value_Use": 1.0,
+    "_Dis_Speed_X": 0.0,
+    "_Dis_Speed_Y": 0.0,
+    "_DisappearOffset": 1.0,
+    "_DisappearValue": 0.007000000216066837,
+    "_Distortion_Power_X": 0.0,
+    "_Distortion_Power_Y": 0.0,
+    "_Float0": 30.0,
+    "_FlowSpeed": 0.0,
+    "_Flowspeed": 1.0,
+    "_Flowspeed_Data_Use": 0.0,
+    "_GColor_Glow_Value": 20.0,
+    "_GColor_Sharpness": 0.0,
+    "_GCustom_Data_Use": 1.0,
+    "_GDisappear_Offset": 1.0,
+    "_GlowStr": 2.0,
+    "_GlowStrength": 4.0,
+    "_Main_Speed_X": 0.0,
+    "_Main_Speed_Y": 0.0,
+    "_Main_Texture_No": 0.0,
+    "_Multiply": 1.0,
+    "_Mutiply": 1.0,
+    "_RGBRGBA": 1.0,
+    "_Shadow_Color_Multiply": 0.5,
+    "_Shadow_Color_Value": 0.5,
+    "_Shadow_Glow_Value": 10.0,
+    "_Shadow_Value": -0.19599999487400055,
+    "_Shadow_Value_Data_Use": 0.0,
+    "_Step_Custom_DataVertex_color_Use": 0.0,
+    "_Step_Value": 1.0,
+    "_ToggleSwitch0": 1.0,
+    "_UseParticle": 1.0,
+    "_Vertex_Alpha_Use": 0.0,
+    "_ZTest_Mode": 4.0,
+    "_ZWrite_Mode": 0.0,
+    "__dirty": 0.0
+  },
+  "colors": {
+    "Color_23AAFA41": {
+      "r": 10.722519874572754,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.501960813999176
+    },
+    "Color_54D9EA89": {
+      "r": 4.015686988830566,
+      "g": 4.015686988830566,
+      "b": 4.015686988830566,
+      "a": 0.501960813999176
+    },
+    "_Color": {
+      "r": 11.98431396484375,
+      "g": 2.94901967048645,
+      "b": 0.7529411911964417,
+      "a": 1.0
+    },
+    "_Color0": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_Color1": {
+      "r": 0.20392157137393951,
+      "g": 0.1635066270828247,
+      "b": 0.15979880094528198,
+      "a": 1.0
+    },
+    "_Color2": {
+      "r": 5.992156982421875,
+      "g": 5.992156982421875,
+      "b": 5.992156982421875,
+      "a": 1.0
+    },
+    "_GColor": {
+      "r": 6.85054349899292,
+      "g": 1.1477352380752563,
+      "b": 0.48470816016197205,
+      "a": 1.0
+    },
+    "_MainColor": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_Main_Color": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 0.0
+    },
+    "_RColor": {
+      "r": 1.4980392456054688,
+      "g": 1.4980392456054688,
+      "b": 1.4980392456054688,
+      "a": 1.0
+    },
+    "_Shadow_Offset": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_Tint": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    }
+  },
+  "ints": {},
+  "textures": {
+    "_Tex_Main": {
+      "name": "FX_TEX_Smoke_RGB_01",
+      "path_id": -5657685009324225928,
+      "size": [
+        256,
+        256
+      ],
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ]
+    }
+  }
+}

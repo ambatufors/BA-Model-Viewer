@@ -1,0 +1,123 @@
+{
+  "schema_version": 3,
+  "char_id": "CH0325",
+  "scope": "char",
+  "filter": "head_red-only",
+  "prefab_roots": [
+    "FX_CH0325_Cafe_Reaction_Head_01"
+  ],
+  "emotion_only": false,
+  "from_anim_events": true,
+  "bundle_count": 331,
+  "fx_parent_bones": [
+    {
+      "index": 0,
+      "name": "bone_root",
+      "transform_path_id": 731929482636525353
+    },
+    {
+      "index": 1,
+      "name": "Bip001 Pelvis",
+      "transform_path_id": -7746283016298791127
+    },
+    {
+      "index": 2,
+      "name": "Bip001 Head",
+      "transform_path_id": 625668004971249449
+    },
+    {
+      "index": 3,
+      "name": "Bip001 L Hand",
+      "transform_path_id": 513107988258848553
+    },
+    {
+      "index": 4,
+      "name": "Bip001 R Hand",
+      "transform_path_id": 3205279862600531753
+    },
+    {
+      "index": 5,
+      "name": "fire_01",
+      "transform_path_id": -6868425759003345111
+    },
+    {
+      "index": 6,
+      "name": "second_fire_01",
+      "transform_path_id": -2976014116289544407
+    },
+    {
+      "index": 7,
+      "name": "Bip001 eye_L",
+      "transform_path_id": 2001538676668006185
+    },
+    {
+      "index": 8,
+      "name": "Bip001 eye_R",
+      "transform_path_id": 4565909257299590953
+    },
+    {
+      "index": 9,
+      "name": "Bip001",
+      "transform_path_id": -3880353260520046807
+    }
+  ],
+  "prefabs": [
+    {
+      "name": "FX_CH0325_Cafe_Reaction_Head_01",
+      "file": "prefabs/FX_CH0325_Cafe_Reaction_Head_01.json",
+      "descendant_count": 16,
+      "attach": {
+        "parent_index": 2,
+        "timer_duration": 7.5,
+        "life_mode": 1
+      }
+    }
+  ],
+  "textures": [
+    {
+      "name": "FX_TEX_Gra_W_01",
+      "path_id": -2619523782826305410,
+      "size": [
+        512,
+        16
+      ],
+      "wrap_u": 1,
+      "wrap_v": 1,
+      "file": "textures/FX_TEX_Gra_W_01.png"
+    }
+  ],
+  "materials": [
+    {
+      "name": "FX_MAT_Gra_W_03a_Multi",
+      "file": "materials/FX_MAT_Gra_W_03a_Multi.json"
+    }
+  ],
+  "meshes": [
+    {
+      "name": "FX_MESH_CH0325_Head",
+      "file": "meshes/FX_MESH_CH0325_Head.glb",
+      "verts": 431,
+      "faces": 666,
+      "frame_quat": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "particles": [
+    {
+      "go_name": "head_red",
+      "go_path_id": -375999494416733530,
+      "root": "FX_CH0325_Cafe_Reaction_Head_01",
+      "file": "particles/FX_CH0325_Cafe_Reaction_Head_01__head_red.json",
+      "renderer_materials": [
+        "FX_MAT_Gra_W_03a_Multi"
+      ],
+      "renderer_mesh": "FX_MESH_CH0325_Head",
+      "renderer_mesh_file": "meshes/FX_MESH_CH0325_Head.glb"
+    }
+  ],
+  "anim_events_file": "anim_events.json"
+}

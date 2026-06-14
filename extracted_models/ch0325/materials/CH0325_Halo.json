@@ -1,0 +1,89 @@
+{
+  "name": "CH0325_Halo",
+  "shader": "MX/C-Halo/UnlitTextured",
+  "floats": {
+    "_AlphaClip": 0.0,
+    "_Blend": 0.0,
+    "_BumpScale": 1.0,
+    "_Cull": 0.0,
+    "_Cutoff": 0.5,
+    "_DetailNormalMapScale": 1.0,
+    "_DitherThreshold": 0.0,
+    "_DstBlend": 0.0,
+    "_DstBlendAlpha": 0.0,
+    "_GlossMapScale": 1.0,
+    "_Glossiness": 0.5,
+    "_GlossyReflections": 1.0,
+    "_GlowStrength0": 1.5,
+    "_GlowStrictness0": 10.0,
+    "_GrayBrightness": 1.0,
+    "_Metallic": 0.0,
+    "_OcclusionStrength": 1.0,
+    "_Parallax": 0.019999999552965164,
+    "_SmoothnessTextureChannel": 0.0,
+    "_SpecularHighlights": 1.0,
+    "_SrcBlend": 1.0,
+    "_SrcBlendAlpha": 1.0,
+    "_Surface": 0.0,
+    "_UVSec": 0.0,
+    "_WorkflowMode": 1.0,
+    "_ZWrite": 1.0
+  },
+  "colors": {
+    "_Color": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5,
+      "a": 1.0
+    },
+    "_EmissionColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "_GlowMaskColor0": {
+      "r": 0.6625559329986572,
+      "g": 0.6036846041679382,
+      "b": 0.9622641801834106,
+      "a": 1.0
+    },
+    "_GlowTint0": {
+      "r": 0.2608288824558258,
+      "g": 0.0,
+      "b": 0.7169811725616455,
+      "a": 1.0
+    },
+    "_SimpleBaseColor": {
+      "r": 1.702776551246643,
+      "g": 0.6126391887664795,
+      "b": 1.7207953929901123,
+      "a": 1.0
+    },
+    "_SpecColor": {
+      "r": 0.19999995827674866,
+      "g": 0.19999995827674866,
+      "b": 0.19999995827674866,
+      "a": 1.0
+    },
+    "_Tint": {
+      "r": 1.2142282724380493,
+      "g": 1.1087790727615356,
+      "b": 1.407551884651184,
+      "a": 1.0
+    }
+  },
+  "textures": {
+    "_MainTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ],
+      "name": "CH0325_Halo"
+    }
+  }
+}

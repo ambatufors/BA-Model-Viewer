@@ -1,0 +1,457 @@
+{
+  "name": "FX_CH0325_Cafe_Reaction_Head_01",
+  "descendants": [
+    {
+      "go_name": "FX_CH0325_Cafe_Reaction_Head_01",
+      "path_id": -7400339486316729690,
+      "parent_path_id": 0,
+      "local_transform": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer",
+        "MB:CharacterAnimationEventEffect"
+      ]
+    },
+    {
+      "go_name": "L",
+      "path_id": -7877643834258396506,
+      "parent_path_id": -7400339486316729690,
+      "local_transform": {
+        "position": {
+          "x": -0.033000003546476364,
+          "y": 0.08119998127222061,
+          "z": -0.06229996681213379
+        },
+        "rotation": {
+          "x": -0.46295663714408875,
+          "y": -0.3204323351383209,
+          "z": 0.6123495697975159,
+          "w": -0.5549975633621216
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "R",
+      "path_id": -1697252986239096154,
+      "parent_path_id": -7400339486316729690,
+      "local_transform": {
+        "position": {
+          "x": -0.037099990993738174,
+          "y": 0.08190002292394638,
+          "z": 0.06280002743005753
+        },
+        "rotation": {
+          "x": 0.612352728843689,
+          "y": 0.5549977421760559,
+          "z": -0.4629543721675873,
+          "w": 0.32042938470840454
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "L_glow",
+      "path_id": -7346210069611386202,
+      "parent_path_id": -7400339486316729690,
+      "local_transform": {
+        "position": {
+          "x": -0.033000003546476364,
+          "y": 0.08119998127222061,
+          "z": -0.06229996681213379
+        },
+        "rotation": {
+          "x": -0.46295663714408875,
+          "y": -0.3204323351383209,
+          "z": 0.6123495697975159,
+          "w": -0.5549975633621216
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "R_glow",
+      "path_id": 6773258482242513574,
+      "parent_path_id": -7400339486316729690,
+      "local_transform": {
+        "position": {
+          "x": -0.03710000216960907,
+          "y": 0.08190001547336578,
+          "z": 0.0628000870347023
+        },
+        "rotation": {
+          "x": 0.612352728843689,
+          "y": 0.5549977421760559,
+          "z": -0.4629543721675873,
+          "w": 0.32042938470840454
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "Sweat_L",
+      "path_id": 9158873738564168358,
+      "parent_path_id": -7400339486316729690,
+      "local_transform": {
+        "position": {
+          "x": -0.289000004529953,
+          "y": 0.11299999803304672,
+          "z": -0.1420000046491623
+        },
+        "rotation": {
+          "x": 0.03177119418978691,
+          "y": -0.04663000628352165,
+          "z": -0.0001332759711658582,
+          "w": 0.9984068870544434
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "Sweat_R",
+      "path_id": -3206494880487740762,
+      "parent_path_id": -7400339486316729690,
+      "local_transform": {
+        "position": {
+          "x": -0.28299999237060547,
+          "y": 0.1289999932050705,
+          "z": 0.18000000715255737
+        },
+        "rotation": {
+          "x": 0.031341053545475006,
+          "y": -0.04037690535187721,
+          "z": 0.00018343325064051896,
+          "w": 0.9986928105354309
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "sweat_1",
+      "path_id": 5065375205927774886,
+      "parent_path_id": -7400339486316729690,
+      "local_transform": {
+        "position": {
+          "x": -0.027899999171495438,
+          "y": 0.07699999958276749,
+          "z": -0.06560000032186508
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "sweat_shadow",
+      "path_id": -6076613414181377370,
+      "parent_path_id": 5065375205927774886,
+      "local_transform": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "sweat_2",
+      "path_id": -5217548238677906778,
+      "parent_path_id": -7400339486316729690,
+      "local_transform": {
+        "position": {
+          "x": -0.03799999877810478,
+          "y": 0.08370000123977661,
+          "z": 0.055399999022483826
+        },
+        "rotation": {
+          "x": -2.9802318834981634e-08,
+          "y": -2.9802318834981634e-08,
+          "z": -0.055847711861133575,
+          "w": 0.9984393119812012
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "sweat_shadow",
+      "path_id": -1371225092549809498,
+      "parent_path_id": -5217548238677906778,
+      "local_transform": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "-----",
+      "path_id": -3142512304257471834,
+      "parent_path_id": -7400339486316729690,
+      "local_transform": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform"
+      ]
+    },
+    {
+      "go_name": "head_red",
+      "path_id": -375999494416733530,
+      "parent_path_id": -7400339486316729690,
+      "local_transform": {
+        "position": {
+          "x": 0.0,
+          "y": 0.00019999999494757503,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "smoke",
+      "path_id": 1381515867983211174,
+      "parent_path_id": -7400339486316729690,
+      "local_transform": {
+        "position": {
+          "x": -0.2980000078678131,
+          "y": 0.03200000151991844,
+          "z": 0.010999999940395355
+        },
+        "rotation": {
+          "x": -0.9323486685752869,
+          "y": -0.09872496128082275,
+          "z": -0.05775654315948486,
+          "w": -0.3429921865463257
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "sigh",
+      "path_id": -5784519796453512538,
+      "parent_path_id": -7400339486316729690,
+      "local_transform": {
+        "position": {
+          "x": 0.0,
+          "y": 0.12160003185272217,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": -0.6500871181488037,
+          "y": 0.016351336613297462,
+          "z": -0.06173040717840195,
+          "w": 0.7571715116500854
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    },
+    {
+      "go_name": "sigh_outline",
+      "path_id": -7509897142213121370,
+      "parent_path_id": -5784519796453512538,
+      "local_transform": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 3.7252898543727042e-09,
+          "w": 1.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer"
+      ]
+    }
+  ],
+  "attach": {
+    "parent_index": 2,
+    "timer_duration": 7.5,
+    "life_mode": 1
+  }
+}
