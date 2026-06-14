@@ -1543,6 +1543,31 @@ function createAnimationState(
     setSpeed(speed) {
       state.speed = Number.isFinite(speed) ? speed : 1;
     },
+    getDuration() {
+      let max = 0;
+      for (const action of state.currentActions) {
+        const dur = action.getClip?.()?.duration || 0;
+        if (dur > max) max = dur;
+      }
+      return max;
+    },
+    getTime() {
+      const action = state.currentActions[0];
+      const t = Number(action?.time);
+      return Number.isFinite(t) ? t : 0;
+    },
+    seek(time) {
+      const duration = state.getDuration();
+      if (!duration) return;
+      const clamped = Math.max(0, Math.min(time, duration));
+      for (const action of state.currentActions) {
+        action.enabled = true;
+        action.time = clamped;
+      }
+      // mixer.update(0) re-applies the pose at the new time without advancing it
+      for (const mixer of mixers) mixer.update(0);
+      state.updateExpressions(true);
+    },
     updateVisibility() {
       for (const part of state.visibleParts) {
         part.root.visible = shouldShowVisiblePart(part.rule, state.activeClip);

@@ -9,6 +9,7 @@ import {
   resetModelPartVisibilityOverrides,
   setModelPartVisibility,
   toggleAxes,
+  toggleGrid,
   toggleBodyPartMarkers
 } from "./scene.js";
 
@@ -279,18 +280,18 @@ function setupUIBindings() {
           );
     });
 
-  const animationPlay = document.getElementById("animationPlay");
-  if (animationPlay)
-    animationPlay.addEventListener("change", () => {
-      if (animationStateRef)
-        animationStateRef.setPlaying(animationPlay.checked);
-      updateMouthTileControlState();
-    });
+  setupTimeline();
 
   const showAxesEl = document.getElementById("showAxes");
   if (showAxesEl)
     showAxesEl.addEventListener("change", () =>
       toggleAxes(showAxesEl.checked)
+    );
+
+  const showGridEl = document.getElementById("showGrid");
+  if (showGridEl)
+    showGridEl.addEventListener("change", () =>
+      toggleGrid(showGridEl.checked)
     );
 
   const showBodyPartsEl = document.getElementById("showBodyParts");
@@ -317,27 +318,125 @@ function setupUIBindings() {
   setRimEnabled(false);
 }
 
+// Timeline
+let timelineScrubbing = false;
+let timelineWasPlaying = false;
+
+function setupTimeline() {
+  const track = document.getElementById("timelineTrack");
+  const playBtn = document.getElementById("timelinePlay");
+  if (!track || !playBtn) return;
+
+  playBtn.addEventListener("click", () => {
+    if (!animationStateRef) return;
+    const next = !animationStateRef.playing;
+    animationStateRef.setPlaying(next);
+    updateMouthTileControlState();
+    syncTimelinePlayButton();
+  });
+
+  const ratioFromEvent = (ev) => {
+    const rect = track.getBoundingClientRect();
+    if (!rect.width) return 0;
+    const x = ev.clientX - rect.left;
+    return Math.max(0, Math.min(1, x / rect.width));
+  };
+
+  const seekToEvent = (ev) => {
+    if (!animationStateRef) return;
+    const duration = animationStateRef.getDuration?.() || 0;
+    if (!duration) return;
+    animationStateRef.seek(ratioFromEvent(ev) * duration);
+    updateTimelineUI();
+  };
+
+  track.addEventListener("pointerdown", (ev) => {
+    if (!animationStateRef || !(animationStateRef.getDuration?.() > 0)) return;
+    timelineScrubbing = true;
+    timelineWasPlaying = animationStateRef.playing;
+    // Pause while dragging so the playhead follows the cursor cleanly.
+    if (timelineWasPlaying) animationStateRef.setPlaying(false);
+    track.classList.add("scrubbing");
+    track.setPointerCapture?.(ev.pointerId);
+    seekToEvent(ev);
+  });
+
+  track.addEventListener("pointermove", (ev) => {
+    if (timelineScrubbing) seekToEvent(ev);
+  });
+
+  const endScrub = (ev) => {
+    if (!timelineScrubbing) return;
+    timelineScrubbing = false;
+    track.classList.remove("scrubbing");
+    track.releasePointerCapture?.(ev.pointerId);
+    if (timelineWasPlaying && animationStateRef) {
+      animationStateRef.setPlaying(true);
+    }
+    syncTimelinePlayButton();
+  };
+  track.addEventListener("pointerup", endScrub);
+  track.addEventListener("pointercancel", endScrub);
+
+  // Independent rAF loop keeps the playhead in sync with the render loop
+  // without creating a circular import between scene.js and controls.js.
+  const tick = () => {
+    requestAnimationFrame(tick);
+    updateTimelineUI();
+  };
+  requestAnimationFrame(tick);
+}
+
+function syncTimelinePlayButton() {
+  const playBtn = document.getElementById("timelinePlay");
+  if (!playBtn) return;
+  const playing = !!animationStateRef?.playing;
+  playBtn.textContent = playing ? "❚❚" : "▶";
+  playBtn.title = playing ? "Pause" : "Play";
+}
+
+function fmtTime(t) {
+  return (Number.isFinite(t) ? t : 0).toFixed(2);
+}
+
+// Called every frame to advance the playhead/time label.
+function updateTimelineUI() {
+  const timeline = document.getElementById("timeline");
+  if (!timeline || timeline.hidden) return;
+  const state = animationStateRef;
+  const duration = state?.getDuration?.() || 0;
+  const time = state?.getTime?.() || 0;
+  const ratio = duration > 0 ? Math.max(0, Math.min(1, time / duration)) : 0;
+  const pct = (ratio * 100).toFixed(2) + "%";
+
+  const fill = timeline.querySelector(".track-fill");
+  const thumb = timeline.querySelector(".track-thumb");
+  const label = document.getElementById("timelineTime");
+  if (fill) fill.style.width = pct;
+  if (thumb) thumb.style.left = pct;
+  if (label) label.textContent = `${fmtTime(time)} / ${fmtTime(duration)}s`;
+}
+
 function setAnimationState(state) {
   animationStateRef = state;
   const select = document.getElementById("animationSelect");
-  const play = document.getElementById("animationPlay");
   const speed = document.getElementById("animationSpeed");
+  const timeline = document.getElementById("timeline");
   if (!select) return;
 
   select.innerHTML = '<option value="">None</option>';
   if (!state || !state.clipNames?.length) {
     select.disabled = true;
-    if (play) play.disabled = true;
     if (speed) speed.disabled = true;
+    if (timeline) timeline.hidden = true;
     updateMouthTileControlState();
     return;
   }
 
+  if (timeline) timeline.hidden = false;
+  syncTimelinePlayButton();
+
   select.disabled = false;
-  if (play) {
-    play.disabled = false;
-    play.checked = state.playing;
-  }
   if (speed) {
     speed.disabled = false;
     speed.value = String(state.speed);

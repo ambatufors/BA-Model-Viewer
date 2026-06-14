@@ -12,6 +12,7 @@ let composer, bloomPass;
 let currentModel = null;
 let lightHelpers = [];
 let axisHelpers = [];
+let gridHelper = null;
 let bodyPartMarkersVisible = false;
 const haloFollowWorldPos = new THREE.Vector3();
 const haloFollowLocalPos = new THREE.Vector3();
@@ -107,6 +108,9 @@ export function toggleLightHelpers(visible) {
 }
 export function toggleAxes(visible) {
   for (const h of axisHelpers) h.visible = visible;
+}
+export function toggleGrid(visible) {
+  if (gridHelper) gridHelper.visible = !!visible;
 }
 export function toggleBodyPartMarkers(visible) {
   bodyPartMarkersVisible = !!visible;
@@ -420,7 +424,8 @@ export function initScene() {
     window.__viewerControls = controls;
   }
 
-  scene.add(new THREE.GridHelper(10, 20, 0xaaaacc, 0x888899));
+  gridHelper = new THREE.GridHelper(10, 20, 0xaaaacc, 0x888899);
+  scene.add(gridHelper);
 
   const axesLen = 2;
   const axes = new THREE.AxesHelper(axesLen);

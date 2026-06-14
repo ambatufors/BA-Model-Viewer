@@ -29,6 +29,7 @@
         font-size: 12px;
         min-width: 280px;
         max-width: min(360px, calc(100vw - 56px));
+        accent-color: #1a8cff;
       }
       #ui.ui-collapsed {
         transform: translateX(calc(-100% - 10px));
@@ -77,6 +78,89 @@
         text-align: right;
         font-size: 10px;
         color: #aaa;
+      }
+      /* Timeline */
+      #timeline {
+        margin: 8px 0;
+      }
+      #timeline[hidden] {
+        display: none;
+      }
+      .timeline-row {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      #timelinePlay {
+        flex: 0 0 auto;
+        width: 26px;
+        height: 26px;
+        border: 0;
+        border-radius: 50%;
+        background: rgba(26, 140, 255, 0.25);
+        color: #cfe7ff;
+        cursor: pointer;
+        font-size: 12px;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #timelinePlay:hover {
+        background: rgba(26, 140, 255, 0.5);
+      }
+      #timelineTrack {
+        flex: 1;
+        position: relative;
+        height: 16px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        touch-action: none;
+      }
+      #timelineTrack .track-bg {
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 4px;
+        border-radius: 2px;
+        background: rgba(255, 255, 255, 0.22);
+      }
+      #timelineTrack .track-fill {
+        position: absolute;
+        left: 0;
+        height: 4px;
+        width: 0;
+        border-radius: 2px;
+        background: #1a8cff;
+        pointer-events: none;
+      }
+      #timelineTrack .track-thumb {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 11px;
+        height: 11px;
+        margin-left: -5.5px;
+        border-radius: 50%;
+        background: #1a8cff;
+        transform: translateY(-50%) scale(0.85);
+        transition: transform 80ms ease;
+        pointer-events: none;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+      }
+      #timelineTrack:hover .track-thumb,
+      #timelineTrack.scrubbing .track-thumb {
+        transform: translateY(-50%) scale(1.1);
+      }
+      #timelineTime {
+        flex: 0 0 auto;
+        font-size: 10px;
+        color: #aaa;
+        font-variant-numeric: tabular-nums;
+        white-space: nowrap;
+        min-width: 74px;
+        text-align: right;
       }
       .part-panel {
         margin-top: 8px;
@@ -460,6 +544,17 @@
           <option value="">None</option>
         </select>
       </div>
+      <div id="timeline" hidden>
+        <div class="timeline-row">
+          <button id="timelinePlay" type="button" title="Play/Pause">❚❚</button>
+          <div id="timelineTrack">
+            <div class="track-bg"></div>
+            <div class="track-fill"></div>
+            <div class="track-thumb"></div>
+          </div>
+          <span id="timelineTime">0.00 / 0.00s</span>
+        </div>
+      </div>
       <div class="control">
         <label>Anim Speed</label>
         <input
@@ -472,12 +567,10 @@
         />
       </div>
       <div class="control">
-        <label
-          ><input type="checkbox" id="animationPlay" checked /> Play Anim</label
-        >
+        <label><input type="checkbox" id="showAxes" checked /> XYZ</label>
       </div>
       <div class="control">
-        <label><input type="checkbox" id="showAxes" checked /> XYZ</label>
+        <label><input type="checkbox" id="showGrid" checked /> Grid</label>
       </div>
       <div class="control">
         <label><input type="checkbox" id="showBodyParts" /> Body Points</label>
