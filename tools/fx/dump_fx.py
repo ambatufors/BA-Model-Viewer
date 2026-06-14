@@ -682,6 +682,7 @@ def dump_particle(env, by_pid, ps_obj) -> dict | None:
         "ShapeModule": tt.get("ShapeModule"),
         "EmissionModule": tt.get("EmissionModule"),
         "ColorModule": tt.get("ColorModule"),
+        "CustomDataModule": tt.get("CustomDataModule"),
         "SizeModule": tt.get("SizeModule"),
         "RotationModule": tt.get("RotationModule"),
         "VelocityModule": tt.get("VelocityModule"),
@@ -721,7 +722,25 @@ def export_textures(tex_objs, out_dir: Path) -> dict[int, dict]:
         except Exception:
             continue
         pid = getattr(obj, "path_id", None)
-        metas.append({"obj": obj, "data": data, "name": name, "size": size, "path_id": pid})
+        # Capture the Unity-authored wrap mode (TextureWrapMode: 0=Repeat,
+        # 1=Clamp, 2=Mirror, 3=MirrorOnce). The viewer needs this to avoid
+        # tiling clamp-authored gradient ramps (e.g. FX_TEX_Gra_W_01, the
+        # CH0325 head_red blush sweep). Newer textures store per-axis m_WrapU/
+        # m_WrapV; older ones only a single m_WrapMode — fall back to it.
+        wrap_u, wrap_v = None, None
+        ts = getattr(data, "m_TextureSettings", None)
+        if ts is not None:
+            wrap_u = getattr(ts, "m_WrapU", None)
+            wrap_v = getattr(ts, "m_WrapV", None)
+            wrap_mode = getattr(ts, "m_WrapMode", None)
+            if wrap_u is None:
+                wrap_u = wrap_mode
+            if wrap_v is None:
+                wrap_v = wrap_mode
+        metas.append({
+            "obj": obj, "data": data, "name": name, "size": size, "path_id": pid,
+            "wrap_u": wrap_u, "wrap_v": wrap_v,
+        })
         name_counts[name] = name_counts.get(name, 0) + 1
         namesize_counts[(name, tuple(size))] = namesize_counts.get((name, tuple(size)), 0) + 1
 
@@ -745,6 +764,8 @@ def export_textures(tex_objs, out_dir: Path) -> dict[int, dict]:
             "name": name,
             "path_id": pid,
             "size": size,
+            "wrap_u": m.get("wrap_u"),
+            "wrap_v": m.get("wrap_v"),
             "file": f"textures/{out_path.name}",
         }
     return out
