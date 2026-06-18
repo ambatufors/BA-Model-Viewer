@@ -1,0 +1,136 @@
+{
+  "name": "CH0239_Hair",
+  "shader": "MX/C-Hair",
+  "floats": {
+    "_AdditionalLightSharpness": 5.0,
+    "_AdditionalLightStrength": 1.0,
+    "_AdjustiveHairShadow": 0.0,
+    "_Cull": 0.0,
+    "_DitherThreshold": 0.0,
+    "_DstBlend": 0.0,
+    "_DstBlendAlpha": 0.0,
+    "_GlowStrength": 1.0,
+    "_GrayBrightness": 1.0,
+    "_MaskGSensitivity": 1.0,
+    "_OutlineZCorrection": 0.0,
+    "_RimAreaLeveler": 4.0,
+    "_RimAreaMultiplier": 5.0,
+    "_RimStrength": 1.0,
+    "_ShadowThreshold": 0.3799999952316284,
+    "_SpecBotArea": 0.2800000011920929,
+    "_SpecBotMultiplier": 12.755102157592773,
+    "_SpecStrength": 1.0,
+    "_SpecTopLeveler": 9.0,
+    "_SpecTopMultiplier": 10.0,
+    "_SrcBlend": 1.0,
+    "_SrcBlendAlpha": 1.0,
+    "_ZWrite": 1.0
+  },
+  "colors": {
+    "_CodeAddColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeAddRimColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeMultiplyColor": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_GlowTint": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "_OutlineSolidColorTint": {
+      "r": 0.699999988079071,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "_OutlineTint": {
+      "r": 0.5283018946647644,
+      "g": 0.4909220337867737,
+      "b": 0.4909220337867737,
+      "a": 1.0
+    },
+    "_ShadowTint": {
+      "r": 0.5349991321563721,
+      "g": 0.4832680821418762,
+      "b": 0.5660377740859985,
+      "a": 1.0
+    },
+    "_SpecDirMultiplier": {
+      "r": 0.3300000727176666,
+      "g": 5.015731971980131e-07,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_Tint": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_TwoSideTint": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    }
+  },
+  "textures": {
+    "_HairSpecTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ],
+      "name": "CH0239_Hair_Spec"
+    },
+    "_MainTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ],
+      "name": "CH0239_Hair"
+    },
+    "_MaskTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ],
+      "name": "CH0239_Hair_Mask"
+    },
+    "_TempTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ]
+    }
+  }
+}
