@@ -2270,6 +2270,17 @@ export async function loadCharacter(
       );
       tex.flipY = false;
       tex.colorSpace = THREE.LinearSRGBColorSpace;
+      // Cap panel seams baked into the albedo are 1-3px wide. At the grazing
+      // back-top orbit angle the texture is compressed along one axis; without
+      // anisotropic filtering those thin lines alias into hard streaks (they
+      // soften only when you zoom/look head-on, where the compression drops).
+      // Trilinear mips + max anisotropy reproduce that head-on softening at
+      // every angle. three.js clamps anisotropy to the GPU max.
+      tex.generateMipmaps = true;
+      tex.minFilter = THREE.LinearMipmapLinearFilter;
+      tex.magFilter = THREE.LinearFilter;
+      tex.anisotropy = 16;
+      tex.needsUpdate = true;
       return tex;
     };
 
@@ -2606,6 +2617,11 @@ export async function loadCharacter(
         matData
       );
       let mainTex = resolvedMainTex;
+      const allowTextureFallback =
+        meshInfo?.allow_texture_fallback !== false &&
+        meshInfo?.allowTextureFallback !== false &&
+        meshInfo?.disable_body_texture_fallback !== true &&
+        meshInfo?.disableBodyTextureFallback !== true;
       if (isHaloMesh && !mainTex) {
         const haloTexKey = pickHaloTextureKey(texCache, haloProfile);
         if (haloTexKey) mainTex = texCache[haloTexKey];
@@ -2617,7 +2633,12 @@ export async function loadCharacter(
           name.startsWith("Unknown_"))
       ) {
         // No texture needed
-      } else if (!mainTex && name !== "Body" && !isHaloMesh) {
+      } else if (
+        !mainTex &&
+        name !== "Body" &&
+        !isHaloMesh &&
+        allowTextureFallback
+      ) {
         mainTex = texCache[`${charId}_Body`] || null;
       }
       if (!mainTex && name === "Body")
