@@ -34,7 +34,7 @@ FORCE_SOURCE_TRANSFORM_HALO_CHARS = {"CH0145"}
 FORCE_VIEWER_DOWN_HALO_CHARS = {"CH0145"}
 VIEWER_PITCH_DOWN_HALO_DEG = {"CH0145": -60.0}
 PRESERVE_DEPTH_HALO_CHARS = {"CH0145", "CH0304"}
-CIRCULAR_SCALE_ONLY_HALO_CHARS = {"CH0220"}
+CIRCULAR_SCALE_ONLY_HALO_CHARS = {"CH0220", "CH0239"}
 VIEWER_GROUP_ROTATION = np.array(
     [
         [1.0, 0.0, 0.0],
@@ -938,8 +938,8 @@ def mesh_world_matrix(mesh_filter, char_id: str, tri: trimesh.Trimesh | None = N
             )
         if not halo_mesh_should_use_transform(tri, char_key):
             if char_key in CIRCULAR_SCALE_ONLY_HALO_CHARS:
-                return flip_viewer_halo_face_down(
-                    circular_preserve_rotation_matrix(matrix, tri),
+                return circular_preserve_rotation_matrix(
+                    matrix @ face_direction_flip_matrix(tri),
                     tri,
                 )
             return preserve_source_face_direction(matrix, scale_only_matrix(matrix), tri)
