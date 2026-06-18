@@ -679,6 +679,12 @@ def _skinned_export_name(
     source_ids: Iterable[str] | None = None,
 ) -> str:
     source = mesh_name or go_name
+    if char_id.upper() == "CH0233":
+        lowered = f"{go_name} {mesh_name}".lower()
+        if "ch0233_prop_outline_01" in lowered:
+            return "Brazier"
+        if "ch0233_prop_outline_02" in lowered:
+            return "Prop"
     ch0091_cafe_name = _ch0091_cafe_outline_export_name(char_id, go_name, mesh_name)
     if ch0091_cafe_name:
         return ch0091_cafe_name

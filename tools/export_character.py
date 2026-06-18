@@ -114,6 +114,8 @@ STATIC_FX_MESHES = {
     },
 }
 
+RUNTIME_STATIC_MESHES = {}
+
 MATERIAL_ALIASES = {
     "CH0304": [
         {
@@ -160,6 +162,10 @@ def _load_external_prop_configs() -> dict[str, dict]:
 
 def _static_fx_mesh_spec(char_id: str, go_name: str) -> dict | None:
     return STATIC_FX_MESHES.get(char_id.upper(), {}).get(go_name)
+
+
+def _runtime_static_mesh_spec(char_id: str, go_name: str) -> dict | None:
+    return RUNTIME_STATIC_MESHES.get(char_id.upper(), {}).get(go_name)
 
 
 def _source_ids(char_id: str) -> tuple[str, ...]:
@@ -523,16 +529,18 @@ def export_submeshes(env, char_id: str, output_dir: Path, submesh_names: list):
             continue
 
         static_fx_spec = _static_fx_mesh_spec(char_id, go_name)
+        runtime_static_spec = _runtime_static_mesh_spec(char_id, go_name)
+        static_mesh_spec = static_fx_spec or runtime_static_spec
         is_halo_name = go_name.lower() in halo_names_lower
         if go_name in exported_go_names:
             continue
-        if not static_fx_spec and not (_has_source_prefix(go_name, char_id) or is_halo_name):
+        if not static_mesh_spec and not (_has_source_prefix(go_name, char_id) or is_halo_name):
             continue
-        if not static_fx_spec and any(skip in go_name.lower() for skip in ["weapon", "prop", "outline", "glass"]):
+        if not static_mesh_spec and any(skip in go_name.lower() for skip in ["weapon", "prop", "outline", "glass"]):
             continue
         # Only export the base halo. Alternate carrier/scenario halos overlap
         # the default character when the viewer has no variant selector.
-        if not static_fx_spec and not is_halo_name:
+        if not static_mesh_spec and not is_halo_name:
             continue
 
         exported_go_names.add(go_name)
@@ -612,8 +620,8 @@ def export_submeshes(env, char_id: str, output_dir: Path, submesh_names: list):
                 face_indices.append(face)
 
             mesh_name = (
-                static_fx_spec["name"]
-                if static_fx_spec
+                static_mesh_spec["name"]
+                if static_mesh_spec
                 else "Halo" if is_halo_name
                 else _strip_source_prefix(go_name, char_id)
             )
@@ -631,8 +639,8 @@ def export_submeshes(env, char_id: str, output_dir: Path, submesh_names: list):
             out_path = output_dir / f"{char_id}_{mesh_name}.glb"
             sub_mesh.export(str(out_path), file_type='glb')
             mesh_entry = {"name": mesh_name, "file": f"{char_id}_{mesh_name}.glb", "verts": len(new_verts), "faces": len(face_indices)}
-            if static_fx_spec:
-                mesh_entry.update({k: v for k, v in static_fx_spec.items() if k != "name"})
+            if static_mesh_spec:
+                mesh_entry.update({k: v for k, v in static_mesh_spec.items() if k != "name"})
             all_exported.append(mesh_entry)
             print(f"  [MeshRenderer] {mesh_name}: {len(new_verts)} verts, {len(face_indices)} tris")
         except Exception as e:
@@ -1281,11 +1289,17 @@ def main():
 
     # Export materials
     print(f"\nExporting materials...")
+    static_mesh_materials = {
+        str(item["material_name"])
+        for item in mesh_data
+        if item.get("material_name")
+    }
     mat_data, referenced_textures = export_materials(
         env,
         char_id,
         output_dir,
         avatar_paths=avatar_paths,
+        extra_targets=static_mesh_materials,
     )
     _add_material_aliases(char_id, output_dir, mat_data, skinned_data, referenced_textures)
 
