@@ -37,6 +37,8 @@ export function parseMaterialOverrides(matData) {
 
   const c = matData.colors || {};
   const f = matData.floats || {};
+  const shaderName = getMaterialShaderName(matData);
+  const isLayer4Shader = /Layer4/i.test(shaderName);
 
   if (c._Tint) overrides.u_Tint = vec4(c._Tint);
   else if (c._Color) overrides.u_Tint = vec4(c._Color);
@@ -45,7 +47,7 @@ export function parseMaterialOverrides(matData) {
   // Shadow params (Layer4)
   if (c._ShadowThreshold4) {
     overrides.u_ShadowThreshold4 = vec4(c._ShadowThreshold4);
-    overrides.u_UseLayer4 = true;
+    if (isLayer4Shader) overrides.u_UseLayer4 = true;
   }
   if (c._ShadowTintR4) overrides.u_ShadowTintR4 = vec4(c._ShadowTintR4);
   if (c._ShadowTintG4) overrides.u_ShadowTintG4 = vec4(c._ShadowTintG4);
@@ -148,8 +150,8 @@ export function parseMaterialOverrides(matData) {
 //
 // Older exported JSONs don't carry the shader name; for those we fall back to
 // material-name and texture-slot heuristics (Hair material = hair shader,
-// presence of `_HairSpecTex` slot = hair, `_DstBlend != 0` = some transparent
-// variant).
+// presence of `_HairSpecTex` slot = hair, Layer4 property groups = legacy
+// Layer4 body shader, `_DstBlend != 0` = some transparent variant).
 export function getMaterialShaderName(matData) {
   const direct = String(matData?.shader || matData?.shaderName || "");
   if (direct) return direct;
@@ -157,6 +159,7 @@ export function getMaterialShaderName(matData) {
   const name = String(matData?.name || "").toLowerCase();
   const tex = matData?.textures || {};
   const f = matData?.floats || {};
+  const c = matData?.colors || {};
   if (tex._HairSpecTex || /_hair$/i.test(name) || /^.*hair.*$/i.test(name)) {
     // Game ships TWO hair shaders that share the same `_HairSpecTex` slot:
     //   - MX/C-Hair             — opaque (Cull=2, ZWrite=1, SrcBlend=One,
@@ -183,6 +186,14 @@ export function getMaterialShaderName(matData) {
   }
   if (/_face$/i.test(name) || name.endsWith("face")) {
     return "MX/C-Face-Cutin";
+  }
+  if (
+    c._ShadowThreshold4 ||
+    c._ShadowTintR4 ||
+    c._ShadowTintG4 ||
+    c._ShadowTintB4
+  ) {
+    return "MX/C-General/Layer4";
   }
   if (f._DstBlend != null && f._DstBlend !== 0) {
     return "MX/C-General/Transparent";
