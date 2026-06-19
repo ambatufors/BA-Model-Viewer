@@ -1095,6 +1095,18 @@ def _is_skinned_export_candidate(
     # Whitelist it explicitly so it exports as the skinned `Dron01`.
     if char_id.upper() == "CH0174" and "dron01_outline" in f"{go_name} {mesh_name}".lower():
         return True
+    # CH0295 (Aris idol) carries two real prop SMRs whose GOs end with
+    # `_Outline`: `CH0295_Mike_Outline` (selfie stick / monopod with mic,
+    # 5 bones: bone_Monopod_01..04 + bone_mike) and `CH0295_Car_Outline`
+    # (parade car, 12 bones: bone_car + 4 wheels + 2 doors + handle + 2 wiper
+    # arms). The generic outline filter drops them because neither "mike"
+    # nor "car" is in `_PROP_OUTLINE_TOKENS`; the matching OL_-prefixed
+    # outlines are filtered separately above.
+    if char_id.upper() == "CH0295" and (
+        "mike_outline" in f"{go_name} {mesh_name}".lower()
+        or "car_outline" in f"{go_name} {mesh_name}".lower()
+    ):
+        return True
     # Some prop GOs legitimately end with "_Outline" in their name
     # (e.g. CH0063_Tube_Outline is the actual swim ring mesh, not an
     # outline of another mesh). Treat tube-style props as exportable
