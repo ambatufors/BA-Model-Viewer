@@ -15,6 +15,7 @@ CHARACTER_BUNDLE_ALIASES = {
     "ch0072": ("mari_original", "mari"),
     "ch0091": ("hoshino_swimsuit",),
     "ch0184": ("yuuka_original",),
+    "ch0232": ("kotama_original",),
     # CH0300's hammock is authored as the paired SM030001 model: its mesh and
     # standalone Normal/Vital/Appear clips live in SM030001 bundles.
     "ch0300": ("sm030001",),
@@ -22,6 +23,12 @@ CHARACTER_BUNDLE_ALIASES = {
 CHARACTER_OBJECT_ALIASES = {
     "ch0072": ("Mari_Original",),
     "ch0091": ("Hoshino_Swimsuit",),
+    "ch0232": ("Kotama_Original",),
+}
+CHARACTER_BUNDLE_ALIAS_KIND_EXCLUDES = {
+    ("ch0232", "kotama_original"): frozenset(
+        {"animationclips", "animatorcontrollers", "timelines"}
+    ),
 }
 
 
@@ -101,6 +108,36 @@ def character_object_ids(char_id: str) -> tuple[str, ...]:
     return tuple(dict.fromkeys((canonical, *CHARACTER_OBJECT_ALIASES.get(char_id.lower(), ()))))
 
 
+def bundle_kind(bundle: Path | str) -> str:
+    name = Path(bundle).name.lower()
+    if "animationclips" in name:
+        return "animationclips"
+    if "animatorcontrollers" in name:
+        return "animatorcontrollers"
+    if "timelines" in name:
+        return "timelines"
+    if "meshes" in name:
+        return "meshes"
+    if "textures" in name:
+        return "textures"
+    if "materials" in name:
+        return "materials"
+    if "prefabs" in name:
+        return "prefabs"
+    if "_mxdependency-assets" in name or "_mxload-assets" in name:
+        return "assets"
+    if "audio" in name:
+        return "audio"
+    return "other"
+
+
+def _allows_bundle_alias_kind(char_id: str, bundle_key: str, bundle: Path) -> bool:
+    excluded = CHARACTER_BUNDLE_ALIAS_KIND_EXCLUDES.get((char_id.lower(), bundle_key))
+    if not excluded:
+        return True
+    return bundle_kind(bundle) not in excluded
+
+
 def find_character_bundles(root: Path, char_id: str) -> list[Path]:
     out: set[Path] = set()
     for lower in character_bundle_keys(char_id):
@@ -121,7 +158,9 @@ def find_character_bundles(root: Path, char_id: str) -> list[Path]:
             f"prologgroup-assets-_mx-addressableasset-character-{lower}-_mxprolog-*.bundle",
         ]
         for pattern in patterns:
-            out.update(root.glob(pattern))
+            for bundle in root.glob(pattern):
+                if _allows_bundle_alias_kind(char_id, lower, bundle):
+                    out.add(bundle)
     return sorted(out, key=lambda p: p.name.lower())
 
 
@@ -156,27 +195,7 @@ def categorize_bundles(bundles: Iterable[Path]) -> dict[str, list[Path]]:
         "other": [],
     }
     for bundle in sorted(set(bundles), key=lambda p: p.name.lower()):
-        name = bundle.name.lower()
-        if "animationclips" in name:
-            buckets["animationclips"].append(bundle)
-        elif "animatorcontrollers" in name:
-            buckets["animatorcontrollers"].append(bundle)
-        elif "timelines" in name:
-            buckets["timelines"].append(bundle)
-        elif "meshes" in name:
-            buckets["meshes"].append(bundle)
-        elif "textures" in name:
-            buckets["textures"].append(bundle)
-        elif "materials" in name:
-            buckets["materials"].append(bundle)
-        elif "prefabs" in name:
-            buckets["prefabs"].append(bundle)
-        elif "_mxdependency-assets" in name or "_mxload-assets" in name:
-            buckets["assets"].append(bundle)
-        elif "audio" in name:
-            buckets["audio"].append(bundle)
-        else:
-            buckets["other"].append(bundle)
+        buckets[bundle_kind(bundle)].append(bundle)
     return buckets
 
 

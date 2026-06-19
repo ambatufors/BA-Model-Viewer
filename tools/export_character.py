@@ -8,6 +8,7 @@ import trimesh
 import UnityPy
 
 from bundle_resolver import (
+    bundle_kind,
     character_object_ids,
     categorize_bundles,
     find_character_bundles,
@@ -242,13 +243,22 @@ def _runtime_static_meshes_for_manifest(meshes: list[dict], skinned_meshes: list
     return runtime_meshes
 
 
-def _manifest_resolved_dependencies(paths: list[Path]) -> list[str]:
+def _manifest_resolved_dependencies(paths: list[Path], char_id: str = "") -> list[str]:
     """Keep manifest diagnostics focused on character/runtime dependencies."""
-    return [
-        path.name
-        for path in paths
-        if not path.name.lower().startswith("assets-_mx-cafe-")
-    ]
+    out = []
+    for path in paths:
+        name = path.name
+        lower = name.lower()
+        if lower.startswith("assets-_mx-cafe-"):
+            continue
+        if (
+            char_id.upper() == "CH0232"
+            and "kotama_original" in lower
+            and bundle_kind(path) in {"animationclips", "animatorcontrollers", "timelines"}
+        ):
+            continue
+        out.append(name)
+    return out
 
 
 def find_bundles(char_id: str) -> dict:
@@ -1337,7 +1347,9 @@ def main():
         "materials": _dedupe_manifest_items(mat_data + extra_mat_data),
         "animations": [item.summary() for item in animation_data],
         "source_bundles": {k: [b.name for b in v] for k, v in bundles.items() if v},
-        "resolved_dependencies": _manifest_resolved_dependencies(resolution.added_dependencies),
+        "resolved_dependencies": _manifest_resolved_dependencies(
+            resolution.added_dependencies, char_id
+        ),
         "unresolved_cabs": resolution.unresolved_cabs,
     }
     if halo_transform and not halo_anchor:

@@ -702,6 +702,8 @@ def _skinned_export_name(
     if _is_weapon_name(source) or _is_weapon_name(go_name):
         if "shield" in f"{source} {go_name}".lower():
             return "Shield_Weapon"
+        if "radio" in f"{source} {go_name}".lower():
+            return "Radio_Weapon"
         if source.lower().endswith("weapon001") or go_name.lower().endswith("weapon001"):
             return "Weapon001"
         variant = re.search(r"(?:^|_)weapon[_-]?(\d+)$", stripped, re.I)
@@ -759,6 +761,13 @@ def _visibility_rule_for_export_name(export_name: str, char_id: str = "") -> dic
             return {"default_visible": False, "show_clip_patterns": ["Cafe_my_event091_strategytable"]}
     if char_id.upper() == "CH0072" and lowered == "weapon":
         return {"default_visible": True, "hide_clip_patterns": ["Cafe_", "Exs_Cutin"]}
+    if char_id.upper() == "CH0232" and lowered == "radio_weapon":
+        # CH0232 carries the radio only in the cafe my_event063 partition
+        # event. Hide otherwise so the regular Weapon takes over.
+        return {
+            "default_visible": False,
+            "show_clip_patterns": ["Cafe_my_event063_partition"],
+        }
     if char_id.upper() == "CH0304" and lowered.startswith("weapon"):
         # Cafe_CH0304 prefab keeps both gun renderers enabled, and its Cafe
         # clips animate Bip001_Weapon / Bip001_Weapon_Case directly.
