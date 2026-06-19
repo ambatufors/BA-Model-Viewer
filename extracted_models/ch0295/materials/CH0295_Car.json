@@ -1,0 +1,224 @@
+{
+  "name": "CH0295_Car",
+  "shader": "MX/C-General/Layer4-Inline",
+  "floats": {
+    "_AdditionalLightSharpness": 5.0,
+    "_AdditionalLightStrength": 1.0,
+    "_AlphaClip": 0.0,
+    "_Blend": 0.0,
+    "_BumpScale": 1.0,
+    "_ClearCoatMask": 0.0,
+    "_ClearCoatSmoothness": 0.0,
+    "_Cull": 2.0,
+    "_Cutoff": 0.5,
+    "_DetailAlbedoMapScale": 1.0,
+    "_DetailNormalMapScale": 1.0,
+    "_DitherThreshold": 0.0,
+    "_DstBlend": 0.0,
+    "_DstBlendAlpha": 0.0,
+    "_EnvironmentReflections": 1.0,
+    "_GlossMapScale": 0.0,
+    "_Glossiness": 0.0,
+    "_GlossyReflections": 0.0,
+    "_GlowStrength": 0.5,
+    "_GrayBrightness": 1.0,
+    "_InlineAmount": 1.0,
+    "_MaskGSensitivity": 1.0,
+    "_Metallic": 0.0,
+    "_OcclusionStrength": 1.0,
+    "_OutlineZCorrection": 0.0,
+    "_Parallax": 0.004999999888241291,
+    "_QueueOffset": 0.0,
+    "_ReceiveShadows": 1.0,
+    "_Smoothness": 0.5,
+    "_SmoothnessTextureChannel": 0.0,
+    "_SpecularHighlights": 1.0,
+    "_SrcBlend": 1.0,
+    "_SrcBlendAlpha": 1.0,
+    "_Surface": 0.0,
+    "_WorkflowMode": 1.0,
+    "_ZWrite": 1.0
+  },
+  "colors": {
+    "_BaseBrightness4": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_BaseColor": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_CodeAddColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeAddRimColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeMultiplyColor": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_Color": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_EmissionColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "_GlowTint": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_InlineTint": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5,
+      "a": 1.0
+    },
+    "_InvViewPower4": {
+      "r": 25.0,
+      "g": 15.899999618530273,
+      "b": 1.0,
+      "a": 10.0
+    },
+    "_InvViewStrength4": {
+      "r": 0.10000000149011612,
+      "g": 0.10000000149011612,
+      "b": 0.0,
+      "a": 0.30000001192092896
+    },
+    "_OutlineSolidColorTint": {
+      "r": 0.699999988079071,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "_OutlineTint": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5,
+      "a": 1.0
+    },
+    "_RimAreaMultiplier4": {
+      "r": 7.0,
+      "g": 3.0,
+      "b": 3.0,
+      "a": 3.0
+    },
+    "_RimStrength4": {
+      "r": 0.30000001192092896,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_ShadowThreshold4": {
+      "r": 0.4000000059604645,
+      "g": 1.0,
+      "b": 0.6000000238418579,
+      "a": 0.5
+    },
+    "_ShadowTintB4": {
+      "r": 0.7953177690505981,
+      "g": 0.49434852600097656,
+      "b": 0.4261302947998047,
+      "a": 0.45572271943092346
+    },
+    "_ShadowTintG4": {
+      "r": 0.8113207817077637,
+      "g": 0.5597840547561646,
+      "b": 0.5888471007347107,
+      "a": 0.46226418018341064
+    },
+    "_ShadowTintR4": {
+      "r": 0.7539160251617432,
+      "g": 0.650943398475647,
+      "b": 0.6792452931404114,
+      "a": 0.4164738655090332
+    },
+    "_SpecColor": {
+      "r": 0.19999995827674866,
+      "g": 0.19999995827674866,
+      "b": 0.19999995827674866,
+      "a": 1.0
+    },
+    "_Tint": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_TwoSideTint": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_ViewLightEdge4": {
+      "r": 1.0,
+      "g": 0.5,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "_ViewOffset4": {
+      "r": 4.119999885559082,
+      "g": 1.2699999809265137,
+      "b": 0.0,
+      "a": 0.7099999785423279
+    },
+    "_ViewPower4": {
+      "r": 21.0,
+      "g": 65.0,
+      "b": 1.0,
+      "a": 20.0
+    },
+    "_ViewStrength4": {
+      "r": 0.10000000149011612,
+      "g": 0.10000000149011612,
+      "b": 0.0,
+      "a": 0.20000000298023224
+    }
+  },
+  "textures": {
+    "_MainTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ],
+      "name": "CH0295_Car"
+    },
+    "_MaskTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ],
+      "name": "CH0295_Car_Mask"
+    }
+  }
+}
