@@ -816,6 +816,21 @@ def _visibility_rule_for_export_name(export_name: str, char_id: str = "") -> dic
         # token. Drop the rule so the bone-scale animation drives visibility
         # naturally per sub-prop.
         return None
+    if char_id.upper() == "CH0070" and lowered == "bird":
+        # CH0070_Bird SMR lives only under FX_CH0070_* / CH0070_Exs_Cutin_Mesh
+        # in the truth prefabs, gated per-variant by `bone_bird_main004`
+        # localScale (1.0/1.3 in show-variants, 0.01 in EX1_Buff_1) plus a
+        # few sub-bones at 0.001. Unlike CH0264, only the dedicated bird
+        # clips (`*_Bird*`, 306 channels) key the 100 sub-bones — every
+        # other clip keys just 6 root channels, so bind-pose drive cannot
+        # hide the flock. No `AniEnableChildRenderer` events or
+        # `Renderer.m_Enabled` curves exist either. Use a static
+        # name-pattern: hide by default, show only when a `_Bird` sub-clip
+        # plays. See doc/hide-by-scale-trick.md for the counter-example.
+        return {
+            "default_visible": False,
+            "show_clip_patterns": [r"_Bird(_|$)"],
+        }
     if char_id.upper() == "CH0334":
         variant_clip_pattern = "^CH0334_(Cafe|Carrier|Scenario)_"
         if lowered == "arms_body":
