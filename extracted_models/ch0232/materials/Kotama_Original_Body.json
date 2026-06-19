@@ -1,0 +1,172 @@
+{
+  "name": "Kotama_Original_Body",
+  "shader": "MX/C-General/Layer4",
+  "floats": {
+    "_AdditionalLightSharpness": 5.0,
+    "_AdditionalLightStrength": 1.0,
+    "_Cull": 0.0,
+    "_Cutoff": 0.5,
+    "_DitherThreshold": 0.0,
+    "_DstBlend": 0.0,
+    "_DstBlendAlpha": 0.0,
+    "_GlowStrength": 0.0,
+    "_GrayBrightness": 1.0,
+    "_MaskGSensitivity": 1.8799999952316284,
+    "_OutlineZCorrection": 0.0,
+    "_SrcBlend": 1.0,
+    "_SrcBlendAlpha": 1.0,
+    "_ZWrite": 1.0
+  },
+  "colors": {
+    "_BaseBrightness4": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeAddColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeAddRimColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeMultiplyColor": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_GlowTint": {
+      "r": 1.0,
+      "g": 0.6172067523002625,
+      "b": 0.48514997959136963,
+      "a": 1.0
+    },
+    "_InvViewPower4": {
+      "r": 1.0,
+      "g": 10.0,
+      "b": 5.0,
+      "a": 1.0
+    },
+    "_InvViewStrength4": {
+      "r": 0.0,
+      "g": 0.10000000149011612,
+      "b": 0.10000000149011612,
+      "a": 0.0
+    },
+    "_OutlineSolidColorTint": {
+      "r": 0.699999988079071,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "_OutlineTint": {
+      "r": 0.49461549520492554,
+      "g": 0.5305555462837219,
+      "b": 0.5377358198165894,
+      "a": 1.0
+    },
+    "_RimAreaMultiplier4": {
+      "r": 5.0,
+      "g": 5.0,
+      "b": 5.0,
+      "a": 5.0
+    },
+    "_RimStrength4": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_ShadowThreshold4": {
+      "r": 0.17000000178813934,
+      "g": 0.8999999761581421,
+      "b": 0.800000011920929,
+      "a": 0.550000011920929
+    },
+    "_ShadowTintB4": {
+      "r": 0.7405660152435303,
+      "g": 0.6226415038108826,
+      "b": 0.7908510565757751,
+      "a": 0.7264150977134705
+    },
+    "_ShadowTintG4": {
+      "r": 0.7686845064163208,
+      "g": 0.6186276078224182,
+      "b": 0.7924528121948242,
+      "a": 0.7233149409294128
+    },
+    "_ShadowTintR4": {
+      "r": 1.0,
+      "g": 0.5022249817848206,
+      "b": 0.7064791321754456,
+      "a": 0.6613118648529053
+    },
+    "_Tint": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_TwoSideTint": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_ViewLightEdge4": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 1.0,
+      "a": 0.0
+    },
+    "_ViewOffset4": {
+      "r": 0.0,
+      "g": 0.5,
+      "b": 0.699999988079071,
+      "a": 0.0
+    },
+    "_ViewPower4": {
+      "r": 1.0,
+      "g": 1.5,
+      "b": 6.0,
+      "a": 1.0
+    },
+    "_ViewStrength4": {
+      "r": 0.0,
+      "g": 0.10000000149011612,
+      "b": 0.20000000298023224,
+      "a": 0.0
+    }
+  },
+  "textures": {
+    "_MainTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ],
+      "name": "Kotama_Original_Body"
+    },
+    "_MaskTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ],
+      "name": "Kotama_Original_Body_Mask"
+    }
+  }
+}
