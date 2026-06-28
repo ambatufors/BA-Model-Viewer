@@ -466,6 +466,7 @@ def export_submeshes(env, char_id: str, output_dir: Path, submesh_names: list):
     """Export submeshes from ALL relevant SkinnedMeshRenderers and MeshRenderers."""
     all_exported = []
     body_names = _source_body_names(char_id)
+    source_ids = _source_ids(char_id)
 
     # Export main Body SMR
     exported_go_names = set()
@@ -503,6 +504,15 @@ def export_submeshes(env, char_id: str, output_dir: Path, submesh_names: list):
         except Exception:
             mesh_name_for_filter = ""
         if mesh_name_for_filter.lower().startswith("ol_"):
+            continue
+        owner_path = _skinned_renderer_path(data)
+        if not _is_skinned_export_candidate(
+            char_id,
+            go_name,
+            mesh_name_for_filter or go_name,
+            owner_path,
+            source_ids=source_ids,
+        ):
             continue
         if not _has_source_prefix(go_name, char_id):
             continue

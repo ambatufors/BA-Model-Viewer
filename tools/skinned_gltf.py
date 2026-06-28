@@ -1074,6 +1074,12 @@ def _is_skinned_export_candidate(
     if mesh_name.lower().startswith("ol_") and not is_ch0091_cafe_skinned_outline:
         return False
     lowered = f"{go_name} {mesh_name}".lower()
+    if (
+        char_id.upper() == "CH0356"
+        and owner_path.lower().startswith("fx_mesh_ch0356_water_flow_01/")
+        and "ch0356_body001" in lowered
+    ):
+        return False
     if "scenario" in lowered or "carrier" in lowered:
         return False
     if _is_skill_prop_name(go_name) or _is_skill_prop_name(mesh_name):
