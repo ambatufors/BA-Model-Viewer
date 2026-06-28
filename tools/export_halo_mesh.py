@@ -35,6 +35,7 @@ FORCE_VIEWER_DOWN_HALO_CHARS = {"CH0145"}
 VIEWER_PITCH_DOWN_HALO_DEG = {"CH0145": -60.0}
 PRESERVE_DEPTH_HALO_CHARS = {"CH0145", "CH0304"}
 CIRCULAR_SCALE_ONLY_HALO_CHARS = {"CH0220", "CH0239"}
+FLAT_IDENTITY_FACE_DOWN_HALO_CHARS = {"CH0235"}
 VIEWER_GROUP_ROTATION = np.array(
     [
         [1.0, 0.0, 0.0],
@@ -913,6 +914,39 @@ def preserve_source_face_direction(
     return simplified_matrix @ face_direction_flip_matrix(tri)
 
 
+def flat_identity_halo_face_down_matrix(tri: trimesh.Trimesh | None) -> np.ndarray | None:
+    source_normal = average_face_normal(tri)
+    if source_normal is None:
+        source_normal = plane_normal(np.asarray(getattr(tri, "vertices", []), dtype=np.float64))
+    if source_normal is None:
+        return None
+
+    identity = np.eye(4, dtype=np.float64)
+    current = predicted_export_viewer_normal(identity, source_normal)
+    if float(current[1]) <= 0.0:
+        return None
+
+    flipped = face_direction_flip_matrix(tri)
+    flipped_normal = predicted_export_viewer_normal(flipped, source_normal)
+    if float(flipped_normal[1]) <= 0.0:
+        return flipped
+    return None
+
+
+def simplified_halo_matrix_preserving_orientation(
+    matrix: np.ndarray,
+    tri: trimesh.Trimesh | None,
+    *,
+    force_identity_face_down: bool = False,
+) -> np.ndarray | None:
+    simplified = scale_only_matrix(matrix)
+    if simplified is None:
+        if force_identity_face_down:
+            return flat_identity_halo_face_down_matrix(tri)
+        return None
+    return preserve_source_face_direction(matrix, simplified, tri)
+
+
 def mesh_world_matrix(mesh_filter, char_id: str, tri: trimesh.Trimesh | None = None) -> np.ndarray | None:
     try:
         char_key = char_id.upper()
@@ -942,7 +976,11 @@ def mesh_world_matrix(mesh_filter, char_id: str, tri: trimesh.Trimesh | None = N
                     matrix @ face_direction_flip_matrix(tri),
                     tri,
                 )
-            return preserve_source_face_direction(matrix, scale_only_matrix(matrix), tri)
+            return simplified_halo_matrix_preserving_orientation(
+                matrix,
+                tri,
+                force_identity_face_down=char_key in FLAT_IDENTITY_FACE_DOWN_HALO_CHARS,
+            )
         return matrix
     except Exception:
         return None

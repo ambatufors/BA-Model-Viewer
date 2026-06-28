@@ -144,6 +144,7 @@ CH0091_SEAHOUSE_TUBES_BUNDLES = {
 }
 
 HALO_PART_ALIASES = {
+    "CH0235": ("Maki_Original_Halo",),
     "CH0300": ("CH0225_Halo",),
 }
 

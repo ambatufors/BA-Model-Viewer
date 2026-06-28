@@ -856,6 +856,8 @@ def _visibility_rule_for_export_name(export_name: str, char_id: str = "") -> dic
                 "default_visible": False,
                 "show_clip_patterns": ["^CH0334_Scenario_"],
             }
+    if char_id.upper() == "CH0235" and lowered == "bag":
+        return {"default_visible": False, "show_clip_patterns": ["^CH0235_Exs_Cutin_Prop$"]}
     if "prop02" in lowered:
         return {"default_visible": False, "show_clip_patterns": ["Prop02"]}
     if lowered.startswith("scenario_weapon"):
@@ -1106,6 +1108,8 @@ def _is_skinned_export_candidate(
         "mike_outline" in f"{go_name} {mesh_name}".lower()
         or "car_outline" in f"{go_name} {mesh_name}".lower()
     ):
+        return True
+    if char_id.upper() == "CH0235" and "ch0235_hat_outline" in f"{go_name} {mesh_name}".lower():
         return True
     # Some prop GOs legitimately end with "_Outline" in their name
     # (e.g. CH0063_Tube_Outline is the actual swim ring mesh, not an
