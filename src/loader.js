@@ -308,6 +308,36 @@ function findObjectByName(root, name) {
   return found;
 }
 
+function uniqueNonEmpty(values) {
+  const out = [];
+  const seen = new Set();
+  for (const value of values) {
+    const text = String(value || "").trim();
+    const key = normalizeObjectName(text);
+    if (!text || seen.has(key)) continue;
+    seen.add(key);
+    out.push(text);
+  }
+  return out;
+}
+
+function findFirstObjectByName(root, names) {
+  for (const name of names || []) {
+    const found = findObjectByName(root, name);
+    if (found) return found;
+  }
+  return null;
+}
+
+function haloFollowTargetNames(assetData) {
+  return uniqueNonEmpty([
+    assetData?.halo_follow?.follow_target,
+    assetData?.head_transform?.bone,
+    assetData?.head_anchor?.bone,
+    "Bip001 Head"
+  ]);
+}
+
 function hasRenderableDescendant(root) {
   if (!root) return false;
   let found = false;
@@ -2363,10 +2393,8 @@ export async function loadCharacter(
       )
     ].sort();
     const defaultClipName = pickDefaultAnimationClip(animationClipNames);
-    const haloFollowTargetName =
-      assetData.halo_follow?.follow_target ||
-      assetData.head_transform?.bone ||
-      "Bip001 Head";
+    const haloFollowTargets = haloFollowTargetNames(assetData);
+    const haloPrimaryFollowTarget = haloFollowTargets[0] || null;
     let haloFollowTarget = null;
     group.userData.haloFollowLocalForward =
       vector3FromPosition(assetData.halo_follow?.local_forward) ||
@@ -3203,8 +3231,8 @@ export async function loadCharacter(
         // the flowerpot around the loop boundary.
         gltf.scene.visible = getInitialRendererVisible(meshInfo);
       }
-      if (meshInfo.isSkinned && !haloFollowTarget) {
-        haloFollowTarget = findObjectByName(gltf.scene, haloFollowTargetName);
+      if (meshInfo.isSkinned && !haloFollowTarget && haloPrimaryFollowTarget) {
+        haloFollowTarget = findObjectByName(gltf.scene, haloPrimaryFollowTarget);
       }
       const skinnedUvNeedsFlip =
         meshInfo.isSkinned && !gltf.parser?.json?.extras?.viewerUvYFlipped;
@@ -3559,6 +3587,14 @@ export async function loadCharacter(
 
     for (const haloRoot of haloRoots) {
       applyStaticHaloSourceRotation(haloRoot, assetData);
+    }
+    if (!haloFollowTarget) {
+      haloFollowTarget = findFirstObjectByName(group, haloFollowTargets);
+      if (!haloFollowTarget && haloFollowTargets.length) {
+        console.warn(
+          `[${charId}] halo follow target not found: ${haloFollowTargets.join(", ")}`
+        );
+      }
     }
     const haloTarget = estimateHaloTargetPosition(group, assetData);
     for (const haloRoot of haloRoots) {

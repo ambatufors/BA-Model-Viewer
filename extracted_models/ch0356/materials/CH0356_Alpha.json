@@ -1,0 +1,121 @@
+{
+  "name": "CH0356_Alpha",
+  "shader": "MX/C-General/Transparent",
+  "floats": {
+    "_AdditionalLightSharpness": 5.0,
+    "_AdditionalLightStrength": 1.0,
+    "_BaseBrightness": 0.0,
+    "_Cull": 0.0,
+    "_Cutoff": 0.20000000298023224,
+    "_DepthDrawPassZWrite": 1.0,
+    "_DissolveFactor": 0.0,
+    "_DissolveLineThickness": 0.05000000074505806,
+    "_DissolveUVChannel": 1.0,
+    "_DitherThreshold": 0.0,
+    "_DstBlend": 0.0,
+    "_DstBlendAlpha": 0.0,
+    "_GlowStrength": 0.0,
+    "_GrayBrightness": 1.0,
+    "_InlineArea": 1.0,
+    "_InlineSharpness": 0.0,
+    "_InvViewPower": 32.0,
+    "_InvViewStrength": 0.30000001192092896,
+    "_MaskGSensitivity": 1.0,
+    "_OutlineAlpha": 1.0,
+    "_OutlineThickness": 0.0020000000949949026,
+    "_OutlineZCorrection": 0.0,
+    "_RimArea": 1.0,
+    "_RimAreaLeveler": 4.0,
+    "_RimAreaMultiplier": 5.0,
+    "_RimSharpness": 0.6000000238418579,
+    "_RimStrength": 0.5,
+    "_ShadowThreshold": 0.0,
+    "_SrcBlend": 1.0,
+    "_SrcBlendAlpha": 1.0,
+    "_ViewLightEdge": 1.0,
+    "_ViewOffset": 0.0,
+    "_ViewPower": 2.0,
+    "_ViewStrength": 0.0,
+    "_ZWrite": 1.0
+  },
+  "colors": {
+    "_CodeAddColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeAddRimColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeMultiplyColor": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_GlowTint": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "_LineColor": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_OutlineTint": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5,
+      "a": 1.0
+    },
+    "_ShadowTint": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_Tint": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 0.501960813999176
+    },
+    "_TwoSideTint": {
+      "r": 2.1185474395751953,
+      "g": 2.1185474395751953,
+      "b": 2.1185474395751953,
+      "a": 1.0
+    }
+  },
+  "textures": {
+    "_MainTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ],
+      "name": "CH0356_Body"
+    },
+    "_MaskTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ],
+      "name": "CH0356_Body_Mask"
+    }
+  }
+}

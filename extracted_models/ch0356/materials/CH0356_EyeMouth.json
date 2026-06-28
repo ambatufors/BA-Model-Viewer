@@ -1,0 +1,68 @@
+{
+  "name": "CH0356_EyeMouth",
+  "shader": "MX/C-EyesMouth",
+  "floats": {
+    "_AdditionalLightSharpness": 5.0,
+    "_AdditionalLightStrength": 0.15000000596046448,
+    "_DitherThreshold": 0.0,
+    "_GrayBrightness": 1.0,
+    "_MouthTileCols": 8.0,
+    "_MouthTileRows": 8.0
+  },
+  "colors": {
+    "_CodeAddColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeAddRimColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeMultiplyColor": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_EyeTint": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_MouthTint": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    }
+  },
+  "textures": {
+    "_MainTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ],
+      "name": "CH0356_EyeMouth"
+    },
+    "_MouthTileTex": {
+      "scale": [
+        0.5,
+        0.5
+      ],
+      "offset": [
+        0.125,
+        0.5
+      ],
+      "name": "Character_Mouth"
+    }
+  }
+}
