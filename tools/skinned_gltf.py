@@ -378,6 +378,9 @@ def _material_base_names(smr: Any, char_id: str, source_ids: Iterable[str] | Non
         except Exception:
             names.append(f"sub{index}")
             continue
+        if char_id.upper() == "CH0355" and re.match(r"CH0355_(0[12])_", name, re.I):
+            names.append(name)
+            continue
         name = _strip_source_prefix(name, char_id, source_ids)
         names.append(name or f"sub{index}")
     return names
@@ -697,6 +700,12 @@ def _skinned_export_name(
     if char_id.upper() == "CH0174" and "dron01_outline" in f"{go_name} {mesh_name}".lower():
         return "Dron01"
     stripped = _strip_source_prefix(source, char_id, source_ids) or go_name
+    if char_id.upper() == "CH0355":
+        source_match = re.match(r"CH0355_(0[12])_", source, re.I) or re.match(
+            r"CH0355_(0[12])_", go_name, re.I
+        )
+        if source_match and stripped.lower() in {"body", "weapon"}:
+            return f"{stripped}_{source_match.group(1)}"
     if "cutin" in source.lower() and _is_weapon_name(source):
         return "Cutin_Weapon"
     if _is_weapon_name(source) or _is_weapon_name(go_name):
@@ -789,6 +798,31 @@ def _visibility_rule_for_export_name(export_name: str, char_id: str = "") -> dic
         # frame Yuzu without requiring the cabin mesh.
         if lowered.startswith("cockpit") or lowered == "controller":
             return {"default_visible": False}
+    if char_id.upper() == "CH0355":
+        form_02_patterns = [r"^CH0355_02_", r"^FX_CH0355_02_"]
+        if lowered in {"body_01", "weapon_01"}:
+            return {
+                "default_visible": True,
+                "hide_clip_patterns": form_02_patterns,
+            }
+        if lowered in {"body_02", "weapon_02", "face01_mesh"}:
+            return {
+                "default_visible": False,
+                "show_clip_patterns": form_02_patterns,
+            }
+        if lowered == "face02_mesh":
+            return {
+                "default_visible": False,
+                "show_clip_patterns": [
+                    r"^CH0355_02_Exs$",
+                    r"^CH0355_02_Exs_Cutin_02$",
+                ],
+            }
+        if lowered == "prop_mesh":
+            return {
+                "default_visible": False,
+                "show_clip_patterns": [r"^CH0355_01_Exs_Cutin_prop_"],
+            }
     if char_id.upper() == "CH0326" and lowered == "face02":
         return {"default_visible": False, "show_clip_patterns": ["Exs_Cutin"]}
     if char_id.upper() == "CH0145" and lowered == "garbagebox":
@@ -1022,6 +1056,8 @@ def _truth_visibility_rule_for_export(
 def _initial_renderer_visible_override_for_export_name(export_name: str, char_id: str = "") -> bool | None:
     if char_id.upper() == "CH0172" and export_name.lower() in {"hand02_mesh", "prop02"}:
         return False
+    if char_id.upper() == "CH0355" and export_name.lower() == "face02_mesh":
+        return False
     return None
 
 
@@ -1059,6 +1095,10 @@ def _is_skinned_export_candidate(
     is_ch0300_hammock_prop = _is_ch0300_hammock_prop(char_id, go_name, mesh_name, owner_path)
     is_ch0303_food_prop = _is_ch0303_food_prop(char_id, go_name, mesh_name, owner_path)
     if not _name_has_source_prefix(go_name, char_id, source_ids):
+        if char_id.upper() == "CH0355" and (
+            _is_weapon_name(go_name) or _is_weapon_name(mesh_name)
+        ):
+            return False
         if _is_owned_external_weapon(char_id, go_name, mesh_name, owner_path, avatar_paths, source_ids):
             pass
         elif is_ch0300_hammock_prop:

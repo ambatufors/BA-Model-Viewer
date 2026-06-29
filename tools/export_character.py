@@ -219,6 +219,21 @@ def _dedupe_manifest_items(items: list[dict]) -> list[dict]:
     return out
 
 
+def _filter_runtime_animations(char_id: str, animations: list) -> list:
+    """Drop source-only helper clips that should not appear in the viewer."""
+    if char_id.upper() != "CH0355":
+        return animations
+    hidden = {
+        "FX_CH0355_02_Exs_Cutin_01",
+        "FX_CH0355_02_Exs_Cutin_02",
+    }
+    filtered = [animation for animation in animations if animation.name not in hidden]
+    removed = len(animations) - len(filtered)
+    if removed:
+        print(f"  [Anim] Filtered {removed} source-only FX clip(s): {', '.join(sorted(hidden))}")
+    return filtered
+
+
 def _runtime_static_meshes_for_manifest(meshes: list[dict], skinned_meshes: list[dict]) -> list[dict]:
     """Only advertise static runtime companions when skinned meshes are present.
 
@@ -1276,6 +1291,7 @@ def main():
     avatar_paths = set(avatar_tos.values()) if avatar_tos else set()
     if avatar_tos and bundles["animationclips"]:
         animation_data = decode_animation_bundles(bundles["animationclips"], avatar_tos)
+        animation_data = _filter_runtime_animations(char_id, animation_data)
     else:
         animation_data = []
         if not avatar_tos:

@@ -24,6 +24,7 @@ CHARACTER_OBJECT_ALIASES = {
     "ch0072": ("Mari_Original",),
     "ch0091": ("Hoshino_Swimsuit",),
     "ch0232": ("Kotama_Original",),
+    "ch0355": ("CH0355_01", "CH0355_02"),
 }
 CHARACTER_BUNDLE_ALIAS_KIND_EXCLUDES = {
     ("ch0232", "kotama_original"): frozenset(

@@ -322,6 +322,56 @@ def find_head_transform(env, char_id: str) -> dict | None:
     }
 
 
+def find_head_transform_for_variant(
+    env,
+    char_id: str,
+    variant: str | None,
+) -> dict | None:
+    char_key = char_id.upper()
+    if char_key != "CH0355" or not variant:
+        return None
+
+    wanted_roots = [f"{char_id}_{variant}".lower()]
+    wanted_meshes = [root if root.endswith("_mesh") else f"{root}_mesh" for root in wanted_roots]
+    candidates: list[tuple[int, np.ndarray, list[str]]] = []
+
+    for obj in env.objects:
+        if obj.type.name not in ("Transform", "RectTransform"):
+            continue
+        try:
+            data = obj.read()
+            go = data.m_GameObject.read()
+            if go.m_Name != "Bip001 Head":
+                continue
+            chain_names = transform_chain_names(data)
+            lower_chain = [name.lower() for name in chain_names]
+            matrix = prefab_to_mesh_basis(composed_transform_matrix(data))
+        except Exception:
+            continue
+
+        score = 0
+        if any(wanted_mesh in lower_chain for wanted_mesh in wanted_meshes):
+            score += 100
+        if any(wanted_root in lower_chain for wanted_root in wanted_roots):
+            score += 50
+        if any("cutin" in name for name in lower_chain):
+            score -= 40
+        if any(name.startswith("fx_mesh") for name in lower_chain):
+            score -= 20
+        if score <= 0:
+            continue
+        candidates.append((score, matrix, chain_names))
+
+    if not candidates:
+        return None
+    _score, matrix, chain_names = max(candidates, key=lambda item: item[0])
+    return {
+        "bone": "Bip001 Head",
+        "position": transform_position(matrix[:3, 3]),
+        "source_path": " <- ".join(chain_names),
+    }
+
+
 def vector3_from_typetree(data) -> np.ndarray | None:
     if data is None:
         return None
@@ -986,7 +1036,25 @@ def mesh_world_matrix(mesh_filter, char_id: str, tri: trimesh.Trimesh | None = N
         return None
 
 
+def ch0355_halo_variant(name: str, char_id: str) -> str | None:
+    if char_id.upper() != "CH0355":
+        return None
+    match = re.match(r"^(?:CH0355_)?(0[12])_Halo$", name, re.I)
+    return match.group(1) if match else None
+
+
+def halo_form_variant(name: str, char_id: str) -> str | None:
+    return ch0355_halo_variant(name, char_id)
+
+
+def halo_material_name(char_id: str, mesh_name: str, variant: str) -> str:
+    return f"{char_id}_{mesh_name}"
+
+
 def safe_mesh_name(go_name: str, char_id: str) -> str:
+    variant = halo_form_variant(go_name, char_id)
+    if variant:
+        return f"{variant}_Halo"
     if go_name.lower().endswith("_original_halo"):
         return "Halo"
     # Alias-keyed halo (e.g. hoshino_swimsuit_halo for CH0091): collapse to
@@ -1001,6 +1069,46 @@ def safe_mesh_name(go_name: str, char_id: str) -> str:
     if name.lower().startswith(char_id.lower() + "_"):
         name = name[len(char_id) + 1 :]
     return name or "Halo"
+
+
+def halo_visibility_for_mesh(char_id: str, mesh_name: str) -> dict | None:
+    variant = halo_form_variant(mesh_name, char_id)
+    if variant == "01":
+        return {
+            "default_visible": True,
+            "hide_clip_patterns": ["^CH0355_02_", "^FX_CH0355_02_"],
+        }
+    if variant == "02":
+        return {
+            "default_visible": False,
+            "show_clip_patterns": ["^CH0355_02_", "^FX_CH0355_02_"],
+        }
+    return None
+
+
+def halo_follow_target_part(char_id: str, mesh_name: str) -> str | None:
+    variant = halo_form_variant(mesh_name, char_id)
+    return f"Body_{variant}" if variant else None
+
+
+def source_halo_transform(
+    mesh_filter,
+    mesh_name: str,
+    chain_names: list[str],
+) -> dict | None:
+    try:
+        go = mesh_filter.m_GameObject.read()
+        transform = get_transform_object(go)
+        if transform is None:
+            return None
+        return transform_from_matrix(
+            prefab_to_mesh_basis(composed_transform_matrix(transform)),
+            " <- ".join(chain_names),
+            mesh_name,
+            coordinate_space="viewer",
+        )
+    except Exception:
+        return None
 
 
 def obj_to_trimesh(mesh) -> trimesh.Trimesh | None:
@@ -1120,7 +1228,13 @@ def find_mesh_filters(env, char_id: str) -> list[tuple[str, object, list[str]]]:
         lower = go_name.lower()
         if "halo" not in lower:
             continue
-        if not (any_object_key_matches(lower, keys) or lower == "halo" or lower.endswith("_original_halo")):
+        if char_id.upper() == "CH0355" and lower.endswith("_original_halo"):
+            continue
+        if not (
+            any_object_key_matches(lower, keys)
+            or lower == "halo"
+            or lower.endswith("_original_halo")
+        ):
             continue
         # Compare case-insensitively: some prefabs use "Ch####_Halo" instead
         # of the canonical "CH####_Halo". Accept the canonical char-id halo,
@@ -1352,7 +1466,31 @@ def export_character(root: Path, output_root: Path, char_id: str, metadata_only:
                 coordinate_space="viewer",
             )
         export_trimesh_with_transform(output_dir / file_name, tri, transform)
-        item = {"name": mesh_name, "file": file_name, "verts": len(tri.vertices), "faces": len(tri.faces)}
+        item = {
+            "name": mesh_name,
+            "file": file_name,
+            "verts": len(tri.vertices),
+            "faces": len(tri.faces),
+        }
+        visibility = halo_visibility_for_mesh(char_id, mesh_name)
+        if visibility:
+            item["visibility"] = visibility
+        follow_part = halo_follow_target_part(char_id, mesh_name)
+        if follow_part:
+            item["halo_follow_target_part"] = follow_part
+        variant = halo_form_variant(mesh_name, char_id)
+        if variant:
+            item["material_name"] = halo_material_name(char_id, mesh_name, variant)
+            source_transform = source_halo_transform(
+                mesh_filter,
+                mesh_name,
+                chain_names,
+            )
+            if source_transform:
+                item["halo_anchor"] = source_transform
+            variant_head = find_head_transform_for_variant(env, char_id, variant)
+            if variant_head:
+                item["head_transform"] = variant_head
         exported.append(item)
         print(
             f"{char_id}: exported {go_name} -> {file_name} "
