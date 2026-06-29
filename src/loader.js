@@ -31,7 +31,7 @@ import { createHaloParticleSystem } from "./haloParticles.js";
 import { createModelFx } from "./modelFx.js";
 
 let modelsIndex = [];
-const ASSET_CACHE_VERSION = "build-11"; //You should poke this after modifying the code
+const ASSET_CACHE_VERSION = "build-12"; //You should poke this after modifying the code
 const HEAD_MESH_BASE_NAMES = new Set([
   "Face",
   "Hair",
@@ -79,6 +79,8 @@ function getMeshBaseName(name) {
   if (prop02Match) return prop02Match[1];
   const brushMatch = source.match(/(?:^|_)(Brush(?:_\d+)?)$/i);
   if (brushMatch) return brushMatch[1];
+  const variantPartMatch = source.match(/^(Body|Weapon)_[0-9]+$/i);
+  if (variantPartMatch) return variantPartMatch[1];
   return source.replace(/^Face\d+_/, "").replace(/^.*_/, "") || source;
 }
 
@@ -393,6 +395,11 @@ function findSharedSkeletonParentBone(group, boneName, partName) {
 function findParentAttachBone(group, boneName, partName) {
   if (partName) return findSharedSkeletonParentBone(group, boneName, partName);
   return findObjectByName(group, boneName);
+}
+
+function findFirstObjectByNameInSkinnedPart(group, partName, names) {
+  const skinnedRoot = findFxOverlaySkinnedRoot(group, partName);
+  return findFirstObjectByName(skinnedRoot, names);
 }
 
 function findFxOverlayParentBone({
@@ -1856,6 +1863,27 @@ function haloSourceIsTransient(data) {
   return TRANSIENT_HALO_SOURCE_RE.test(data?.source_path || "");
 }
 
+function haloSourcePathKey(data) {
+  return String(data?.source_path || data?.sourcePath || "").trim().toLowerCase();
+}
+
+function hasMeshSpecificHaloAnchor(meshInfo, assetData) {
+  const meshAnchorPath = haloSourcePathKey(
+    meshInfo?.halo_anchor || meshInfo?.haloAnchor
+  );
+  const rootAnchorPath = haloSourcePathKey(assetData?.halo_anchor);
+  return !!meshAnchorPath && !!rootAnchorPath && meshAnchorPath !== rootAnchorPath;
+}
+
+function haloAnchorForMesh(meshInfo, assetData) {
+  const anchor = meshInfo?.halo_anchor || meshInfo?.haloAnchor || assetData?.halo_anchor;
+  if (!anchor || !hasMeshSpecificHaloAnchor(meshInfo, assetData)) return anchor;
+  return {
+    ...anchor,
+    depth_mode: anchor.depth_mode || anchor.depthMode || "preserve"
+  };
+}
+
 function haloAnchorIsTrivial(anchor) {
   const pos = vector3FromPosition(anchor?.position);
   return !pos || pos.lengthSq() < 1e-8;
@@ -1915,12 +1943,15 @@ function getMetadataHaloTarget(assetData, headPos) {
     !haloAnchorIsTrivial(anchor)
   ) {
     const target = vector3FromPosition(anchor.position);
+    const anchorDepthMode = anchor.depth_mode || anchor.depthMode || depthMode;
+    const anchorPlacementTiltDeg =
+      anchor.placement_tilt_deg ?? anchor.placementTiltDeg ?? placementTiltDeg;
     if (haloTargetLooksValid(target, headPos)) {
       return adjustHaloTargetDepth(
         target,
         headPos,
-        depthMode,
-        placementTiltDeg
+        anchorDepthMode,
+        anchorPlacementTiltDeg
       );
     }
   }
@@ -2116,6 +2147,7 @@ function attachHaloRuntimeFollow(
   followTarget.updateWorldMatrix(true, false);
   const targetWorldPos = localRoot.localToWorld(haloTarget.clone());
   const targetForwardLocal =
+    vector3FromPosition(haloFollow?.local_forward) ||
     vector3FromPosition(localRoot.userData?.haloFollowLocalForward) ||
     new THREE.Vector3(0, 1, 0);
   const baseYaw = yawFromLocalRootDirection(
@@ -2382,6 +2414,7 @@ export async function loadCharacter(
     const visibleParts = [];
     const pendingFollows = [];
     const pendingParentAttach = [];
+    const pendingHaloFollows = [];
     const animationSummaries = collectAnimationSummaries(assetData);
     const expressionTracks = buildExpressionTracks(animationSummaries);
     const eyeMouthMaterials = [];
@@ -3348,7 +3381,7 @@ export async function loadCharacter(
       if (isSourceHalo) {
         gltf.scene.userData.isHaloRoot = true;
         rootToAdd.userData.isHaloRoot = true;
-        haloRoots.push(rootToAdd);
+        haloRoots.push({ root: rootToAdd, meshInfo });
       }
       if (meshInfo.follow_target) {
         pendingFollows.push({ root: rootToAdd, meshInfo });
@@ -3513,6 +3546,7 @@ export async function loadCharacter(
       if (loaded) {
         resolvePendingFollows(false);
         resolvePendingParentAttach(false);
+        resolvePendingHaloFollows(false);
       }
       return !!loaded;
     };
@@ -3585,8 +3619,27 @@ export async function loadCharacter(
     resolvePendingFollows(false);
     resolvePendingParentAttach(false);
 
-    for (const haloRoot of haloRoots) {
-      applyStaticHaloSourceRotation(haloRoot, assetData);
+    const haloAssetDataForMesh = (meshInfo = {}) => ({
+      ...assetData,
+      halo_transform:
+        meshInfo.halo_transform ||
+        meshInfo.haloTransform ||
+        assetData.halo_transform,
+      halo_anchor: haloAnchorForMesh(meshInfo, assetData),
+      halo_follow:
+        meshInfo.halo_follow || meshInfo.haloFollow || assetData.halo_follow,
+      head_transform:
+        meshInfo.head_transform ||
+        meshInfo.headTransform ||
+        assetData.head_transform,
+      head_anchor:
+        meshInfo.head_anchor || meshInfo.headAnchor || assetData.head_anchor
+    });
+    for (const { root: haloRoot, meshInfo } of haloRoots) {
+      applyStaticHaloSourceRotation(
+        haloRoot,
+        haloAssetDataForMesh(meshInfo)
+      );
     }
     if (!haloFollowTarget) {
       haloFollowTarget = findFirstObjectByName(group, haloFollowTargets);
@@ -3596,15 +3649,86 @@ export async function loadCharacter(
         );
       }
     }
-    const haloTarget = estimateHaloTargetPosition(group, assetData);
-    for (const haloRoot of haloRoots) {
-      alignHaloRootToTarget(haloRoot, haloTarget);
-      attachHaloRuntimeFollow(
+    const queuePendingHaloFollow = (pending) => {
+      if (!pendingHaloFollows.some((item) => item.root === pending.root)) {
+        pendingHaloFollows.push(pending);
+      }
+    };
+    const attachHaloFollowForMesh = (
+      haloRoot,
+      meshInfo,
+      meshHaloTarget,
+      meshHaloAssetData,
+      { queueMissing = false, warnMissing = false } = {}
+    ) => {
+      const meshHaloFollowTargets = haloFollowTargetNames(meshHaloAssetData);
+      const followTargetPart =
+        meshInfo?.halo_follow_target_part || meshInfo?.haloFollowTargetPart;
+      const meshHaloFollowTarget = followTargetPart
+        ? findFirstObjectByNameInSkinnedPart(
+            group,
+            followTargetPart,
+            meshHaloFollowTargets
+          )
+        : null;
+      const followTarget =
+        meshHaloFollowTarget || (followTargetPart ? null : haloFollowTarget);
+      if (!followTarget) {
+        if (followTargetPart) {
+          if (queueMissing) {
+            queuePendingHaloFollow({
+              root: haloRoot,
+              meshInfo,
+              meshHaloTarget,
+              meshHaloAssetData
+            });
+          }
+          if (warnMissing) {
+            console.warn(
+              `[${charId}] halo follow target not found for ${meshInfo?.name}: ` +
+                `${followTargetPart}/${meshHaloFollowTargets.join(", ")}`
+            );
+          }
+        }
+        return false;
+      }
+      return attachHaloRuntimeFollow(
         group,
         haloRoot,
-        haloFollowTarget,
-        haloTarget,
-        assetData.halo_follow
+        followTarget,
+        meshHaloTarget,
+        meshHaloAssetData.halo_follow
+      );
+    };
+    const resolvePendingHaloFollows = (warnMissing = false) => {
+      for (let i = pendingHaloFollows.length - 1; i >= 0; i--) {
+        const pending = pendingHaloFollows[i];
+        if (
+          attachHaloFollowForMesh(
+            pending.root,
+            pending.meshInfo,
+            pending.meshHaloTarget,
+            pending.meshHaloAssetData,
+            { warnMissing }
+          )
+        ) {
+          pendingHaloFollows.splice(i, 1);
+        }
+      }
+    };
+    const haloTarget = estimateHaloTargetPosition(group, assetData);
+    for (const { root: haloRoot, meshInfo } of haloRoots) {
+      const meshHaloAssetData = haloAssetDataForMesh(meshInfo);
+      const meshHaloTarget =
+        estimateHaloTargetPosition(group, meshHaloAssetData) ||
+        haloTarget;
+      alignHaloRootToTarget(haloRoot, meshHaloTarget);
+      attachHaloFollowForMesh(
+        haloRoot,
+        meshInfo,
+        meshHaloTarget,
+        meshHaloAssetData,
+        { queueMissing: true }
       );
     }
 

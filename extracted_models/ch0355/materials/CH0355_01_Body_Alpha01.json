@@ -1,0 +1,202 @@
+{
+  "name": "CH0355_01_Body_Alpha01",
+  "shader": "MX/C-Transparent-ST",
+  "floats": {
+    "_AdditionalLightSharpness": 0.0,
+    "_AdditionalLightStrength": 0.0,
+    "_BaseBrightness": 0.0,
+    "_Cull": 0.0,
+    "_Cutoff": 0.20000000298023224,
+    "_DitherThreshold": 0.0,
+    "_DstBlend": 0.0,
+    "_DstBlendAlpha": 0.0,
+    "_GlowStrength": 0.0,
+    "_GrayBrightness": 1.0,
+    "_InvViewPower": 2.0,
+    "_InvViewStrength": 0.0,
+    "_MaskGSensitivity": 1.409999966621399,
+    "_MaskRtoG": 0.0,
+    "_OutlineZCorrection": 0.0,
+    "_RimAreaLeveler": 0.0,
+    "_RimAreaMultiplier": 1.0,
+    "_RimStrength": 0.0,
+    "_SeeThroughMinValue": 0.800000011920929,
+    "_SeeThroughSmoothness": 1.0,
+    "_SeeThroughTransparency": 1.0,
+    "_ShadowThreshold": 2.0799999237060547,
+    "_SrcBlend": 1.0,
+    "_SrcBlendAlpha": 1.0,
+    "_ViewLightEdge": 0.0,
+    "_ViewOffset": 0.0,
+    "_ViewPower": 2.0,
+    "_ViewStrength": 0.0,
+    "_ZOffsetFactor": 0.0,
+    "_ZOffsetUnits": 0.0,
+    "_ZTest": 4.0,
+    "_ZWrite": 0.0
+  },
+  "colors": {
+    "_BaseBrightness4": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeAddColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeAddRimColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_CodeMultiplyColor": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_Color": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_GlowTint": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "_InvViewPower4": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_InvViewStrength4": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_OutlineSolidColorTint": {
+      "r": 0.699999988079071,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "_OutlineTint": {
+      "r": 0.6792452931404114,
+      "g": 0.6055535674095154,
+      "b": 0.6055535674095154,
+      "a": 1.0
+    },
+    "_RimAreaMultiplier4": {
+      "r": 5.0,
+      "g": 5.0,
+      "b": 5.0,
+      "a": 5.0
+    },
+    "_RimStrength4": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_ShadowThreshold4": {
+      "r": 0.25,
+      "g": 0.2800000011920929,
+      "b": 0.4000000059604645,
+      "a": 0.0
+    },
+    "_ShadowTint": {
+      "r": 0.7452830076217651,
+      "g": 0.7066126465797424,
+      "b": 0.7066126465797424,
+      "a": 1.0
+    },
+    "_ShadowTintB4": {
+      "r": 0.5854396224021912,
+      "g": 0.5377358198165894,
+      "b": 0.696956217288971,
+      "a": 1.0
+    },
+    "_ShadowTintG4": {
+      "r": 0.6589169502258301,
+      "g": 0.41852080821990967,
+      "b": 0.7297970652580261,
+      "a": 1.0
+    },
+    "_ShadowTintR4": {
+      "r": 0.8679245114326477,
+      "g": 0.4353891611099243,
+      "b": 0.7735849022865295,
+      "a": 1.0
+    },
+    "_Tint": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_TwoSideTint": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_ViewLightEdge4": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_ViewOffset4": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "_ViewPower4": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "_ViewStrength4": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    }
+  },
+  "textures": {
+    "_MainTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ],
+      "name": "CH0355_01_Body"
+    },
+    "_MaskTex": {
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "offset": [
+        0.0,
+        0.0
+      ],
+      "name": "CH0355_01_Body_Mask"
+    }
+  }
+}
